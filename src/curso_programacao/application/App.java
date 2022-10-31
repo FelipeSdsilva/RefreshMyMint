@@ -1,18 +1,20 @@
 package curso_programacao.application;
 
-import java.util.Locale;
-
 import exercicies.Array;
+import exercicies.FixExercicies;
 
 public class App {
 
 	public static void main(String[] args) {
 
-		Locale.setDefault(Locale.US);
+		//Locale.setDefault(Locale.US);
 		
+		
+		FixExercicies fix1 = new FixExercicies();
 		Array arr = new Array();
 		
-		arr.arrayFixedExercicies3();
+		//arr.arrayFixedExercicies3();
+		fix1.fixedExercicieString();
 		
 	}
 

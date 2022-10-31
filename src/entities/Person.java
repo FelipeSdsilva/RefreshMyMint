@@ -5,6 +5,7 @@ public class Person {
 	private String name;
 	private int age;
 	private double height;
+	private char gender;
 
 	public Person() {
 	}
@@ -13,6 +14,13 @@ public class Person {
 		this.name = name;
 		this.age = age;
 		this.height = height;
+	}
+
+	public Person(String name, int age, double height, char gender) {
+		this.name = name;
+		this.age = age;
+		this.height = height;
+		this.gender = gender;
 	}
 
 	public String getName() {
@@ -38,4 +46,13 @@ public class Person {
 	public void setHeight(double height) {
 		this.height = height;
 	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+
 }
