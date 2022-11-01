@@ -5,7 +5,7 @@ import java.util.Locale;
 import entities.Person;
 import entities.Product;
 
-public class FixExercicies {
+public class StringText {
 
 	Product p1 = new Product(5290, "Computer", 2100.0);
 	Product p2 = new Product(5598, "Office desk", 650.50);

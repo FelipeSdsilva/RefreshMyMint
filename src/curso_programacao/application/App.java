@@ -1,21 +1,26 @@
 package curso_programacao.application;
 
+import java.util.Locale;
+
 import exercicies.Array;
-import exercicies.FixExercicies;
+import exercicies.StringText;
+import exercicies.StructuralSequence;
 
 public class App {
 
 	public static void main(String[] args) {
 
-		//Locale.setDefault(Locale.US);
+		Locale.setDefault(Locale.US);
 		
 		
-		FixExercicies fix1 = new FixExercicies();
-		Array arr = new Array();
+	//	StringText fix1 = new StringText();
+	//	Array arr = new Array();
+		StructuralSequence ss =  new StructuralSequence();
 		
 		//arr.arrayFixedExercicies3();
-		fix1.fixedExercicieString();
+		//fix1.fixedExercicieString();
 		
+		ss.avarageAge();
 	}
 
 }
