@@ -15,7 +15,7 @@ public class StructuralSequence {
 		 * Fazer um programa para ler as medidas da largura e comprimento de um terreno
 		 * retangular com uma casa decimal, bem como o valor do metro quadrado do
 		 * terreno com duas casas decimais. Em seguida, o programa deve mostrar o valor
-		 * da �rea do terreno, bem como o valor do pre�o do terreno, ambos com duas
+		 * da área do terreno, bem como o valor do preço do terreno, ambos com duas
 		 * casas decimais, conforme exemplo.
 		 */
 
@@ -25,7 +25,7 @@ public class StructuralSequence {
 		double width = in.nextDouble();
 		System.out.print("Write the length of terrain: ");
 		double lenth = in.nextDouble();
-		System.out.print("Write  the value for m�: ");
+		System.out.print("Write  the value for m²: ");
 		double value = in.nextDouble();
 
 		System.out.println("Area of terrain = " + String.format("%.2f", width * lenth));
@@ -36,8 +36,8 @@ public class StructuralSequence {
 	public void rectangleMeasure() {
 
 		/*
-		 * Fazer um programa para ler as medidas da base e altura de um ret�ngulo. Em
-		 * seguida, mostrar o valor da �rea, per�metro e diagonal deste ret�ngulo, com
+		 * Fazer um programa para ler as medidas da base e altura de um retângulo. Em
+		 * seguida, mostrar o valor da área, perímetro e diagonal deste retângulo, com
 		 * quatro casas decimais, conforme exemplos.
 		 */
 
@@ -59,7 +59,7 @@ public class StructuralSequence {
 		Locale.setDefault(Locale.US);
 		/*
 		 * Fazer um programa para ler o nome e idade de duas pessoas. Ao final mostrar
-		 * uma mensagem com os nomes e a idade m�dia entre essas pessoas, com uma casa
+		 * uma mensagem com os nomes e a idade média entre essas pessoas, com uma casa
 		 * decimal, conforme exemplo.
 		 */
 
@@ -88,5 +88,158 @@ public class StructuralSequence {
 
 		System.out.println("A age avarege " + p[0].getName() + " and " + p[1].getName() + " is the "
 				+ String.format("%.1f", avarege) + " years old");
+	}
+
+	public void sumBetweenTwoNumbers() {
+
+		/*
+		 * Fazer um programa para ler dois valores inteiros X e Y, e depois mostrar na
+		 * tela o valor da soma destes números.
+		 */
+
+		int x, y, sum;
+
+		System.out.print("Write a value of x: ");
+		x = in.nextInt();
+		System.out.print("Write a value of y: ");
+		y = in.nextInt();
+		sum = x + y;
+		System.out.println("Sum = " + sum);
+	}
+
+	public void getChange() {
+
+		Locale.setDefault(Locale.US);
+		/*
+		 * Fazer um programa para calcular o troco no processo de pagamento de um
+		 * produto de uma mercearia. O programa deve ler o preço unitário do produto, a
+		 * quantidade de unidades compradas deste produto, e o valor em dinheiro dado
+		 * pelo cliente (suponha que haja dinheiro suficiente). Seu programa deve
+		 * mostrar o valor do troco a ser devolvido ao cliente.
+		 */
+
+		double price, change, money;
+		int qtd;
+
+		System.out.print("Enter with unit price of product: ");
+		price = in.nextDouble();
+		System.out.print("Enter the quantity purchased: ");
+		qtd = in.nextInt();
+		System.out.print("Money received: ");
+		money = in.nextDouble();
+		change = money - (price * qtd);
+		System.out.println("Change: " + String.format("%.2f", change));
+
+	}
+
+	public void circleRadius() {
+
+		Locale.setDefault(Locale.US);
+		/*
+		 * Fazer um programa para ler o valor "r" do raio de um círculo, e depois
+		 * mostrar o valor da área do círculo com três casas decimais. A fórmula da área
+		 * do círculo é a seguinte: 𝑎𝑟𝑒𝑎 = 𝜋. 𝑟 ଶ . Você pode usar o valor de 𝜋
+		 * fornecido pela biblioteca da sua linguagem de programação, ou então, se
+		 * preferir, use diretamente o valor 3.14159.
+		 */
+
+		System.out.print("Enter the value circle radius: ");
+		double circleRadius = in.nextDouble();
+		double area = Math.PI * Math.pow(circleRadius, 2);
+		System.out.println("AREA = " + String.format("%.3f", area));
+
+	}
+
+	public void payment() {
+
+		/*
+		 * Fazer um programa para ler o nome de um(a) funcionário(a), o valor que ele(a)
+		 * recebe por hora, e a quantidade de horas trabalhadas por ele(a). Ao final,
+		 * mostrar o valor do pagamento do funcionário com uma mensagem explicativa,
+		 * conforme exemplo.
+		 */
+
+		String name;
+		double valuePerHour, hoursJobs;
+
+		System.out.print("Name: ");
+		name = in.nextLine();
+		System.out.print("Value per hours: ");
+		valuePerHour = in.nextDouble();
+		System.out.print("Working hours: ");
+		hoursJobs = in.nextDouble();
+
+		System.out.println("The payment for " + name + "is " + String.format("%.2f", (valuePerHour * hoursJobs)));
+
+	}
+
+	public void consumption() {
+
+		Locale.setDefault(Locale.US);
+		/*
+		 * Fazer um programa para ler a distância total (em km) percorrida por um carro,
+		 * bem como o total de combustível gasto por este carro ao percorrer tal
+		 * distância. Seu programa deve mostrar o consumo médio do carro, com três casas
+		 * decimais.
+		 */
+
+		int km;
+		double fuel;
+
+		System.out.print("Enter the distance travelled(Km): ");
+		km = in.nextInt();
+		System.out.print("Fuel spent: ");
+		fuel = in.nextDouble();
+		System.out.println("Average consumption: " + String.format("%.3f", km / fuel));
+	}
+
+	public void measures() {
+
+		Locale.setDefault(Locale.US);
+		/*
+		 * Fazer um programa para ler três medidas A, B e C. Em seguida, calcular e
+		 * mostrar (imprimir os dados com quatro casas decimais): a) a área do quadrado
+		 * que tem lado A b) a área do triângulo retângulo que base A e altura B c) a
+		 * área do trapézio que tem bases A e B, e altura C
+		 */
+		double a, b, c;
+		double tri, trap, sqrt;
+
+		System.out.print("Enter the measure A: ");
+		a = in.nextDouble();
+		System.out.print("Enter the measure B: ");
+		b = in.nextDouble();
+		System.out.print("Enter the measure C: ");
+		c = in.nextDouble();
+
+		tri = (a * b) / 2;
+		trap = (a + b) * c / 2;
+		sqrt = a * a;
+
+		System.out.printf("\nQUADRADO: %.4f" + "\nTRIANGULO: %.4f" + "\nTRAPEZIO: %.4f", sqrt, tri, trap);
+
+	}
+
+	public void duration() {
+
+		Locale.setDefault(Locale.US);
+		/*
+		 * Fazer um programa para ler uma duração de tempo em segundos, daí imprimir na
+		 * tela esta duração no formato horas:minutos:segundos.
+		 */
+
+		int duration, hours, minutes, seconds, rest;
+
+		System.out.print("Write duration in seconds: ");
+		duration = in.nextInt();
+
+		hours = duration / 3600;
+		rest = duration % 3600;
+
+		minutes = rest / 60;
+		seconds = rest % 60;
+
+		System.out.println(hours + ":" + minutes + ":" + seconds);
+
 	}
 }

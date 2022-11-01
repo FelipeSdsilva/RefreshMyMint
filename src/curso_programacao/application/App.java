@@ -13,14 +13,16 @@ public class App {
 		Locale.setDefault(Locale.US);
 		
 		
-	//	StringText fix1 = new StringText();
-	//	Array arr = new Array();
+		@SuppressWarnings("unused")
+		StringText fix1 = new StringText();
+		@SuppressWarnings("unused")
+		Array arr = new Array();
 		StructuralSequence ss =  new StructuralSequence();
 		
 		//arr.arrayFixedExercicies3();
 		//fix1.fixedExercicieString();
 		
-		ss.avarageAge();
+		ss.duration();
 	}
 
 }
