@@ -15,7 +15,7 @@ public class StructuralSequence {
 		 * Fazer um programa para ler as medidas da largura e comprimento de um terreno
 		 * retangular com uma casa decimal, bem como o valor do metro quadrado do
 		 * terreno com duas casas decimais. Em seguida, o programa deve mostrar o valor
-		 * da área do terreno, bem como o valor do preço do terreno, ambos com duas
+		 * da Ã¡rea do terreno, bem como o valor do preÃ§o do terreno, ambos com duas
 		 * casas decimais, conforme exemplo.
 		 */
 
@@ -36,8 +36,8 @@ public class StructuralSequence {
 	public void rectangleMeasure() {
 
 		/*
-		 * Fazer um programa para ler as medidas da base e altura de um retângulo. Em
-		 * seguida, mostrar o valor da área, perímetro e diagonal deste retângulo, com
+		 * Fazer um programa para ler as medidas da base e altura de um retÃ¢ngulo. Em
+		 * seguida, mostrar o valor da Ã¡rea, perÃ­metro e diagonal deste retÃ¢ngulo, com
 		 * quatro casas decimais, conforme exemplos.
 		 */
 
@@ -59,7 +59,7 @@ public class StructuralSequence {
 		Locale.setDefault(Locale.US);
 		/*
 		 * Fazer um programa para ler o nome e idade de duas pessoas. Ao final mostrar
-		 * uma mensagem com os nomes e a idade média entre essas pessoas, com uma casa
+		 * uma mensagem com os nomes e a idade mÃ©dia entre essas pessoas, com uma casa
 		 * decimal, conforme exemplo.
 		 */
 
@@ -94,7 +94,7 @@ public class StructuralSequence {
 
 		/*
 		 * Fazer um programa para ler dois valores inteiros X e Y, e depois mostrar na
-		 * tela o valor da soma destes números.
+		 * tela o valor da soma destes nÃºmeros.
 		 */
 
 		int x, y, sum;
@@ -112,7 +112,7 @@ public class StructuralSequence {
 		Locale.setDefault(Locale.US);
 		/*
 		 * Fazer um programa para calcular o troco no processo de pagamento de um
-		 * produto de uma mercearia. O programa deve ler o preço unitário do produto, a
+		 * produto de uma mercearia. O programa deve ler o preÃ§o unitÃ¡rio do produto, a
 		 * quantidade de unidades compradas deste produto, e o valor em dinheiro dado
 		 * pelo cliente (suponha que haja dinheiro suficiente). Seu programa deve
 		 * mostrar o valor do troco a ser devolvido ao cliente.
@@ -136,10 +136,10 @@ public class StructuralSequence {
 
 		Locale.setDefault(Locale.US);
 		/*
-		 * Fazer um programa para ler o valor "r" do raio de um círculo, e depois
-		 * mostrar o valor da área do círculo com três casas decimais. A fórmula da área
-		 * do círculo é a seguinte: 𝑎𝑟𝑒𝑎 = 𝜋. 𝑟 ଶ . Você pode usar o valor de 𝜋
-		 * fornecido pela biblioteca da sua linguagem de programação, ou então, se
+		 * Fazer um programa para ler o valor "r" do raio de um cÃ­rculo, e depois
+		 * mostrar o valor da Ã¡rea do cÃ­rculo com trÃªs casas decimais. A fÃ³rmula da Ã¡rea
+		 * do cÃ­rculo Ã© a seguinte: ð�‘Žð�‘Ÿð�‘’ð�‘Ž = ð�œ‹. ð�‘Ÿ à¬¶ . VocÃª pode usar o valor de ð�œ‹
+		 * fornecido pela biblioteca da sua linguagem de programaÃ§Ã£o, ou entÃ£o, se
 		 * preferir, use diretamente o valor 3.14159.
 		 */
 
@@ -153,9 +153,9 @@ public class StructuralSequence {
 	public void payment() {
 
 		/*
-		 * Fazer um programa para ler o nome de um(a) funcionário(a), o valor que ele(a)
+		 * Fazer um programa para ler o nome de um(a) funcionÃ¡rio(a), o valor que ele(a)
 		 * recebe por hora, e a quantidade de horas trabalhadas por ele(a). Ao final,
-		 * mostrar o valor do pagamento do funcionário com uma mensagem explicativa,
+		 * mostrar o valor do pagamento do funcionÃ¡rio com uma mensagem explicativa,
 		 * conforme exemplo.
 		 */
 
@@ -177,9 +177,9 @@ public class StructuralSequence {
 
 		Locale.setDefault(Locale.US);
 		/*
-		 * Fazer um programa para ler a distância total (em km) percorrida por um carro,
-		 * bem como o total de combustível gasto por este carro ao percorrer tal
-		 * distância. Seu programa deve mostrar o consumo médio do carro, com três casas
+		 * Fazer um programa para ler a distÃ¢ncia total (em km) percorrida por um carro,
+		 * bem como o total de combustÃ­vel gasto por este carro ao percorrer tal
+		 * distÃ¢ncia. Seu programa deve mostrar o consumo mÃ©dio do carro, com trÃªs casas
 		 * decimais.
 		 */
 
@@ -197,10 +197,10 @@ public class StructuralSequence {
 
 		Locale.setDefault(Locale.US);
 		/*
-		 * Fazer um programa para ler três medidas A, B e C. Em seguida, calcular e
-		 * mostrar (imprimir os dados com quatro casas decimais): a) a área do quadrado
-		 * que tem lado A b) a área do triângulo retângulo que base A e altura B c) a
-		 * área do trapézio que tem bases A e B, e altura C
+		 * Fazer um programa para ler trÃªs medidas A, B e C. Em seguida, calcular e
+		 * mostrar (imprimir os dados com quatro casas decimais): a) a Ã¡rea do quadrado
+		 * que tem lado A b) a Ã¡rea do triÃ¢ngulo retÃ¢ngulo que base A e altura B c) a
+		 * Ã¡rea do trapÃ©zio que tem bases A e B, e altura C
 		 */
 		double a, b, c;
 		double tri, trap, sqrt;
@@ -224,8 +224,8 @@ public class StructuralSequence {
 
 		Locale.setDefault(Locale.US);
 		/*
-		 * Fazer um programa para ler uma duração de tempo em segundos, daí imprimir na
-		 * tela esta duração no formato horas:minutos:segundos.
+		 * Fazer um programa para ler uma duraÃ§Ã£o de tempo em segundos, daÃ­ imprimir na
+		 * tela esta duraÃ§Ã£o no formato horas:minutos:segundos.
 		 */
 
 		int duration, hours, minutes, seconds, rest;
