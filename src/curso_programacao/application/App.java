@@ -23,7 +23,7 @@ public class App {
 		
 		StructureRepetitionWhile sw = new StructureRepetitionWhile();
 		
-		sw.excercicie2();
+		sw.exercicie3();
 		
 		//arr.arrayFixedExercicies3();
 		//fix1.fixedExercicieString();
