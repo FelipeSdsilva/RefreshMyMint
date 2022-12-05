@@ -1,6 +1,5 @@
 package exercicies;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class RepetitionFor {
@@ -69,15 +68,14 @@ public class RepetitionFor {
 		 * o terceiro valor tem peso 5
 		 */
 
-		double avg1, avg2, avg3, md1, md2, md3;
+		double avg1, md1;
 
 		n = in.nextInt();
 
 		for (int i = 0; i < n; i++) {
-			avg1 = in.nextDouble();
-			avg2 = in.nextDouble();
-			avg3 = in.nextDouble();
-
+			for (int c = 1; c <= 3; c++) {
+				avg1 = in.nextDouble();
+			}
 		}
 	}
 
@@ -95,6 +93,16 @@ public class RepetitionFor {
 		 * N * (N-1) * (N-2) * (N-3) * ... * 1. Lembrando que, por definição, fatorial
 		 * de 0 é 1.
 		 */
+		n = in.nextInt();
+		if(n == 0) {
+			n =1;
+		}
+		som = n;
+		for (int i = 1; i < n; i++) {
+			som  *= (n-i);
+		}
+		System.out.println(som);
+		
 	}
 
 	public void exercicie6() {
@@ -120,7 +128,7 @@ public class RepetitionFor {
 
 		for (i = 1; i <= n; i++) {
 			for (int c = 1; c <= 3; c++) {
-				System.out.print(Math.pow(i, c)+" ");
+				System.out.print(String.format("%.0f", Math.pow(i, c)) + " ");
 			}
 			System.out.println();
 		}
