@@ -93,13 +93,11 @@ public class RepetitionFor {
 
 		n = in.nextInt();
 
-		int[] array = new int[n];
-
-		for (i = 1; i < array.length; i++) {
-			array[i] = i;
+		for (i = 1; i <= n; i++) {
 			if (n % i == 0) {
-				System.out.println(array[i]);
+				System.out.println(i);
 			}
 		}
+		
 	}
 }
