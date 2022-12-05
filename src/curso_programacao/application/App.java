@@ -22,7 +22,7 @@ public class App {
 		RepetitionWhile sw = new RepetitionWhile();
 		RepetitionFor sf = new RepetitionFor();
 
-		sf.exercicie6();
+		sf.exercicie7();
 		
 		// sw.exercicie3();
 

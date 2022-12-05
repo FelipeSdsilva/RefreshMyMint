@@ -1,5 +1,6 @@
 package exercicies;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class RepetitionFor {
@@ -68,8 +69,16 @@ public class RepetitionFor {
 		 * o terceiro valor tem peso 5
 		 */
 
+		double avg1, avg2, avg3, md1, md2, md3;
+
 		n = in.nextInt();
 
+		for (int i = 0; i < n; i++) {
+			avg1 = in.nextDouble();
+			avg2 = in.nextDouble();
+			avg3 = in.nextDouble();
+
+		}
 	}
 
 	public void exercicie4() {
@@ -98,6 +107,23 @@ public class RepetitionFor {
 				System.out.println(i);
 			}
 		}
-		
 	}
+
+	public void exercicie7() {
+		/*
+		 * Fazer um programa para ler um número inteiro positivo N. O programa deve
+		 * então mostrar na tela N linhas, começando de 1 até N. Para cada linha,
+		 * mostrar o número da linha, depois o quadrado e o cubo do valor, conforme
+		 * exemplo
+		 */
+		n = in.nextInt();
+
+		for (i = 1; i <= n; i++) {
+			for (int c = 1; c <= 3; c++) {
+				System.out.print(Math.pow(i, c)+" ");
+			}
+			System.out.println();
+		}
+	}
+
 }
