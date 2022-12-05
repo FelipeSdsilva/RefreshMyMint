@@ -88,4 +88,22 @@ public class RepetitionWhile {
 
 		System.out.println(mensage);
 	}
+
+	public void exercicie4() {
+		/*
+		 * Fazer um programa para ler uma temperatura em Celsius e mostrar o equivalente
+		 * em Fahrenheit. Perguntar se o usuário deseja repetir (s/n). Caso o usuário
+		 * digite "s", repetir o programa
+		 */
+
+		char cont;
+		
+		do {
+		System.out.print("White the temperature in Celcios: ");
+		double celciuos = in.nextDouble();
+		System.out.println("Equivalent in Fahrenheit: " + String.format("%.1f",((9 * celciuos)/ 5) + 32));
+		System.out.print("Restart the program (Y/N)? ");
+		cont = in.next().charAt(0);
+		}while(cont != 'n');
+	}
 }

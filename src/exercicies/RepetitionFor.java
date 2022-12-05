@@ -82,8 +82,8 @@ public class RepetitionFor {
 			avg3 = in.nextDouble();
 			md[i] = ((avg1 * 2) + (avg2 * 3) + (avg3 * 5)) / (2 + 3 + 5);
 		}
-		
-		for ( i = 0 ; i <md.length; i++) {
+
+		for (i = 0; i < md.length; i++) {
 			System.out.println(String.format("%.1f", md[i]));
 		}
 	}
@@ -94,6 +94,28 @@ public class RepetitionFor {
 		 * mostre a divisão do primeiro pelo segundo. Se o denominador for igual a zero,
 		 * mostrar a mensagem "divisao impossivel".
 		 */
+		n = in.nextInt();
+
+		int[] x = new int[n], y = new int[n];
+		double result = 0;
+
+		for (i = 0; i < n; i++) {
+			x[i] = in.nextInt();
+			y[i] = in.nextInt();
+		}
+
+		for (i = 0; i < n; i++) {
+
+			result = (double) x[i] / y[i];
+			
+			if(y[i] == 0) {
+				System.out.println("imposible division");
+			}else {
+				System.out.print(result + "\n");
+			}
+
+			
+		}
 	}
 
 	public void exercicie5() {
