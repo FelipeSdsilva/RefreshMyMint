@@ -2,7 +2,7 @@ package exercicies;
 
 import java.util.Scanner;
 
-public class StructureRepetitionWhile {
+public class RepetitionWhile {
 
 	Scanner in = new Scanner(System.in);
 
