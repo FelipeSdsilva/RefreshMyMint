@@ -65,7 +65,6 @@ public class RepetitionWhile {
 		 * tipo de combustível, conforme exemplo.
 		 */
 
-		@SuppressWarnings("unused")
 		int alchool = 0, fuel = 0, diesel = 0, n;
 
 		do {

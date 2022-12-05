@@ -1,5 +1,6 @@
 package exercicies;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class RepetitionFor {
@@ -68,14 +69,22 @@ public class RepetitionFor {
 		 * o terceiro valor tem peso 5
 		 */
 
-		double avg1, md1;
+		double avg1, avg2, avg3;
 
 		n = in.nextInt();
+		double[] md = new double[n];
+
+		Locale.setDefault(Locale.US);
 
 		for (int i = 0; i < n; i++) {
-			for (int c = 1; c <= 3; c++) {
-				avg1 = in.nextDouble();
-			}
+			avg1 = in.nextDouble();
+			avg2 = in.nextDouble();
+			avg3 = in.nextDouble();
+			md[i] = ((avg1 * 2) + (avg2 * 3) + (avg3 * 5)) / (2 + 3 + 5);
+		}
+		
+		for ( i = 0 ; i <md.length; i++) {
+			System.out.println(String.format("%.1f", md[i]));
 		}
 	}
 
@@ -94,15 +103,15 @@ public class RepetitionFor {
 		 * de 0 é 1.
 		 */
 		n = in.nextInt();
-		if(n == 0) {
-			n =1;
+		if (n == 0) {
+			n = 1;
 		}
 		som = n;
 		for (int i = 1; i < n; i++) {
-			som  *= (n-i);
+			som *= (n - i);
 		}
 		System.out.println(som);
-		
+
 	}
 
 	public void exercicie6() {
