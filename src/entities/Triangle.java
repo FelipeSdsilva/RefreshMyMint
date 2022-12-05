@@ -49,9 +49,9 @@ public class Triangle {
 		this.area = area;
 	}
 
-	public double measuresOfTriangle(double a, double b, double c) {
-		double p = (a + b + c) / 2;
-		double measure = Math.sqrt(p * ((p - a) * (p - b) * (p - c)));
+	public double measuresOfTriangle() {
+		double p = (getWidth() + getHight() + getBase()) / 2;
+		double measure = Math.sqrt(p * ((p - getWidth()) * (p - getHight()) * (p - getBase())));
 		return area = measure;
 	}
 

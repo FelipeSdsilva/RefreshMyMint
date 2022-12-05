@@ -16,13 +16,13 @@ public class ComparationOfTriangle {
 		t1.setWidth(sc.nextDouble());
 		t1.setHight(sc.nextDouble());
 		t1.setBase(sc.nextDouble());
-		t1.measuresOfTriangle(t1.getWidth(), t1.getHight(), t1.getBase());
+		t1.measuresOfTriangle();
 		System.out.println("Enter the measures of triangle y: ");
 
 		t2.setWidth(sc.nextDouble());
 		t2.setHight(sc.nextDouble());
 		t2.setBase(sc.nextDouble());
-		t2.measuresOfTriangle(t2.getWidth(), t2.getHight(), t2.getBase());
+		t2.measuresOfTriangle();
 
 		t1.toString();
 		t2.toString();
