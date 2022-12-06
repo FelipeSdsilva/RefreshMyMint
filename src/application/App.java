@@ -1,4 +1,4 @@
-package curso_programacao.application;
+package application;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -21,7 +21,8 @@ public class App {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		ComparationOfTriangle.triangleExercicie();
+		//ComparationOfTriangle.triangleExercicie();
+		StringText.resolvProblemWithOrientationObject();
 		
 		Array arr = new Array();
 		IntrodutionTheFunction fc = new IntrodutionTheFunction();

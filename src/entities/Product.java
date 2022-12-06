@@ -4,7 +4,8 @@ public class Product {
 
 	private Integer code;
 	private String name;
-	private Double price;
+	private Double price = 0.0;
+	private Integer quantity = 0;
 
 	public Product() {
 	}
@@ -39,4 +40,25 @@ public class Product {
 		this.price = price;
 	}
 
+	public Integer getQuantity() {
+		return quantity;
+	}
+
+	public double totalValueInStock() {
+		return quantity * price;
+	}
+
+	public void addStock(Integer qtd) {
+		this.quantity += qtd;
+	}
+
+	public void removeStock(Integer qtd) {
+		this.quantity -= qtd;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [code=" + code + ", name=" + name + ", price=" + String.format("%.2f", price) + ", quantity="
+				+ quantity + " ,Total: " + String.format("%.2f", totalValueInStock()) + "]";
+	}
 }
