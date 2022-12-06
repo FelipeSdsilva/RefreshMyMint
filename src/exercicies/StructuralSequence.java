@@ -43,7 +43,7 @@ public class StructuralSequence {
 
 		Locale.setDefault(Locale.US);
 
-		System.out.print("Base of recrangle: ");
+		System.out.print("Base of rectangle: ");
 		double b = in.nextDouble();
 		System.out.print("Height of rectangle: ");
 		double h = in.nextDouble();
