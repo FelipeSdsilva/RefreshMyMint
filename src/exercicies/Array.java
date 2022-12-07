@@ -23,16 +23,16 @@ public class Array {
 
 		int[] vec = new int[cont];
 
-		for (int i : vec) {
+		for (int i = 0; i < vec.length; i++) {
 			System.out.print("Digit a number: ");
 			vec[i] = in.nextInt();
 		}
 
 		System.out.println("Negative numbers: ");
 
-		for (int i = 0; i < cont; i++) {
+		for (int i = 0; i < vec.length; i++) {
 			if (vec[i] < 0) {
-				System.out.println(String.format("%d\n", vec[i]));
+				System.out.println(vec[i]);
 			}
 		}
 
@@ -57,13 +57,12 @@ public class Array {
 			System.out.print("Digit a number: ");
 			array[i] = in.nextDouble();
 		}
-		System.out.print("nValues: ");
+		System.out.print("Values: ");
 		for (int i = 0; i < cont; i++) {
 			sum += array[i];
-			System.out.printf(" %.1f ", array[i]);
-			System.out.println();
+			System.out.printf("%.1f ", array[i]);
 		}
-		System.out.println("Sum: " + String.format("%.2f", sum));
+		System.out.println("\nSum: " + String.format("%.2f", sum));
 		System.out.println("Avarage: " + String.format("%.2f", sum / cont));
 
 	}
@@ -99,6 +98,8 @@ public class Array {
 
 		}
 
+		int contp = 0;
+
 		for (int i = 0; i < person.length; i++) {
 			sum += person[i].getHeight();
 
@@ -107,7 +108,13 @@ public class Array {
 		avg = sum / cont;
 		System.out.println("Average height: " + String.format("%.2f", avg));
 
-		System.out.println("People whit less 16 year old: ");
+		for (int i = 0; i < person.length; i++) {
+			if (person[i].getAge() < 16) {
+				contp++;
+			}
+		}
+
+		System.out.println("People whit less 16 year old: " + String.format("%.1f", (100.00 * contp) / cont)+"%");
 
 		for (int i = 0; i < person.length; i++) {
 			if (person[i].getAge() < 16) {
@@ -123,7 +130,26 @@ public class Array {
 		 * seguida, mostre na tela todos os números pares, e também a quantidade de
 		 * números pares.
 		 */
+		System.out.print("How many numbers will you type? ");
+		cont = in.nextInt();
 
+		int[] vec = new int[cont];
+
+		for (int i = 0; i < vec.length; i++) {
+			System.out.print("Digit a number: ");
+			vec[i] = in.nextInt();
+		}
+		cont = 0;
+
+		System.out.println("Even numbers: ");
+		for (int i = 0; i < vec.length; i++) {
+			if (vec[i] % 2 == 0) {
+				System.out.print(vec[i] + " ");
+				cont++;
+			}
+
+		}
+		System.out.println("\nEven quantity: " + cont);
 	}
 
 	public void exercicie5() {

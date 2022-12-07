@@ -29,12 +29,12 @@ public class App {
 		RepetitionWhile sw = new RepetitionWhile();
 		RepetitionFor sf = new RepetitionFor();
 		
-		// arr.arrayFixedExercicies3();
+		arr.exercicie3();
 		// ComparationOfTriangle.triangleExercicie();
 		// fc.whatNumberMoreHigh();
 		// fc.IGoWentPayYReaisForValueXinDollar();
 		// fix1.fixedExercicieString();
-		or.accountExercicie();
+		//or.accountExercicie();
 		// or.estudentExercicie();
 		// sf.exercicie4();
 		// ss.duration();
