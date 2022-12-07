@@ -4,12 +4,15 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Person;
+import views.StringText;
 
 public class Array {
 
 	Scanner in = new Scanner(System.in);
+	StringText msg = new StringText();
 
 	int cont;
+	double som = 0.0;
 
 	public void exercicie1() {
 		/*
@@ -18,13 +21,13 @@ public class Array {
 		 * todos os números negativos lidos.
 		 */
 
-		System.out.print("How many numbers will you type? ");
+		System.out.print(msg.array[0]);
 		cont = in.nextInt();
 
 		int[] vec = new int[cont];
 
 		for (int i = 0; i < vec.length; i++) {
-			System.out.print("Digit a number: ");
+			System.out.print(msg.array[1]);
 			vec[i] = in.nextInt();
 		}
 
@@ -78,20 +81,20 @@ public class Array {
 		int age;
 		double height, avg, sum = 0;
 
-		System.out.print("How many persons will you type? ");
+		System.out.print(msg.person[0]);
 		cont = in.nextInt();
 
 		Person[] person = new Person[cont];
 
 		for (int i = 0; i < person.length; i++) {
 
-			System.out.println("Date of " + (i + 1) + "a person: ");
+			System.out.println(msg.person[1] + (i + 1) + msg.person[2]);
 			in.nextLine();
-			System.out.print("Name: ");
+			System.out.print(msg.person[3]);
 			name = in.nextLine();
-			System.out.print("Age: ");
+			System.out.print(msg.person[4]);
 			age = in.nextInt();
-			System.out.print("Height: ");
+			System.out.print(msg.person[5]);
 			height = in.nextDouble();
 
 			person[i] = new Person(name, age, height);
@@ -106,7 +109,7 @@ public class Array {
 		}
 
 		avg = sum / cont;
-		System.out.println("Average height: " + String.format("%.2f", avg));
+		System.out.println(msg.person[6] + String.format("%.2f", avg));
 
 		for (int i = 0; i < person.length; i++) {
 			if (person[i].getAge() < 16) {
@@ -114,7 +117,7 @@ public class Array {
 			}
 		}
 
-		System.out.println("People whit less 16 year old: " + String.format("%.1f", (100.00 * contp) / cont)+"%");
+		System.out.println(msg.person[7] + String.format("%.1f", (100.00 * contp) / cont) + "%");
 
 		for (int i = 0; i < person.length; i++) {
 			if (person[i].getAge() < 16) {
@@ -130,13 +133,13 @@ public class Array {
 		 * seguida, mostre na tela todos os números pares, e também a quantidade de
 		 * números pares.
 		 */
-		System.out.print("How many numbers will you type? ");
+		System.out.print(msg.array[0]);
 		cont = in.nextInt();
 
 		int[] vec = new int[cont];
 
 		for (int i = 0; i < vec.length; i++) {
-			System.out.print("Digit a number: ");
+			System.out.print(msg.array[1]);
 			vec[i] = in.nextInt();
 		}
 		cont = 0;
@@ -159,6 +162,23 @@ public class Array {
 		 * Mostrar também a posição do maior elemento, considerando a primeira posição
 		 * como 0 (zero).
 		 */
+		double highest = 0.0;
+		int position = 0;
+		System.out.print(msg.array[0]);
+		cont = in.nextInt();
+
+		double[] vec = new double[cont];
+
+		for (int i = 0; i < vec.length; i++) {
+			System.out.print(msg.array[1]);
+			vec[i] = in.nextDouble();
+			if (vec[i] > highest) {
+				highest = vec[i];
+				position = i;
+			}
+		}
+		System.out.println("Highest number: " + highest);
+		System.out.println("Position of highest number: " + position);
 	}
 
 	public void exercicie6() {
@@ -169,6 +189,31 @@ public class Array {
 		 * 
 		 * .
 		 */
+		System.out.print(msg.array[2]);
+		cont = in.nextInt();
+
+		int[] vecA = new int[cont];
+		int[] vecB = new int[cont];
+
+		System.out.println(msg.array[3]);
+		for (int i = 0; i < vecA.length; i++) {
+			vecA[i] = in.nextInt();
+		}
+
+		System.out.println(msg.array[4]);
+		for (int i = 0; i < vecB.length; i++) {
+			vecB[i] = in.nextInt();
+		}
+
+		int[] vecC = new int[cont];
+
+		for (int i = 0; i < vecC.length; i++) {
+			vecC[i] = vecA[i] + vecB[i];
+		}
+		System.out.println(msg.array[5]);
+		for (int i = 0; i < vecC.length; i++) {
+			System.out.println(vecC[i]);
+		}
 	}
 
 	public void exercicie7() {
@@ -178,6 +223,25 @@ public class Array {
 		 * três casas decimais. Depois mostrar todos os elementos do vetor que estejam
 		 * abaixo da média, com uma casa decimal cada.
 		 */
+		System.out.print(msg.array[0]);
+		cont = in.nextInt();
+
+		double[] vec = new double[cont];
+
+		for (int i = 0; i < vec.length; i++) {
+			System.out.print(msg.array[1]);
+			vec[i] = in.nextDouble();
+			som += vec[i];
+		}
+
+		System.out.println(msg.array[6] + String.format("%.3f", som / cont));
+		System.out.println(msg.array[7]);
+
+		for (int i = 0; i < vec.length; i++) {
+			if (vec[i] < som / cont) {
+				System.out.println(vec[i]);
+			}
+		}
 	}
 
 	public void exercicie8() {
@@ -187,6 +251,26 @@ public class Array {
 		 * casa decimal. Se nenhum número par for digitado, mostrar a mensagem
 		 * "NENHUM NUMERO PAR"
 		 */
+		System.out.print(msg.array[0]);
+		cont = in.nextInt();
+
+		int[] vec = new int[cont];
+
+		cont = 0;
+
+		for (int i = 0; i < vec.length; i++) {
+			System.out.print(msg.array[1]);
+			vec[i] = in.nextInt();
+			if (vec[i] % 2 == 0) {
+				som += vec[i];
+				cont++;
+			}
+		}
+		if (som > 0) {
+			System.out.println(msg.array[8] + som / cont);
+		}else {
+			System.out.println(msg.array[9]);
+		}
 	}
 
 	public void exercicie9() {

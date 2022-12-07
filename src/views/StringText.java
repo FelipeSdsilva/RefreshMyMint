@@ -39,6 +39,23 @@ public class StringText {
 			""","""
 			Enter the number of product to be remove in stock: 
 			"""};
-
-	
+	public String[] array = {"How many numbers will you type? ",
+			"Digit a number: ",
+			"How a many is position values have the arrays ? ",
+			"Write values of array A: ",
+			"Write values of array B: ",
+			"Array Result: ",
+			"Avarege array: ",
+			"Elements down average: ",
+			"Avarege even numbers: ",
+			"Not have number even"};
+	public String[] person = {"How many persons will you type? ",
+								"Date of ", 	
+								"a person: ",
+								"Name: ",
+								"Age: ",
+								"Height: ",
+								"Average height: ",
+								"People whit less 16 year old: ",
+								};
 }
