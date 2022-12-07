@@ -1,11 +1,14 @@
 # RefreshMyMint
 This Repository is where training my logical and OO with exercicies DEVSUPERIOR.
 
-#Exercices Resolved
+### Exercices Resolved
 
-- [x] 
-- [x]
-- [ ] 
+- [ ] (1)
+
+- [ ] (2)
+
+- [ ] (3)
+
 ### Exercice Array
 - [x] (1) Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros 
       e armazene-os em um vetor. Em seguida, mostrar na tela todos os números negativos lidos. 
@@ -34,15 +37,15 @@ This Repository is where training my logical and OO with exercicies DEVSUPERIOR.
 		 mostrar na tela a média aritmética somente dos números pares lidos, com uma
 		 casa decimal. Se nenhum número par for digitado, mostrar a mensagem
 		 "NENHUM NUMERO PAR"
-- [] (9) Fazer um programa para ler um conjunto de nomes de pessoas e suas respectivas
+- [ ] (9) Fazer um programa para ler um conjunto de nomes de pessoas e suas respectivas
 		 idades. Os nomes devem ser armazenados em um vetor, e as idades em um outro
 		 vetor. Depois, mostrar na tela o nome da pessoa mais velha.
-- [] (10) Fazer um programa para ler um conjunto de N nomes de alunos, bem como as
+- [ ] (10) Fazer um programa para ler um conjunto de N nomes de alunos, bem como as
 		 notas que eles tiraram no 1º e 2º semestres. Cada uma dessas informações deve
 		 ser armazenada em um vetor. Depois, imprimir os nomes dos alunos aprovados,
 		 considerando aprovados aqueles cuja média das notas seja maior ou igual a 6.0
 		 (seis).
-- [] (11) Tem-se um conjunto de dados contendo a altura e o gênero (M, F) de N pessoas.
+- [ ] (11) Tem-se um conjunto de dados contendo a altura e o gênero (M, F) de N pessoas.
 		 Fazer um programa que calcule e escreva a maior e a menor altura do grupo, a
 		 média de altura das mulheres, e o número de homens.
 
