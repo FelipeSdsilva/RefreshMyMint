@@ -12,7 +12,7 @@ public class Array {
 	StringText msg = new StringText();
 
 	int cont;
-	double som = 0.0;
+	double sum = 0.0;
 
 	public void exercicie1() {
 		/*
@@ -47,7 +47,7 @@ public class Array {
 		 * seguida: - Imprimir todos os elementos do vetor - Mostrar na tela a soma e a
 		 * média dos elementos do vetor
 		 */
-		double sum = 0;
+		sum = 0;
 
 		Locale.setDefault(Locale.US);
 		System.out.print("How many numbers will you type? ");
@@ -231,14 +231,14 @@ public class Array {
 		for (int i = 0; i < vec.length; i++) {
 			System.out.print(msg.array[1]);
 			vec[i] = in.nextDouble();
-			som += vec[i];
+			sum += vec[i];
 		}
 
-		System.out.println(msg.array[6] + String.format("%.3f", som / cont));
+		System.out.println(msg.array[6] + String.format("%.3f", sum / cont));
 		System.out.println(msg.array[7]);
 
 		for (int i = 0; i < vec.length; i++) {
-			if (vec[i] < som / cont) {
+			if (vec[i] < sum / cont) {
 				System.out.println(vec[i]);
 			}
 		}
@@ -262,12 +262,12 @@ public class Array {
 			System.out.print(msg.array[1]);
 			vec[i] = in.nextInt();
 			if (vec[i] % 2 == 0) {
-				som += vec[i];
+				sum += vec[i];
 				cont++;
 			}
 		}
-		if (som > 0) {
-			System.out.println(msg.array[8] + som / cont);
+		if (sum > 0) {
+			System.out.println(msg.array[8] + sum / cont);
 		}else {
 			System.out.println(msg.array[9]);
 		}

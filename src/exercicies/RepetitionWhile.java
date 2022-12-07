@@ -6,7 +6,26 @@ public class RepetitionWhile {
 
 	Scanner in = new Scanner(System.in);
 
-	public void exercicie1() {
+	public void exercice1() {
+		/*
+		 * Leia uma quantidade indeterminada de duplas de valores inteiros X e Y.
+		 * Escreva para cada X e Y uma mensagem que indique se estes valores foram
+		 * digitados em ordem crescente ou decrescente. O programa deve finalizar quando
+		 * forem digitados dois valores iguais.
+		 */
+	}
+
+	public void exercice2() {
+		/*
+		 * Faça um programa para ler um número indeterminado de dados, contendo cada um,
+		 * a idade de um indivíduo. O último dado, que não entrará nos cálculos, contém
+		 * um valor de idade negativa. Calcular e imprimir a idade média deste grupo de
+		 * indivíduos. Se for entrado um valor negativo na primeira vez, mostrar a
+		 * mensagem "IMPOSSIVEL CALCULAR".
+		 */
+	}
+
+	public void exercice3() {
 		/*
 		 * Escreva um programa que repita a leitura de uma senha até que ela seja
 		 * válida. Para cada leitura de senha incorreta informada, escrever a mensagem
@@ -29,7 +48,7 @@ public class RepetitionWhile {
 
 	}
 
-	public void exercicie2() {
+	public void exercice4() {
 		/*
 		 * Escreva um programa para ler as coordenadas (X,Y) de uma quantidade
 		 * indeterminada de pontos no sistema cartesiano. Para cada ponto escrever o
@@ -53,7 +72,16 @@ public class RepetitionWhile {
 
 	}
 
-	public void exercicie3() {
+	public void exercice5() {
+		/*
+		 * Faça um programa que leia as notas referentes às duas avaliações de um aluno.
+		 * Calcule e imprima a média semestral. Faça com que o algoritmo só aceite notas
+		 * válidas (uma nota válida deve pertencer ao intervalo [0,10]). Cada nota deve
+		 * ser validada separadamente.
+		 */
+	}
+
+	public void exercice6() {
 		/*
 		 * Um Posto de combustíveis deseja determinar qual de seus produtos tem a
 		 * preferência de seus clientes. Escreva um algoritmo para ler o tipo de
@@ -89,7 +117,7 @@ public class RepetitionWhile {
 		System.out.println(mensage);
 	}
 
-	public void exercicie4() {
+	public void exercice7() {
 		/*
 		 * Fazer um programa para ler uma temperatura em Celsius e mostrar o equivalente
 		 * em Fahrenheit. Perguntar se o usuário deseja repetir (s/n). Caso o usuário
@@ -97,13 +125,13 @@ public class RepetitionWhile {
 		 */
 
 		char cont;
-		
+
 		do {
-		System.out.print("White the temperature in Celcios: ");
-		double celciuos = in.nextDouble();
-		System.out.println("Equivalent in Fahrenheit: " + String.format("%.1f",((9 * celciuos)/ 5) + 32));
-		System.out.print("Restart the program (Y/N)? ");
-		cont = in.next().charAt(0);
-		}while(cont != 'n');
+			System.out.print("White the temperature in Celcios: ");
+			double celciuos = in.nextDouble();
+			System.out.println("Equivalent in Fahrenheit: " + String.format("%.1f", ((9 * celciuos) / 5) + 32));
+			System.out.print("Restart the program (Y/N)? ");
+			cont = in.next().charAt(0);
+		} while (cont != 'n');
 	}
 }
