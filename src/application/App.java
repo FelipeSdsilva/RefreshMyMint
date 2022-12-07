@@ -21,8 +21,6 @@ public class App {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		// ComparationOfTriangle.triangleExercicie();
-
 		Array arr = new Array();
 		IntrodutionTheFunction fc = new IntrodutionTheFunction();
 		OrientationObject or = new OrientationObject();
@@ -30,11 +28,14 @@ public class App {
 		StructuralSequence ss = new StructuralSequence();
 		RepetitionWhile sw = new RepetitionWhile();
 		RepetitionFor sf = new RepetitionFor();
-
+		
 		// arr.arrayFixedExercicies3();
+		// ComparationOfTriangle.triangleExercicie();
 		// fc.whatNumberMoreHigh();
+		// fc.IGoWentPayYReaisForValueXinDollar();
 		// fix1.fixedExercicieString();
-		or.estudentExercicie();
+		or.accountExercicie();
+		// or.estudentExercicie();
 		// sf.exercicie4();
 		// ss.duration();
 		// sw.exercicie4();

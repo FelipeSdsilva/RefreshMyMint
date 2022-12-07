@@ -12,28 +12,33 @@ public class StringText {
 			Measue whit eight decimal places: %.8f
 			Rouded (three decimal places): %.3f
 			""";
-
-	public String msgRectangle = """
+	public String rectangle = """
 			Enter rectangle width and height: 
 			""";
-	
-	public String msgProduct1 = """
-			Enter the product data:
-			""";
-	public String msgProduct2 = """
-			Product data: """;
-	public String msgProduct3 = """
-			Update data: """;
-
-	public String msgProdAdd = """
-			Enter the number of product to be added in stock: 
-			""";
-	
-	public String msgProdRem ="""
-			Enter the number of product to be remove in stock: 
-			""";
-	
-	public String msgPercentageIncrease ="""
+	public String percentageIncrease ="""
 			Which percentage to increase salary?  """;
+	public String[] statics = {"""
+			What is the dollar price? ""","""
+			How many dollar will be bought? ""","""
+			Amount to be paid in reais = """};
+	public String[] account = {"Enter account number: ",
+			"Enter account holder: ",
+			"Is there na initial deposit (y/n)? ",
+			"Enter initial deposit value:  ",
+			"Account data:",
+			"Enter deposit value:",
+			"Update account:",
+			"Enter a withdraw value: "};
+	public String[] product = { """
+			Enter the product data:
+			""","""
+			Product data: """,
+			"""
+			Update data: ""","""
+			Enter the number of product to be added in stock: 
+			""","""
+			Enter the number of product to be remove in stock: 
+			"""};
+
 	
 }

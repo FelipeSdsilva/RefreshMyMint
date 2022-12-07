@@ -3,6 +3,7 @@ package exercicies;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Account;
 import entities.Employee;
 import entities.Person;
 import entities.Product;
@@ -33,7 +34,7 @@ public class OrientationObject {
 
 		Product p1 = new Product();
 
-		System.out.print(msg.msgProduct1 + "Name: ");
+		System.out.print(msg.product[0] + "Name: ");
 		p1.setName(sc.nextLine());
 		System.out.print("Price: ");
 		p1.setPrice(sc.nextDouble());
@@ -41,29 +42,19 @@ public class OrientationObject {
 		int qtd = sc.nextInt();
 		p1.addStock(qtd);
 
-		msg.msgProduct2 = """
-				Product data: """ + p1 + """
-				""";
-		System.out.println(msg.msgProduct2);
+		System.out.println(msg.product[1] + p1);
 
-		System.out.print(msg.msgProdAdd);
+		System.out.print(msg.product[3]);
 		qtd = sc.nextInt();
 		p1.addStock(qtd);
-		msg.msgProduct3 = """
-				Update data: """ + p1 + """
-				""";
 
-		System.out.println(msg.msgProduct3);
+		System.out.println(msg.product[2] + p1);
 
-		System.out.print(msg.msgProdRem);
+		System.out.print(msg.product[4]);
 		qtd = sc.nextInt();
 		p1.removeStock(qtd);
 
-		msg.msgProduct3 = """
-				Update data: """ + p1 + """
-				""";
-
-		System.out.println(msg.msgProduct3);
+		System.out.println(msg.product[2] + p1);
 
 		sc.close();
 	}
@@ -71,7 +62,7 @@ public class OrientationObject {
 	public void rectangleExercicie() {
 		Rectangle rec = new Rectangle();
 
-		System.out.print(msg.msgRectangle);
+		System.out.print(msg.rectangle);
 		rec.setHeight(sc.nextDouble());
 		rec.setWidth(sc.nextDouble());
 
@@ -90,7 +81,7 @@ public class OrientationObject {
 
 		System.out.println(emp);
 
-		System.out.print(msg.msgPercentageIncrease);
+		System.out.print(msg.percentageIncrease);
 		double percentage = sc.nextDouble();
 		emp.increaseSalary(percentage);
 
@@ -102,7 +93,7 @@ public class OrientationObject {
 		Student std = new Student();
 
 		std.setName(sc.nextLine());
-		
+
 		Double[] aval = new Double[3];
 		for (int i = 0; i < aval.length; i++) {
 			aval[i] = sc.nextDouble();
@@ -112,4 +103,41 @@ public class OrientationObject {
 
 		std.finalNote();
 	}
+
+	public void accountExercicie() {
+		Account acc = new Account();
+		char confDeposit;
+		double value;
+
+		System.out.print(msg.account[0]);
+		acc.setNumberAcc(sc.nextInt());
+		sc.nextLine();
+
+		System.out.print(msg.account[1]);
+		acc.setNameHolder(sc.nextLine());
+
+		System.out.print(msg.account[2]);
+		confDeposit = sc.next().charAt(0);
+
+		if (confDeposit == 'Y' || confDeposit == 'y') {
+			System.out.print(msg.account[3]);
+			value = sc.nextDouble();
+			acc.deposit(value);
+		}
+
+		System.out.println(msg.account[4] + "\n" + acc);
+
+		System.out.print(msg.account[5]);
+		value = sc.nextDouble();
+		acc.deposit(value);
+		
+		System.out.println(msg.account[6] + "\n" + acc);
+		
+		System.out.print(msg.account[7]);
+		value = sc.nextDouble();
+		acc.withdraw(value);
+		
+		System.out.println(msg.account[6] + "\n" + acc);
+	}
+
 }
