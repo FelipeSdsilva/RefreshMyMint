@@ -125,18 +125,18 @@ public class OrientationObject {
 			acc.deposit(value);
 		}
 
-		System.out.println(msg.account[4] + "\n" + acc);
+		System.out.println(msg.account[4] + "\n" + acc + "\n");
 
 		System.out.print(msg.account[5]);
 		value = sc.nextDouble();
 		acc.deposit(value);
-		
-		System.out.println(msg.account[6] + "\n" + acc);
-		
+
+		System.out.println(msg.account[6] + "\n" + acc + "\n");
+
 		System.out.print(msg.account[7]);
 		value = sc.nextDouble();
 		acc.withdraw(value);
-		
+
 		System.out.println(msg.account[6] + "\n" + acc);
 	}
 
