@@ -205,7 +205,6 @@ Exemplo 2:
 no sangue de uma pessoa e depois mostrar na tela a 
 classificação desta glicose de acordo com a tabela de 
 referência ao lado. ```	
-	
 			<table>
 				<tr>
 					<th>Classificação</th>
