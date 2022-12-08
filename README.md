@@ -10,11 +10,11 @@ duas casas decimais, conforme exemplo.```
 
 Exemplo:
 
-		Digite a largura do terreno: 10.0
-		Digite o comprimento do terreno: 30.0
-		Digite o valor do metro quadrado: 200.00
-		Area do terreno = 300.00 
-		Preco do terreno = 60000.00	
+	Digite a largura do terreno: 10.0
+	Digite o comprimento do terreno: 30.0
+	Digite o valor do metro quadrado: 200.00
+	Area do terreno = 300.00 
+	Preco do terreno = 60000.00	
 - [ ] ```(2) Fazer um programa para ler as medidas da base e altura de um retângulo. Em seguida, mostrar o valor 
 da área, perímetro e diagonal deste retângulo, com quatro casas decimais, conforme exemplos. ```
 
