@@ -1,7 +1,7 @@
 # RefreshMyMint
 This Repository is where training my logical and OO with exercicies DEVSUPERIOR.
 
-### Exercices Structural Sequence
+### Exercices Sequential Structure
 
 - [ ] ```(1) Fazer um programa para ler as medidas da largura e comprimento de um terreno retangular com uma 
 casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais. Em seguida, 
@@ -109,6 +109,18 @@ Exemplo:
 	Digite a duracao em segundos: 300
 	0:5:0 
 
+### Exercice Conditional Structure
+
+- [ ] ```(1) ```
+- [ ] ```(2) ```
+- [ ] ```(3) ```
+- [ ] ```(4) ```
+- [ ] ```(5) ```
+- [ ] ```(6) ```
+- [ ] ```(7) ```
+- [ ] ```(8) ```
+- [ ] ```(9) ```
+- [ ] ```(10) ```
 
 ### Exercice Array
 - [x]  ```(1) Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros 
