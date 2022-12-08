@@ -205,7 +205,7 @@ Exemplo 2:
 no sangue de uma pessoa e depois mostrar na tela a 
 classificação desta glicose de acordo com a tabela de 
 referência ao lado. ```	
-			<div style="float:rigth">
+	
 			<table>
 				<tr>
 					<th>Classificação</th>
@@ -224,7 +224,6 @@ referência ao lado. ```
 					<td>Maior de 140 mg/dl</td>
 				</tr>
 			</table>
-			</div>
 
 Exemplo 1: 
 	
@@ -239,10 +238,99 @@ Exemplo 3:
 	Digite a medida da glicose: 143.2
 	Classificacao: diabetes 
 
-- [ ] ```(7) ```
-- [ ] ```(8) ```
-- [ ] ```(9) ```
-- [ ] ```(10) ```
+- [ ] ```(7) No arremesso de dardo, o atleta tem três chances para lançar o dardo à maior distância que conseguir. 
+Você deve criar um programa para, dadas as medidas das três tentativas de lançamento, informar qual 
+foi a maior.```
+
+Exemplo 1: 
+	
+	Digite as tres distancias: 
+	83.21 
+	79.53 
+	89.15 
+	MAIOR DISTANCIA = 89.15 
+
+Exemplo 2: 
+
+	Digite as tres distancias: 
+	83.21 
+	87.20 
+	83.21 
+	MAIOR DISTANCIA = 87.20 
+
+- [ ] ```(8) Deseja-se converter uma medida de temperatura da escala Celsius para Fahrenheit ou vice-versa. Para 
+isso, você deve construir um programa que leia a letra "C" ou "F" indicando em qual escala vai ser 
+informada uma temperatura. Em seguida o programa deve mostrar a temperatura na outra escala com 
+duas casas decimais. A seguir é dada a fórmula para converter de Fahrenheit para Celsius (você deve 
+deduzir a fórmula de Celsius para Fahrenheit): 5/9(F - 32)```
+
+Exemplo 1: 
+	
+	Voce vai digitar a temperatura em qual escala (C/F)? F
+	Digite a temperatura em Fahrenheit: 75.00
+	Temperatura equivalente em Celsius: 23.89 
+Exemplo 2: 
+	
+	Voce vai digitar a temperatura em qual escala (C/F)? C
+	Digite a temperatura em Celsius: 28.15
+	Temperatura equivalente em Fahrenheit: 82.67 
+- [ ] ```(9)Uma lanchonete possui vários produtos. Cada produto possui um código 
+e um preço. Você deve fazer um programa para ler o código e a 
+quantidade comprada de um produto (suponha um código válido), e daí 
+informar qual o valor a ser pago, com duas casas decimais, conforme 
+tabela de produtos ao lado.  ```
+			<table>
+				<tr>
+					<th>Código do produto</th>
+					<th>Preço do produto</th> 
+				</tr>	
+				<tr>
+					<td>1</td> 
+					<td>R$ 5.00</td>
+				</tr>
+				<tr>
+					<td>2</td> 
+					<td>R$ 3.50</td>
+				</tr>
+				<tr>
+					<td>3</td> 
+					<td>R$ 4.80</td>
+				</tr>
+				<tr>
+					<td>4</td> 
+					<td>R$ 8.90</td>
+				</tr>
+				<tr>
+					<td>5</td> 
+					<td>R$ 7.32</td>
+				</tr>
+			</table>
+			
+Exemplo 1: 
+	
+	Codigo do produto comprado: 1
+	Quantidade comprada: 3
+	Valor a pagar: R$ 15.00 
+Exemplo 2: 
+	
+	Codigo do produto comprado: 4
+	Quantidade comprada: 2
+	Valor a pagar: R$ 17.80 
+- [ ] ```(10)Fazer um programa para ler dois números inteiros, e dizer se um número é múltiplo do outro. Os 
+números podem ser digitados em qualquer ordem. ```
+
+Exemplo 2: 
+	
+	Digite dois numeros inteiros: 
+	24
+	6
+	Sao multiplos 
+Exemplo 3: 
+	
+	Digite dois numeros inteiros: 
+	13
+	5
+	Nao sao multiplos
 
 ### Exercice Array
 - [x]  ```(1) Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros 
