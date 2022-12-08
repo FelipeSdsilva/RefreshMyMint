@@ -8,7 +8,7 @@ public class RepetitionFor {
 	Scanner in = new Scanner(System.in);
 	int n, i, som;
 
-	public void exercicie1() {
+	public void exercice1() {
 		/*
 		 * Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os ímpares de 1
 		 * até X, um valor por linha, inclusive o X, se for o caso.
@@ -26,7 +26,7 @@ public class RepetitionFor {
 		}
 	}
 
-	public void exercicie2() {
+	public void exercice2() {
 
 		/*
 		 * Leia um valor inteiro N. Este valor será a quantidade de valores inteiros X
@@ -59,7 +59,7 @@ public class RepetitionFor {
 
 	}
 
-	public void exercicie3() {
+	public void exercice3() {
 
 		/*
 		 * Leia 1 valor inteiro N, que representa o número de casos de teste que vem a
@@ -88,7 +88,7 @@ public class RepetitionFor {
 		}
 	}
 
-	public void exercicie4() {
+	public void exercice4() {
 		/*
 		 * Fazer um programa para ler um número N. Depois leia N pares de números e
 		 * mostre a divisão do primeiro pelo segundo. Se o denominador for igual a zero,
@@ -118,7 +118,7 @@ public class RepetitionFor {
 		}
 	}
 
-	public void exercicie5() {
+	public void exercice5() {
 		/*
 		 * Ler um valor N. Calcular e escrever seu respectivo fatorial. Fatorial de N =
 		 * N * (N-1) * (N-2) * (N-3) * ... * 1. Lembrando que, por definição, fatorial
@@ -136,7 +136,7 @@ public class RepetitionFor {
 
 	}
 
-	public void exercicie6() {
+	public void exercice6() {
 		/* Ler um número inteiro N e calcular todos os seus divisores */
 
 		n = in.nextInt();
@@ -148,7 +148,7 @@ public class RepetitionFor {
 		}
 	}
 
-	public void exercicie7() {
+	public void exercice7() {
 		/*
 		 * Fazer um programa para ler um número inteiro positivo N. O programa deve
 		 * então mostrar na tela N linhas, começando de 1 até N. Para cada linha,
@@ -165,4 +165,7 @@ public class RepetitionFor {
 		}
 	}
 
+	public void exercie8() {
+		/*Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10, conforme exemplo. */
+	}
 }

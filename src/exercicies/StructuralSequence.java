@@ -9,7 +9,7 @@ public class StructuralSequence {
 
 	Scanner in = new Scanner(System.in);
 
-	public void terrainArea() {
+	public void exercice1() {
 
 		/*
 		 * Fazer um programa para ler as medidas da largura e comprimento de um terreno
@@ -18,8 +18,6 @@ public class StructuralSequence {
 		 * da Ã¡rea do terreno, bem como o valor do preÃ§o do terreno, ambos com duas
 		 * casas decimais, conforme exemplo.
 		 */
-
-		Locale.setDefault(Locale.US);
 
 		System.out.print("Write the width of terrain: ");
 		double width = in.nextDouble();
@@ -33,7 +31,7 @@ public class StructuralSequence {
 
 	}
 
-	public void rectangleMeasure() {
+	public void exercice2() {
 
 		/*
 		 * Fazer um programa para ler as medidas da base e altura de um retÃ¢ngulo. Em
@@ -54,7 +52,7 @@ public class StructuralSequence {
 		System.out.println("Diagonal = " + String.format("%.4f", Math.sqrt(d)));
 	}
 
-	public void avarageAge() {
+	public void exercice3() {
 
 		Locale.setDefault(Locale.US);
 		/*
@@ -90,7 +88,7 @@ public class StructuralSequence {
 				+ String.format("%.1f", avarege) + " years old");
 	}
 
-	public void sumBetweenTwoNumbers() {
+	public void exercice4() {
 
 		/*
 		 * Fazer um programa para ler dois valores inteiros X e Y, e depois mostrar na
@@ -107,7 +105,7 @@ public class StructuralSequence {
 		System.out.println("Sum = " + sum);
 	}
 
-	public void getChange() {
+	public void exercice5() {
 
 		Locale.setDefault(Locale.US);
 		/*
@@ -132,7 +130,7 @@ public class StructuralSequence {
 
 	}
 
-	public void circleRadius() {
+	public void exercice6() {
 
 		Locale.setDefault(Locale.US);
 		/*
@@ -150,7 +148,7 @@ public class StructuralSequence {
 
 	}
 
-	public void payment() {
+	public void exercice7() {
 
 		/*
 		 * Fazer um programa para ler o nome de um(a) funcionÃ¡rio(a), o valor que ele(a)
@@ -173,7 +171,7 @@ public class StructuralSequence {
 
 	}
 
-	public void consumption() {
+	public void exercice8() {
 
 		Locale.setDefault(Locale.US);
 		/*
@@ -193,7 +191,7 @@ public class StructuralSequence {
 		System.out.println("Average consumption: " + String.format("%.3f", km / fuel));
 	}
 
-	public void measures() {
+	public void exercice9() {
 
 		Locale.setDefault(Locale.US);
 		/*
@@ -220,7 +218,7 @@ public class StructuralSequence {
 
 	}
 
-	public void duration() {
+	public void exercice10() {
 
 		Locale.setDefault(Locale.US);
 		/*
