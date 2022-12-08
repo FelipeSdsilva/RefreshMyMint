@@ -108,15 +108,137 @@ Exemplo:
 
 	Digite a duracao em segundos: 300
 	0:5:0 
-
 ### Exercice Conditional Structure
 
-- [ ] ```(1) ```
-- [ ] ```(2) ```
-- [ ] ```(3) ```
-- [ ] ```(4) ```
-- [ ] ```(5) ```
-- [ ] ```(6) ```
+- [ ] ```(1) Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de 
+uma disciplina anual. Em seguida, mostrar a nota final que o aluno obteve (com uma casa decimal) no 
+ano juntamente com um texto explicativo. Caso a nota final do aluno seja inferior a 60.00, mostrar a 
+mensagem "REPROVADO", conforme exemplos.```
+
+Exemplo 1: 
+	
+	Digite a primeira nota: 45.5
+	Digite a segunda nota: 31.3
+	NOTA FINAL = 76.8 
+Exemplo 2:
+
+	Digite a primeira nota: 34.0
+	Digite a segunda nota: 23.5
+	NOTA FINAL = 57.5 
+	REPROVADO	
+- [ ] ```(2) Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula 
+de Baskara, calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais, 
+conforme exemplo. Se a equação não possuir raízes reais, mostrar uma mensagem. ```
+
+Exemplo 1: 
+	
+	Coeficiente a: 1
+	Coeficiente b: 0
+	Coeficiente c: -9
+	X1 = 3.0000 
+	X2 = -3.0000 
+Exemplo 2: 
+	
+	Coeficiente a: 2
+	Coeficiente b: -4.5
+	Coeficiente c: 1.7
+	X1 = 1.7697 
+	X2 = 0.4803 
+Exemplo 3: 
+	
+	Coeficiente a: 1
+	Coeficiente b: 3
+	Coeficiente c: 4
+	Esta equacao nao possui raizes reais
+- [ ] ```(3) Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três 
+números lidos. Em caso de empate, mostrar apenas uma vez.  ```
+
+Exemplo 1: 
+
+	Primeiro valor: 7
+	Segundo valor: 3
+	Terceiro valor: 8
+	MENOR = 3 
+Exemplo 2: 
+	
+	Primeiro valor: 5
+	Segundo valor: 12
+	Terceiro valor: 5
+	MENOR = 5 
+Exemplo 3: 
+	
+	Primeiro valor: 9
+	Segundo valor: 9
+	Terceiro valor: 9
+	MENOR = 9 
+- [ ] ```(4) Uma operadora de telefonia cobra R$ 50.00 por um plano básico que dá direito a 100 minutos de 
+telefone. Cada minuto que exceder a franquia de 100 minutos custa R$ 2.00. Fazer um programa para 
+ler a quantidade de minutos que uma pessoa consumiu, daí mostrar o valor a ser pago.  ```
+
+Exemplo 1: 
+	
+	Digite a quantidade de minutos: 22
+	Valor a pagar: R$ 50.00 
+Exemplo 2: 
+
+	Digite a quantidade de minutos: 103
+	Valor a pagar: R$ 56.00 
+- [ ] ```(5) Fazer um programa para calcular o troco no processo de pagamento de um produto de uma mercearia. 
+O programa deve ler o preço unitário do produto, a quantidade de unidades compradas deste produto, 
+e o valor em dinheiro dado pelo cliente. Seu programa deve mostrar o valor do troco a ser devolvido 
+ao cliente. Se o dinheiro dado pelo cliente não for suficiente, mostrar uma mensagem informando o 
+valor restante conforme exemplo. ```
+
+Exemplo 1: 
+	
+	Preço unitário do produto: 8.00
+	Quantidade comprada: 2
+	Dinheiro recebido: 20.00
+	TROCO = 4.00 
+Exemplo 2: 
+	
+	Preço unitário do produto: 30.00
+	Quantidade comprada: 3
+	Dinheiro recebido: 70.00
+	DINHEIRO INSUFICIENTE. FALTAM 20.00 REAIS 
+- [ ] ```(6) Fazer um programa para ler a quantidade de glicose 
+no sangue de uma pessoa e depois mostrar na tela a 
+classificação desta glicose de acordo com a tabela de 
+referência ao lado. ```	
+			<div style="float:rigth">
+			<table>
+				<tr>
+					<th>Classificação</th>
+					<th>Glicose</th> 
+				</tr>	
+				<tr>
+					<td>Normal</td> 
+					<td> Até 100 mg/dl</td>
+				</tr>
+				<tr>
+					<td>Elevado</td>
+					<td> Maior que 100 até 140 mg/dl</td>
+				</tr>
+				<tr>
+					<td>Diabetes</td> 
+					<td>Maior de 140 mg/dl</td>
+				</tr>
+			</table>
+			</div>
+
+Exemplo 1: 
+	
+	Digite a medida da glicose: 90.0
+	Classificacao: normal 
+Exemplo 2: 
+	
+	Digite a medida da glicose: 140.0
+	Classificacao: elevado 
+Exemplo 3: 
+
+	Digite a medida da glicose: 143.2
+	Classificacao: diabetes 
+
 - [ ] ```(7) ```
 - [ ] ```(8) ```
 - [ ] ```(9) ```
