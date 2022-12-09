@@ -6,8 +6,13 @@ import java.util.Scanner;
 public class RepetitionFor {
 
 	Scanner in = new Scanner(System.in);
-	int n, i, som;
+	int n, i, sum, inp = 0, out = 0, numW;;
 
+	public void exercie() {
+		/*Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10, conforme exemplo. */
+		
+	}
+	
 	public void exercice1() {
 		/*
 		 * Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os ímpares de 1
@@ -128,11 +133,11 @@ public class RepetitionFor {
 		if (n == 0) {
 			n = 1;
 		}
-		som = n;
+		sum = n;
 		for (int i = 1; i < n; i++) {
-			som *= (n - i);
+			sum *= (n - i);
 		}
-		System.out.println(som);
+		System.out.println(sum);
 
 	}
 
@@ -165,7 +170,5 @@ public class RepetitionFor {
 		}
 	}
 
-	public void exercie8() {
-		/*Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10, conforme exemplo. */
-	}
+	
 }

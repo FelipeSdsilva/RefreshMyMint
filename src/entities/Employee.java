@@ -5,7 +5,9 @@ public class Employee {
 	private String name;
 	private Double grossSalary;
 	private Double tax = 0.0;
-
+	private Double valuePerHour;
+	private Integer hoursJobs;
+	
 	public Employee() {
 	}
 
@@ -37,6 +39,22 @@ public class Employee {
 
 	public void setTax(Double tax) {
 		this.tax = tax;
+	}
+	
+	public Double getValuePerHour() {
+		return valuePerHour;
+	}
+
+	public void setValuePerHour(Double valuePerHour) {
+		this.valuePerHour = valuePerHour;
+	}
+
+	public Integer getHoursJobs() {
+		return hoursJobs;
+	}
+
+	public void setHoursJobs(Integer hoursJobs) {
+		this.hoursJobs = hoursJobs;
 	}
 
 	public double netSalary() {

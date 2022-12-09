@@ -29,7 +29,7 @@ public class App {
 		RepetitionWhile sw = new RepetitionWhile();
 		RepetitionFor sf = new RepetitionFor();
 		
-		arr.exercice8();
+		//arr.exercice8();
 		// ComparationOfTriangle.triangleExercicie();
 		// fc.whatNumberMoreHigh();
 		// fc.IGoWentPayYReaisForValueXinDollar();
@@ -37,7 +37,7 @@ public class App {
 		// or.accountExercicie();
 		// or.estudentExercicie();
 		// sf.exercicie4();
-		// ss.duration();
+		 ss.exercice10();
 		// sw.exercicie4();
 
 		sc.close();

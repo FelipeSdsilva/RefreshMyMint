@@ -1,234 +1,148 @@
 package exercicies;
 
-import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Employee;
 import entities.Person;
+import entities.Product;
+import views.StringText;
 
 public class StructuralSequence {
 
 	Scanner in = new Scanner(System.in);
+	StringText msg = new StringText();
+
+	String name;
+
+	int age,
+	x,
+	y,
+	sum,
+	duration,
+	hours,
+	minutes,
+	seconds,
+	rest;
+
+	double area,
+	width,
+	lenth,
+	value,
+	a,
+	c,
+	b, 
+	h,
+	p,
+	d,
+	avarege = 0.0,
+	change, 
+	money,
+	tri,
+	trap,
+	sqrt;
+
+	Person[] person = new Person[2];
+	Product product = new Product();
+	Employee emp = new Employee();
 
 	public void exercice1() {
+		System.out.print(msg.terrain[0]);
+		width = in.nextDouble();
+		System.out.print(msg.terrain[1]);
+		lenth = in.nextDouble();
+		System.out.print(msg.terrain[2]);
+		value = in.nextDouble();
 
-		/*
-		 * Fazer um programa para ler as medidas da largura e comprimento de um terreno
-		 * retangular com uma casa decimal, bem como o valor do metro quadrado do
-		 * terreno com duas casas decimais. Em seguida, o programa deve mostrar o valor
-		 * da Ã¡rea do terreno, bem como o valor do preÃ§o do terreno, ambos com duas
-		 * casas decimais, conforme exemplo.
-		 */
-
-		System.out.print("Write the width of terrain: ");
-		double width = in.nextDouble();
-		System.out.print("Write the length of terrain: ");
-		double lenth = in.nextDouble();
-		System.out.print("Write  the value for m²: ");
-		double value = in.nextDouble();
-
-		System.out.println("Area of terrain = " + String.format("%.2f", width * lenth));
-		System.out.println("The price of terrain = " + String.format("%.2f", (width * lenth) * value));
-
+		System.out.println(msg.terrain[4] + String.format("%.2f", width * lenth) + "\n" + msg.terrain[3]
+				+ String.format("%.2f", (width * lenth) * value));
 	}
-
 	public void exercice2() {
-
-		/*
-		 * Fazer um programa para ler as medidas da base e altura de um retÃ¢ngulo. Em
-		 * seguida, mostrar o valor da Ã¡rea, perÃ­metro e diagonal deste retÃ¢ngulo, com
-		 * quatro casas decimais, conforme exemplos.
-		 */
-
-		Locale.setDefault(Locale.US);
-
-		System.out.print("Base of rectangle: ");
-		double b = in.nextDouble();
-		System.out.print("Height of rectangle: ");
-		double h = in.nextDouble();
-		System.out.println("Area = " + String.format("%.4f", b * h));
-		double p = b + h;
-		System.out.println("Perimeter = " + String.format("%.4f", p * 2));
-		double d = Math.pow(b, 2) + Math.pow(h, 2);
-		System.out.println("Diagonal = " + String.format("%.4f", Math.sqrt(d)));
+		System.out.print(msg.rectangle[1]);
+		b = in.nextDouble();
+		System.out.print(msg.rectangle[2]);
+		h = in.nextDouble();
+		p = b + h;
+		d = Math.pow(b, 2) + Math.pow(h, 2);
+		System.out.println(msg.rectangle[3] + String.format("%.4f", b * h) + "\n" + msg.rectangle[4]
+				+ String.format("%.4f", p * 2) + "\n" + msg.rectangle[5] + String.format("%.4f", Math.sqrt(d)));
 	}
-
 	public void exercice3() {
-
-		Locale.setDefault(Locale.US);
-		/*
-		 * Fazer um programa para ler o nome e idade de duas pessoas. Ao final mostrar
-		 * uma mensagem com os nomes e a idade mÃ©dia entre essas pessoas, com uma casa
-		 * decimal, conforme exemplo.
-		 */
-
-		String name;
-		int age;
-		double avarege = 0.0;
-		Person[] p = new Person[2];
-
 		for (int i = 0; i < 2; i++) {
 
-			System.out.println("Date of " + i + 1 + "Person: ");
-			System.out.print("Name: ");
+			System.out.print(msg.person[1] + (i + 1) + msg.person[13] + msg.person[8] + "\n" + msg.person[3]);
 			name = in.nextLine();
 
-			System.out.print("Age: ");
+			System.out.print(msg.person[4]);
 			age = in.nextInt();
 			in.nextLine();
 
-			p[i] = new Person(name, age);
-
-			avarege += (double) p[i].getAge();
-
+			person[i] = new Person(name, age);
+			avarege += (double) person[i].getAge();
 		}
 
 		avarege /= 2;
 
-		System.out.println("A age avarege " + p[0].getName() + " and " + p[1].getName() + " is the "
-				+ String.format("%.1f", avarege) + " years old");
+		System.out.println(msg.person[9] + person[0].getName() + msg.person[11] + person[1].getName() + msg.person[10]
+				+ String.format("%.1f", avarege) + msg.person[12]);
 	}
-
 	public void exercice4() {
-
-		/*
-		 * Fazer um programa para ler dois valores inteiros X e Y, e depois mostrar na
-		 * tela o valor da soma destes nÃºmeros.
-		 */
-
-		int x, y, sum;
-
-		System.out.print("Write a value of x: ");
+		System.out.print(msg.xAndY[0]);
 		x = in.nextInt();
-		System.out.print("Write a value of y: ");
+		System.out.print(msg.xAndY[1]);
 		y = in.nextInt();
 		sum = x + y;
-		System.out.println("Sum = " + sum);
+		System.out.println(msg.xAndY[2] + sum);
 	}
-
 	public void exercice5() {
-
-		Locale.setDefault(Locale.US);
-		/*
-		 * Fazer um programa para calcular o troco no processo de pagamento de um
-		 * produto de uma mercearia. O programa deve ler o preÃ§o unitÃ¡rio do produto, a
-		 * quantidade de unidades compradas deste produto, e o valor em dinheiro dado
-		 * pelo cliente (suponha que haja dinheiro suficiente). Seu programa deve
-		 * mostrar o valor do troco a ser devolvido ao cliente.
-		 */
-
-		double price, change, money;
-		int qtd;
-
-		System.out.print("Enter with unit price of product: ");
-		price = in.nextDouble();
-		System.out.print("Enter the quantity purchased: ");
-		qtd = in.nextInt();
-		System.out.print("Money received: ");
+		System.out.print(msg.product[5]);
+		product.setPrice(in.nextDouble());
+		System.out.print(msg.product[6]);
+		product.addStock(in.nextInt());
+		System.out.print(msg.product[7]);
 		money = in.nextDouble();
-		change = money - (price * qtd);
-		System.out.println("Change: " + String.format("%.2f", change));
-
+		change = money - (product.getPrice() * product.getQuantity());
+		System.out.println(msg.product[8] + String.format("%.2f", change));
 	}
-
 	public void exercice6() {
-
-		Locale.setDefault(Locale.US);
-		/*
-		 * Fazer um programa para ler o valor "r" do raio de um cÃ­rculo, e depois
-		 * mostrar o valor da Ã¡rea do cÃ­rculo com trÃªs casas decimais. A fÃ³rmula da Ã¡rea
-		 * do cÃ­rculo Ã© a seguinte: ð�‘Žð�‘Ÿð�‘’ð�‘Ž = ð�œ‹. ð�‘Ÿ à¬¶ . VocÃª pode usar o valor de ð�œ‹
-		 * fornecido pela biblioteca da sua linguagem de programaÃ§Ã£o, ou entÃ£o, se
-		 * preferir, use diretamente o valor 3.14159.
-		 */
-
-		System.out.print("Enter the value circle radius: ");
-		double circleRadius = in.nextDouble();
-		double area = Math.PI * Math.pow(circleRadius, 2);
-		System.out.println("AREA = " + String.format("%.3f", area));
-
+		System.out.print(msg.circle[0]);
+		value = in.nextDouble();
+		area = Math.PI * Math.pow(value, 2);
+		System.out.println(msg.rectangle[3] + String.format("%.3f", area));
 	}
-
 	public void exercice7() {
+		System.out.print(msg.person[3]);
+		emp.setName(in.nextLine());
+		System.out.print(msg.employee[0]);
+		emp.setValuePerHour(in.nextDouble());
+		System.out.print(msg.employee[1]);
+		emp.setHoursJobs(in.nextInt());
 
-		/*
-		 * Fazer um programa para ler o nome de um(a) funcionÃ¡rio(a), o valor que ele(a)
-		 * recebe por hora, e a quantidade de horas trabalhadas por ele(a). Ao final,
-		 * mostrar o valor do pagamento do funcionÃ¡rio com uma mensagem explicativa,
-		 * conforme exemplo.
-		 */
-
-		String name;
-		double valuePerHour, hoursJobs;
-
-		System.out.print("Name: ");
-		name = in.nextLine();
-		System.out.print("Value per hours: ");
-		valuePerHour = in.nextDouble();
-		System.out.print("Working hours: ");
-		hoursJobs = in.nextDouble();
-
-		System.out.println("The payment for " + name + "is " + String.format("%.2f", (valuePerHour * hoursJobs)));
-
+		System.out.println(msg.employee[2] + emp.getName() + msg.employee[3]
+				+ String.format("%.2f", (emp.getValuePerHour() * emp.getHoursJobs())));
 	}
-
 	public void exercice8() {
-
-		Locale.setDefault(Locale.US);
-		/*
-		 * Fazer um programa para ler a distÃ¢ncia total (em km) percorrida por um carro,
-		 * bem como o total de combustÃ­vel gasto por este carro ao percorrer tal
-		 * distÃ¢ncia. Seu programa deve mostrar o consumo mÃ©dio do carro, com trÃªs casas
-		 * decimais.
-		 */
-
-		int km;
-		double fuel;
-
-		System.out.print("Enter the distance travelled(Km): ");
-		km = in.nextInt();
-		System.out.print("Fuel spent: ");
-		fuel = in.nextDouble();
-		System.out.println("Average consumption: " + String.format("%.3f", km / fuel));
+		System.out.print(msg.mensage[1]);
+		x = in.nextInt();
+		System.out.print(msg.mensage[2]);
+		value = in.nextDouble();
+		System.out.println(msg.mensage[3] + String.format("%.3f", x / value));
 	}
-
 	public void exercice9() {
-
-		Locale.setDefault(Locale.US);
-		/*
-		 * Fazer um programa para ler trÃªs medidas A, B e C. Em seguida, calcular e
-		 * mostrar (imprimir os dados com quatro casas decimais): a) a Ã¡rea do quadrado
-		 * que tem lado A b) a Ã¡rea do triÃ¢ngulo retÃ¢ngulo que base A e altura B c) a
-		 * Ã¡rea do trapÃ©zio que tem bases A e B, e altura C
-		 */
-		double a, b, c;
-		double tri, trap, sqrt;
-
-		System.out.print("Enter the measure A: ");
+		System.out.print(msg.mensage[4]);
 		a = in.nextDouble();
-		System.out.print("Enter the measure B: ");
+		System.out.print(msg.mensage[5]);
 		b = in.nextDouble();
-		System.out.print("Enter the measure C: ");
+		System.out.print(msg.mensage[6]);
 		c = in.nextDouble();
 
 		tri = (a * b) / 2;
 		trap = (a + b) * c / 2;
 		sqrt = a * a;
 
-		System.out.printf("\nQUADRADO: %.4f" + "\nTRIANGULO: %.4f" + "\nTRAPEZIO: %.4f", sqrt, tri, trap);
-
+		System.out.printf(msg.mensage[7], sqrt, tri, trap);
 	}
-
 	public void exercice10() {
-
-		Locale.setDefault(Locale.US);
-		/*
-		 * Fazer um programa para ler uma duraÃ§Ã£o de tempo em segundos, daÃ­ imprimir na
-		 * tela esta duraÃ§Ã£o no formato horas:minutos:segundos.
-		 */
-
-		int duration, hours, minutes, seconds, rest;
-
-		System.out.print("Write duration in seconds: ");
+		System.out.print(msg.mensage[8]);
 		duration = in.nextInt();
 
 		hours = duration / 3600;

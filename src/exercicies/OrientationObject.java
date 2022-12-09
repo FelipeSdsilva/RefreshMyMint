@@ -24,7 +24,7 @@ public class OrientationObject {
 		Person per = new Person("Maria", 30, 1.70, 'f');
 
 		double measure = 53.234567;
-		System.out.printf(msg.mensage, p1.getName(), p1.getPrice(), p2.getName(), p2.getPrice(), per.getAge(),
+		System.out.printf(msg.mensage[0], p1.getName(), p1.getPrice(), p2.getName(), p2.getPrice(), per.getAge(),
 				p1.getCode(), per.getGender(), measure, measure);
 		Locale.setDefault(Locale.US);
 		System.out.println("US decimal point:" + String.format("%.3f", measure));
