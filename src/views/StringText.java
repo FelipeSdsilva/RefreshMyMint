@@ -28,6 +28,7 @@ public class StringText {
 			"Working hours: ",//1
 			"The payment for ",//2
 			"is ",//3
+			"Which percentage to increase salary?",//4
 	};
 	public String[] mensage = {"""
 			Products;
@@ -52,8 +53,6 @@ public class StringText {
 					""",//7
 			"Write duration in seconds: "		
 			};
-	public String percentageIncrease ="""
-			Which percentage to increase salary?  """;
 	public String[] person = {"How many persons will you type? ", //0
 			"Date of ", //1	
 			"a person: ", //2
@@ -68,7 +67,7 @@ public class StringText {
 			" and ",//11
 			 " years old",//12
 			 " ",//13
-			};
+			 };
 	public String[] product = { "Enter the product data:",//0
 			"Product data: ",//1
 			"Update data: ",//2
@@ -90,7 +89,14 @@ public class StringText {
 			What is the dollar price? ""","""
 			How many dollar will be bought? ""","""
 			Amount to be paid in reais = """};
-	public String[] terrain = {
+	public String[] student = {
+			"Enter with the firsth note: ",
+			"Enter with the second note: ",
+			"Final note: ",
+			"Reproved ",
+			
+	};
+ 	public String[] terrain = {
 			"Write the width of terrain: ",//0
 			"Write the length of terrain: ",//1
 			"Write  the value for m²: ",//2

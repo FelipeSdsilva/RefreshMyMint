@@ -6,6 +6,7 @@ import java.util.Scanner;
 import entities.Triangle;
 import exercicies.Array;
 import exercicies.ComparationOfTriangle;
+import exercicies.ConditionalStructure;
 import exercicies.IntrodutionTheFunction;
 import exercicies.OrientationObject;
 import exercicies.SequentialStructure;
@@ -22,6 +23,7 @@ public class App {
 		Scanner sc = new Scanner(System.in);
 
 		Array arr = new Array();
+		ConditionalStructure cs = new ConditionalStructure();
 		IntrodutionTheFunction fc = new IntrodutionTheFunction();
 		OrientationObject or = new OrientationObject();
 		StringText fix1 = new StringText();
@@ -29,7 +31,8 @@ public class App {
 		RepetitionWhile sw = new RepetitionWhile();
 		RepetitionFor sf = new RepetitionFor();
 		
-		//arr.exercice8();
+		// arr.exercice8();
+		cs.exercice1();
 		// ComparationOfTriangle.triangleExercicie();
 		// fc.whatNumberMoreHigh();
 		// fc.IGoWentPayYReaisForValueXinDollar();
@@ -37,7 +40,7 @@ public class App {
 		// or.accountExercicie();
 		// or.estudentExercicie();
 		// sf.exercicie4();
-		 ss.exercice10();
+		// ss.exercice10();
 		// sw.exercicie4();
 
 		sc.close();

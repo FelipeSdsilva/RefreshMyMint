@@ -81,7 +81,7 @@ public class OrientationObject {
 
 		System.out.println(emp);
 
-		System.out.print(msg.percentageIncrease);
+		System.out.print(msg.employee[4]);
 		double percentage = sc.nextDouble();
 		emp.increaseSalary(percentage);
 
