@@ -8,7 +8,7 @@ import exercicies.Array;
 import exercicies.ComparationOfTriangle;
 import exercicies.IntrodutionTheFunction;
 import exercicies.OrientationObject;
-import exercicies.StructuralSequence;
+import exercicies.SequentialStructure;
 import views.StringText;
 import exercicies.RepetitionFor;
 import exercicies.RepetitionWhile;
@@ -25,7 +25,7 @@ public class App {
 		IntrodutionTheFunction fc = new IntrodutionTheFunction();
 		OrientationObject or = new OrientationObject();
 		StringText fix1 = new StringText();
-		StructuralSequence ss = new StructuralSequence();
+		SequentialStructure ss = new SequentialStructure();
 		RepetitionWhile sw = new RepetitionWhile();
 		RepetitionFor sf = new RepetitionFor();
 		
