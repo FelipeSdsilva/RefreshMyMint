@@ -17,4 +17,8 @@ public class StaticFixation {
 	public static int sumInterTwoNumbers(int a, int b) {
 		return a + b;
 	}
+
+	public static double sumTwoNumbersDoub(double a, double b) {
+		return a + b;
+	}
 }

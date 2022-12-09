@@ -94,7 +94,7 @@ public class StringText {
 			"Enter with the second note: ",
 			"Final note: ",
 			"Reproved ",
-			
+			"Aproved"
 	};
  	public String[] terrain = {
 			"Write the width of terrain: ",//0
