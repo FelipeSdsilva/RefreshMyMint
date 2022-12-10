@@ -18,13 +18,32 @@ public class ConditionalStructure {
 		av2 = in.nextDouble();
 
 		sum = StaticFixation.sumTwoNumbersDoub(av1, av2);
-		
+
 		String resp = (sum < 60) ? msg.student[3] : "";
+
 		System.out.println(msg.student[2] + sum + "\n" + resp);
 	}
 
 	public void exercice2() {
 
+		double a, b, c, delt, x1, x2;
+
+		System.out.print(msg.mensage[9]);
+		a = in.nextDouble();
+		System.out.print(msg.mensage[10]);
+		b = in.nextDouble();
+		System.out.print(msg.mensage[11]);
+		c = in.nextDouble();
+
+		delt = StaticFixation.formOfBaskara(a, b, c);
+
+		x1 = StaticFixation.positiveValueBaskara(a, b, delt);
+		x2 = StaticFixation.negativeValueBaskara(a, b, delt);
+
+		String result = !(x1 != Double.NaN && x2 != Double.NaN) ? msg.mensage[12]
+				: msg.xAndY[3] + String.format("%.4f", x1) + "\n" + msg.xAndY[4] + String.format("%.4f", x2);
+
+		System.out.println(result);
 	}
 
 	public void exercice3() {
