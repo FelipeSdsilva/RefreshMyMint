@@ -32,7 +32,7 @@ public class App {
 		RepetitionFor sf = new RepetitionFor();
 		
 		// arr.exercice8();
-		cs.exercice2();
+		cs.exercice7();
 		// ComparationOfTriangle.triangleExercicie();
 		// fc.whatNumberMoreHigh();
 		// fc.IGoWentPayYReaisForValueXinDollar();

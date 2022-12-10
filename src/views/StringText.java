@@ -48,9 +48,9 @@ public class StringText {
 			"Enter the distance travelled(Km): ",//1
 			"Fuel spent: ",//2
 			"Average consumption: ",//3
-			"Enter the measure A: ",
-			"Enter the measure B: ",
-			"Enter the measure C: ",
+			"Enter the measure A: ",//4
+			"Enter the measure B: ",//5
+			"Enter the measure C: ",//6
 			"""
 			SQUARE: %.4f
 			TRIANGLE: %.4f
@@ -61,6 +61,13 @@ public class StringText {
 			"Coefficient b: ",//10
 			"Coefficient c: ",//11
 			"This is equation not has real root ",//12
+			"Firsth value: ",//13
+			"Second value: ",//14
+			"Third value: ",//15
+			"Write the quantity of min: ",//16
+			"Value payment: R$ ",//17
+			"Write the average of glucose: ",//18
+			"Write three distance: "
 			};
 	public String[] person = {
 			"How many persons will you type? ", //0

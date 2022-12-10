@@ -48,22 +48,62 @@ public class ConditionalStructure {
 
 	public void exercice3() {
 
+		int a, b, c;
+
+		System.out.print(msg.mensage[13]);
+		a = in.nextInt();
+		System.out.print(msg.mensage[14]);
+		b = in.nextInt();
+		System.out.print(msg.mensage[15]);
+		c = in.nextInt();
+		StaticFixation.smallerBetweeThreeNumbers(a, b, c);
 	}
 
 	public void exercice4() {
 
+		int min;
+
+		System.out.print(msg.mensage[16]);
+		min = in.nextInt();
+
+		System.out.println(msg.mensage[17] + String.format("%.2f", StaticFixation.valueContOfTellOperator(min)));
 	}
 
 	public void exercice5() {
 
+		double money, totalValue, price;
+		int qtd;
+
+		System.out.print(msg.product[5]);
+		price = in.nextDouble();
+		System.out.print(msg.product[6]);
+		qtd = in.nextInt();
+		System.out.print(msg.product[7]);
+		money = in.nextDouble();
+
+		totalValue = StaticFixation.converterDollar(price, (double) qtd);
+
+		StaticFixation.changeVerification(money, totalValue);
+
 	}
 
 	public void exercice6() {
+		double avgGlu;
+		System.out.print(msg.mensage[18]);
+		avgGlu = in.nextDouble();
 
+		StaticFixation.quantityOfGlucose(avgGlu);
 	}
 
 	public void exercice7() {
+		double a, b, c;
 
+		System.out.println(msg.mensage[19]);
+		a = in.nextDouble();
+		b = in.nextDouble();
+		c = in.nextDouble();
+
+		StaticFixation.biggerDistance(a, b, c);
 	}
 
 	public void exercice8() {
