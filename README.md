@@ -148,7 +148,7 @@ Exemplo 3:
 	Coeficiente b: 3
 	Coeficiente c: 4
 	Esta equacao nao possui raizes reais
-- [ ] ```(3) Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três 
+- [x] ```(3) Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três 
 números lidos. Em caso de empate, mostrar apenas uma vez.  ```
 
 Exemplo 1: 
@@ -169,7 +169,7 @@ Exemplo 3:
 	Segundo valor: 9
 	Terceiro valor: 9
 	MENOR = 9 
-- [ ] ```(4) Uma operadora de telefonia cobra R$ 50.00 por um plano básico que dá direito a 100 minutos de 
+- [x] ```(4) Uma operadora de telefonia cobra R$ 50.00 por um plano básico que dá direito a 100 minutos de 
 telefone. Cada minuto que exceder a franquia de 100 minutos custa R$ 2.00. Fazer um programa para 
 ler a quantidade de minutos que uma pessoa consumiu, daí mostrar o valor a ser pago.  ```
 
@@ -181,7 +181,7 @@ Exemplo 2:
 
 	Digite a quantidade de minutos: 103
 	Valor a pagar: R$ 56.00 
-- [ ] ```(5) Fazer um programa para calcular o troco no processo de pagamento de um produto de uma mercearia. 
+- [x] ```(5) Fazer um programa para calcular o troco no processo de pagamento de um produto de uma mercearia. 
 O programa deve ler o preço unitário do produto, a quantidade de unidades compradas deste produto, 
 e o valor em dinheiro dado pelo cliente. Seu programa deve mostrar o valor do troco a ser devolvido 
 ao cliente. Se o dinheiro dado pelo cliente não for suficiente, mostrar uma mensagem informando o 
@@ -199,7 +199,7 @@ Exemplo 2:
 	Quantidade comprada: 3
 	Dinheiro recebido: 70.00
 	DINHEIRO INSUFICIENTE. FALTAM 20.00 REAIS 
-- [ ] ```(6) Fazer um programa para ler a quantidade de glicose 
+- [x] ```(6) Fazer um programa para ler a quantidade de glicose 
 no sangue de uma pessoa e depois mostrar na tela a 
 classificação desta glicose de acordo com a tabela de 
 referência ao lado. ```	
@@ -235,7 +235,7 @@ Exemplo 3:
 	Digite a medida da glicose: 143.2
 	Classificacao: diabetes 
 
-- [ ] ```(7) No arremesso de dardo, o atleta tem três chances para lançar o dardo à maior distância que conseguir. 
+- [x] ```(7) No arremesso de dardo, o atleta tem três chances para lançar o dardo à maior distância que conseguir. 
 Você deve criar um programa para, dadas as medidas das três tentativas de lançamento, informar qual 
 foi a maior.```
 
