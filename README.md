@@ -108,7 +108,7 @@ Exemplo:
 	0:5:0 
 ## Exercice Conditional Structure
 
-- [ ] ```(1) Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de 
+- [x] ```(1) Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de 
 uma disciplina anual. Em seguida, mostrar a nota final que o aluno obteve (com uma casa decimal) no 
 ano juntamente com um texto explicativo. Caso a nota final do aluno seja inferior a 60.00, mostrar a 
 mensagem "REPROVADO", conforme exemplos.```
@@ -124,7 +124,7 @@ Exemplo 2:
 	Digite a segunda nota: 23.5
 	NOTA FINAL = 57.5 
 	REPROVADO	
-- [ ] ```(2) Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula 
+- [x] ```(2) Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula 
 de Baskara, calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais, 
 conforme exemplo. Se a equação não possuir raízes reais, mostrar uma mensagem. ```
 
