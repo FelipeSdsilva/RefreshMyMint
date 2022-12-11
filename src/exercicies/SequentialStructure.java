@@ -5,6 +5,7 @@ import java.util.Scanner;
 import entities.Employee;
 import entities.Person;
 import entities.Product;
+import statics.StaticFixation;
 import views.StringText;
 
 public class SequentialStructure {
@@ -12,17 +13,11 @@ public class SequentialStructure {
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
 
-	String name;
 
-	int age, x, y, sum, duration, hours, minutes, seconds, rest;
+	public void exercice01() {
 
-	double area, width, lenth, value, a, c, b, h, p, d, avarege = 0.0, change, money, tri, trap, sqrt;
+		double width, lenth, value;
 
-	Person[] person = new Person[2];
-	Product product = new Product();
-	Employee emp = new Employee();
-
-	public void exercice1() {
 		System.out.print(msg.terrain[0]);
 		width = in.nextDouble();
 		System.out.print(msg.terrain[1]);
@@ -34,7 +29,10 @@ public class SequentialStructure {
 				+ String.format("%.2f", (width * lenth) * value));
 	}
 
-	public void exercice2() {
+	public void exercice02() {
+
+		double b, h, p, d;
+
 		System.out.print(msg.rectangle[1]);
 		b = in.nextDouble();
 		System.out.print(msg.rectangle[2]);
@@ -45,7 +43,13 @@ public class SequentialStructure {
 				+ String.format("%.4f", p * 2) + "\n" + msg.rectangle[5] + String.format("%.4f", Math.sqrt(d)));
 	}
 
-	public void exercice3() {
+	public void exercice03() {
+		
+		String name;
+		double avarege = 0.0;
+		Person[] person = new Person[2];
+		int age;
+		
 		for (int i = 0; i < 2; i++) {
 
 			System.out.print(msg.person[1] + (i + 1) + msg.person[13] + msg.person[8] + "\n" + msg.person[3]);
@@ -65,7 +69,10 @@ public class SequentialStructure {
 				+ String.format("%.1f", avarege) + msg.person[12]);
 	}
 
-	public void exercice4() {
+	public void exercice04() {
+		
+		int x, y, sum;
+		
 		System.out.print(msg.xAndY[0]);
 		x = in.nextInt();
 		System.out.print(msg.xAndY[1]);
@@ -74,7 +81,11 @@ public class SequentialStructure {
 		System.out.println(msg.xAndY[2] + sum);
 	}
 
-	public void exercice5() {
+	public void exercice05() {
+
+		double money, change;
+		Product product = new Product();
+
 		System.out.print(msg.product[5]);
 		product.setPrice(in.nextDouble());
 		System.out.print(msg.product[6]);
@@ -85,14 +96,20 @@ public class SequentialStructure {
 		System.out.println(msg.product[8] + String.format("%.2f", change));
 	}
 
-	public void exercice6() {
+	public void exercice06() {
+
+		double area, value;
+
 		System.out.print(msg.circle[0]);
 		value = in.nextDouble();
 		area = Math.PI * Math.pow(value, 2);
 		System.out.println(msg.rectangle[3] + String.format("%.3f", area));
 	}
 
-	public void exercice7() {
+	public void exercice07() {
+		
+		Employee emp = new Employee();
+		
 		System.out.print(msg.person[3]);
 		emp.setName(in.nextLine());
 		System.out.print(msg.employee[0]);
@@ -104,7 +121,11 @@ public class SequentialStructure {
 				+ String.format("%.2f", (emp.getValuePerHour() * emp.getHoursJobs())));
 	}
 
-	public void exercice8() {
+	public void exercice08() {
+
+		int x;
+		double value;
+
 		System.out.print(msg.mensage[1]);
 		x = in.nextInt();
 		System.out.print(msg.mensage[2]);
@@ -112,7 +133,10 @@ public class SequentialStructure {
 		System.out.println(msg.mensage[3] + String.format("%.3f", x / value));
 	}
 
-	public void exercice9() {
+	public void exercice09() {
+
+		double a, b, c, tri, trap, sqrt;
+
 		System.out.print(msg.mensage[4]);
 		a = in.nextDouble();
 		System.out.print(msg.mensage[5]);
@@ -128,6 +152,9 @@ public class SequentialStructure {
 	}
 
 	public void exercice10() {
+
+		int duration, hours, minutes, seconds, rest;
+
 		System.out.print(msg.mensage[8]);
 		duration = in.nextInt();
 
@@ -138,6 +165,19 @@ public class SequentialStructure {
 		seconds = rest % 60;
 
 		System.out.println(hours + ":" + minutes + ":" + seconds);
+
+	}
+
+	public void exercice11() {
+
+		StringText msg = new StringText();
+
+		System.out.print(msg.statics[0]);
+		double priceDoll = in.nextDouble();
+		System.out.print(msg.statics[1]);
+		double money = in.nextDouble();
+
+		System.out.println(msg.statics[2] + String.format("%.2f", StaticFixation.converterDollar(priceDoll, money)));
 
 	}
 }

@@ -1,4 +1,6 @@
-package exercicies;
+package statics;
+
+import views.StringText;
 
 public class StaticFixation {
 
@@ -34,22 +36,28 @@ public class StaticFixation {
 	}
 
 	public static void smallerBetweeThreeNumbers(int a, int b, int c) {
+		
+		StringText msg = new StringText();
+		
 		if (a < b && a < c) {
-			System.out.println("smaller number: " + a);
+			System.out.println(msg.mensage[20] + a);
 		} else if (b < c && b < a) {
-			System.out.println("smaller number: " + b);
+			System.out.println(msg.mensage[20] + b);
 		} else {
-			System.out.println("smaller number: " + c);
+			System.out.println(msg.mensage[20] + c);
 		}
 	}
 
 	public static void biggerDistance(double a, double b, double c) {
+		
+		StringText msg = new StringText();
+		
 		if (a > b && a > c) {
-			System.out.println(String.format("Bigger Distance = %.2f", a) + a);
+			System.out.println(String.format(msg.mensage[21], a));
 		} else if (b > c) {
-			System.out.println(String.format("Bigger Distance = %.2f", b));
+			System.out.println(String.format(msg.mensage[21], b));
 		} else {
-			System.out.println(String.format("Bigger Distance = %.2f", c));
+			System.out.println(String.format(msg.mensage[21], c));
 		}
 	}
 
@@ -79,4 +87,12 @@ public class StaticFixation {
 		}
 	}
 
+	public static double convertTemperatureCelciusAndFahrenheit(char escFahOrCel, double temp) {
+		if (escFahOrCel == 'F' ||  escFahOrCel == ' ') {
+			return temp = (temp * 9 / 5) + 32;
+		} else if (escFahOrCel == 'C') {
+			return temp = (temp - 32) * (5 / 9);
+		}
+		return temp;
+	}
 }

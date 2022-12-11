@@ -2,8 +2,12 @@ package exercicies;
 
 import java.util.Scanner;
 
-public class RepetitionWhile {
+import statics.StaticFixation;
+import views.StringText;
 
+public class While {
+
+	StringText msg = new StringText();
 	Scanner in = new Scanner(System.in);
 
 	public void exercice1() {
@@ -138,11 +142,30 @@ public class RepetitionWhile {
 		char cont;
 
 		do {
-			System.out.print("White the temperature in Celcios: ");
+			System.out.print(msg.mensage[26]);
 			double celciuos = in.nextDouble();
-			System.out.println("Equivalent in Fahrenheit: " + String.format("%.1f", ((9 * celciuos) / 5) + 32));
-			System.out.print("Restart the program (Y/N)? ");
+			System.out.println(msg.mensage[25]
+					+ String.format("%.1f", StaticFixation.convertTemperatureCelciusAndFahrenheit(' ', celciuos)));
+			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);
 		} while (cont != 'n');
+	}
+
+	public void exercice9() {
+
+		int a, b, c;
+		char cont;
+
+		do {
+			System.out.println(msg.mensage[22]);
+			a = in.nextInt();
+			b = in.nextInt();
+			c = in.nextInt();
+
+			StaticFixation.biggerDistance(a, b, c);
+
+			System.out.print(msg.mensage[24]);
+			cont = in.next().charAt(0);
+		} while (cont != 'n' && cont != 'N');
 	}
 }

@@ -10,30 +10,13 @@ public class Array {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
-	String name;
-	
-	int[] vec = new int[0], 
-		  vecA = new int[0],
-		  vecB = new int[0],
-		  vecC = new int[0];
-	
-	double[] vecD = new double[0];
-	
-	int cont,
-		age,
-		position = 0;
-	
-	double sum = 0.0, 
-		   height,
-		   highest = 0,
-		   avg;
 
-	public void exercice1() {
-		/*
-		 * Faça um programa que leia um número inteiro positivo N (máximo = 10) e
-		 * depois N números inteiros e armazene-os em um vetor. Em seguida, mostrar na
-		 * tela todos os números negativos lidos.
-		 */
+
+	int cont;
+
+	public void exercice01() {
+
+		int[] vec = new int[0];
 
 		System.out.print(msg.array[0]);
 		cont = in.nextInt();
@@ -55,13 +38,10 @@ public class Array {
 
 	}
 
-	public void exercice2() {
-		/*
-		 * Faça um programa que leia N números reais e armazene-os em um vetor. Em
-		 * seguida: - Imprimir todos os elementos do vetor - Mostrar na tela a soma e a
-		 * média dos elementos do vetor
-		 */
-		sum = 0;
+	public void exercice02() {
+
+		double[] vecD = new double[0];
+		int sum = 0;
 
 		Locale.setDefault(Locale.US);
 		System.out.print(msg.array[0]);
@@ -84,13 +64,11 @@ public class Array {
 
 	}
 
-	public void exercice3() {
-		/*
-		 * Fazer um programa para ler nome, idade e altura de N pessoas, conforme
-		 * exemplo. Depois, mostrar na tela a altura média das pessoas, e mostrar
-		 * também a porcentagem de pessoas com menos de 16 anos, bem como os nomes
-		 * dessas pessoas caso houver.
-		 */
+	public void exercice03() {
+
+		int age;
+		double height, sum = 0, avg;
+		String name;
 
 		System.out.print(msg.person[0]);
 		cont = in.nextInt();
@@ -138,12 +116,8 @@ public class Array {
 		}
 	}
 
-	public void exercice4() {
-		/*
-		 * Faça um programa que leia N números inteiros e armazene-os em um vetor. Em
-		 * seguida, mostre na tela todos os números pares, e também a quantidade de
-		 * números pares.
-		 */
+	public void exercice04() {
+		int[] vec = new int[0];
 
 		System.out.print(msg.array[0]);
 		cont = in.nextInt();
@@ -167,13 +141,10 @@ public class Array {
 		System.out.println("\nEven quantity: " + cont);
 	}
 
-	public void exercice5() {
-		/*
-		 * Faça um programa que leia N números reais e armazene-os em um vetor. Em
-		 * seguida, mostrar na tela o maior número do vetor (supor não haver empates).
-		 * Mostrar também a posição do maior elemento, considerando a primeira
-		 * posição como 0 (zero).
-		 */
+	public void exercice05() {
+
+		int position = 0;
+		double highest = 0;
 
 		System.out.print(msg.array[0]);
 		cont = in.nextInt();
@@ -192,12 +163,8 @@ public class Array {
 		System.out.println("Position of highest number: " + position);
 	}
 
-	public void exercice6() {
-		/*
-		 * Faça um programa para ler dois vetores A e B, contendo N elementos cada. Em
-		 * seguida, gere um terceiro vetor C onde cada elemento de C é a soma dos
-		 * elementos correspondentes de A e B. Imprima o vetor C gerado.
-		 */
+	public void exercice06() {
+		int[] vecA = new int[0], vecB = new int[0], vecC = new int[0];
 
 		System.out.print(msg.array[2]);
 		cont = in.nextInt();
@@ -226,13 +193,11 @@ public class Array {
 		}
 	}
 
-	public void exercice7() {
-		/*
-		 * Fazer um programa para ler um número inteiro N e depois um vetor de N
-		 * números reais. Em seguida, mostrar na tela a média aritmética de todos
-		 * elementos com três casas decimais. Depois mostrar todos os elementos do
-		 * vetor que estejam abaixo da média, com uma casa decimal cada.
-		 */
+	public void exercice07() {
+
+		int[] vec = new int[0];
+		double[] vecD = new double[0];
+		double sum = 0;
 
 		System.out.print(msg.array[0]);
 		cont = in.nextInt();
@@ -255,13 +220,10 @@ public class Array {
 		}
 	}
 
-	public void exercice8() {
-		/*
-		 * Fazer um programa para ler um vetor de N números inteiros. Em seguida,
-		 * mostrar na tela a média aritmética somente dos números pares lidos, com
-		 * uma casa decimal. Se nenhum número par for digitado, mostrar a mensagem
-		 * "NENHUM NUMERO PAR"
-		 */
+	public void exercice08() {
+
+		int[] vec = new int[0];
+		double sum = 0;
 
 		System.out.print(msg.array[0]);
 		cont = in.nextInt();
@@ -285,7 +247,7 @@ public class Array {
 		}
 	}
 
-	public void exercice9() {
+	public void exercice09() {
 		/*
 		 * Fazer um programa para ler um conjunto de nomes de pessoas e suas respectivas
 		 * idades. Os nomes devem ser armazenados em um vetor, e as idades em um outro

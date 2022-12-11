@@ -2,6 +2,7 @@ package exercicies;
 
 import java.util.Scanner;
 
+import statics.StaticFixation;
 import views.StringText;
 
 public class ConditionalStructure {
@@ -9,7 +10,7 @@ public class ConditionalStructure {
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
 
-	public void exercice1() {
+	public void exercice01() {
 		Double av1, av2, sum;
 
 		System.out.print(msg.student[0]);
@@ -24,7 +25,7 @@ public class ConditionalStructure {
 		System.out.println(msg.student[2] + sum + "\n" + resp);
 	}
 
-	public void exercice2() {
+	public void exercice02() {
 
 		double a, b, c, delt, x1, x2;
 
@@ -46,7 +47,7 @@ public class ConditionalStructure {
 		System.out.println(result);
 	}
 
-	public void exercice3() {
+	public void exercice03() {
 
 		int a, b, c;
 
@@ -59,7 +60,7 @@ public class ConditionalStructure {
 		StaticFixation.smallerBetweeThreeNumbers(a, b, c);
 	}
 
-	public void exercice4() {
+	public void exercice04() {
 
 		int min;
 
@@ -69,7 +70,7 @@ public class ConditionalStructure {
 		System.out.println(msg.mensage[17] + String.format("%.2f", StaticFixation.valueContOfTellOperator(min)));
 	}
 
-	public void exercice5() {
+	public void exercice05() {
 
 		double money, totalValue, price;
 		int qtd;
@@ -87,7 +88,7 @@ public class ConditionalStructure {
 
 	}
 
-	public void exercice6() {
+	public void exercice06() {
 		double avgGlu;
 		System.out.print(msg.mensage[18]);
 		avgGlu = in.nextDouble();
@@ -95,7 +96,7 @@ public class ConditionalStructure {
 		StaticFixation.quantityOfGlucose(avgGlu);
 	}
 
-	public void exercice7() {
+	public void exercice07() {
 		double a, b, c;
 
 		System.out.println(msg.mensage[19]);
@@ -106,11 +107,11 @@ public class ConditionalStructure {
 		StaticFixation.biggerDistance(a, b, c);
 	}
 
-	public void exercice8() {
-
+	public void exercice08() {
+		
 	}
 
-	public void exercice9() {
+	public void exercice09() {
 
 	}
 

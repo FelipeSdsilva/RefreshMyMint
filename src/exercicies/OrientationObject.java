@@ -9,6 +9,7 @@ import entities.Person;
 import entities.Product;
 import entities.Rectangle;
 import entities.Student;
+import entities.Triangle;
 import views.StringText;
 
 public class OrientationObject {
@@ -69,6 +70,35 @@ public class OrientationObject {
 		System.out.println(rec);
 	}
 
+	public static void triangleExercicie() {
+
+		Triangle t1 = new Triangle(), t2 = new Triangle();
+
+		StringText msg = new StringText();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println(msg.xAndY[5]);
+
+		t1.setWidth(sc.nextDouble());
+		t1.setHight(sc.nextDouble());
+		t1.setBase(sc.nextDouble());
+		t1.measuresOfTriangle();
+		
+		System.out.println(msg.xAndY[6]);
+
+		t2.setWidth(sc.nextDouble());
+		t2.setHight(sc.nextDouble());
+		t2.setBase(sc.nextDouble());
+		t2.measuresOfTriangle();
+
+		t1.toString();
+		t2.toString();
+
+		Triangle.theBiggeArea(t1, t2);
+
+		sc.close();
+	}
+	
 	public void employeeExercicie() {
 
 		Employee emp = new Employee();

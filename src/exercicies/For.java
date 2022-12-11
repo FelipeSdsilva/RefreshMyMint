@@ -3,7 +3,7 @@ package exercicies;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class RepetitionFor {
+public class For {
 
 	Scanner in = new Scanner(System.in);
 	int n, i, sum, inp = 0, out = 0, numW;;
