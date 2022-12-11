@@ -16,7 +16,7 @@ public class ForExercice {
 
 	}
 
-	public void exercice01() {
+	public void exercice02() {
 
 		n = in.nextInt();
 
@@ -31,7 +31,7 @@ public class ForExercice {
 	}
 	
 
-	public void exercice02() {
+	public void exercice03() {
 
 		n = in.nextInt();
 
@@ -57,7 +57,7 @@ public class ForExercice {
 
 	}
 
-	public void exercice03() {
+	public void exercice04() {
 
 		double avg1, avg2, avg3;
 
@@ -79,7 +79,7 @@ public class ForExercice {
 	}
 	
 
-	public void exercice04() {
+	public void exercice05() {
 
 		n = in.nextInt();
 
@@ -104,7 +104,7 @@ public class ForExercice {
 		}
 	}
 
-	public void exercice05() {
+	public void exercice06() {
 
 		int sum;
 
@@ -119,7 +119,7 @@ public class ForExercice {
 		System.out.println(sum);
 	}
 
-	public void exercice06() {
+	public void exercice07() {
 
 		n = in.nextInt();
 
@@ -130,7 +130,7 @@ public class ForExercice {
 		}
 	}
 
-	public void exercice07() {
+	public void exercice08() {
 
 		n = in.nextInt();
 

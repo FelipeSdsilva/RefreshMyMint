@@ -7,7 +7,7 @@ import views.StringText;
 
 public class ArrayController {
 
-	public static void menuExercicesArray() {
+	public static void menuExerciciesArray() {
 
 		ArrayExercice arr = new ArrayExercice();
 		Scanner in = new Scanner(System.in);

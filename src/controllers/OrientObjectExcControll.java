@@ -17,7 +17,7 @@ public class OrientObjectExcControll {
 
 		do {
 
-			System.out.print(msg.menuArr);
+			System.out.print(msg.menuArr[0]);
 			n = in.nextInt();
 
 			switch (n) {

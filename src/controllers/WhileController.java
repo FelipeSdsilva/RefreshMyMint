@@ -7,7 +7,7 @@ import views.StringText;
 
 public class WhileController {
 
-	public static void menuExercicesWhile() {
+	public static void menuExerciciesWhile() {
 
 		WhileExercice wl = new WhileExercice();
 		Scanner in = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class WhileController {
 
 		do {
 
-			System.out.print(msg.menuWhile);
+			System.out.print(msg.menuWhile[0]);
 			n = in.nextInt();
 
 			switch (n) {

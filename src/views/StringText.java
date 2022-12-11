@@ -71,58 +71,66 @@ public class StringText {
 			"Equivalent in Fahrenheit: ", // 25
 			"White the temperature in Celcios: ", "White the temperature in Fahrenheint: " };
 	public String[] menuArr = { """
-			Exercice 01 -
-			Exercice 02 -
-			Exercice 03 -
-			Exercice 04 -
-			Exercice 05 -
-			Exercice 06 -
-			Exercice 07 -
-			Exercice 08 -
-			Exercice 09 -
-			Exercice 10 -
-			Exercice 11 -
+			Exercice 01 - negativos DevSuperior//OK
+			Exercice 02 - soma_vetor DevSuperior//OK
+			Exercice 03 - alturas Devsuperior//OK
+			Exercice 04 - numeros_pares DevSuperior//Ok
+			Exercice 05 - maior_posicao DevSuperior//Ok
+			Exercice 06 - soma_vetores DevSuperior//Ok
+			Exercice 07 - abaixo_da_media Dev
+			Exercice 08 - media_pares
+			Exercice 09 - mais_velho
+			Exercice 10 - aprovados 
+			Exercice 11 - dados_pessoas DevSuperior//Falta
 			""" };
 	public String[] menuCond = { """
-			Exercice 01 -
-			Exercice 02 -
-			Exercice 03 -
-			Exercice 04 -
-			Exercice 05 -
-			Exercice 06 -
-			Exercice 07 -
-			Exercice 08 -
-			Exercice 09 -
-			Exercice 10 -
-			Exercice 11 -
-			Exercice 12 -
-			Exercice 13 -
+			Exercice 01 - notas ok
+			Exercice 02 - baskara ok
+			Exercice 03 - menor_de_tres ok
+			Exercice 04 - operadora ok
+			Exercice 05 - troco_verificado ok
+			Exercice 06 - glicose ok
+			Exercice 07 - dardo ok
+			Exercice 08 - temperatura falta
+			Exercice 09 - lanchonete falta
+			Exercice 10 - são_multiplos 
+			Exercice 11 - aumento falta
+			Exercice 12 - tempo_de_jogo falta
+			Exercice 13 - coordenadas falta
 			""" };
 	public String[] menuFor = { """
-			Exercice 00 -
-			Exercice 01 -
-			Exercice 02 -
-			Exercice 03 -
-			Exercice 04 -
-			Exercice 05 -
-			Exercice 06 -
+			Exercice 00 - tabuada DevSuperior // Falta
+			Exercice 01 - soma_impares DevSuperior //
+			Exercice 02 - sequencia_impares DevSuperior//Falta || Udemy//Ok
+			Exercice 03 - dentro_fora DevSuperior//Falta || Udemy//Ok
+			Exercice 04 - media_ponderada DevSuperior//Ok 
+			Exercice 05 - divisao
+			Exercice 06 - fatorial DevSuperior//Falta || Udemy//Ok
 			Exercice 07 -
 			""" };
+	public String[] menuIn = {"""
+			1 - Exercicies Array 
+			2 - Exercicies Conditional Structure
+			3 - Exercicies For
+			4 - Exercecies Orientation Object
+			5 - Exercicies Sequential Structure 
+			6 - Exercicies While
+			"""};
 	public String[] menuSeq = { """
-			Exercice 01 -
-			Exercice 02 -
-			Exercice 03 -
-			Exercice 04 -
-			Exercice 05 -
-			Exercice 06 -
-			Exercice 07 -
-			Exercice 08 -
-			Exercice 09 -
-			Exercice 10 -
-			Exercice 11 -
+			Exercice 01 - terreno ok
+			Exercice 02 - retangulo ok
+			Exercice 03 - idades ok
+			Exercice 04 - soma ok 
+			Exercice 05 - troco ok
+			Exercice 06 - circulo ok 
+			Exercice 07 - pagamento ok
+			Exercice 08 - consumo ok
+			Exercice 09 - medidas ok
+			Exercice 10 - duracao ok
+			Exercice 11 - valor_do_dollar_em_real ok
 			""" };
 	public String[] menuWhile = { """
-			Exercice 01 -
+			Exercice 01 - 
 			Exercice 02 -
 			Exercice 03 -
 			Exercice 04 -

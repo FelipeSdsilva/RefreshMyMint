@@ -8,7 +8,7 @@ import views.StringText;
 public class ConditionalStructureController {
 
 
-	public static void menuExerciceConditional() {
+	public static void menuExerciciesConditional() {
 
 		Scanner in = new Scanner(System.in);
 		ConditionalStructureExercice sc = new ConditionalStructureExercice();
@@ -18,7 +18,7 @@ public class ConditionalStructureController {
 
 		do {
 			
-			System.out.print(msg.menuCond);
+			System.out.print(msg.menuCond[0]);
 			n = in.nextInt();
 			
 			switch (n) {

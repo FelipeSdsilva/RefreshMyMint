@@ -8,7 +8,7 @@ import views.StringText;
 
 public class SequentialStrutureController {
 
-	public static void menuExerciceSequential() {
+	public static void menuExerciciesSequential() {
 		
 		SequentialStructureExercice ss =  new SequentialStructureExercice();
 		Scanner in = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class SequentialStrutureController {
 		
 		do {
 			
-			System.out.print(msg.menuSeq);
+			System.out.print(msg.menuSeq[0]);
 			n = in.nextInt();
 			
 			switch (n) {

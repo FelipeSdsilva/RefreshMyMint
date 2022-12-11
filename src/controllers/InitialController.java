@@ -15,20 +15,20 @@ public class InitialController {
 
 		do {
 
-			System.out.print("");
+			System.out.print(msg.menuIn[0]);
 			n = in.nextInt();
 
 			switch (n) {
 			case 1: {
-				ArrayController.menuExercicesArray();
+				ArrayController.menuExerciciesArray();
 				break;
 			}
 			case 2: {
-				ConditionalStructureController.menuExerciceConditional();
+				ConditionalStructureController.menuExerciciesConditional();
 				break;
 			}
 			case 3: {
-				ForController.menuExerciceFor();
+				ForController.menuExerciciesFor();
 				break;
 			}
 			case 4: {
@@ -36,17 +36,18 @@ public class InitialController {
 				break;
 			}
 			case 5: {
-				SequentialStrutureController.menuExerciceSequential();
+				SequentialStrutureController.menuExerciciesSequential();
 				break;
 			}
 			case 6: {
-				WhileController.menuExercicesWhile();
+				WhileController.menuExerciciesWhile();
 				break;
 			}
 			default:
 				throw new IllegalArgumentException("Unexpected value: " + n);
 			}
 
+			in.nextLine();
 			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);
 

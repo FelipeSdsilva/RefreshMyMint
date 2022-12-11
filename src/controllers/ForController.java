@@ -7,7 +7,7 @@ import views.StringText;
 
 public class ForController {
 
-	public static void menuExerciceFor() {
+	public static void menuExerciciesFor() {
 
 		StringText msg = new StringText();
 		Scanner in = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class ForController {
 
 		do {
 
-			System.out.print(msg.menuFor);
+			System.out.print(msg.menuFor[0]);
 			n = in.nextInt();
 
 			switch (n) {
@@ -26,7 +26,7 @@ public class ForController {
 				break;
 			}
 			case 1: {
-				exFor.exercice01();
+				exFor.exercice00();
 				break;
 			}
 			case 2: {
