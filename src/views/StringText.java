@@ -71,6 +71,7 @@ public class StringText {
 			"Equivalent in Fahrenheit: ", // 25
 			"White the temperature in Celcios: ", "White the temperature in Fahrenheint: " };
 	public String[] menuArr = { """
+				 Exercices Array
 			Exercice 01 - negativos DevSuperior//OK
 			Exercice 02 - soma_vetor DevSuperior//OK
 			Exercice 03 - alturas Devsuperior//OK
@@ -80,10 +81,12 @@ public class StringText {
 			Exercice 07 - abaixo_da_media Dev
 			Exercice 08 - media_pares
 			Exercice 09 - mais_velho
-			Exercice 10 - aprovados 
+			Exercice 10 - aprovados
 			Exercice 11 - dados_pessoas DevSuperior//Falta
+				 0  - Initial menu
 			""" };
 	public String[] menuCond = { """
+				 Exercices conditional structure
 			Exercice 01 - notas ok
 			Exercice 02 - baskara ok
 			Exercice 03 - menor_de_tres ok
@@ -93,44 +96,53 @@ public class StringText {
 			Exercice 07 - dardo ok
 			Exercice 08 - temperatura falta
 			Exercice 09 - lanchonete falta
-			Exercice 10 - são_multiplos 
+			Exercice 10 - são_multiplos
 			Exercice 11 - aumento falta
 			Exercice 12 - tempo_de_jogo falta
 			Exercice 13 - coordenadas falta
+				 0  - Initial menu
 			""" };
 	public String[] menuFor = { """
+				 Exercices of repetition For
 			Exercice 00 - tabuada DevSuperior // Falta
 			Exercice 01 - soma_impares DevSuperior //
 			Exercice 02 - sequencia_impares DevSuperior//Falta || Udemy//Ok
 			Exercice 03 - dentro_fora DevSuperior//Falta || Udemy//Ok
-			Exercice 04 - media_ponderada DevSuperior//Ok 
+			Exercice 04 - media_ponderada DevSuperior//Ok
 			Exercice 05 - divisao
 			Exercice 06 - fatorial DevSuperior//Falta || Udemy//Ok
 			Exercice 07 -
+				 0  - Initial menu
 			""" };
-	public String[] menuIn = {"""
-			1 - Exercicies Array 
-			2 - Exercicies Conditional Structure
-			3 - Exercicies For
-			4 - Exercecies Orientation Object
-			5 - Exercicies Sequential Structure 
-			6 - Exercicies While
-			"""};
+	public String[] menuIn = { """
+			Welcome to my exercicies of resolved in modules
+				DevSuperior and Udemy.
+			1 - Exercices Array
+			2 - Exercices Conditional Structure
+			3 - Exercices For
+			4 - Exerceces Orientation Object
+			5 - Exercices Sequential Structure
+			6 - Exercices While
+			0 - Exit
+			""" };
 	public String[] menuSeq = { """
+				 Exercices Sequential Structure
 			Exercice 01 - terreno ok
 			Exercice 02 - retangulo ok
 			Exercice 03 - idades ok
-			Exercice 04 - soma ok 
+			Exercice 04 - soma ok
 			Exercice 05 - troco ok
-			Exercice 06 - circulo ok 
+			Exercice 06 - circulo ok
 			Exercice 07 - pagamento ok
 			Exercice 08 - consumo ok
 			Exercice 09 - medidas ok
 			Exercice 10 - duracao ok
 			Exercice 11 - valor_do_dollar_em_real ok
+				 0  - Initial menu
 			""" };
 	public String[] menuWhile = { """
-			Exercice 01 - 
+				Exercices of repetition while
+			Exercice 01 -
 			Exercice 02 -
 			Exercice 03 -
 			Exercice 04 -
@@ -139,6 +151,7 @@ public class StringText {
 			Exercice 07 -
 			Exercice 08 -
 			Exercice 09 -
+				 0  - Initial menu
 			""" };
 	public String[] person = { "How many persons will you type? ", // 0
 			"Date of ", // 1

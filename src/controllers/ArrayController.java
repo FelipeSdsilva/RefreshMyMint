@@ -21,6 +21,10 @@ public class ArrayController {
 			n = in.nextInt();
 
 			switch (n) {
+			case 0:{
+				InitialController.menuInitial();
+				break;
+			}
 			case 1: {
 				arr.exercice01();
 				break;

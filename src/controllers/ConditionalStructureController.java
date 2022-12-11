@@ -13,7 +13,6 @@ public class ConditionalStructureController {
 		Scanner in = new Scanner(System.in);
 		ConditionalStructureExercice sc = new ConditionalStructureExercice();
 		StringText msg = new StringText();
-		char cont = ' ';
 		int n;
 
 		do {
@@ -22,6 +21,10 @@ public class ConditionalStructureController {
 			n = in.nextInt();
 			
 			switch (n) {
+			case 0:{
+				InitialController.menuInitial();
+				break;
+			}
 			case 1: {
 				sc.exercice01();
 				break;
@@ -75,14 +78,10 @@ public class ConditionalStructureController {
 				break;
 			}
 			default:
-				throw new IllegalArgumentException("Unexpected value: " + n);
-
+				InitialController.menuInitial();
 			}
 
-			System.out.print(msg.mensage[24]);
-			cont = in.next().charAt(0);
-
-		} while (cont != 'n');
+		} while (n != 0);
 
 		in.close();
 	}

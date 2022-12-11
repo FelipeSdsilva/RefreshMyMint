@@ -40,7 +40,7 @@ public class ArrayExercice {
 	public void exercice02() {
 
 		double[] vecD = new double[0];
-		int sum = 0;
+		double sum = 0;
 
 		Locale.setDefault(Locale.US);
 		System.out.print(msg.array[0]);
@@ -194,7 +194,6 @@ public class ArrayExercice {
 
 	public void exercice07() {
 
-		int[] vec = new int[0];
 		double[] vecD = new double[0];
 		double sum = 0;
 
@@ -212,9 +211,10 @@ public class ArrayExercice {
 		System.out.println(msg.array[6] + String.format("%.3f", sum / cont));
 		System.out.println(msg.array[7]);
 
+		
 		for (int i = 0; i < vecD.length; i++) {
 			if (vecD[i] < sum / cont) {
-				System.out.println(vec[i]);
+				System.out.println(vecD[i]);
 			}
 		}
 	}

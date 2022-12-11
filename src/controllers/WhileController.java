@@ -12,7 +12,6 @@ public class WhileController {
 		WhileExercice wl = new WhileExercice();
 		Scanner in = new Scanner(System.in);
 		StringText msg = new StringText();
-		char cont = ' ';
 		int n;
 
 		do {
@@ -57,14 +56,15 @@ public class WhileController {
 				wl.exercice09();
 				break;
 			}
+			case 0:{
+				InitialController.menuInitial();
+				break;
+			}
 			default:
-				throw new IllegalArgumentException("Unexpected value: " + n);
+				InitialController.menuInitial();
 			}
 
-			System.out.print(msg.mensage[24]);
-			cont = in.next().charAt(0);
-
-		} while (cont != 'n');
+		} while (n != 0);
 
 		in.close();
 	}

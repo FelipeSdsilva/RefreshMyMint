@@ -5,22 +5,20 @@ import java.util.Scanner;
 import exercicies.SequentialStructureExercice;
 import views.StringText;
 
-
 public class SequentialStrutureController {
 
 	public static void menuExerciciesSequential() {
-		
-		SequentialStructureExercice ss =  new SequentialStructureExercice();
+
+		SequentialStructureExercice ss = new SequentialStructureExercice();
 		Scanner in = new Scanner(System.in);
 		StringText msg = new StringText();
-		char cont = ' ';
 		int n;
-		
+
 		do {
-			
+
 			System.out.print(msg.menuSeq[0]);
 			n = in.nextInt();
-			
+
 			switch (n) {
 			case 1: {
 				ss.exercice01();
@@ -62,16 +60,16 @@ public class SequentialStrutureController {
 				ss.exercice10();
 				break;
 			}
+			case 0:{
+				InitialController.menuInitial();
+				break;
+			}
 			default:
-				throw new IllegalArgumentException("Unexpected value: " + n);
-
+				InitialController.menuInitial();
 			}
 			
-			System.out.print(msg.mensage[24]);
-			cont = in.next().charAt(0);
-			
-		} while (cont != 'n');
-		
+		} while (n != 0);
+
 		in.close();
 	}
 }

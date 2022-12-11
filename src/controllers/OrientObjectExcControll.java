@@ -12,7 +12,6 @@ public class OrientObjectExcControll {
 		OrientationObjectExercice or = new OrientationObjectExercice();
 		Scanner in = new Scanner(System.in);
 		StringText msg = new StringText();
-		char cont = ' ';
 		int n;
 
 		do {
@@ -46,15 +45,15 @@ public class OrientObjectExcControll {
 				or.resolvProblemWithOrientationObject();
 				break;
 			}
-			default:
-				throw new IllegalArgumentException("Unexpected value: " + n);
-
+			case 0:{
+				InitialController.menuInitial();
+				break;
 			}
-
-			System.out.print(msg.mensage[24]);
-			cont = in.next().charAt(0);
+			default:
+				InitialController.menuInitial();
+			}
 			
-		} while (cont != 'n');
+		} while (n != 0);
 
 		in.close();
 	}

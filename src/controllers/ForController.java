@@ -21,10 +21,6 @@ public class ForController {
 			n = in.nextInt();
 
 			switch (n) {
-			case 0: {
-				exFor.exercice00();
-				break;
-			}
 			case 1: {
 				exFor.exercice00();
 				break;
@@ -53,14 +49,16 @@ public class ForController {
 				exFor.exercice07();
 				break;
 			}
-			default:
-				throw new IllegalArgumentException("Unexpected value: " + n);
+			case 0:{
+				InitialController.menuInitial();
+				break;
 			}
-
-			System.out.print(msg.mensage[24]);
-			cont = in.next().charAt(0);
-
-		} while (cont != 'n');
+			default:
+				InitialController.menuInitial();	
+			}
+		} while (cont != 0);
+		
+		
 
 		in.close();
 	}
