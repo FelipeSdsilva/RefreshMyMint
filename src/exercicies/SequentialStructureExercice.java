@@ -8,7 +8,7 @@ import entities.Product;
 import statics.StaticFixation;
 import views.StringText;
 
-public class SequentialStructure {
+public class SequentialStructureExercice {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();

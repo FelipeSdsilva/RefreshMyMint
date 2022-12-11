@@ -3,7 +3,7 @@ package exercicies;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class For {
+public class ForExercice {
 
 	Scanner in = new Scanner(System.in);
 	int n, i;

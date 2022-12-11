@@ -6,11 +6,10 @@ import java.util.Scanner;
 import entities.Person;
 import views.StringText;
 
-public class Array {
+public class ArrayExercice {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
-
 
 	int cont;
 

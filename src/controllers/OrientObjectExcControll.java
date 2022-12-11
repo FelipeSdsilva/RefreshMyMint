@@ -2,14 +2,14 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.ArrayExercice;
+import exercicies.OrientationObjectExercice;
 import views.StringText;
 
-public class ArrayController {
+public class OrientObjectExcControll {
 
-	public static void menuExercicesArray() {
+	public static void menuExerOrientationObject() {
 
-		ArrayExercice arr = new ArrayExercice();
+		OrientationObjectExercice or = new OrientationObjectExercice();
 		Scanner in = new Scanner(System.in);
 		StringText msg = new StringText();
 		char cont = ' ';
@@ -17,62 +17,45 @@ public class ArrayController {
 
 		do {
 
-			System.out.print(msg.menuArr[0]);
+			System.out.print(msg.menuArr);
 			n = in.nextInt();
 
 			switch (n) {
 			case 1: {
-				arr.exercice01();
+				or.accountExercicie();
+				;
 				break;
 			}
 			case 2: {
-				arr.exercice02();
+				or.employeeExercicie();
 				break;
 			}
 			case 3: {
-				arr.exercice03();
+				or.estudentExercicie();
 				break;
 			}
 			case 4: {
-				arr.exercice04();
+				or.fixedExercicieString();
 				break;
 			}
 			case 5: {
-				arr.exercice05();
+				or.rectangleExercicie();
 				break;
 			}
 			case 6: {
-				arr.exercice06();
-				break;
-			}
-			case 7: {
-				arr.exercice07();
-				break;
-			}
-			case 8: {
-				arr.exercice08();
-				break;
-			}
-			case 9: {
-				arr.exercice09();
-				break;
-			}
-			case 10: {
-				arr.exercice10();
-				break;
-			}
-			case 11: {
-				arr.exercice11();
+				or.resolvProblemWithOrientationObject();
 				break;
 			}
 			default:
 				throw new IllegalArgumentException("Unexpected value: " + n);
+
 			}
 
 			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);
 			
 		} while (cont != 'n');
+
 		in.close();
 	}
 }

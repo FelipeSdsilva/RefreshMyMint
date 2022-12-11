@@ -5,7 +5,7 @@ import java.util.Scanner;
 import statics.StaticFixation;
 import views.StringText;
 
-public class ConditionalStructure {
+public class ConditionalStructureExercice {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();

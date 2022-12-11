@@ -2,14 +2,12 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.ArrayExercice;
 import views.StringText;
 
-public class ArrayController {
+public class InitialController {
 
-	public static void menuExercicesArray() {
+	public static void menuInitial() {
 
-		ArrayExercice arr = new ArrayExercice();
 		Scanner in = new Scanner(System.in);
 		StringText msg = new StringText();
 		char cont = ' ';
@@ -17,52 +15,32 @@ public class ArrayController {
 
 		do {
 
-			System.out.print(msg.menuArr[0]);
+			System.out.print("");
 			n = in.nextInt();
 
 			switch (n) {
 			case 1: {
-				arr.exercice01();
+				ArrayController.menuExercicesArray();
 				break;
 			}
 			case 2: {
-				arr.exercice02();
+				ConditionalStructureController.menuExerciceConditional();
 				break;
 			}
 			case 3: {
-				arr.exercice03();
+				ForController.menuExerciceFor();
 				break;
 			}
 			case 4: {
-				arr.exercice04();
+				OrientObjectExcControll.menuExerOrientationObject();
 				break;
 			}
 			case 5: {
-				arr.exercice05();
+				SequentialStrutureController.menuExerciceSequential();
 				break;
 			}
 			case 6: {
-				arr.exercice06();
-				break;
-			}
-			case 7: {
-				arr.exercice07();
-				break;
-			}
-			case 8: {
-				arr.exercice08();
-				break;
-			}
-			case 9: {
-				arr.exercice09();
-				break;
-			}
-			case 10: {
-				arr.exercice10();
-				break;
-			}
-			case 11: {
-				arr.exercice11();
+				WhileController.menuExercicesWhile();
 				break;
 			}
 			default:
@@ -71,8 +49,9 @@ public class ArrayController {
 
 			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);
-			
+
 		} while (cont != 'n');
+
 		in.close();
 	}
 }

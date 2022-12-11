@@ -2,88 +2,76 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.ConditionalStructureExercice;
+import exercicies.SequentialStructureExercice;
 import views.StringText;
 
-public class ConditionalStructureController {
 
+public class SequentialStrutureController {
 
-	public static void menuExerciceConditional() {
-
+	public static void menuExerciceSequential() {
+		
+		SequentialStructureExercice ss =  new SequentialStructureExercice();
 		Scanner in = new Scanner(System.in);
-		ConditionalStructureExercice sc = new ConditionalStructureExercice();
 		StringText msg = new StringText();
 		char cont = ' ';
 		int n;
-
+		
 		do {
 			
-			System.out.print(msg.menuCond);
+			System.out.print(msg.menuSeq);
 			n = in.nextInt();
 			
 			switch (n) {
 			case 1: {
-				sc.exercice01();
+				ss.exercice01();
 				break;
 			}
 			case 2: {
-				sc.exercice02();
+				ss.exercice02();
 				break;
 			}
 			case 3: {
-				sc.exercice03();
+				ss.exercice03();
 				break;
 			}
 			case 4: {
-				sc.exercice04();
+				ss.exercice04();
 				break;
 			}
 			case 5: {
-				sc.exercice05();
+				ss.exercice05();
 				break;
 			}
 			case 6: {
-				sc.exercice06();
+				ss.exercice06();
 				break;
 			}
 			case 7: {
-				sc.exercice07();
+				ss.exercice07();
 				break;
 			}
 			case 8: {
-				sc.exercice08();
+				ss.exercice08();
 				break;
 			}
 			case 9: {
-				sc.exercice09();
+				ss.exercice09();
 				break;
 			}
 			case 10: {
-				sc.exercice10();
-				break;
-			}
-			case 11: {
-				sc.exercice11();
-				break;
-			}
-			case 12: {
-				sc.exercice12();
-				break;
-			}
-			case 13: {
-				sc.exercice13();
+				ss.exercice10();
 				break;
 			}
 			default:
 				throw new IllegalArgumentException("Unexpected value: " + n);
 
 			}
-
+			
 			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);
-
+			
 		} while (cont != 'n');
-
+		
 		in.close();
 	}
 }

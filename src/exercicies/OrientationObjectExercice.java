@@ -12,7 +12,7 @@ import entities.Student;
 import entities.Triangle;
 import views.StringText;
 
-public class OrientationObject {
+public class OrientationObjectExercice {
 
 	Scanner sc = new Scanner(System.in);
 

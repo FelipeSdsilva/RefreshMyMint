@@ -5,7 +5,7 @@ import java.util.Scanner;
 import statics.StaticFixation;
 import views.StringText;
 
-public class While {
+public class WhileExercice {
 
 	StringText msg = new StringText();
 	Scanner in = new Scanner(System.in);

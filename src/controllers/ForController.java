@@ -2,56 +2,66 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.For;
+import exercicies.ForExercice;
+import views.StringText;
 
 public class ForController {
 
-	@SuppressWarnings("resource")
-public static void menuExerciceFor(int n) {
-		
+	public static void menuExerciceFor() {
+
+		StringText msg = new StringText();
 		Scanner in = new Scanner(System.in);
-		For exFor = new For();
+		ForExercice exFor = new ForExercice();
+		char cont = ' ';
+		int n;
 
-		n = in.nextInt();
+		do {
 
-		switch (n) {
-		case 0: {
-			exFor.exercice00();
-			break;
-		}
-		case 1: {
-			exFor.exercice01();
-			break;
-		}
-		case 2: {
-			exFor.exercice02();
-			break;
-		}
-		case 3: {
-			exFor.exercice03();
-			break;
-		}
-		case 4: {
-			exFor.exercice04();
-			break;
-		}
-		case 5: {
-			exFor.exercice05();
-			break;
-		}
-		case 6: {
-			exFor.exercice06();
-			break;
-		}
-		case 7: {
-			exFor.exercice07();
-			break;
-		}
-		default:
-			throw new IllegalArgumentException("Unexpected value: " + n);
-		
-		}
-		
+			System.out.print(msg.menuFor);
+			n = in.nextInt();
+
+			switch (n) {
+			case 0: {
+				exFor.exercice00();
+				break;
+			}
+			case 1: {
+				exFor.exercice01();
+				break;
+			}
+			case 2: {
+				exFor.exercice02();
+				break;
+			}
+			case 3: {
+				exFor.exercice03();
+				break;
+			}
+			case 4: {
+				exFor.exercice04();
+				break;
+			}
+			case 5: {
+				exFor.exercice05();
+				break;
+			}
+			case 6: {
+				exFor.exercice06();
+				break;
+			}
+			case 7: {
+				exFor.exercice07();
+				break;
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + n);
+			}
+
+			System.out.print(msg.mensage[24]);
+			cont = in.next().charAt(0);
+
+		} while (cont != 'n');
+
 		in.close();
 	}
 }
