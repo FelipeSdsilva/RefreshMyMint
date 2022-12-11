@@ -21,10 +21,11 @@ public class App {
 
 		Array arr = new Array();
 		ConditionalStructure cs = new ConditionalStructure();
+		For sf = new For();
 		OrientationObject or = new OrientationObject();
 		SequentialStructure ss = new SequentialStructure();
 		While sw = new While();
-		For sf = new For();
+		
 		
 		// arr.exercice08();
 		cs.exercice07();

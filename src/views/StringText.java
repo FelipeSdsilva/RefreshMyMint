@@ -30,8 +30,7 @@ public class StringText {
 			"is ", // 3
 			"Which percentage to increase salary?",// 4
 	};
-	public String[] mensage = { 
-			"""
+	public String[] mensage = { """
 			Products;
 			%s, which price is $ %.2f
 			%s, which price is $ %.2f
@@ -48,10 +47,10 @@ public class StringText {
 			"Enter the measure B: ", // 5
 			"Enter the measure C: ", // 6
 			"""
-			SQUARE: %.4f
-			TRIANGLE: %.4f
-			TRAPEZE: %.4f
-			""", // 7
+					SQUARE: %.4f
+					TRIANGLE: %.4f
+					TRAPEZE: %.4f
+					""", // 7
 			"Write duration in seconds: ", // 8
 			"Coefficient a: ", // 9
 			"Coefficient b: ", // 10
@@ -66,13 +65,73 @@ public class StringText {
 			"Write three distance: ", // 19
 			"smaller number: ", // 20
 			"Bigger Distance = %.2f", // 21
-			"Enter with three numbens: ",//22
-			"High: ",//23
-			"Restart the program (Y/N)?",//24
-			"Equivalent in Fahrenheit: ",//25
-			"White the temperature in Celcios: ",
-			"White the temperature in Fahrenheint: "
-			};
+			"Enter with three numbens: ", // 22
+			"High: ", // 23
+			"Restart the program (Y/N)?", // 24
+			"Equivalent in Fahrenheit: ", // 25
+			"White the temperature in Celcios: ", "White the temperature in Fahrenheint: " };
+	public String[] menuArr = { """
+			Exercice 01 -
+			Exercice 02 -
+			Exercice 03 -
+			Exercice 04 -
+			Exercice 05 -
+			Exercice 06 -
+			Exercice 07 -
+			Exercice 08 -
+			Exercice 09 -
+			Exercice 10 -
+			Exercice 11 -
+			""" };
+	public String[] menuCond = { """
+			Exercice 01 -
+			Exercice 02 -
+			Exercice 03 -
+			Exercice 04 -
+			Exercice 05 -
+			Exercice 06 -
+			Exercice 07 -
+			Exercice 08 -
+			Exercice 09 -
+			Exercice 10 -
+			Exercice 11 -
+			Exercice 12 -
+			Exercice 13 -
+			""" };
+	public String[] menuFor = { """
+			Exercice 00 -
+			Exercice 01 -
+			Exercice 02 -
+			Exercice 03 -
+			Exercice 04 -
+			Exercice 05 -
+			Exercice 06 -
+			Exercice 07 -
+			""" };
+	public String[] menuSeq = { """
+			Exercice 01 -
+			Exercice 02 -
+			Exercice 03 -
+			Exercice 04 -
+			Exercice 05 -
+			Exercice 06 -
+			Exercice 07 -
+			Exercice 08 -
+			Exercice 09 -
+			Exercice 10 -
+			Exercice 11 -
+			""" };
+	public String[] menuWhile = { """
+			Exercice 01 -
+			Exercice 02 -
+			Exercice 03 -
+			Exercice 04 -
+			Exercice 05 -
+			Exercice 06 -
+			Exercice 07 -
+			Exercice 08 -
+			Exercice 09 -
+			""" };
 	public String[] person = { "How many persons will you type? ", // 0
 			"Date of ", // 1
 			"a person: ", // 2
@@ -129,4 +188,5 @@ public class StringText {
 			"Enter the measures of triangle x: ", // 5
 			"Enter the measures of triangle y: ",// 6
 	};
+
 }
