@@ -12,41 +12,37 @@ public class InitialController {
 		StringText msg = new StringText();
 		int n;
 
-		do {
+		System.out.print(msg.menuIn[0]);
+		n = in.nextInt();
 
-			System.out.print(msg.menuIn[0]);
-			n = in.nextInt();
-
-			switch (n) {
-			case 1: {
-				ArrayController.menuExerciciesArray();
-				break;
-			}
-			case 2: {
-				ConditionalStructureController.menuExerciciesConditional();
-				break;
-			}
-			case 3: {
-				ForController.menuExerciciesFor();
-				break;
-			}
-			case 4: {
-				OrientObjectExcControll.menuExerOrientationObject();
-				break;
-			}
-			case 5: {
-				SequentialStrutureController.menuExerciciesSequential();
-				break;
-			}
-			case 6: {
-				WhileController.menuExerciciesWhile();
-				break;
-			}
-			default:
-				InitialController.menuInitial();
-			}
-
-		} while (n != 0);
+		switch (n) {
+		case 1: {
+			ArrayController.menuExerciciesArray();
+			break;
+		}
+		case 2: {
+			ConditionalStructureController.menuExerciciesConditional();
+			break;
+		}
+		case 3: {
+			ForController.menuExerciciesFor();
+			break;
+		}
+		case 4: {
+			OrientObjectExcControll.menuExerOrientationObject();
+			break;
+		}
+		case 5: {
+			SequentialStrutureController.menuExerciciesSequential();
+			break;
+		}
+		case 6: {
+			WhileController.menuExerciciesWhile();
+			break;
+		}
+		default:
+			System.out.println(msg.mensage[30]);
+		}
 
 		in.close();
 	}

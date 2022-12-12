@@ -69,13 +69,16 @@ public class StringText {
 			"High: ", // 23
 			"Restart the program (Y/N)?", // 24
 			"Temperature equivalent in Fahrenheit: ", // 25
-			"Write the temperature in Celcius: ",
-			"Write the temperature in Fahrenheint: ",
-			"You go write a temperature in when scale (C/F)? ",
-			"Temperature equivalent in Celcius: ",
+			"Write the temperature in Celcius: ",//26
+			"Write the temperature in Fahrenheint: ",//27
+			"You go write a temperature in when scale (C/F)? ",//28
+			"Temperature equivalent in Celcius: ",//29
+			"Thanks for the using",//30
 	};
 	public String[] menuArr = { """
-				 Exercices Array
+			
+			Exercices Array
+			
 			Exercice 01 - negativos DevSuperior//OK
 			Exercice 02 - soma_vetor DevSuperior//OK
 			Exercice 03 - alturas Devsuperior//OK
@@ -90,7 +93,9 @@ public class StringText {
 				 0  - Initial menu
 			""" };
 	public String[] menuCond = { """
-				 Exercices conditional structure
+			
+			Exercices conditional structure
+			
 			Exercice 01 - notas ok
 			Exercice 02 - baskara ok
 			Exercice 03 - menor_de_tres ok
@@ -98,7 +103,7 @@ public class StringText {
 			Exercice 05 - troco_verificado ok
 			Exercice 06 - glicose ok
 			Exercice 07 - dardo ok
-			Exercice 08 - temperatura falta
+			Exercice 08 - temperatura ok
 			Exercice 09 - lanchonete falta
 			Exercice 10 - são_multiplos
 			Exercice 11 - aumento falta
@@ -107,7 +112,9 @@ public class StringText {
 				 0  - Initial menu
 			""" };
 	public String[] menuFor = { """
-				 Exercices of repetition For
+			
+			Exercices of repetition For
+			
 			Exercice 00 - tabuada DevSuperior // Falta
 			Exercice 01 - soma_impares DevSuperior //
 			Exercice 02 - sequencia_impares DevSuperior//Falta || Udemy//Ok
@@ -119,8 +126,10 @@ public class StringText {
 				 0  - Initial menu
 			""" };
 	public String[] menuIn = { """
+			
 			Welcome to my exercicies of resolved in modules
 				DevSuperior and Udemy.
+			
 			1 - Exercices Array
 			2 - Exercices Conditional Structure
 			3 - Exercices For
@@ -130,7 +139,9 @@ public class StringText {
 			0 - Exit
 			""" };
 	public String[] menuSeq = { """
-				 Exercices Sequential Structure
+			
+			Exercices Sequential Structure
+			
 			Exercice 01 - terreno ok
 			Exercice 02 - retangulo ok
 			Exercice 03 - idades ok
@@ -145,7 +156,9 @@ public class StringText {
 				 0  - Initial menu
 			""" };
 	public String[] menuWhile = { """
-				Exercices of repetition while
+			
+			Exercices of repetition while
+			
 			Exercice 01 -
 			Exercice 02 -
 			Exercice 03 -
@@ -180,7 +193,9 @@ public class StringText {
 			"Enter with unit price of product: ", // 5
 			"Enter the quantity purchased: ", // 6
 			"Money received: ", // 7
-			"Change: "// 8
+			"Change: ",// 8
+			"Total value for pay: R$ ",//9
+			"Enter the code of product acquired: ",//10
 	};
 	public String[] rectangle = { "Enter rectangle width and height: ", // 0
 			"Base of rectangle: ", // 1

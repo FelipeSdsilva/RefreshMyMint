@@ -128,7 +128,16 @@ public class ConditionalStructureExercice {
 	}
 
 	public void exercice09() {
-
+		
+		int codProd, qtd;
+		
+		System.out.print(msg.product[10]);
+		codProd = in.nextInt();
+		System.out.print(msg.product[6]);
+		qtd = in.nextInt();
+		
+		System.out.print(msg.product[9]);
+		FixationStatic.totalOrderPriceSnackBar(codProd, qtd);
 	}
 
 	public void exercice10() {

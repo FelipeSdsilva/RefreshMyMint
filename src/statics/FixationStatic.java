@@ -28,9 +28,9 @@ public class FixationStatic {
 	}
 
 	public static void smallerBetweeThreeNumbers(int a, int b, int c) {
-		
+
 		StringText msg = new StringText();
-		
+
 		if (a < b && a < c) {
 			System.out.println(msg.mensage[20] + a);
 		} else if (b < c && b < a) {
@@ -41,9 +41,9 @@ public class FixationStatic {
 	}
 
 	public static void biggerDistance(double a, double b, double c) {
-		
+
 		StringText msg = new StringText();
-		
+
 		if (a > b && a > c) {
 			System.out.println(String.format(msg.mensage[21], a));
 		} else if (b > c) {
@@ -87,4 +87,20 @@ public class FixationStatic {
 		}
 		return temp;
 	}
+
+	public static void totalOrderPriceSnackBar(int codProd, int qtd) {
+
+		if (codProd == 1) {
+			System.out.printf("%.2f%n", 5.00 * qtd);
+		} else if (codProd == 2) {
+			System.out.printf("%.2f%n", 3.50 * qtd);
+		} else if (codProd == 3) {
+			System.out.printf("%.2f%n", 4.80 * qtd);
+		} else if (codProd == 4) {
+			System.out.printf("%.2f%n", 8.90 * qtd);
+		} else {
+			System.out.printf("%.2f%n", 7.32 * qtd);
+		}
+	}
+
 }
