@@ -29,7 +29,6 @@ public class ForExercice {
 			}
 		}
 	}
-	
 
 	public void exercice03() {
 
@@ -77,7 +76,6 @@ public class ForExercice {
 			System.out.println(String.format("%.1f", md[i]));
 		}
 	}
-	
 
 	public void exercice05() {
 

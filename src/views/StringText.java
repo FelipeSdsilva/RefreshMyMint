@@ -88,14 +88,14 @@ public class StringText {
 			
 			Exercices Array
 			
-			Exercice 01 - negativos DevSuperior//OK
-			Exercice 02 - soma_vetor DevSuperior//OK
-			Exercice 03 - alturas Devsuperior//OK
-			Exercice 04 - numeros_pares DevSuperior//Ok
-			Exercice 05 - maior_posicao DevSuperior//Ok
-			Exercice 06 - soma_vetores DevSuperior//Ok
-			Exercice 07 - abaixo_da_media Dev
-			Exercice 08 - media_pares
+			Exercice 01 - negativos || DevSuperior Ok || 
+			Exercice 02 - soma_vetor || DevSuperior Ok || 
+			Exercice 03 - alturas Devsuperior || DevSuperior Ok || 
+			Exercice 04 - numeros_pares DevSuperior || DevSuperior Ok || 
+			Exercice 05 - maior_posicao DevSuperior || DevSuperior Ok || 
+			Exercice 06 - soma_vetores DevSuperior || DevSuperior Ok || 
+			Exercice 07 - abaixo_da_media || DevSuperior Ok || 
+			Exercice 08 - media_pares || DevSuperior Ok || 
 			Exercice 09 - mais_velho
 			Exercice 10 - aprovados
 			Exercice 11 - dados_pessoas DevSuperior//Falta
@@ -105,19 +105,19 @@ public class StringText {
 			
 			Exercices conditional structure
 			
-			Exercice 01 - notas ok
-			Exercice 02 - baskara ok
-			Exercice 03 - menor_de_tres ok
-			Exercice 04 - operadora ok
-			Exercice 05 - troco_verificado ok
-			Exercice 06 - glicose ok
-			Exercice 07 - dardo ok
-			Exercice 08 - temperatura ok
-			Exercice 09 - lanchonete falta
-			Exercice 10 - são_multiplos
-			Exercice 11 - aumento falta
-			Exercice 12 - tempo_de_jogo falta
-			Exercice 13 - coordenadas falta
+			Exercice 01 - notas || DevSuperior Ok || 
+			Exercice 02 - baskara || DevSuperior Ok || 
+			Exercice 03 - menor_de_tres || DevSuperior Ok || 
+			Exercice 04 - operadora || DevSuperior Ok || 
+			Exercice 05 - troco_verificado || DevSuperior Ok || 
+			Exercice 06 - glicose || DevSuperior Ok || 
+			Exercice 07 - dardo || DevSuperior Ok || 
+			Exercice 08 - temperatura || DevSuperior Ok || 
+			Exercice 09 - lanchonete || DevSuperior Ok || 
+			Exercice 10 - são_multiplos || DevSuperior Ok || 
+			Exercice 11 - aumento falta || DevSuperior Ok || 
+			Exercice 12 - tempo_de_jogo || DevSuperior Ok || 
+			Exercice 13 - coordenadas || DevSuperior Ok || 
 				 0  - Initial menu
 			""" };
 	public String[] menuFor = { """

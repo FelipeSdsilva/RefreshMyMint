@@ -79,6 +79,27 @@ public class ConditionalStatic {
 		}
 	}
 
+	public static void planCartesian(double x, double y) {
+		
+		if (x >= 1 && y >= 1) {
+			System.out.println("Q1");
+		} else if (x <= -1 && y >= 1) {
+			System.out.println("Q2");
+		} else if (x <= -1 && y <= -1) {
+			System.out.println("Q3");
+		} else if (x >= 1 && y <= -1) {
+			System.out.println("Q4");
+		} else if (x == 0 && y == 0) {
+			System.out.println("Origin");
+		} else if (y == 0 && x >= 1) {
+			System.out.println("Axle X");
+		}else {
+			System.out.println("Axle y");
+		}
+		
+	
+	}
+
 	public static void quantityOfGlucose(double avgGlu) {
 
 		if (avgGlu <= 100.0) {
@@ -119,12 +140,13 @@ public class ConditionalStatic {
 	}
 
 	public static double valueContOfTellOperator(int min) {
-		
+
 		double value = 50.00;
-		
+
 		if (min <= 100) {
 			return value;
 		}
 		return value += (min - 100) * 2.00;
 	}
+
 }

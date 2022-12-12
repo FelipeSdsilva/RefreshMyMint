@@ -79,10 +79,10 @@ public class ConditionalStructureExercice {
 
 		System.out.print(msg.product[5]);
 		price = in.nextDouble();
-		
+
 		System.out.print(msg.product[6]);
 		qtd = in.nextInt();
-		
+
 		System.out.print(msg.product[7]);
 		money = in.nextDouble();
 
@@ -145,7 +145,7 @@ public class ConditionalStructureExercice {
 	public void exercice10() {
 
 		int a, b;
-		
+
 		System.out.println(msg.mensage[31]);
 		a = in.nextInt();
 		b = in.nextInt();
@@ -178,14 +178,14 @@ public class ConditionalStructureExercice {
 
 	public void exercice13() {
 
-		int x, y;
-		
+		double x = 0, y = 0;
+
 		System.out.print(msg.xAndY[0]);
-		x = in.nextInt();
-		
+		x = in.nextDouble();
+
 		System.out.print(msg.xAndY[1]);
-		y = in.nextInt();
-		
-		
+		y = in.nextDouble();
+
+		ConditionalStatic.planCartesian(x, y);		
 	}
 }
