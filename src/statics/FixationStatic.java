@@ -103,4 +103,45 @@ public class FixationStatic {
 		}
 	}
 
+	public static void areMultiples(int a, int b) {
+		if (a % b == 0) {
+			System.out.println("Are multiples ");
+		} else {
+			System.out.println("Not are multiples ");
+		}
+	}
+
+	public static void increasySalary(double salary) {
+
+		StringText msg = new StringText();
+		double newSalary;
+
+		if (salary <= 1000.00) {
+
+			newSalary = salary * 1.20;
+
+			System.out.println(msg.employee[5] + String.format("%.2f", newSalary) + "\n" + msg.employee[6]
+					+ String.format("%.2f", newSalary - salary) + "\n" + msg.employee[7] + "20%");
+		} else if (salary > 1000.00 && salary <= 3000.00) {
+			
+			newSalary = salary * 1.15;
+
+			System.out.println(msg.employee[5] + String.format("%.2f", newSalary) + "\n" + msg.employee[6]
+					+ String.format("%.2f", newSalary - salary) + "\n" + msg.employee[7] + "15%");
+		} else if (salary > 3000.00 && salary <= 8000.00) {
+
+			newSalary = salary * 1.10;
+
+			System.out.println(msg.employee[5] + String.format("%.2f", newSalary) + "\n" + msg.employee[6]
+					+ String.format("%.2f", newSalary - salary) + "\n" + msg.employee[7] + "10%");
+
+		} else {
+
+			newSalary = salary * 1.05;
+
+			System.out.println(msg.employee[5] + String.format("%.2f", newSalary) + "\n" + msg.employee[6]
+					+ String.format("%.2f", newSalary - salary) + "\n" + msg.employee[7] + "5%");
+
+		}
+	}
 }

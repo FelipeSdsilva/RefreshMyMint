@@ -29,6 +29,10 @@ public class StringText {
 			"The payment for ", // 2
 			"is ", // 3
 			"Which percentage to increase salary?",// 4
+			"New salary = R$ ",//5
+			"Increasy = R$ ",//6
+			"Percentege = ",//7
+			"Write the salary of person: "
 	};
 	public String[] mensage = { """
 			Products;
@@ -74,6 +78,7 @@ public class StringText {
 			"You go write a temperature in when scale (C/F)? ",//28
 			"Temperature equivalent in Celcius: ",//29
 			"Thanks for the using",//30
+			"Enter with two numbers: ",//31
 	};
 	public String[] menuArr = { """
 			

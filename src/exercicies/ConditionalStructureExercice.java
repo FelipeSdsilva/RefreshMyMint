@@ -128,24 +128,37 @@ public class ConditionalStructureExercice {
 	}
 
 	public void exercice09() {
-		
+
 		int codProd, qtd;
-		
+
 		System.out.print(msg.product[10]);
 		codProd = in.nextInt();
 		System.out.print(msg.product[6]);
 		qtd = in.nextInt();
-		
+
 		System.out.print(msg.product[9]);
 		FixationStatic.totalOrderPriceSnackBar(codProd, qtd);
 	}
 
 	public void exercice10() {
 
+		int a, b;
+		System.out.println(msg.mensage[31]);
+		a = in.nextInt();
+		b = in.nextInt();
+
+		FixationStatic.areMultiples(a, b);
 	}
 
 	public void exercice11() {
-
+		
+		double salary;
+		
+		System.out.print(msg.employee[8]);
+		salary = in.nextDouble();
+		
+		FixationStatic.increasySalary(salary);
+		
 	}
 
 	public void exercice12() {
