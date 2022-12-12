@@ -2,7 +2,8 @@ package exercicies;
 
 import java.util.Scanner;
 
-import statics.StaticFixation;
+import statics.FixationStatic;
+import statics.SumStatic;
 import views.StringText;
 
 public class ConditionalStructureExercice {
@@ -18,7 +19,7 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.student[1]);
 		av2 = in.nextDouble();
 
-		sum = StaticFixation.sumTwoNumbersDoub(av1, av2);
+		sum = SumStatic.sumTwoNumbersDoub(av1, av2);
 
 		String resp = (sum < 60) ? msg.student[3] : "";
 
@@ -36,10 +37,10 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.mensage[11]);
 		c = in.nextDouble();
 
-		delt = StaticFixation.formOfBaskara(a, b, c);
+		delt = FixationStatic.formOfBaskara(a, b, c);
 
-		x1 = StaticFixation.positiveValueBaskara(a, b, delt);
-		x2 = StaticFixation.negativeValueBaskara(a, b, delt);
+		x1 = FixationStatic.positiveValueBaskara(a, b, delt);
+		x2 = FixationStatic.negativeValueBaskara(a, b, delt);
 
 		String result = !(x1 != Double.NaN && x2 != Double.NaN) ? msg.mensage[12]
 				: msg.xAndY[3] + String.format("%.4f", x1) + "\n" + msg.xAndY[4] + String.format("%.4f", x2);
@@ -57,7 +58,7 @@ public class ConditionalStructureExercice {
 		b = in.nextInt();
 		System.out.print(msg.mensage[15]);
 		c = in.nextInt();
-		StaticFixation.smallerBetweeThreeNumbers(a, b, c);
+		FixationStatic.smallerBetweeThreeNumbers(a, b, c);
 	}
 
 	public void exercice04() {
@@ -67,7 +68,7 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.mensage[16]);
 		min = in.nextInt();
 
-		System.out.println(msg.mensage[17] + String.format("%.2f", StaticFixation.valueContOfTellOperator(min)));
+		System.out.println(msg.mensage[17] + String.format("%.2f", FixationStatic.valueContOfTellOperator(min)));
 	}
 
 	public void exercice05() {
@@ -82,9 +83,9 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.product[7]);
 		money = in.nextDouble();
 
-		totalValue = StaticFixation.converterDollar(price, (double) qtd);
+		totalValue = FixationStatic.converterDollar(price, (double) qtd);
 
-		StaticFixation.changeVerification(money, totalValue);
+		FixationStatic.changeVerification(money, totalValue);
 
 	}
 
@@ -93,7 +94,7 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.mensage[18]);
 		avgGlu = in.nextDouble();
 
-		StaticFixation.quantityOfGlucose(avgGlu);
+		FixationStatic.quantityOfGlucose(avgGlu);
 	}
 
 	public void exercice07() {
@@ -104,11 +105,26 @@ public class ConditionalStructureExercice {
 		b = in.nextDouble();
 		c = in.nextDouble();
 
-		StaticFixation.biggerDistance(a, b, c);
+		FixationStatic.biggerDistance(a, b, c);
 	}
 
 	public void exercice08() {
-		
+
+		char scale;
+		double temp;
+
+		System.out.print(msg.mensage[28]);
+		scale = in.next().charAt(0);
+
+		String result = (scale == 'C') ? msg.mensage[26] : msg.mensage[27];
+
+		System.out.print(result);
+		temp = in.nextDouble();
+
+		String result1 = (scale == 'C') ? msg.mensage[25] : msg.mensage[29];
+
+		System.out.println(
+				result1 + String.format("%.2f", FixationStatic.convertTemperatureCelciusAndFahrenheit(scale, temp)));
 	}
 
 	public void exercice09() {

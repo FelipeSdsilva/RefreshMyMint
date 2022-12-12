@@ -2,7 +2,7 @@ package statics;
 
 import views.StringText;
 
-public class StaticFixation {
+public class FixationStatic {
 
 	public static double converterDollar(double priceDollar, double money) {
 		return priceDollar * money;
@@ -10,14 +10,6 @@ public class StaticFixation {
 
 	public static double diameterOfRectangle(double base, double higth) {
 		return Math.pow(base, 2) + Math.pow(higth, 2);
-	}
-
-	public static int sumBetweeTwoNumbersInteger(int a, int b) {
-		return a + b;
-	}
-
-	public static double sumTwoNumbersDoub(double a, double b) {
-		return a + b;
 	}
 
 	public static double formOfBaskara(double a, double b, double c) {
@@ -88,10 +80,10 @@ public class StaticFixation {
 	}
 
 	public static double convertTemperatureCelciusAndFahrenheit(char escFahOrCel, double temp) {
-		if (escFahOrCel == 'F' ||  escFahOrCel == ' ') {
+		if (escFahOrCel == 'C' || escFahOrCel == ' ') {
 			return temp = (temp * 9 / 5) + 32;
-		} else if (escFahOrCel == 'C') {
-			return temp = (temp - 32) * (5 / 9);
+		} else if (escFahOrCel == 'F') {
+			return temp = (temp - 32) * 5 / 9;
 		}
 		return temp;
 	}

@@ -2,7 +2,7 @@ package exercicies;
 
 import java.util.Scanner;
 
-import statics.StaticFixation;
+import statics.FixationStatic;
 import views.StringText;
 
 public class WhileExercice {
@@ -128,7 +128,7 @@ public class WhileExercice {
 			System.out.print(msg.mensage[26]);
 			double celciuos = in.nextDouble();
 			System.out.println(msg.mensage[25]
-					+ String.format("%.1f", StaticFixation.convertTemperatureCelciusAndFahrenheit(' ', celciuos)));
+					+ String.format("%.1f", FixationStatic.convertTemperatureCelciusAndFahrenheit(' ', celciuos)));
 			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);
 		} while (cont != 'n');
@@ -145,7 +145,7 @@ public class WhileExercice {
 			b = in.nextInt();
 			c = in.nextInt();
 
-			StaticFixation.biggerDistance(a, b, c);
+			FixationStatic.biggerDistance(a, b, c);
 
 			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);

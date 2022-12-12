@@ -68,8 +68,12 @@ public class StringText {
 			"Enter with three numbens: ", // 22
 			"High: ", // 23
 			"Restart the program (Y/N)?", // 24
-			"Equivalent in Fahrenheit: ", // 25
-			"White the temperature in Celcios: ", "White the temperature in Fahrenheint: " };
+			"Temperature equivalent in Fahrenheit: ", // 25
+			"Write the temperature in Celcius: ",
+			"Write the temperature in Fahrenheint: ",
+			"You go write a temperature in when scale (C/F)? ",
+			"Temperature equivalent in Celcius: ",
+	};
 	public String[] menuArr = { """
 				 Exercices Array
 			Exercice 01 - negativos DevSuperior//OK

@@ -5,7 +5,7 @@ import java.util.Scanner;
 import entities.Employee;
 import entities.Person;
 import entities.Product;
-import statics.StaticFixation;
+import statics.FixationStatic;
 import views.StringText;
 
 public class SequentialStructureExercice {
@@ -177,7 +177,7 @@ public class SequentialStructureExercice {
 		System.out.print(msg.statics[1]);
 		double money = in.nextDouble();
 
-		System.out.println(msg.statics[2] + String.format("%.2f", StaticFixation.converterDollar(priceDoll, money)));
+		System.out.println(msg.statics[2] + String.format("%.2f", FixationStatic.converterDollar(priceDoll, money)));
 
 	}
 }
