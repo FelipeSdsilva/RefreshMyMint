@@ -3,7 +3,7 @@ package exercicies;
 import java.util.Scanner;
 
 import statics.ConditionalStatic;
-import statics.MultiplecationStatic;
+import statics.MultiplicationStatic;
 import statics.SumStatic;
 import views.StringText;
 
@@ -38,10 +38,10 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.mensage[11]);
 		c = in.nextDouble();
 
-		delt = MultiplecationStatic.formOfBaskara(a, b, c);
+		delt = MultiplicationStatic.formOfBaskara(a, b, c);
 
-		x1 = MultiplecationStatic.positiveValueBaskara(a, b, delt);
-		x2 = MultiplecationStatic.negativeValueBaskara(a, b, delt);
+		x1 = MultiplicationStatic.positiveValueBaskara(a, b, delt);
+		x2 = MultiplicationStatic.negativeValueBaskara(a, b, delt);
 
 		String result = !(x1 != Double.NaN && x2 != Double.NaN) ? msg.mensage[12]
 				: msg.xAndY[3] + String.format("%.4f", x1) + "\n" + msg.xAndY[4] + String.format("%.4f", x2);
@@ -86,7 +86,7 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.product[7]);
 		money = in.nextDouble();
 
-		totalValue = MultiplecationStatic.converterDollar(price, (double) qtd);
+		totalValue = MultiplicationStatic.converterDollar(price, (double) qtd);
 
 		ConditionalStatic.changeVerification(money, totalValue);
 	}

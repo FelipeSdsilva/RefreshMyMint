@@ -1,6 +1,6 @@
 package statics;
 
-public class MultiplecationStatic {
+public class MultiplicationStatic {
 
 	public static double converterDollar(double priceDollar, double money) {
 		return priceDollar * money;
