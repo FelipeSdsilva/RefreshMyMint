@@ -79,6 +79,10 @@ public class StringText {
 			"Temperature equivalent in Celcius: ",//29
 			"Thanks for the using",//30
 			"Enter with two numbers: ",//31
+			"The game dured ",//32
+			" HOUR(S)",//33
+			"Initial Hour: ",//34
+			"Final Hour : ",//35
 	};
 	public String[] menuArr = { """
 			

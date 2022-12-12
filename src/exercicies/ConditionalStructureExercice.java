@@ -2,7 +2,8 @@ package exercicies;
 
 import java.util.Scanner;
 
-import statics.FixationStatic;
+import statics.ConditionalStatic;
+import statics.MultiplecationStatic;
 import statics.SumStatic;
 import views.StringText;
 
@@ -37,10 +38,10 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.mensage[11]);
 		c = in.nextDouble();
 
-		delt = FixationStatic.formOfBaskara(a, b, c);
+		delt = MultiplecationStatic.formOfBaskara(a, b, c);
 
-		x1 = FixationStatic.positiveValueBaskara(a, b, delt);
-		x2 = FixationStatic.negativeValueBaskara(a, b, delt);
+		x1 = MultiplecationStatic.positiveValueBaskara(a, b, delt);
+		x2 = MultiplecationStatic.negativeValueBaskara(a, b, delt);
 
 		String result = !(x1 != Double.NaN && x2 != Double.NaN) ? msg.mensage[12]
 				: msg.xAndY[3] + String.format("%.4f", x1) + "\n" + msg.xAndY[4] + String.format("%.4f", x2);
@@ -58,7 +59,7 @@ public class ConditionalStructureExercice {
 		b = in.nextInt();
 		System.out.print(msg.mensage[15]);
 		c = in.nextInt();
-		FixationStatic.smallerBetweeThreeNumbers(a, b, c);
+		ConditionalStatic.smallerBetweeThreeNumbers(a, b, c);
 	}
 
 	public void exercice04() {
@@ -68,7 +69,7 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.mensage[16]);
 		min = in.nextInt();
 
-		System.out.println(msg.mensage[17] + String.format("%.2f", FixationStatic.valueContOfTellOperator(min)));
+		System.out.println(msg.mensage[17] + String.format("%.2f", ConditionalStatic.valueContOfTellOperator(min)));
 	}
 
 	public void exercice05() {
@@ -78,15 +79,16 @@ public class ConditionalStructureExercice {
 
 		System.out.print(msg.product[5]);
 		price = in.nextDouble();
+		
 		System.out.print(msg.product[6]);
 		qtd = in.nextInt();
+		
 		System.out.print(msg.product[7]);
 		money = in.nextDouble();
 
-		totalValue = FixationStatic.converterDollar(price, (double) qtd);
+		totalValue = MultiplecationStatic.converterDollar(price, (double) qtd);
 
-		FixationStatic.changeVerification(money, totalValue);
-
+		ConditionalStatic.changeVerification(money, totalValue);
 	}
 
 	public void exercice06() {
@@ -94,7 +96,7 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.mensage[18]);
 		avgGlu = in.nextDouble();
 
-		FixationStatic.quantityOfGlucose(avgGlu);
+		ConditionalStatic.quantityOfGlucose(avgGlu);
 	}
 
 	public void exercice07() {
@@ -105,7 +107,7 @@ public class ConditionalStructureExercice {
 		b = in.nextDouble();
 		c = in.nextDouble();
 
-		FixationStatic.biggerDistance(a, b, c);
+		ConditionalStatic.biggerDistance(a, b, c);
 	}
 
 	public void exercice08() {
@@ -124,7 +126,7 @@ public class ConditionalStructureExercice {
 		String result1 = (scale == 'C') ? msg.mensage[25] : msg.mensage[29];
 
 		System.out.println(
-				result1 + String.format("%.2f", FixationStatic.convertTemperatureCelciusAndFahrenheit(scale, temp)));
+				result1 + String.format("%.2f", ConditionalStatic.convertTemperatureCelciusAndFahrenheit(scale, temp)));
 	}
 
 	public void exercice09() {
@@ -137,35 +139,53 @@ public class ConditionalStructureExercice {
 		qtd = in.nextInt();
 
 		System.out.print(msg.product[9]);
-		FixationStatic.totalOrderPriceSnackBar(codProd, qtd);
+		ConditionalStatic.totalOrderPriceSnackBar(codProd, qtd);
 	}
 
 	public void exercice10() {
 
 		int a, b;
+		
 		System.out.println(msg.mensage[31]);
 		a = in.nextInt();
 		b = in.nextInt();
 
-		FixationStatic.areMultiples(a, b);
+		ConditionalStatic.areMultiples(a, b);
 	}
 
 	public void exercice11() {
-		
+
 		double salary;
-		
+
 		System.out.print(msg.employee[8]);
 		salary = in.nextDouble();
-		
-		FixationStatic.increasySalary(salary);
-		
+
+		ConditionalStatic.increasySalary(salary);
 	}
 
 	public void exercice12() {
 
+		int initH, endH;
+
+		System.out.print(msg.mensage[34]);
+		initH = in.nextInt();
+
+		System.out.print(msg.mensage[35]);
+		endH = in.nextInt();
+
+		SumStatic.initalAndEndHorTheGame(initH, endH);
 	}
 
 	public void exercice13() {
 
+		int x, y;
+		
+		System.out.print(msg.xAndY[0]);
+		x = in.nextInt();
+		
+		System.out.print(msg.xAndY[1]);
+		y = in.nextInt();
+		
+		
 	}
 }
