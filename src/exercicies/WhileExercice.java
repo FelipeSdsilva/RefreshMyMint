@@ -67,11 +67,11 @@ public class WhileExercice {
 		int x, y;
 
 		do {
-			
+
 			x = in.nextInt();
 			y = in.nextInt();
 			ConditionalStatic.planCartesian('U', x, y);
-		
+
 		} while (x != 0 && y != 0);
 
 		/* Form 2 */
@@ -79,34 +79,34 @@ public class WhileExercice {
 	}
 
 	public void exercice05() {
-		/*
-		 * Faça um programa que leia as notas referentes às duas avaliações de um aluno.
-		 * Calcule e imprima a média semestral. Faça com que o algoritmo só aceite notas
-		 * válidas (uma nota válida deve pertencer ao intervalo [0,10]). Cada nota deve
-		 * ser validada separadamente.
-		 */
+
+		double av1, av2, avg = 0;
+
+		System.out.print(msg.student[0]);
+		av1 = in.nextDouble();
+		avg += ConditionalStatic.validatorOfPositiveNumber(av1);
+		
+		while (av1 < 0 || av1 > 10) {
+			ConditionalStatic.validatorOfAvaliation(av1);
+			av1 = in.nextDouble();
+			avg += ConditionalStatic.validatorOfPositiveNumber(av1);
+		}
+
+		System.out.print(msg.student[1]);
+		av2 = in.nextDouble();
+		avg += ConditionalStatic.validatorOfPositiveNumber(av2);
+		
+		while (av2 < 0 || av2 > 10) {
+			ConditionalStatic.validatorOfAvaliation(av2);
+			av2 = in.nextDouble();
+			avg += ConditionalStatic.validatorOfPositiveNumber(av2);
+		}
+		
+		DivisionStatic.averageAgeIndeterminateNumbers(2, avg);
 	}
 
 	public void exercice06() {
-
-		int alchool = 0, fuel = 0, diesel = 0, n;
-
-		do {
-			n = in.nextInt();
-			alchool += (n == 1)? alchool ++ : alchool ;
-			fuel += (n == 2) ? fuel ++ : fuel;
-			diesel += (n == 3)? diesel ++ : diesel;
-		} while (n != 4);
-
-		String mensage = """
-				Very thanks
-				Alchool = """ + alchool + """
-
-				Fuel =  """ + fuel + """
-
-				Diesel = """ + diesel;
-
-		System.out.println(mensage);
+		ConditionalStatic.acresentNumber();
 	}
 
 	public void exercice07() {
@@ -118,6 +118,7 @@ public class WhileExercice {
 		 * operação: 4+6+8+10+12, enquanto que se o valor de entrada for 11, por
 		 * exemplo, a saída deve ser 80, que é a soma de 12+14+16+18+20.
 		 */
+
 	}
 
 	public void exercice08() {
@@ -149,6 +150,7 @@ public class WhileExercice {
 
 			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);
+
 		} while (cont != 'n' && cont != 'N');
 	}
 }

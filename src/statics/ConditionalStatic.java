@@ -1,5 +1,7 @@
 package statics;
 
+import java.util.Scanner;
+
 import views.StringText;
 
 public class ConditionalStatic {
@@ -13,20 +15,29 @@ public class ConditionalStatic {
 		}
 	}
 
-	public static int acresentNumber(int n) {
+	public static void acresentNumber() {
 
-		int alchool = 0, fuel = 0, diesel = 0;
+		StringText msg = new StringText();
+		Scanner in = new Scanner(System.in);
 
-		if (n == 1) {
-			return alchool += 1;
-		} else if (n == 2) {
-			return fuel += 1;
-		} else if (n == 3) {
-			return diesel += 1;
-		} else {
-			return 4;
+		int alchool = 0, gas = 0, diesel = 0, n;
+
+		n = in.nextInt();
+		while (n != 4) {
+			if (n == 1) {
+				alchool += 1;
+			} else if (n == 2) {
+				gas += 1;
+			} else if (n == 3) {
+				diesel += 1;
+			}
+			n = in.nextInt();
 		}
 
+		System.out.println(msg.mensage[36] + "\n" + msg.mensage[37] + alchool + "\n" + msg.mensage[38] + gas + "\n"
+				+ msg.mensage[39] + diesel);
+
+		in.close();
 	}
 
 	public static void ascendingAndDescendingOrder(int a, int b) {
@@ -176,6 +187,26 @@ public class ConditionalStatic {
 		}
 	}
 
+	public static void validatorOfAvaliation(double avaliation) {
+	
+		StringText msg = new StringText();
+		
+		if(avaliation < 0 || avaliation > 10) {
+			System.out.print(msg.student[5]);
+		}
+		
+	}
+	
+	public static double validatorOfPositiveNumber(double avaliation) {
+		
+		double avg = 0;
+		
+		if(avaliation > 0 && avaliation <= 10.0) {
+			return avg += avaliation;
+		}
+		return avg += 0;
+	}
+	
 	public static double valueContOfTellOperator(int min) {
 
 		double value = 50.00;

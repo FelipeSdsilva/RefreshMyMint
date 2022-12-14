@@ -83,6 +83,10 @@ public class StringText {
 			" HOUR(S)",//33
 			"Initial Hour: ",//34
 			"Final Hour : ",//35
+			"Very thanks ",//36
+			"Alchool = ",//37
+			"Gas = ",//38
+			"Diesel = ",//39
 	};
 	public String[] menuArr = { """
 			
@@ -175,8 +179,8 @@ public class StringText {
 			Exercice 05 - validacao_de_nota
 			Exercice 06 - combustivel
 			Exercice 07 - pares_consecutivos
-			Exercice 08 -
-			Exercice 09 -
+			Exercice 08 - temperaruta_celcius_em_fahrenheit
+			Exercice 09 - maior_entre_tres_numeros
 				 0  - Initial menu
 			""" };
 	public String[] person = { "How many persons will you type? ", // 0
@@ -222,7 +226,8 @@ public class StringText {
 			"Enter with the second note: ", // 1
 			"Final note: ", // 2
 			"Reproved ", // 3
-			"Aproved"// 4
+			"Aproved",// 4
+			"Value invalid! try again: "
 	};
 	public String[] terrain = { "Write the width of terrain: ", // 0
 			"Write the length of terrain: ", // 1
