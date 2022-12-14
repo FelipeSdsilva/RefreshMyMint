@@ -3,6 +3,7 @@ package exercicies;
 import java.util.Scanner;
 
 import statics.ConditionalStatic;
+import statics.DivisionStatic;
 import views.StringText;
 
 public class WhileExercice {
@@ -11,22 +12,38 @@ public class WhileExercice {
 	Scanner in = new Scanner(System.in);
 
 	public void exercice01() {
-		/*
-		 * Leia uma quantidade indeterminada de duplas de valores inteiros X e Y.
-		 * Escreva para cada X e Y uma mensagem que indique se estes valores foram
-		 * digitados em ordem crescente ou decrescente. O programa deve finalizar quando
-		 * forem digitados dois valores iguais.
-		 */
+
+		int x = 2, y = 0;
+		do {
+
+			System.out.println(msg.mensage[31]);
+			x = in.nextInt();
+			y = in.nextInt();
+
+			ConditionalStatic.ascendingAndDescendingOrder(x, y);
+		} while (x != y);
 	}
 
 	public void exercice02() {
-		/*
-		 * Faça um programa para ler um número indeterminado de dados, contendo cada um,
-		 * a idade de um indivíduo. O último dado, que não entrará nos cálculos, contém
-		 * um valor de idade negativa. Calcular e imprimir a idade média deste grupo de
-		 * indivíduos. Se for entrado um valor negativo na primeira vez, mostrar a
-		 * mensagem "IMPOSSIVEL CALCULAR".
-		 */
+
+		int x = 1, y = 0, sum = 0;
+
+		System.out.println(msg.person[14]);
+
+		while (x > 0) {
+			x = in.nextInt();
+			if (x > 0) {
+				sum += x;
+				y++;
+			}
+		}
+
+		if (sum > 1) {
+			DivisionStatic.averageAgeIndeterminateNumbers(y, sum);
+		} else {
+			System.out.println("Impossible calculation!");
+		}
+
 	}
 
 	public void exercice03() {
@@ -46,24 +63,16 @@ public class WhileExercice {
 	}
 
 	public void exercice04() {
-		/*
-		 * Escreva um programa para ler as coordenadas (X,Y) de uma quantidade
-		 * indeterminada de pontos no sistema cartesiano. Para cada ponto escrever o
-		 * quadrante a que ele pertence. O algoritmo será encerrado quando pelo menos
-		 * uma de duas coordenadas for NULA (nesta situação sem escrever mensagem
-		 * alguma).
-		 */
 
-		@SuppressWarnings("unused")
 		int x, y;
 
-		/*
-		 * Form one do { x = in.nextInt(); y = in.nextInt(); if (x >= 1 && y >= 1) {
-		 * System.out.println("Firsth"); } else if (x <= -1 && y >= 1) {
-		 * System.out.println("Second"); } else if (x <= -1 && y <= -1) {
-		 * System.out.println("Third"); } else if (x >= 1 && y <= -1) {
-		 * System.out.println("Fourth"); } } while (x != 0 && y != 0);
-		 */
+		do {
+			
+			x = in.nextInt();
+			y = in.nextInt();
+			ConditionalStatic.planCartesian('U', x, y);
+		
+		} while (x != 0 && y != 0);
 
 		/* Form 2 */
 
@@ -79,18 +88,14 @@ public class WhileExercice {
 	}
 
 	public void exercice06() {
-	
+
 		int alchool = 0, fuel = 0, diesel = 0, n;
 
 		do {
 			n = in.nextInt();
-			if (n == 1) {
-				alchool += 1;
-			} else if (n == 2) {
-				fuel += 1;
-			} else if (n == 3) {
-				diesel += 1;
-			}
+			alchool += (n == 1)? alchool ++ : alchool ;
+			fuel += (n == 2) ? fuel ++ : fuel;
+			diesel += (n == 3)? diesel ++ : diesel;
 		} while (n != 4);
 
 		String mensage = """
@@ -116,11 +121,6 @@ public class WhileExercice {
 	}
 
 	public void exercice08() {
-		/*
-		 * Fazer um programa para ler uma temperatura em Celsius e mostrar o equivalente
-		 * em Fahrenheit. Perguntar se o usuário deseja repetir (s/n). Caso o usuário
-		 * digite "s", repetir o programa
-		 */
 
 		char cont;
 

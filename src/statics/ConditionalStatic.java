@@ -13,6 +13,33 @@ public class ConditionalStatic {
 		}
 	}
 
+	public static int acresentNumber(int n) {
+
+		int alchool = 0, fuel = 0, diesel = 0;
+
+		if (n == 1) {
+			return alchool += 1;
+		} else if (n == 2) {
+			return fuel += 1;
+		} else if (n == 3) {
+			return diesel += 1;
+		} else {
+			return 4;
+		}
+
+	}
+
+	public static void ascendingAndDescendingOrder(int a, int b) {
+
+		if (a > b) {
+			System.out.println("Descending!");
+		} else if (b > a) {
+			System.out.println("Ascending!");
+		} else {
+
+		}
+	}
+
 	public static void biggerDistance(double a, double b, double c) {
 
 		StringText msg = new StringText();
@@ -79,25 +106,35 @@ public class ConditionalStatic {
 		}
 	}
 
-	public static void planCartesian(double x, double y) {
-		
-		if (x >= 1 && y >= 1) {
-			System.out.println("Q1");
-		} else if (x <= -1 && y >= 1) {
-			System.out.println("Q2");
-		} else if (x <= -1 && y <= -1) {
-			System.out.println("Q3");
-		} else if (x >= 1 && y <= -1) {
-			System.out.println("Q4");
-		} else if (x == 0 && y == 0) {
-			System.out.println("Origin");
-		} else if (y == 0 && x >= 1) {
-			System.out.println("Axle X");
-		}else {
-			System.out.println("Axle y");
+	public static void planCartesian(char plat, double x, double y) {
+
+		if (plat == 'D') {
+			if (x >= 1 && y >= 1) {
+				System.out.println("Q1");
+			} else if (x <= -1 && y >= 1) {
+				System.out.println("Q2");
+			} else if (x <= -1 && y <= -1) {
+				System.out.println("Q3");
+			} else if (x >= 1 && y <= -1) {
+				System.out.println("Q4");
+			} else if (x == 0 && y == 0) {
+				System.out.println("Origin");
+			} else if (y == 0 && x >= 1) {
+				System.out.println("Axle X");
+			} else {
+				System.out.println("Axle y");
+			}
+		} else if (plat == 'U') {
+			if (x >= 1 && y >= 1) {
+				System.out.println("Firsth");
+			} else if (x <= -1 && y >= 1) {
+				System.out.println("Second");
+			} else if (x <= -1 && y <= -1) {
+				System.out.println("Third");
+			} else if (x >= 1 && y <= -1) {
+				System.out.println("Fourth");
+			}
 		}
-		
-	
 	}
 
 	public static void quantityOfGlucose(double avgGlu) {

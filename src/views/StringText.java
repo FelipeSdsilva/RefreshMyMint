@@ -151,30 +151,30 @@ public class StringText {
 			
 			Exercices Sequential Structure
 			
-			Exercice 01 - terreno ok
-			Exercice 02 - retangulo ok
-			Exercice 03 - idades ok
-			Exercice 04 - soma ok
-			Exercice 05 - troco ok
-			Exercice 06 - circulo ok
-			Exercice 07 - pagamento ok
-			Exercice 08 - consumo ok
-			Exercice 09 - medidas ok
-			Exercice 10 - duracao ok
-			Exercice 11 - valor_do_dollar_em_real ok
+			Exercice 01 - terreno || DevSuperior Ok || 
+			Exercice 02 - retangulo || DevSuperior Ok || 
+			Exercice 03 - idades || DevSuperior Ok || 
+			Exercice 04 - soma || DevSuperior Ok || 
+			Exercice 05 - troco || DevSuperior Ok || 
+			Exercice 06 - circulo || DevSuperior Ok || 
+			Exercice 07 - pagamento || DevSuperior Ok || 
+			Exercice 08 - consumo || DevSuperior Ok || 
+			Exercice 09 - medidas || DevSuperior Ok || 
+			Exercice 10 - duracao || DevSuperior Ok || 
+			Exercice 11 - valor_do_dollar_em_real || DevSuperior Ok || 
 				 0  - Initial menu
 			""" };
 	public String[] menuWhile = { """
 			
 			Exercices of repetition while
 			
-			Exercice 01 -
-			Exercice 02 -
-			Exercice 03 -
-			Exercice 04 -
-			Exercice 05 -
-			Exercice 06 -
-			Exercice 07 -
+			Exercice 01 - crescente || DevSuperior Ok ||
+			Exercice 02 - media_idade 
+			Exercice 03 - senha_fixa
+			Exercice 04 - quadrante
+			Exercice 05 - validacao_de_nota
+			Exercice 06 - combustivel
+			Exercice 07 - pares_consecutivos
 			Exercice 08 -
 			Exercice 09 -
 				 0  - Initial menu
@@ -193,6 +193,7 @@ public class StringText {
 			" and ", // 11
 			" years old", // 12
 			" ",// 13
+			"Write ages: "
 	};
 	public String[] product = { "Enter the product data:", // 0
 			"Product data: ", // 1
@@ -236,6 +237,13 @@ public class StringText {
 			"x2 = ", // 4
 			"Enter the measures of triangle x: ", // 5
 			"Enter the measures of triangle y: ",// 6
+			"Q1",//7
+			"Q2",//8
+			"Q3",//9
+			"Q4",//10
+			"Quadrant ",//11
+			"Firsth",//12
+			"Second",//13
+			"Fourth", //14
 	};
-
 }

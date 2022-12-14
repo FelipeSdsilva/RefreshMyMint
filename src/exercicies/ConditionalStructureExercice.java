@@ -186,6 +186,6 @@ public class ConditionalStructureExercice {
 		System.out.print(msg.xAndY[1]);
 		y = in.nextDouble();
 
-		ConditionalStatic.planCartesian(x, y);		
+		ConditionalStatic.planCartesian('D',x, y);		
 	}
 }
