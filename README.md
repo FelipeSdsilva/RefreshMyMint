@@ -255,7 +255,7 @@ Exemplo 2:
 	83.21 
 	MAIOR DISTANCIA = 87.20 
 
-- [ ] ```(8) Deseja-se converter uma medida de temperatura da escala Celsius para Fahrenheit ou vice-versa. Para 
+- [x] ```(8) Deseja-se converter uma medida de temperatura da escala Celsius para Fahrenheit ou vice-versa. Para 
 isso, você deve construir um programa que leia a letra "C" ou "F" indicando em qual escala vai ser 
 informada uma temperatura. Em seguida o programa deve mostrar a temperatura na outra escala com 
 duas casas decimais. A seguir é dada a fórmula para converter de Fahrenheit para Celsius (você deve 
@@ -271,7 +271,7 @@ Exemplo 2:
 	Voce vai digitar a temperatura em qual escala (C/F)? C
 	Digite a temperatura em Celsius: 28.15
 	Temperatura equivalente em Fahrenheit: 82.67 
-- [ ] ```(9)Uma lanchonete possui vários produtos. Cada produto possui um código 
+- [x] ```(9)Uma lanchonete possui vários produtos. Cada produto possui um código 
 e um preço. Você deve fazer um programa para ler o código e a 
 quantidade comprada de um produto (suponha um código válido), e daí 
 informar qual o valor a ser pago, com duas casas decimais, conforme 
@@ -313,7 +313,7 @@ Exemplo 2:
 	Codigo do produto comprado: 4
 	Quantidade comprada: 2
 	Valor a pagar: R$ 17.80 
-- [ ] ```(10)Fazer um programa para ler dois números inteiros, e dizer se um número é múltiplo do outro. Os 
+- [x] ```(10)Fazer um programa para ler dois números inteiros, e dizer se um número é múltiplo do outro. Os 
 números podem ser digitados em qualquer ordem. ```
 
 Exemplo 2: 
@@ -328,7 +328,7 @@ Exemplo 3:
 	13
 	5
 	Nao sao multiplos
-- [ ] ```(11) Uma empresa vai conceder um aumento percentual de 
+- [x] ```(11) Uma empresa vai conceder um aumento percentual de 
 salário aos seus funcionários dependendo de quanto 
 cada pessoa ganha, conforme tabela ao lado. Fazer um 
 programa para ler o salário de uma pessoa, daí mostrar 
@@ -369,7 +369,7 @@ Exemplo 2:
 	Novo salario = R$ 8800.00 
 	Aumento = R$ 800.00 
 	Porcentagem = 10 %			
-- [ ] ```(12) Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo 
+- [x] ```(12) Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo 
 pode começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 
 horas. ```
 
@@ -383,7 +383,7 @@ Exemplo 2:
 	Hora inicial: 0 
 	Hora final: 0
 	O JOGO DUROU 24 HORA(S)
-- [ ] ```(13) Leia os valores das coordenadas X e Y de um ponto no plano 
+- [x] ```(13) Leia os valores das coordenadas X e Y de um ponto no plano 
 cartesiano. A seguir, determine qual o quadrante ao qual pertence o 
 ponto (Q1, Q2, Q3 ou Q4). Se o ponto estiver na origem, escreva a 
 mensagem “Origem”. Se o ponto estiver sobre um dos eixos escreva 
