@@ -12,7 +12,7 @@ public class InitialController {
 		StringText msg = new StringText();
 		int n;
 
-		System.out.print(msg.menuIn[0]);
+		System.out.printf(msg.menuIn[0]);
 		n = in.nextInt();
 
 		switch (n) {

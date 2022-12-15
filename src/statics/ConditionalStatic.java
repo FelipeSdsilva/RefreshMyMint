@@ -119,15 +119,18 @@ public class ConditionalStatic {
 
 	public static void planCartesian(char plat, double x, double y) {
 
+		StringText msg = new StringText();
+
 		if (plat == 'D') {
+
 			if (x >= 1 && y >= 1) {
-				System.out.println("Q1");
+				System.out.println(msg.xAndY[7]);
 			} else if (x <= -1 && y >= 1) {
-				System.out.println("Q2");
+				System.out.println(msg.xAndY[8]);
 			} else if (x <= -1 && y <= -1) {
-				System.out.println("Q3");
+				System.out.println(msg.xAndY[9]);
 			} else if (x >= 1 && y <= -1) {
-				System.out.println("Q4");
+				System.out.println(msg.xAndY[10]);
 			} else if (x == 0 && y == 0) {
 				System.out.println("Origin");
 			} else if (y == 0 && x >= 1) {
@@ -136,6 +139,7 @@ public class ConditionalStatic {
 				System.out.println("Axle y");
 			}
 		} else if (plat == 'U') {
+
 			if (x >= 1 && y >= 1) {
 				System.out.println("Firsth");
 			} else if (x <= -1 && y >= 1) {
@@ -144,6 +148,17 @@ public class ConditionalStatic {
 				System.out.println("Third");
 			} else if (x >= 1 && y <= -1) {
 				System.out.println("Fourth");
+			}
+		} else if (plat == 'd') {
+
+			if (x >= 1 && y >= 1) {
+				System.out.println("Q1");
+			} else if (x <= -1 && y >= 1) {
+				System.out.println("Q2");
+			} else if (x <= -1 && y <= -1) {
+				System.out.println("Q3");
+			} else if (x >= 1 && y <= -1) {
+				System.out.println("Q4");
 			}
 		}
 	}
@@ -188,25 +203,25 @@ public class ConditionalStatic {
 	}
 
 	public static void validatorOfAvaliation(double avaliation) {
-	
+
 		StringText msg = new StringText();
-		
-		if(avaliation < 0 || avaliation > 10) {
+
+		if (avaliation < 0 || avaliation > 10) {
 			System.out.print(msg.student[5]);
 		}
-		
+
 	}
-	
+
 	public static double validatorOfPositiveNumber(double avaliation) {
-		
+
 		double avg = 0;
-		
-		if(avaliation > 0 && avaliation <= 10.0) {
+
+		if (avaliation > 0 && avaliation <= 10.0) {
 			return avg += avaliation;
 		}
 		return avg += 0;
 	}
-	
+
 	public static double valueContOfTellOperator(int min) {
 
 		double value = 50.00;

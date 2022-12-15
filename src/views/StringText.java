@@ -28,12 +28,11 @@ public class StringText {
 			"Working hours: ", // 1
 			"The payment for ", // 2
 			"is ", // 3
-			"Which percentage to increase salary?",// 4
-			"New salary = R$ ",//5
-			"Increasy = R$ ",//6
-			"Percentege = ",//7
-			"Write the salary of person: "
-	};
+			"Which percentage to increase salary?", // 4
+			"New salary = R$ ", // 5
+			"Increasy = R$ ", // 6
+			"Percentege = ", // 7
+			"Write the salary of person: " };
 	public String[] mensage = { """
 			Products;
 			%s, which price is $ %.2f
@@ -73,116 +72,131 @@ public class StringText {
 			"High: ", // 23
 			"Restart the program (Y/N)?", // 24
 			"Temperature equivalent in Fahrenheit: ", // 25
-			"Write the temperature in Celcius: ",//26
-			"Write the temperature in Fahrenheint: ",//27
-			"You go write a temperature in when scale (C/F)? ",//28
-			"Temperature equivalent in Celcius: ",//29
-			"Thanks for the using",//30
-			"Enter with two numbers: ",//31
-			"The game dured ",//32
-			" HOUR(S)",//33
-			"Initial Hour: ",//34
-			"Final Hour : ",//35
-			"Very thanks ",//36
-			"Alchool = ",//37
-			"Gas = ",//38
-			"Diesel = ",//39
+			"Write the temperature in Celcius: ", // 26
+			"Write the temperature in Fahrenheint: ", // 27
+			"You go write a temperature in when scale (C/F)? ", // 28
+			"Temperature equivalent in Celcius: ", // 29
+			"Thanks for the using", // 30
+			"Enter with two numbers: ", // 31
+			"The game dured ", // 32
+			" HOUR(S)", // 33
+			"Initial Hour: ", // 34
+			"Final Hour : ", // 35
+			"Very thanks ", // 36
+			"Alchool = ", // 37
+			"Gas = ", // 38
+			"Diesel = ",// 39
 	};
 	public String[] menuArr = { """
-			
-			Exercices Array
-			
-			Exercice 01 - negativos || DevSuperior Ok || 
-			Exercice 02 - soma_vetor || DevSuperior Ok || 
-			Exercice 03 - alturas Devsuperior || DevSuperior Ok || 
-			Exercice 04 - numeros_pares DevSuperior || DevSuperior Ok || 
-			Exercice 05 - maior_posicao DevSuperior || DevSuperior Ok || 
-			Exercice 06 - soma_vetores DevSuperior || DevSuperior Ok || 
-			Exercice 07 - abaixo_da_media || DevSuperior Ok || 
-			Exercice 08 - media_pares || DevSuperior Ok || 
-			Exercice 09 - mais_velho
-			Exercice 10 - aprovados
-			Exercice 11 - dados_pessoas DevSuperior//Falta
-				 0  - Initial menu
-			""" };
+			 ______________________________________________________________
+			|                                                              |
+			|                        Exercices Array                       |
+			|                                                              |
+			|           Exercice 01 - negativos       [x] DevSuperior      |
+			|           Exercice 02 - soma_vetor      [x] DevSuperior      |
+			|           Exercice 03 - alturas         [x] DevSuperior      |
+			|           Exercice 04 - numeros_pares   [x] DevSuperior      |
+			|           Exercice 05 - maior_posicao   [x] DevSuperior      |
+			|           Exercice 06 - soma_vetores    [x] DevSuperior      |
+			|           Exercice 07 - abaixo_da_media [x] DevSuperior      |
+			|           Exercice 08 - media_pares     [x] DevSuperior      |
+			|           Exercice 09 - mais_velho      [ ] DevSuperior      |
+			|           Exercice 10 - aprovados       [ ] DevSuperior      |
+			|           Exercice 11 - dados_pessoas   [ ] DevSuperior      |
+			|                                                              |
+			|                     0 - Initial menu                         |
+			|__________________________""" };
 	public String[] menuCond = { """
-			
-			Exercices conditional structure
-			
-			Exercice 01 - notas || DevSuperior Ok || 
-			Exercice 02 - baskara || DevSuperior Ok || 
-			Exercice 03 - menor_de_tres || DevSuperior Ok || 
-			Exercice 04 - operadora || DevSuperior Ok || 
-			Exercice 05 - troco_verificado || DevSuperior Ok || 
-			Exercice 06 - glicose || DevSuperior Ok || 
-			Exercice 07 - dardo || DevSuperior Ok || 
-			Exercice 08 - temperatura || DevSuperior Ok || 
-			Exercice 09 - lanchonete || DevSuperior Ok || 
-			Exercice 10 - são_multiplos || DevSuperior Ok || 
-			Exercice 11 - aumento falta || DevSuperior Ok || 
-			Exercice 12 - tempo_de_jogo || DevSuperior Ok || 
-			Exercice 13 - coordenadas || DevSuperior Ok || 
-				 0  - Initial menu
-			""" };
+			 ______________________________________________________________
+			|                                                              |
+			|                Exercices conditional structure               |
+			|                                                              |
+			|            Exercice 01 - notas            [x] DevSuperior    |
+			|            Exercice 02 - baskara          [x] DevSuperior    |
+			|            Exercice 03 - menor_de_tres    [x] DevSuperior    |
+			|            Exercice 04 - operadora        [x] DevSuperior    |
+			|            Exercice 05 - troco_verificado [x] DevSuperior    |
+			|            Exercice 06 - glicose          [x] DevSuperior    |
+			|            Exercice 07 - dardo            [x] DevSuperior    |
+			|            Exercice 08 - temperatura      [x] DevSuperior    |
+			|            Exercice 09 - lanchonete       [x] DevSuperior    |
+			|            Exercice 10 - são_multiplos    [x] DevSuperior    |
+			|            Exercice 11 - aumento falta    [x] DevSuperior    |
+			|            Exercice 12 - tempo_de_jogo    [x] DevSuperior    |
+			|            Exercice 13 - coordenadas      [x] DevSuperior    |
+			|                                                              |
+			|                      0 - Initial menu                        |
+			|_________________________""" };
 	public String[] menuFor = { """
-			
-			Exercices of repetition For
-			
-			Exercice 00 - tabuada DevSuperior // Falta
-			Exercice 01 - soma_impares DevSuperior //
-			Exercice 02 - sequencia_impares DevSuperior//Falta || Udemy//Ok
-			Exercice 03 - dentro_fora DevSuperior//Falta || Udemy//Ok
-			Exercice 04 - media_ponderada DevSuperior//Ok
-			Exercice 05 - divisao
-			Exercice 06 - fatorial DevSuperior//Falta || Udemy//Ok
-			Exercice 07 -
-				 0  - Initial menu
-			""" };
+			 ______________________________________________________________
+			|                                                              |
+			|                Exercices of repetition For                   |
+			|                                                              |
+			|           Exercice 01 - tabuada           [x] DevSuperior    |
+			|           Exercice 02 - soma_impares      [x] DevSuperior    |
+			|           Exercice 03 - sequencia_impares [x] DevSuperior    |
+			|           Exercice 04 - dentro_fora       [x] DevSuperior    |
+			|           Exercice 05 - media_ponderada   [x] DevSuperior    |
+			|           Exercice 06 - divisao           [x] DevSuperior    |
+			|           Exercice 07 - fatorial          [x] DevSuperior    |
+			|           Exercice 08 -                   [x] DevSuperior    |
+			|                                                              |
+			|                     0 - Initial menu                         |
+			|_______________________""" };
 	public String[] menuIn = { """
-			
-			Welcome to my exercicies of resolved in modules
-				DevSuperior and Udemy.
-			
-			1 - Exercices Array
-			2 - Exercices Conditional Structure
-			3 - Exercices For
-			4 - Exerceces Orientation Object
-			5 - Exercices Sequential Structure
-			6 - Exercices While
-			0 - Exit
-			""" };
+			 ______________________________________________________________
+			|                                                              |
+			|       Welcome to my exercices of resolved in modules         |
+			|                   DevSuperior and Udemy.                     |
+			|                                                              |
+			|                                                              |
+			|                                                              |
+			|           01 - Exercices Array                               |
+			|           02 - Exercices Conditional Structure               |
+			|           03 - Exercices For                                 |
+			|           04 - Exerceces Orientation Object                  |
+			|           05 - Exercices Sequential Structure                |
+			|           06 - Exercices While                               |
+			|            0 - Exit                                          |
+			|                                                              |
+			|                                                              |
+			|_____________________""" };
 	public String[] menuSeq = { """
-			
-			Exercices Sequential Structure
-			
-			Exercice 01 - terreno || DevSuperior Ok || 
-			Exercice 02 - retangulo || DevSuperior Ok || 
-			Exercice 03 - idades || DevSuperior Ok || 
-			Exercice 04 - soma || DevSuperior Ok || 
-			Exercice 05 - troco || DevSuperior Ok || 
-			Exercice 06 - circulo || DevSuperior Ok || 
-			Exercice 07 - pagamento || DevSuperior Ok || 
-			Exercice 08 - consumo || DevSuperior Ok || 
-			Exercice 09 - medidas || DevSuperior Ok || 
-			Exercice 10 - duracao || DevSuperior Ok || 
-			Exercice 11 - valor_do_dollar_em_real || DevSuperior Ok || 
-				 0  - Initial menu
-			""" };
+			______________________________________________________________
+			|                                                             |
+			|               Exercices Sequential Structure                |
+			|                                                             |
+			|         Exercice 01 - terreno   [x] DevSuperior             |
+			|         Exercice 02 - retangulo [x] DevSuperior             |
+			|         Exercice 03 - idades    [x] DevSuperior             |
+			|         Exercice 04 - soma      [x] DevSuperior             |
+			|         Exercice 05 - troco     [x] DevSuperior             |
+			|         Exercice 06 - circulo   [x] DevSuperior             |
+			|         Exercice 07 - pagamento [x] DevSuperior             |
+			|         Exercice 08 - consumo   [x] DevSuperior             |
+			|         Exercice 09 - medidas   [x] DevSuperior             |
+			|         Exercice 10 - duracao   [x] DevSuperior             |
+			|         Exercice 11 - vlrdodollEmReal [x] DevSuperior       |
+			|                                                             |
+			|                   0 - Initial menu                          |
+			|_____________________""" };
 	public String[] menuWhile = { """
-			
-			Exercices of repetition while
-			
-			Exercice 01 - crescente || DevSuperior Ok ||
-			Exercice 02 - media_idade 
-			Exercice 03 - senha_fixa
-			Exercice 04 - quadrante
-			Exercice 05 - validacao_de_nota
-			Exercice 06 - combustivel
-			Exercice 07 - pares_consecutivos
-			Exercice 08 - temperaruta_celcius_em_fahrenheit
-			Exercice 09 - maior_entre_tres_numeros
-				 0  - Initial menu
-			""" };
+			______________________________________________________________
+			|                                                             |
+			|               Exercices of repetition while                 |
+			|                                                             |
+			|          Exercice 01 - crescente          [x] DevSuperior   |
+			|          Exercice 02 - media_idade        [x] DevSuperior   |
+			|          Exercice 03 - senha_fixa         [x] DevSuperior   |
+			|          Exercice 04 - quadrante          [x] DevSuperior   |
+			|          Exercice 05 - validacao_de_nota  [x] DevSuperior   |
+			|          Exercice 06 - combustivel        [x] DevSuperior   |
+			|          Exercice 07 - pares_consecutivos [x] DevSuperior   |
+			|          Exercice 08 - temp_cel_em_fah    [x] DevSuperior   |
+			|          Exercice 09 - maior_ent_tres_num [x] DevSuperior   |
+			|
+			|                    0 - Initial menu
+			|______________________""" };
 	public String[] person = { "How many persons will you type? ", // 0
 			"Date of ", // 1
 			"a person: ", // 2
@@ -196,9 +210,8 @@ public class StringText {
 			" is the ", // 10
 			" and ", // 11
 			" years old", // 12
-			" ",// 13
-			"Write ages: "
-	};
+			" ", // 13
+			"Write ages: " };
 	public String[] product = { "Enter the product data:", // 0
 			"Product data: ", // 1
 			"Update data: ", // 2
@@ -207,9 +220,9 @@ public class StringText {
 			"Enter with unit price of product: ", // 5
 			"Enter the quantity purchased: ", // 6
 			"Money received: ", // 7
-			"Change: ",// 8
-			"Total value for pay: R$ ",//9
-			"Enter the code of product acquired: ",//10
+			"Change: ", // 8
+			"Total value for pay: R$ ", // 9
+			"Enter the code of product acquired: ",// 10
 	};
 	public String[] rectangle = { "Enter rectangle width and height: ", // 0
 			"Base of rectangle: ", // 1
@@ -226,9 +239,8 @@ public class StringText {
 			"Enter with the second note: ", // 1
 			"Final note: ", // 2
 			"Reproved ", // 3
-			"Aproved",// 4
-			"Value invalid! try again: "
-	};
+			"Aproved", // 4
+			"Value invalid! try again: " };
 	public String[] terrain = { "Write the width of terrain: ", // 0
 			"Write the length of terrain: ", // 1
 			"Write  the value for m²: ", // 2
@@ -241,14 +253,14 @@ public class StringText {
 			"x1 = ", // 3
 			"x2 = ", // 4
 			"Enter the measures of triangle x: ", // 5
-			"Enter the measures of triangle y: ",// 6
-			"Q1",//7
-			"Q2",//8
-			"Q3",//9
-			"Q4",//10
-			"Quadrant ",//11
-			"Firsth",//12
-			"Second",//13
-			"Fourth", //14
+			"Enter the measures of triangle y: ", // 6
+			"Q1", // 7
+			"Q2", // 8
+			"Q3", // 9
+			"Q4", // 10
+			"Quadrant ", // 11
+			"Firsth", // 12
+			"Second", // 13
+			"Fourth", // 14
 	};
 }
