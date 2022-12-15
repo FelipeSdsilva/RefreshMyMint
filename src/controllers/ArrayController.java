@@ -12,71 +12,64 @@ public class ArrayController {
 		ArrayExercice arr = new ArrayExercice();
 		Scanner in = new Scanner(System.in);
 		StringText msg = new StringText();
-		char cont = ' ';
 		int n;
 
-		do {
+		System.out.print(msg.menuArr[0]);
+		n = in.nextInt();
 
-			System.out.print(msg.menuArr[0]);
-			n = in.nextInt();
+		switch (n) {
+		case 0: {
+			InitialController.menuInitial();
+			break;
+		}
+		case 1: {
+			arr.exercice01();
+			break;
+		}
+		case 2: {
+			arr.exercice02();
+			break;
+		}
+		case 3: {
+			arr.exercice03();
+			break;
+		}
+		case 4: {
+			arr.exercice04();
+			break;
+		}
+		case 5: {
+			arr.exercice05();
+			break;
+		}
+		case 6: {
+			arr.exercice06();
+			break;
+		}
+		case 7: {
+			arr.exercice07();
+			break;
+		}
+		case 8: {
+			arr.exercice08();
+			break;
+		}
+		case 9: {
+			arr.exercice09();
+			break;
+		}
+		case 10: {
+			arr.exercice10();
+			break;
+		}
+		case 11: {
+			arr.exercice11();
+			break;
+		}
+		default:
+			InitialController.menuInitial();
+		}
 
-			switch (n) {
-			case 0:{
-				InitialController.menuInitial();
-				break;
-			}
-			case 1: {
-				arr.exercice01();
-				break;
-			}
-			case 2: {
-				arr.exercice02();
-				break;
-			}
-			case 3: {
-				arr.exercice03();
-				break;
-			}
-			case 4: {
-				arr.exercice04();
-				break;
-			}
-			case 5: {
-				arr.exercice05();
-				break;
-			}
-			case 6: {
-				arr.exercice06();
-				break;
-			}
-			case 7: {
-				arr.exercice07();
-				break;
-			}
-			case 8: {
-				arr.exercice08();
-				break;
-			}
-			case 9: {
-				arr.exercice09();
-				break;
-			}
-			case 10: {
-				arr.exercice10();
-				break;
-			}
-			case 11: {
-				arr.exercice11();
-				break;
-			}
-			default:
-				throw new IllegalArgumentException("Unexpected value: " + n);
-			}
-
-			System.out.print(msg.mensage[24]);
-			cont = in.next().charAt(0);
-			
-		} while (cont != 'n');
 		in.close();
 	}
 }

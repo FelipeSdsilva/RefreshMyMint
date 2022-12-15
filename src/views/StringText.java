@@ -176,7 +176,7 @@ public class StringText {
 			|         Exercice 08 - consumo   [x] DevSuperior             |
 			|         Exercice 09 - medidas   [x] DevSuperior             |
 			|         Exercice 10 - duracao   [x] DevSuperior             |
-			|         Exercice 11 - vlrdodollEmReal [x] DevSuperior       |
+			|         Exercice 11 - vldolReal [x] DevSuperior             |
 			|                                                             |
 			|                   0 - Initial menu                          |
 			|_____________________""" };

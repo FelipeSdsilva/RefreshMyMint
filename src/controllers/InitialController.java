@@ -16,32 +16,36 @@ public class InitialController {
 		n = in.nextInt();
 
 		switch (n) {
-		case 1: {
+		case 01: {
 			ArrayController.menuExerciciesArray();
 			break;
 		}
-		case 2: {
+		case 02: {
 			ConditionalStructureController.menuExerciciesConditional();
 			break;
 		}
-		case 3: {
+		case 03: {
 			ForController.menuExerciciesFor();
 			break;
 		}
-		case 4: {
+		case 04: {
 			OrientObjectExcControll.menuExerOrientationObject();
 			break;
 		}
-		case 5: {
+		case 05: {
 			SequentialStrutureController.menuExerciciesSequential();
 			break;
 		}
-		case 6: {
+		case 06: {
 			WhileController.menuExerciciesWhile();
 			break;
 		}
-		default:
+		case 00:{
 			System.out.println(msg.mensage[30]);
+			break;
+		}
+		default:
+			InitialController.menuInitial();
 		}
 
 		in.close();
