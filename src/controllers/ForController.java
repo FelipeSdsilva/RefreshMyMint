@@ -19,7 +19,7 @@ public class ForController {
 
 		switch (n) {
 		case 1: {
-			exFor.exercice00();
+			exFor.exercice01();
 			break;
 		}
 		case 2: {

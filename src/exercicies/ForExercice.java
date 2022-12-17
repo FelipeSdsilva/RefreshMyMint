@@ -3,35 +3,44 @@ package exercicies;
 import java.util.Locale;
 import java.util.Scanner;
 
+import controllers.ForController;
+import views.StringText;
+
 public class ForExercice {
 
+	StringText msg = new StringText();
 	Scanner in = new Scanner(System.in);
 	int n, i;
 
-	public void exercice00() {
-		/*
-		 * Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10,
-		 * conforme exemplo.
-		 */
+	public void exercice01() {
+
+		System.out.print(msg.mensage[40]);
 		n = in.nextInt();
 
 		for (int i = 0; i <= 10; i++) {
-			System.out.println(n + "X" + i + "=" + (n * i));
+			System.out.println(n + " X " + i + " = " + (n * i));
 		}
+		ForController.menuExerciciesFor();
 	}
 
 	public void exercice02() {
 
-		n = in.nextInt();
+		int a = in.nextInt();
+		int b = in.nextInt();
+		int c = 0;
+		int res = (a > b) ? a : b;
+		int rest = (a < b) ? a : b;
 
-		int[] array = new int[n];
-
-		for (i = 0; i < array.length; i++) {
-			array[i] = i;
-			if (i % 2 == 1) {
-				System.out.println(array[i]);
+		for (int i = rest; i < res; i++) {
+			if (i % 2 == 1 || i % -2 == 1) {
+				System.out.println(i);
+				c += i;
 			}
 		}
+
+		System.out.println(c);
+
+		ForController.menuExerciciesFor();
 	}
 
 	public void exercice03() {
@@ -57,7 +66,7 @@ public class ForExercice {
 				""";
 
 		System.out.println(msg);
-
+		ForController.menuExerciciesFor();
 	}
 
 	public void exercice04() {
@@ -79,6 +88,7 @@ public class ForExercice {
 		for (i = 0; i < md.length; i++) {
 			System.out.println(String.format("%.1f", md[i]));
 		}
+		ForController.menuExerciciesFor();
 	}
 
 	public void exercice05() {
@@ -104,6 +114,8 @@ public class ForExercice {
 			}
 
 		}
+
+		ForController.menuExerciciesFor();
 	}
 
 	public void exercice06() {
@@ -118,7 +130,9 @@ public class ForExercice {
 		for (int i = 1; i < n; i++) {
 			sum *= (n - i);
 		}
+
 		System.out.println(sum);
+		ForController.menuExerciciesFor();
 	}
 
 	public void exercice07() {
@@ -130,6 +144,8 @@ public class ForExercice {
 				System.out.println(i);
 			}
 		}
+
+		ForController.menuExerciciesFor();
 	}
 
 	public void exercice08() {
@@ -140,8 +156,10 @@ public class ForExercice {
 			for (int c = 1; c <= 3; c++) {
 				System.out.print(String.format("%.0f", Math.pow(i, c)) + " ");
 			}
+
 			System.out.println();
 		}
-	}
 
+		ForController.menuExerciciesFor();
+	}
 }
