@@ -13,7 +13,11 @@ public class ForExercice {
 		 * Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10,
 		 * conforme exemplo.
 		 */
+		n = in.nextInt();
 
+		for (int i = 0; i <= 10; i++) {
+			System.out.println(n + "X" + i + "=" + (n * i));
+		}
 	}
 
 	public void exercice02() {
