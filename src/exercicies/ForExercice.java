@@ -1,6 +1,5 @@
 package exercicies;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 import controllers.ForController;
@@ -49,25 +48,28 @@ public class ForExercice {
 	public void exercice03() {
 		System.out.print(msg.xAndY[0]);
 		int x = in.nextInt();
-		
+
 		for (int i = 0; i <= x; i++) {
-			if(i % 2 == 1) {
+			if (i % 2 == 1) {
 				System.out.println(i);
 			}
 		}
-		
-		
+
 		ForController.menuExerciciesFor();
 	}
-	
+
 	public void exercice04() {
 
+		System.out.print(msg.array[0]);
 		n = in.nextInt();
 
 		int inp = 0, out = 0, numW;
 
 		for (i = 0; i < n; i++) {
+
+			System.out.print(msg.array[1]);
 			numW = in.nextInt();
+
 			if (numW >= 10 && numW <= 20) {
 				inp += 1;
 			} else {
@@ -75,40 +77,64 @@ public class ForExercice {
 			}
 		}
 
-		String msg = """
-				""" + inp + """
-				  in
-				""" + out + """
-				  out
-				""";
-
-		System.out.println(msg);
+		System.out.println(inp + msg.mensage[43] + "\n" + out + msg.mensage[44]);
 		ForController.menuExerciciesFor();
 	}
 
 	public void exercice05() {
 
-		double avg1, avg2, avg3;
-
+		System.out.print(msg.array[0]);
 		n = in.nextInt();
-		double[] md = new double[n];
 
-		Locale.setDefault(Locale.US);
+		for (i = 0; i < n; i++) {
 
-		for (int i = 0; i < n; i++) {
-			avg1 = in.nextDouble();
-			avg2 = in.nextDouble();
-			avg3 = in.nextDouble();
-			md[i] = ((avg1 * 2) + (avg2 * 3) + (avg3 * 5)) / (2 + 3 + 5);
+			System.out.print(msg.array[1]);
+			int numW = in.nextInt();
+
+			if (numW % 2 == 1 && numW > 0) {
+				System.out.println(msg.mensage[45]);
+			} else if (numW % 2 == 0 && numW > 0) {
+				System.out.println(msg.mensage[46]);
+			} else if (numW == 0) {
+				System.out.println(msg.mensage[49]);
+			} else if (numW % -2 == -1 && numW < 0) {
+				System.out.println(msg.mensage[47]);
+			} else if (numW % -2 == 0 && numW < 0) {
+				System.out.println(msg.mensage[48]);
+			}
+
 		}
 
-		for (i = 0; i < md.length; i++) {
-			System.out.println(String.format("%.1f", md[i]));
-		}
 		ForController.menuExerciciesFor();
 	}
 
 	public void exercice06() {
+
+		double avg1, avg2, avg3;
+
+		System.out.print(msg.array[0]);
+		n = in.nextInt();
+
+		// double[] md = new double[n];
+
+		for (int i = 0; i < n; i++) {
+			System.out.println(msg.mensage[22]);
+			avg1 = in.nextDouble();
+			avg2 = in.nextDouble();
+			avg3 = in.nextDouble();
+			double md = ((avg1 * 2) + (avg2 * 3) + (avg3 * 5)) / (2 + 3 + 5);
+			System.out.println(msg.student[6] + String.format("%.1f", md));
+		}
+
+		/*
+		 * for (i = 0; i < md.length; i++) { System.out.println(String.format("%.1f",
+		 * md[i])); }
+		 */
+
+		ForController.menuExerciciesFor();
+	}
+
+	public void exercice07() {
 
 		n = in.nextInt();
 
@@ -135,7 +161,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice07() {
+	public void exercice08() {
 
 		int sum;
 
@@ -152,7 +178,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice08() {
+	public void exercice09() {
 
 		n = in.nextInt();
 
@@ -165,7 +191,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice09() {
+	public void exercice010() {
 
 		n = in.nextInt();
 

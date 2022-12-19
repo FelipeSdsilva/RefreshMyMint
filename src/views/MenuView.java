@@ -53,11 +53,12 @@ public class MenuView {
 			|           Exercice 02 - soma_impares      [x] DevSuperior    |
 			|           Exercice 03 - sequencia_impares [x] DevSuperior    |
 			|           Exercice 04 - dentro_fora       [x] DevSuperior    |
-			|           Exercice 05 - media_ponderada   [x] DevSuperior    |
-			|           Exercice 06 - divisao           [x] DevSuperior    |
-			|           Exercice 07 - fatorial          [x] DevSuperior    |
-			|           Exercice 08 -                   [x] DevSuperior    |
-			|           Exercice 09 -                                      |
+			|           Exercice 05 - par_impar         [x] DevSuperior    |
+			|           Exercice 06 - media_ponderada   [x] DevSuperior    |
+			|           Exercice 07 - divisao           [x] DevSuperior    |
+			|           Exercice 08 - fatorial          [x] DevSuperior    |
+			|           Exercice 09 -                   [x] DevSuperior    |
+			|           Exercice 10 -                                      |
 			|                                                              |
 			|                     0 - Initial menu                         |
 			|_______________________""";

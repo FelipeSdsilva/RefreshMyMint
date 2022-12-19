@@ -33,16 +33,7 @@ public class StringText {
 			"Increasy = R$ ", // 6
 			"Percentege = ", // 7
 			"Write the salary of person: " };
-	public String[] mensage = { """
-			Products;
-			%s, which price is $ %.2f
-			%s, which price is $ %.2f
-
-			Record: %d years old. code %d and gender: %c
-
-			Measue whit eight decimal places: %.8f
-			Rouded (three decimal places): %.3f
-			""", // 0
+	public String[] mensage = { "", // 0
 			"Enter the distance travelled(Km): ", // 1
 			"Fuel spent: ", // 2
 			"Average consumption: ", // 3
@@ -89,6 +80,13 @@ public class StringText {
 			"What number you whe for multiplication table? ",//40
 			"Enter with two numbers? ",//41
 			"Sum of the numbers odd: ",//42
+			" Input",//43
+			" Output",//44
+			"Positive odd",//45
+			"Positive even",//46
+			"Negative odd",//47
+			"Negative even",//48
+			"Null",//49
 	};
 	
 	public String[] person = { "How many persons will you type? ", // 0
@@ -117,6 +115,16 @@ public class StringText {
 			"Change: ", // 8
 			"Total value for pay: R$ ", // 9
 			"Enter the code of product acquired: ",// 10
+			"""
+			Products;
+			%s, which price is $ %.2f
+			%s, which price is $ %.2f
+
+			Record: %d years old. code %d and gender: %c
+
+			Measue whit eight decimal places: %.8f
+			Rouded (three decimal places): %.3f
+			""",//11
 	};
 	public String[] rectangle = { "Enter rectangle width and height: ", // 0
 			"Base of rectangle: ", // 1
@@ -134,7 +142,8 @@ public class StringText {
 			"Final note: ", // 2
 			"Reproved ", // 3
 			"Aproved", // 4
-			"Value invalid! try again: " };
+			"Value invalid! try again: ",//5
+			"Avarage = "};
 	public String[] terrain = { "Write the width of terrain: ", // 0
 			"Write the length of terrain: ", // 1
 			"Write  the value for m²: ", // 2
