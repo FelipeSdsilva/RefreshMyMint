@@ -66,7 +66,7 @@ public class StringText {
 			"Value payment: R$ ", // 17
 			"Write the average of glucose: ", // 18
 			"Write three distance: ", // 19
-			"smaller number: ", // 20
+			"Smaller number: ", // 20
 			"Bigger Distance = %.2f", // 21
 			"Enter with three numbens: ", // 22
 			"High: ", // 23
@@ -88,6 +88,7 @@ public class StringText {
 			"Diesel = ",// 39
 			"What number you whe for multiplication table? ",//40
 			"Enter with two numbers? ",//41
+			"Sum of the numbers odd: ",//42
 	};
 	public String[] menuArr = { """
 			 ______________________________________________________________
@@ -142,6 +143,7 @@ public class StringText {
 			|           Exercice 06 - divisao           [x] DevSuperior    |
 			|           Exercice 07 - fatorial          [x] DevSuperior    |
 			|           Exercice 08 -                   [x] DevSuperior    |
+			|           Exercice 09 -                                      |
 			|                                                              |
 			|                     0 - Initial menu                         |
 			|_______________________""" };

@@ -46,6 +46,14 @@ public class ForController {
 			exFor.exercice07();
 			break;
 		}
+		case 8:{
+			exFor.exercice08();
+			break;
+		}
+		case 9: {
+			exFor.exercice09();
+			break;
+		}
 		case 0: {
 			InitialController.menuInitial();
 			break;

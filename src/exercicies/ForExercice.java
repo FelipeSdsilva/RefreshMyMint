@@ -25,26 +25,42 @@ public class ForExercice {
 
 	public void exercice02() {
 
+		int a, b, c = 0, res, rest;
 		System.out.println(msg.mensage[41]);
-		int a = in.nextInt();
-		int b = in.nextInt();
-		int c = 0;
-		int res = (a > b) ? a : b;
-		int rest = (a < b) ? a : b;
+
+		a = in.nextInt();
+		b = in.nextInt();
+
+		res = (a > b) ? a : b;
+		rest = (a < b) ? a : b;
 
 		for (int i = rest; i < res; i++) {
-			if (i % 2 == 1 || i % -2 == -1) {
-				System.out.println(i);
+
+			if (i % 2 == 1 || i % -2 == -1 && i != rest) {
 				c += i;
 			}
 		}
 
-		System.out.println(c);
+		System.out.println(msg.mensage[42] + c);
 
 		ForController.menuExerciciesFor();
 	}
 
 	public void exercice03() {
+		System.out.print(msg.xAndY[0]);
+		int x = in.nextInt();
+		
+		for (int i = 0; i < x; i++) {
+			if(i % 2 == 0) {
+				System.out.println(i);
+			}
+		}
+		
+		
+		ForController.menuExerciciesFor();
+	}
+	
+	public void exercice04() {
 
 		n = in.nextInt();
 
@@ -70,7 +86,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice04() {
+	public void exercice05() {
 
 		double avg1, avg2, avg3;
 
@@ -92,7 +108,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice05() {
+	public void exercice06() {
 
 		n = in.nextInt();
 
@@ -119,7 +135,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice06() {
+	public void exercice07() {
 
 		int sum;
 
@@ -136,7 +152,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice07() {
+	public void exercice08() {
 
 		n = in.nextInt();
 
@@ -149,7 +165,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice08() {
+	public void exercice09() {
 
 		n = in.nextInt();
 
