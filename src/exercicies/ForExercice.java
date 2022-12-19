@@ -25,6 +25,7 @@ public class ForExercice {
 
 	public void exercice02() {
 
+		System.out.println(msg.mensage[41]);
 		int a = in.nextInt();
 		int b = in.nextInt();
 		int c = 0;
@@ -32,7 +33,7 @@ public class ForExercice {
 		int rest = (a < b) ? a : b;
 
 		for (int i = rest; i < res; i++) {
-			if (i % 2 == 1 || i % -2 == 1) {
+			if (i % 2 == 1 || i % -2 == -1) {
 				System.out.println(i);
 				c += i;
 			}

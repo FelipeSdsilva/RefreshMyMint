@@ -86,7 +86,8 @@ public class StringText {
 			"Alchool = ", // 37
 			"Gas = ", // 38
 			"Diesel = ",// 39
-			"What number you whe for multiplication table? "
+			"What number you whe for multiplication table? ",//40
+			"Enter with two numbers? ",//41
 	};
 	public String[] menuArr = { """
 			 ______________________________________________________________
