@@ -6,12 +6,14 @@ import entities.Employee;
 import entities.Person;
 import entities.Product;
 import statics.MultiplicationStatic;
+import views.MensagensObjects;
 import views.StringText;
 
 public class SequentialStructureExercice {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
+	MensagensObjects ms =  new MensagensObjects();
 
 
 	public void exercice01() {
@@ -52,10 +54,10 @@ public class SequentialStructureExercice {
 		
 		for (int i = 0; i < 2; i++) {
 
-			System.out.print(msg.person[1] + (i + 1) + msg.person[13] + msg.person[8] + "\n" + msg.person[3]);
+			System.out.print(ms.person[1] + (i + 1) + ms.person[13] + ms.person[8] + "\n" + ms.person[3]);
 			name = in.nextLine();
 
-			System.out.print(msg.person[4]);
+			System.out.print(ms.person[4]);
 			age = in.nextInt();
 			in.nextLine();
 
@@ -65,8 +67,8 @@ public class SequentialStructureExercice {
 
 		avarege /= 2;
 
-		System.out.println(msg.person[9] + person[0].getName() + msg.person[11] + person[1].getName() + msg.person[10]
-				+ String.format("%.1f", avarege) + msg.person[12]);
+		System.out.println(ms.person[9] + person[0].getName() + ms.person[11] + person[1].getName() + ms.person[10]
+				+ String.format("%.1f", avarege) + ms.person[12]);
 	}
 
 	public void exercice04() {
@@ -86,14 +88,14 @@ public class SequentialStructureExercice {
 		double money, change;
 		Product product = new Product();
 
-		System.out.print(msg.product[5]);
+		System.out.print(ms.product[5]);
 		product.setPrice(in.nextDouble());
-		System.out.print(msg.product[6]);
+		System.out.print(ms.product[6]);
 		product.addStock(in.nextInt());
-		System.out.print(msg.product[7]);
+		System.out.print(ms.product[7]);
 		money = in.nextDouble();
 		change = money - (product.getPrice() * product.getQuantity());
-		System.out.println(msg.product[8] + String.format("%.2f", change));
+		System.out.println(ms.product[8] + String.format("%.2f", change));
 	}
 
 	public void exercice06() {
@@ -110,14 +112,14 @@ public class SequentialStructureExercice {
 		
 		Employee emp = new Employee();
 		
-		System.out.print(msg.person[3]);
+		System.out.print(ms.person[3]);
 		emp.setName(in.nextLine());
-		System.out.print(msg.employee[0]);
+		System.out.print(ms.employee[0]);
 		emp.setValuePerHour(in.nextDouble());
-		System.out.print(msg.employee[1]);
+		System.out.print(ms.employee[1]);
 		emp.setHoursJobs(in.nextInt());
 
-		System.out.println(msg.employee[2] + emp.getName() + msg.employee[3]
+		System.out.println(ms.employee[2] + emp.getName() + ms.employee[3]
 				+ String.format("%.2f", (emp.getValuePerHour() * emp.getHoursJobs())));
 	}
 

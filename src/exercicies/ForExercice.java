@@ -3,11 +3,13 @@ package exercicies;
 import java.util.Scanner;
 
 import controllers.ForController;
+import views.MensagensObjects;
 import views.StringText;
 
 public class ForExercice {
 
 	StringText msg = new StringText();
+	MensagensObjects ms = new MensagensObjects();
 	Scanner in = new Scanner(System.in);
 	int n, i;
 
@@ -123,7 +125,7 @@ public class ForExercice {
 			avg2 = in.nextDouble();
 			avg3 = in.nextDouble();
 			double md = ((avg1 * 2) + (avg2 * 3) + (avg3 * 5)) / (2 + 3 + 5);
-			System.out.println(msg.student[6] + String.format("%.1f", md));
+			System.out.println(ms.student[6] + String.format("%.1f", md));
 		}
 
 		/*
@@ -136,24 +138,26 @@ public class ForExercice {
 
 	public void exercice07() {
 
+		System.out.print(msg.array[0]);
 		n = in.nextInt();
 
-		int[] x = new int[n], y = new int[n];
+		// int[] x = new int[n], y = new int[n];
 		double result = 0;
 
 		for (i = 0; i < n; i++) {
-			x[i] = in.nextInt();
-			y[i] = in.nextInt();
-		}
 
-		for (i = 0; i < n; i++) {
+			System.out.print(msg.mensage[52]);
+			int x = in.nextInt();
 
-			result = (double) x[i] / y[i];
+			System.out.print(msg.mensage[51]);
+			int y = in.nextInt();
 
-			if (y[i] == 0) {
-				System.out.println("imposible division");
+			result = (double) x / y;
+
+			if (y == 0) {
+				System.out.println(msg.mensage[50]);
 			} else {
-				System.out.print(result + "\n");
+				System.out.printf(msg.mensage[53], result);
 			}
 
 		}
@@ -165,20 +169,54 @@ public class ForExercice {
 
 		int sum;
 
+		System.out.print(msg.mensage[0]);
 		n = in.nextInt();
+
 		if (n == 0) {
 			n = 1;
 		}
+
 		sum = n;
 		for (int i = 1; i < n; i++) {
 			sum *= (n - i);
 		}
 
-		System.out.println(sum);
+		System.out.println(msg.mensage[54] + sum);
+
 		ForController.menuExerciciesFor();
 	}
 
 	public void exercice09() {
+
+		char experiment;
+		int expTotal = 0, rabbit = 0, frog = 0, mouse = 0;
+		double percRabbit = 0, percFrog = 0, percMouse = 0;
+
+		System.out.print(msg.mensage[55]);
+		n = in.nextInt();
+
+		for (int i = 0; i < n; i++) {
+			System.out.print(msg.mensage[56]);
+			n = in.nextInt();
+			
+			expTotal += n;
+			
+			System.out.print(msg.mensage[57]);
+			experiment = in.next().charAt(0);
+			
+			if(experiment == 'C') {
+				rabbit += n;
+			}else if(experiment == 'R') {
+				mouse += n;
+			}else if(experiment == 'S') {
+				frog += n;
+			}
+		}
+		
+		System.out.println();
+	}
+
+	public void exercice10() {
 
 		n = in.nextInt();
 
@@ -191,7 +229,7 @@ public class ForExercice {
 		ForController.menuExerciciesFor();
 	}
 
-	public void exercice010() {
+	public void exercice11() {
 
 		n = in.nextInt();
 

@@ -2,6 +2,7 @@ package statics;
 
 import java.util.Scanner;
 
+import views.MensagensObjects;
 import views.StringText;
 
 public class ConditionalStatic {
@@ -85,34 +86,34 @@ public class ConditionalStatic {
 
 	public static void increasySalary(double salary) {
 
-		StringText msg = new StringText();
+		MensagensObjects ms = new MensagensObjects();
 		double newSalary;
 
 		if (salary <= 1000.00) {
 
 			newSalary = salary * 1.20;
 
-			System.out.println(msg.employee[5] + String.format("%.2f", newSalary) + "\n" + msg.employee[6]
-					+ String.format("%.2f", newSalary - salary) + "\n" + msg.employee[7] + "20%");
+			System.out.println(ms.employee[5] + String.format("%.2f", newSalary) + "\n" + ms.employee[6]
+					+ String.format("%.2f", newSalary - salary) + "\n" + ms.employee[7] + "20%");
 		} else if (salary > 1000.00 && salary <= 3000.00) {
 
 			newSalary = salary * 1.15;
 
-			System.out.println(msg.employee[5] + String.format("%.2f", newSalary) + "\n" + msg.employee[6]
-					+ String.format("%.2f", newSalary - salary) + "\n" + msg.employee[7] + "15%");
+			System.out.println(ms.employee[5] + String.format("%.2f", newSalary) + "\n" + ms.employee[6]
+					+ String.format("%.2f", newSalary - salary) + "\n" + ms.employee[7] + "15%");
 		} else if (salary > 3000.00 && salary <= 8000.00) {
 
 			newSalary = salary * 1.10;
 
-			System.out.println(msg.employee[5] + String.format("%.2f", newSalary) + "\n" + msg.employee[6]
-					+ String.format("%.2f", newSalary - salary) + "\n" + msg.employee[7] + "10%");
+			System.out.println(ms.employee[5] + String.format("%.2f", newSalary) + "\n" + ms.employee[6]
+					+ String.format("%.2f", newSalary - salary) + "\n" + ms.employee[7] + "10%");
 
 		} else {
 
 			newSalary = salary * 1.05;
 
-			System.out.println(msg.employee[5] + String.format("%.2f", newSalary) + "\n" + msg.employee[6]
-					+ String.format("%.2f", newSalary - salary) + "\n" + msg.employee[7] + "5%");
+			System.out.println(ms.employee[5] + String.format("%.2f", newSalary) + "\n" + ms.employee[6]
+					+ String.format("%.2f", newSalary - salary) + "\n" + ms.employee[7] + "5%");
 
 		}
 	}
@@ -204,10 +205,10 @@ public class ConditionalStatic {
 
 	public static void validatorOfAvaliation(double avaliation) {
 
-		StringText msg = new StringText();
+		MensagensObjects ms = new MensagensObjects();
 
 		if (avaliation < 0 || avaliation > 10) {
-			System.out.print(msg.student[5]);
+			System.out.print(ms.student[5]);
 		}
 
 	}

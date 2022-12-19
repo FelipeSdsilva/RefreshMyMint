@@ -2,15 +2,6 @@ package views;
 
 public class StringText {
 
-	public String[] account = { "Enter account number: ", // 0
-			"Enter account holder: ", // 1
-			"Is there na initial deposit (y/n)? ", // 2
-			"Enter initial deposit value:  ", // 3
-			"Account data:", // 4
-			"Enter deposit value:", // 5
-			"Update account:", // 6
-			"Enter a withdraw value: "// 7
-	};
 	public String[] array = { "How many numbers will you type? ", // 0
 			"Digit a number: ", // 1
 			"How a many is position values have the arrays ? ", // 2
@@ -22,18 +13,11 @@ public class StringText {
 			"Avarege even numbers: ", // 8
 			"Not have number even",// 9
 	};
+
 	public String[] circle = { "Enter the value circle radius: ",// 0
 	};
-	public String[] employee = { "Value per hours: ", // 0
-			"Working hours: ", // 1
-			"The payment for ", // 2
-			"is ", // 3
-			"Which percentage to increase salary?", // 4
-			"New salary = R$ ", // 5
-			"Increasy = R$ ", // 6
-			"Percentege = ", // 7
-			"Write the salary of person: " };
-	public String[] mensage = { "", // 0
+
+	public String[] mensage = { "Enter with value of N: ", // 0
 			"Enter the distance travelled(Km): ", // 1
 			"Fuel spent: ", // 2
 			"Average consumption: ", // 3
@@ -76,56 +60,28 @@ public class StringText {
 			"Very thanks ", // 36
 			"Alchool = ", // 37
 			"Gas = ", // 38
-			"Diesel = ",// 39
-			"What number you whe for multiplication table? ",//40
-			"Enter with two numbers? ",//41
-			"Sum of the numbers odd: ",//42
-			" Input",//43
-			" Output",//44
-			"Positive odd",//45
-			"Positive even",//46
-			"Negative odd",//47
-			"Negative even",//48
-			"Null",//49
+			"Diesel = ", // 39
+			"What number you whe for multiplication table? ", // 40
+			"Enter with two numbers? ", // 41
+			"Sum of the numbers odd: ", // 42
+			" Input", // 43
+			" Output", // 44
+			"Positive odd", // 45
+			"Positive even", // 46
+			"Negative odd", // 47
+			"Negative even", // 48
+			"Null",// 49
+			"Imposible division",//50
+			"Enter with denominator: ",//51
+			"Enter with numerator: ",//52
+			"Division = %.2f\n",
+			"Factorial: ",//54
+			"How many cases of test are write? ",
+			"How many of experiment: ",
+			"Type of experiment: ",
+			
 	};
-	
-	public String[] person = { "How many persons will you type? ", // 0
-			"Date of ", // 1
-			"a person: ", // 2
-			"Name: ", // 3
-			"Age: ", // 4
-			"Height: ", // 5
-			"Average height: ", // 6
-			"People whit less 16 year old: ", // 7
-			"Person: ", // 8
-			"A age avarege ", // 9
-			" is the ", // 10
-			" and ", // 11
-			" years old", // 12
-			" ", // 13
-			"Write ages: " };
-	public String[] product = { "Enter the product data:", // 0
-			"Product data: ", // 1
-			"Update data: ", // 2
-			"Enter the number of product to be added in stock: ", // 3
-			"Enter the number of product to be remove in stock: ", // 4
-			"Enter with unit price of product: ", // 5
-			"Enter the quantity purchased: ", // 6
-			"Money received: ", // 7
-			"Change: ", // 8
-			"Total value for pay: R$ ", // 9
-			"Enter the code of product acquired: ",// 10
-			"""
-			Products;
-			%s, which price is $ %.2f
-			%s, which price is $ %.2f
 
-			Record: %d years old. code %d and gender: %c
-
-			Measue whit eight decimal places: %.8f
-			Rouded (three decimal places): %.3f
-			""",//11
-	};
 	public String[] rectangle = { "Enter rectangle width and height: ", // 0
 			"Base of rectangle: ", // 1
 			"Height of rectangle: ", // 2
@@ -133,23 +89,19 @@ public class StringText {
 			"Perimeter = ", // 4
 			"Diagonal = ",// 5
 	};
+
 	public String[] statics = { "What is the dollar price? ", // 0
 			"How many dollar will be bought? ", // 1
 			"Amount to be paid in reais = "// 2
 	};
-	public String[] student = { "Enter with the firsth note: ", // 0
-			"Enter with the second note: ", // 1
-			"Final note: ", // 2
-			"Reproved ", // 3
-			"Aproved", // 4
-			"Value invalid! try again: ",//5
-			"Avarage = "};
+
 	public String[] terrain = { "Write the width of terrain: ", // 0
 			"Write the length of terrain: ", // 1
 			"Write  the value for m²: ", // 2
 			"The price of terrain = ", // 3
 			"rea of terrain = ",// 4
 	};
+
 	public String[] xAndY = { "Write a value of x: ", // 0
 			"Write a value of y: ", // 1
 			"Sum = ", // 2
@@ -166,4 +118,5 @@ public class StringText {
 			"Second", // 13
 			"Fourth", // 14
 	};
+
 }

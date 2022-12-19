@@ -5,26 +5,28 @@ import java.util.Scanner;
 import statics.ConditionalStatic;
 import statics.MultiplicationStatic;
 import statics.SumStatic;
+import views.MensagensObjects;
 import views.StringText;
 
 public class ConditionalStructureExercice {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
-
+	MensagensObjects ms =  new MensagensObjects();
+	
 	public void exercice01() {
 		Double av1, av2, sum;
 
-		System.out.print(msg.student[0]);
+		System.out.print(ms.student[0]);
 		av1 = in.nextDouble();
-		System.out.print(msg.student[1]);
+		System.out.print(ms.student[1]);
 		av2 = in.nextDouble();
 
 		sum = SumStatic.sumTwoNumbersDoub(av1, av2);
 
-		String resp = (sum < 60) ? msg.student[3] : "";
+		String resp = (sum < 60) ? ms.student[3] : "";
 
-		System.out.println(msg.student[2] + sum + "\n" + resp);
+		System.out.println(ms.student[2] + sum + "\n" + resp);
 	}
 
 	public void exercice02() {
@@ -77,13 +79,13 @@ public class ConditionalStructureExercice {
 		double money, totalValue, price;
 		int qtd;
 
-		System.out.print(msg.product[5]);
+		System.out.print(ms.product[5]);
 		price = in.nextDouble();
 
-		System.out.print(msg.product[6]);
+		System.out.print(ms.product[6]);
 		qtd = in.nextInt();
 
-		System.out.print(msg.product[7]);
+		System.out.print(ms.product[7]);
 		money = in.nextDouble();
 
 		totalValue = MultiplicationStatic.converterDollar(price, (double) qtd);
@@ -133,12 +135,12 @@ public class ConditionalStructureExercice {
 
 		int codProd, qtd;
 
-		System.out.print(msg.product[10]);
+		System.out.print(ms.product[10]);
 		codProd = in.nextInt();
-		System.out.print(msg.product[6]);
+		System.out.print(ms.product[6]);
 		qtd = in.nextInt();
 
-		System.out.print(msg.product[9]);
+		System.out.print(ms.product[9]);
 		ConditionalStatic.totalOrderPriceSnackBar(codProd, qtd);
 	}
 
@@ -157,7 +159,7 @@ public class ConditionalStructureExercice {
 
 		double salary;
 
-		System.out.print(msg.employee[8]);
+		System.out.print(ms.employee[8]);
 		salary = in.nextDouble();
 
 		ConditionalStatic.increasySalary(salary);

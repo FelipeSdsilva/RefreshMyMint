@@ -57,8 +57,9 @@ public class MenuView {
 			|           Exercice 06 - media_ponderada   [x] DevSuperior    |
 			|           Exercice 07 - divisao           [x] DevSuperior    |
 			|           Exercice 08 - fatorial          [x] DevSuperior    |
-			|           Exercice 09 -                   [x] DevSuperior    |
-			|           Exercice 10 -                                      |
+			|           Exercice 09 - experiencias      [x] DevSuperior    |
+			|           Exercice 10 -                   [x] DevSuperior    |
+			|           Exercice 11 -                   [x] DevSuperior    |
 			|                                                              |
 			|                     0 - Initial menu                         |
 			|_______________________""";
@@ -77,7 +78,7 @@ public class MenuView {
 			|           04 - Exerceces Orientation Object                  |
 			|           05 - Exercices Sequential Structure                |
 			|           06 - Exercices While                               |
-			|            0 - Exit                                          |
+			|           00 - Exit                                          |
 			|                                                              |
 			|                                                              |
 			|_____________________""";
@@ -87,17 +88,17 @@ public class MenuView {
 			|                                                             |
 			|               Exercices Sequential Structure                |
 			|                                                             |
-			|         Exercice 01 - terreno   [x] DevSuperior             |
-			|         Exercice 02 - retangulo [x] DevSuperior             |
-			|         Exercice 03 - idades    [x] DevSuperior             |
-			|         Exercice 04 - soma      [x] DevSuperior             |
-			|         Exercice 05 - troco     [x] DevSuperior             |
-			|         Exercice 06 - circulo   [x] DevSuperior             |
-			|         Exercice 07 - pagamento [x] DevSuperior             |
-			|         Exercice 08 - consumo   [x] DevSuperior             |
-			|         Exercice 09 - medidas   [x] DevSuperior             |
-			|         Exercice 10 - duracao   [x] DevSuperior             |
-			|         Exercice 11 - vldolReal [x] DevSuperior             |
+			|         Exercice 01 - terreno     [x] DevSuperior           |
+			|         Exercice 02 - retangulo   [x] DevSuperior           |
+			|         Exercice 03 - idades      [x] DevSuperior           |
+			|         Exercice 04 - soma        [x] DevSuperior           |
+			|         Exercice 05 - troco       [x] DevSuperior           |
+			|         Exercice 06 - circulo     [x] DevSuperior           |
+			|         Exercice 07 - pagamento   [x] DevSuperior           |
+			|         Exercice 08 - consumo     [x] DevSuperior           |
+			|         Exercice 09 - medidas     [x] DevSuperior           |
+			|         Exercice 10 - duracao     [x] DevSuperior           |
+			|         Exercice 11 - vl/dol/Real [x] DevSuperior           |
 			|                                                             |
 			|                   0 - Initial menu                          |
 			|_____________________""";

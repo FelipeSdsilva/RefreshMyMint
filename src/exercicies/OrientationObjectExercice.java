@@ -10,12 +10,13 @@ import entities.Product;
 import entities.Rectangle;
 import entities.Student;
 import entities.Triangle;
+import views.MensagensObjects;
 import views.StringText;
 
 public class OrientationObjectExercice {
 
 	Scanner sc = new Scanner(System.in);
-
+	MensagensObjects ms =  new MensagensObjects();
 	StringText msg = new StringText();
 
 	public void fixedExercicieString() {
@@ -25,7 +26,7 @@ public class OrientationObjectExercice {
 		Person per = new Person("Maria", 30, 1.70, 'f');
 
 		double measure = 53.234567;
-		System.out.printf(msg.mensage[0], p1.getName(), p1.getPrice(), p2.getName(), p2.getPrice(), per.getAge(),
+		System.out.printf(ms.product[6], p1.getName(), p1.getPrice(), p2.getName(), p2.getPrice(), per.getAge(),
 				p1.getCode(), per.getGender(), measure, measure);
 		Locale.setDefault(Locale.US);
 		System.out.println("US decimal point:" + String.format("%.3f", measure));
@@ -35,7 +36,7 @@ public class OrientationObjectExercice {
 
 		Product p1 = new Product();
 
-		System.out.print(msg.product[0] + "Name: ");
+		System.out.print(ms.product[0] + "Name: ");
 		p1.setName(sc.nextLine());
 		System.out.print("Price: ");
 		p1.setPrice(sc.nextDouble());
@@ -43,19 +44,19 @@ public class OrientationObjectExercice {
 		int qtd = sc.nextInt();
 		p1.addStock(qtd);
 
-		System.out.println(msg.product[1] + p1);
+		System.out.println(ms.product[1] + p1);
 
-		System.out.print(msg.product[3]);
+		System.out.print(ms.product[3]);
 		qtd = sc.nextInt();
 		p1.addStock(qtd);
 
-		System.out.println(msg.product[2] + p1);
+		System.out.println(ms.product[2] + p1);
 
-		System.out.print(msg.product[4]);
+		System.out.print(ms.product[4]);
 		qtd = sc.nextInt();
 		p1.removeStock(qtd);
 
-		System.out.println(msg.product[2] + p1);
+		System.out.println(ms.product[2] + p1);
 
 		sc.close();
 	}
@@ -111,7 +112,7 @@ public class OrientationObjectExercice {
 
 		System.out.println(emp);
 
-		System.out.print(msg.employee[4]);
+		System.out.print(ms.employee[4]);
 		double percentage = sc.nextDouble();
 		emp.increaseSalary(percentage);
 
@@ -139,35 +140,35 @@ public class OrientationObjectExercice {
 		char confDeposit;
 		double value;
 
-		System.out.print(msg.account[0]);
+		System.out.print(ms.account[0]);
 		acc.setNumberAcc(sc.nextInt());
 		sc.nextLine();
 
-		System.out.print(msg.account[1]);
+		System.out.print(ms.account[1]);
 		acc.setNameHolder(sc.nextLine());
 
-		System.out.print(msg.account[2]);
+		System.out.print(ms.account[2]);
 		confDeposit = sc.next().charAt(0);
 
 		if (confDeposit == 'Y' || confDeposit == 'y') {
-			System.out.print(msg.account[3]);
+			System.out.print(ms.account[3]);
 			value = sc.nextDouble();
 			acc.deposit(value);
 		}
 
-		System.out.println(msg.account[4] + "\n" + acc + "\n");
+		System.out.println(ms.account[4] + "\n" + acc + "\n");
 
-		System.out.print(msg.account[5]);
+		System.out.print(ms.account[5]);
 		value = sc.nextDouble();
 		acc.deposit(value);
 
-		System.out.println(msg.account[6] + "\n" + acc + "\n");
+		System.out.println(ms.account[6] + "\n" + acc + "\n");
 
-		System.out.print(msg.account[7]);
+		System.out.print(ms.account[7]);
 		value = sc.nextDouble();
 		acc.withdraw(value);
 
-		System.out.println(msg.account[6] + "\n" + acc);
+		System.out.println(ms.account[6] + "\n" + acc);
 	}
 
 }

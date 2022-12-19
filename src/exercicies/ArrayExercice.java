@@ -4,13 +4,15 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Person;
+import views.MensagensObjects;
 import views.StringText;
 
 public class ArrayExercice {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
-
+	MensagensObjects ms =  new MensagensObjects();
+	
 	int cont;
 
 	public void exercice01() {
@@ -69,20 +71,20 @@ public class ArrayExercice {
 		double height, sum = 0, avg;
 		String name;
 
-		System.out.print(msg.person[0]);
+		System.out.print(ms.person[0]);
 		cont = in.nextInt();
 
 		Person[] person = new Person[cont];
 
 		for (int i = 0; i < person.length; i++) {
 
-			System.out.println(msg.person[1] + (i + 1) + msg.person[2]);
+			System.out.println(ms.person[1] + (i + 1) + ms.person[2]);
 			in.nextLine();
-			System.out.print(msg.person[3]);
+			System.out.print(ms.person[3]);
 			name = in.nextLine();
-			System.out.print(msg.person[4]);
+			System.out.print(ms.person[4]);
 			age = in.nextInt();
-			System.out.print(msg.person[5]);
+			System.out.print(ms.person[5]);
 			height = in.nextDouble();
 
 			person[i] = new Person(name, age, height);
@@ -97,7 +99,7 @@ public class ArrayExercice {
 		}
 
 		avg = sum / cont;
-		System.out.println(msg.person[6] + String.format("%.2f", avg));
+		System.out.println(ms.person[6] + String.format("%.2f", avg));
 
 		for (int i = 0; i < person.length; i++) {
 			if (person[i].getAge() < 16) {
@@ -105,7 +107,7 @@ public class ArrayExercice {
 			}
 		}
 
-		System.out.println(msg.person[7] + String.format("%.1f", (100.00 * contp) / cont) + "%");
+		System.out.println(ms.person[7] + String.format("%.1f", (100.00 * contp) / cont) + "%");
 
 		for (int i = 0; i < person.length; i++) {
 			if (person[i].getAge() < 16) {

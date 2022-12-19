@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 import statics.ConditionalStatic;
 import statics.DivisionStatic;
+import views.MensagensObjects;
 import views.StringText;
 
 public class WhileExercice {
 
 	StringText msg = new StringText();
+	MensagensObjects ms =  new MensagensObjects();
 	Scanner in = new Scanner(System.in);
 
 	public void exercice01() {
@@ -28,7 +30,7 @@ public class WhileExercice {
 
 		int x = 1, y = 0, sum = 0;
 
-		System.out.println(msg.person[14]);
+		System.out.println(ms.person[14]);
 
 		while (x > 0) {
 			x = in.nextInt();
@@ -82,7 +84,7 @@ public class WhileExercice {
 
 		double av1, av2, avg = 0;
 
-		System.out.print(msg.student[0]);
+		System.out.print(ms.student[0]);
 		av1 = in.nextDouble();
 		avg += ConditionalStatic.validatorOfPositiveNumber(av1);
 		
@@ -92,7 +94,7 @@ public class WhileExercice {
 			avg += ConditionalStatic.validatorOfPositiveNumber(av1);
 		}
 
-		System.out.print(msg.student[1]);
+		System.out.print(ms.student[1]);
 		av2 = in.nextDouble();
 		avg += ConditionalStatic.validatorOfPositiveNumber(av2);
 		
