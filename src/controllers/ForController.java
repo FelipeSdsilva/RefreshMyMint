@@ -3,18 +3,18 @@ package controllers;
 import java.util.Scanner;
 
 import exercicies.ForExercice;
-import views.StringText;
+import views.MenuView;
 
 public class ForController {
 
 	public static void menuExerciciesFor() {
 
-		StringText msg = new StringText();
+		MenuView view = new MenuView();
 		Scanner in = new Scanner(System.in);
 		ForExercice exFor = new ForExercice();
 		int n;
 
-		System.out.print(msg.menuFor[0]);
+		System.out.print(view.menuFor);
 		n = in.nextInt();
 
 		switch (n) {

@@ -3,7 +3,7 @@ package controllers;
 import java.util.Scanner;
 
 import exercicies.SequentialStructureExercice;
-import views.StringText;
+import views.MenuView;
 
 public class SequentialStrutureController {
 
@@ -11,10 +11,10 @@ public class SequentialStrutureController {
 
 		SequentialStructureExercice ss = new SequentialStructureExercice();
 		Scanner in = new Scanner(System.in);
-		StringText msg = new StringText();
+		MenuView view = new MenuView();
 		int n;
 
-		System.out.print(msg.menuSeq[0]);
+		System.out.print(view.menuSeq);
 		n = in.nextInt();
 
 		switch (n) {

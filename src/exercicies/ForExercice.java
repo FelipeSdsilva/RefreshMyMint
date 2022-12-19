@@ -50,8 +50,8 @@ public class ForExercice {
 		System.out.print(msg.xAndY[0]);
 		int x = in.nextInt();
 		
-		for (int i = 0; i < x; i++) {
-			if(i % 2 == 0) {
+		for (int i = 0; i <= x; i++) {
+			if(i % 2 == 1) {
 				System.out.println(i);
 			}
 		}

@@ -3,7 +3,7 @@ package controllers;
 import java.util.Scanner;
 
 import exercicies.WhileExercice;
-import views.StringText;
+import views.MenuView;
 
 public class WhileController {
 
@@ -11,10 +11,10 @@ public class WhileController {
 
 		WhileExercice wl = new WhileExercice();
 		Scanner in = new Scanner(System.in);
-		StringText msg = new StringText();
+		MenuView view = new MenuView();
 		int n;
 
-		System.out.print(msg.menuWhile[0]);
+		System.out.print(view.menuWhile);
 		n = in.nextInt();
 
 		switch (n) {

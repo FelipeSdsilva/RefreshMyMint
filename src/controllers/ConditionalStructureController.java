@@ -3,7 +3,7 @@ package controllers;
 import java.util.Scanner;
 
 import exercicies.ConditionalStructureExercice;
-import views.StringText;
+import views.MenuView;
 
 public class ConditionalStructureController {
 
@@ -11,10 +11,10 @@ public class ConditionalStructureController {
 
 		Scanner in = new Scanner(System.in);
 		ConditionalStructureExercice sc = new ConditionalStructureExercice();
-		StringText msg = new StringText();
+		MenuView view = new MenuView();
 		int n;
 
-		System.out.print(msg.menuCond[0]);
+		System.out.print(view.menuCond);
 		n = in.nextInt();
 
 		switch (n) {

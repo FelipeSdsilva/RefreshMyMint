@@ -2,6 +2,7 @@ package controllers;
 
 import java.util.Scanner;
 
+import views.MenuView;
 import views.StringText;
 
 public class InitialController {
@@ -10,9 +11,10 @@ public class InitialController {
 
 		Scanner in = new Scanner(System.in);
 		StringText msg = new StringText();
+		MenuView view = new MenuView();
 		int n;
 
-		System.out.printf(msg.menuIn[0]);
+		System.out.printf(view.menuIn);
 		n = in.nextInt();
 
 		switch (n) {

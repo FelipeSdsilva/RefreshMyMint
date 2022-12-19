@@ -3,7 +3,7 @@ package controllers;
 import java.util.Scanner;
 
 import exercicies.OrientationObjectExercice;
-import views.StringText;
+import views.MenuView;
 
 public class OrientObjectExcControll {
 
@@ -11,10 +11,10 @@ public class OrientObjectExcControll {
 
 		OrientationObjectExercice or = new OrientationObjectExercice();
 		Scanner in = new Scanner(System.in);
-		StringText msg = new StringText();
+		MenuView view = new MenuView();
 		int n;
 
-		System.out.print(msg.menuArr[0]);
+		System.out.print(view.menuArr);
 		n = in.nextInt();
 
 		switch (n) {

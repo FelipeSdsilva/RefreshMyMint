@@ -3,7 +3,7 @@ package controllers;
 import java.util.Scanner;
 
 import exercicies.ArrayExercice;
-import views.StringText;
+import views.MenuView;
 
 public class ArrayController {
 
@@ -11,10 +11,10 @@ public class ArrayController {
 
 		ArrayExercice arr = new ArrayExercice();
 		Scanner in = new Scanner(System.in);
-		StringText msg = new StringText();
+		MenuView view = new MenuView();
 		int n;
 
-		System.out.print(msg.menuArr[0]);
+		System.out.print(view.menuArr);
 		n = in.nextInt();
 
 		switch (n) {
