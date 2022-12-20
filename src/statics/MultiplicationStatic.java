@@ -20,4 +20,8 @@ public class MultiplicationStatic {
 		double positRes = (-b - Math.sqrt(delta)) / (2 * a);
 		return positRes;
 	}
+	
+	public static double percentageOfvalue(double percTotal, double value ) {
+		return (value * 100) / percTotal;
+	}
 }

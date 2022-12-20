@@ -3,6 +3,8 @@ package exercicies;
 import java.util.Scanner;
 
 import controllers.ForController;
+import statics.MultiplicationStatic;
+import views.MensageInBlockView;
 import views.MensagensObjects;
 import views.StringText;
 
@@ -188,32 +190,39 @@ public class ForExercice {
 
 	public void exercice09() {
 
+		MensageInBlockView msgb = new MensageInBlockView();
+
 		char experiment;
-		int expTotal = 0, rabbit = 0, frog = 0, mouse = 0;
-		double percRabbit = 0, percFrog = 0, percMouse = 0;
+
+		double percRabbit = 0, percFrog = 0, percMouse = 0, expTotal = 0, rabbit = 0, frog = 0, mouse = 0, d;
 
 		System.out.print(msg.mensage[55]);
 		n = in.nextInt();
 
-		for (int i = 0; i < n; i++) {
+		for (int i = 1; i <= n; i++) {
 			System.out.print(msg.mensage[56]);
-			n = in.nextInt();
-			
-			expTotal += n;
-			
+			d = in.nextInt();
+
+			expTotal += d;
+
 			System.out.print(msg.mensage[57]);
 			experiment = in.next().charAt(0);
-			
-			if(experiment == 'C') {
-				rabbit += n;
-			}else if(experiment == 'R') {
-				mouse += n;
-			}else if(experiment == 'S') {
-				frog += n;
+
+			if (experiment == 'C') {
+				rabbit += d;
+			} else if (experiment == 'R') {
+				mouse += d;
+			} else if (experiment == 'S') {
+				frog += d;
 			}
 		}
-		
-		System.out.println();
+		percFrog = MultiplicationStatic.percentageOfvalue(expTotal, frog);
+		percRabbit = MultiplicationStatic.percentageOfvalue(expTotal, rabbit);
+		percMouse = MultiplicationStatic.percentageOfvalue(expTotal, mouse);
+
+		System.out.printf(msgb.blocExercice9For, expTotal, rabbit, mouse, frog, percRabbit, percMouse, percFrog);
+
+		ForController.menuExerciciesFor();
 	}
 
 	public void exercice10() {
