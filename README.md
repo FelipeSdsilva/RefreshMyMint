@@ -300,33 +300,32 @@ e um preço. Você deve fazer um programa para ler o código e a
 quantidade comprada de um produto (suponha um código válido), e daí
 informar qual o valor a ser pago, com duas casas decimais, conforme
 tabela de produtos ao lado.  ```
-
-			<table>
-				<tr>
-					<th>Código do produto</th>
-					<th>Preço do produto</th>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>R$ 5.00</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>R$ 3.50</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>R$ 4.80</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>R$ 8.90</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>R$ 7.32</td>
-				</tr>
-			</table>
+<table>
+	<tr>
+		<th>Código do produto</th>
+		<th>Preço do produto</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>R$ 5.00</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>R$ 3.50</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>R$ 4.80</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>R$ 8.90</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>R$ 7.32</td>
+	</tr>
+</table>
 
 Exemplo 1:
 
