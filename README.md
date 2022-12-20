@@ -301,44 +301,44 @@ quantidade comprada de um produto (suponha um código válido), e daí
 informar qual o valor a ser pago, com duas casas decimais, conforme
 tabela de produtos ao lado.  ```
 
-		<table>
-			<tr>
-				<th>Código do produto</th>
-				<th>Preço do produto</th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>R$ 5.00</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>R$ 3.50</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>R$ 4.80</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>R$ 8.90</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>R$ 7.32</td>
-			</tr>
-		</table>
+			<table>
+				<tr>
+					<th>Código do produto</th>
+					<th>Preço do produto</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>R$ 5.00</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>R$ 3.50</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>R$ 4.80</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>R$ 8.90</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>R$ 7.32</td>
+				</tr>
+			</table>
 
 Exemplo 1:
 
-Codigo do produto comprado: 1
-Quantidade comprada: 3
-Valor a pagar: R$ 15.00
+	Codigo do produto comprado: 1
+	Quantidade comprada: 3
+	Valor a pagar: R$ 15.00
 
 Exemplo 2:
 
-Codigo do produto comprado: 4
-Quantidade comprada: 2
-Valor a pagar: R$ 17.80
+	Codigo do produto comprado: 4
+	Quantidade comprada: 2
+	Valor a pagar: R$ 17.80
 
 - [x] ```(10)Fazer um programa para ler dois números inteiros, e dizer se um número é múltiplo do outro. Os
 números podem ser digitados em qualquer ordem. ```
