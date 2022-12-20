@@ -58,8 +58,8 @@ public class MenuView {
 			|           Exercice 07 - divisao           [x] DevSuperior    |
 			|           Exercice 08 - fatorial          [x] DevSuperior    |
 			|           Exercice 09 - experiencias      [x] DevSuperior    |
-			|           Exercice 10 -                   [x] DevSuperior    |
-			|           Exercice 11 -                   [x] DevSuperior    |
+			|           Exercice 10 - divisores_D_n     [x] Udemy          |
+			|           Exercice 11 - Quadrado_Cubo_D_N [x] Udemy          |
 			|                                                              |
 			|                     0 - Initial menu                         |
 			|_______________________""";

@@ -208,11 +208,11 @@ public class ForExercice {
 			System.out.print(msg.mensage[57]);
 			experiment = in.next().charAt(0);
 
-			if (experiment == 'C') {
+			if (experiment == 'C' || experiment == 'c') {
 				rabbit += d;
-			} else if (experiment == 'R') {
+			} else if (experiment == 'R' || experiment == 'r') {
 				mouse += d;
-			} else if (experiment == 'S') {
+			} else if (experiment == 'S' || experiment == 's') {
 				frog += d;
 			}
 		}
