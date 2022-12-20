@@ -43,7 +43,7 @@ public class StringText {
 			"Write three distance: ", // 19
 			"Smaller number: ", // 20
 			"Bigger Distance = %.2f", // 21
-			"Enter with three numbens: ", // 22
+			"Enter with three numbers: ", // 22
 			"High: ", // 23
 			"Restart the program (Y/N)?", // 24
 			"Temperature equivalent in Fahrenheit: ", // 25
@@ -74,11 +74,16 @@ public class StringText {
 			"Imposible division",//50
 			"Enter with denominator: ",//51
 			"Enter with numerator: ",//52
-			"Division = %.2f\n",
+			"Division = %.2f\n",//53
 			"Factorial: ",//54
-			"How many cases of test are write? ",
-			"How many of experiment: ",
-			"Type of experiment: ",
+			"How many cases of test are write? ",//55
+			"How many of experiment: ",//56
+			"Type of experiment: ",//57
+			"Impossible calculation!",//58
+			"Write your password: ",//59
+			"Password invalind, try again: ",//60
+			"Permited Access",//61
+			"Enter with number integer: ",//62
 			
 	};
 

@@ -2,6 +2,7 @@ package exercicies;
 
 import java.util.Scanner;
 
+import controllers.WhileController;
 import statics.ConditionalStatic;
 import statics.DivisionStatic;
 import views.MensagensObjects;
@@ -10,7 +11,7 @@ import views.StringText;
 public class WhileExercice {
 
 	StringText msg = new StringText();
-	MensagensObjects ms =  new MensagensObjects();
+	MensagensObjects ms = new MensagensObjects();
 	Scanner in = new Scanner(System.in);
 
 	public void exercice01() {
@@ -24,6 +25,8 @@ public class WhileExercice {
 
 			ConditionalStatic.ascendingAndDescendingOrder(x, y);
 		} while (x != y);
+
+		WhileController.menuExerciciesWhile();
 	}
 
 	public void exercice02() {
@@ -43,8 +46,10 @@ public class WhileExercice {
 		if (sum > 1) {
 			DivisionStatic.averageAgeIndeterminateNumbers(y, sum);
 		} else {
-			System.out.println("Impossible calculation!");
+			System.out.println(msg.mensage[58]);
 		}
+
+		WhileController.menuExerciciesWhile();
 
 	}
 
@@ -52,16 +57,20 @@ public class WhileExercice {
 
 		int password;
 
+		System.out.print(msg.mensage[59]);
+
 		do {
-			System.out.print("Write your password: ");
+
 			password = in.nextInt();
-			if (password == 2002) {
-				System.out.println("Passwor valid");
-			} else {
-				System.out.println("Passwor invalid");
+
+			if (password != 2002) {
+				System.out.print(msg.mensage[60]);
 			}
+
 		} while (password != 2002);
 
+		System.out.println(msg.mensage[61]);
+		WhileController.menuExerciciesWhile();
 	}
 
 	public void exercice04() {
@@ -77,7 +86,7 @@ public class WhileExercice {
 		} while (x != 0 && y != 0);
 
 		/* Form 2 */
-
+		WhileController.menuExerciciesWhile();
 	}
 
 	public void exercice05() {
@@ -87,7 +96,7 @@ public class WhileExercice {
 		System.out.print(ms.student[0]);
 		av1 = in.nextDouble();
 		avg += ConditionalStatic.validatorOfPositiveNumber(av1);
-		
+
 		while (av1 < 0 || av1 > 10) {
 			ConditionalStatic.validatorOfAvaliation(av1);
 			av1 = in.nextDouble();
@@ -97,32 +106,49 @@ public class WhileExercice {
 		System.out.print(ms.student[1]);
 		av2 = in.nextDouble();
 		avg += ConditionalStatic.validatorOfPositiveNumber(av2);
-		
+
 		while (av2 < 0 || av2 > 10) {
 			ConditionalStatic.validatorOfAvaliation(av2);
 			av2 = in.nextDouble();
 			avg += ConditionalStatic.validatorOfPositiveNumber(av2);
 		}
-		
+
 		DivisionStatic.averageAgeIndeterminateNumbers(2, avg);
+
+		WhileController.menuExerciciesWhile();
 	}
 
 	public void exercice06() {
+
 		ConditionalStatic.acresentNumber();
+		WhileController.menuExerciciesWhile();
 	}
 
 	public void exercice07() {
-		
-		/*
-		 * O programa deve ler um valor inteiro X indefinidas vezes. (O programa irá
-		 * parar quando o valor de X for igual a 0). Para cada X lido, imprima a soma
-		 * dos 5 pares consecutivos a partir de X, inclusive o X, se for par. Se o valor
-		 * de entrada for 4, por exemplo, a saída deve ser 40, que é o resultado da
-		 * operação: 4+6+8+10+12, enquanto que se o valor de entrada for 11, por
-		 * exemplo, a saída deve ser 80, que é a soma de 12+14+16+18+20.
-		 */
 
-		
+		int n = 1, sum = 0;
+
+		do {
+
+			System.out.print(msg.mensage[62]);
+			n = in.nextInt();
+
+			for (int i = n; i < (n + 10); i++) {
+
+				if (i % 2 == 0) {
+					sum += i;
+				}
+			}
+
+			if (n != 0) {
+				System.out.println(msg.xAndY[2] + sum);
+			} else {
+				sum = n;
+			}
+			sum = 0;
+		} while (n != 0);
+
+		WhileController.menuExerciciesWhile();
 	}
 
 	public void exercice08() {
@@ -137,6 +163,8 @@ public class WhileExercice {
 			System.out.print(msg.mensage[24]);
 			cont = in.next().charAt(0);
 		} while (cont != 'n');
+
+		WhileController.menuExerciciesWhile();
 	}
 
 	public void exercice09() {
@@ -156,5 +184,8 @@ public class WhileExercice {
 			cont = in.next().charAt(0);
 
 		} while (cont != 'n' && cont != 'N');
+
+		WhileController.menuExerciciesWhile();
 	}
+
 }

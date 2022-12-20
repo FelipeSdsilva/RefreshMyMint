@@ -226,7 +226,8 @@ public class ForExercice {
 	}
 
 	public void exercice10() {
-
+		//divisores_D_n     [x] Udemy 
+		
 		n = in.nextInt();
 
 		for (i = 1; i <= n; i++) {
@@ -239,7 +240,8 @@ public class ForExercice {
 	}
 
 	public void exercice11() {
-
+		//Quadrado_Cubo_D_N [x] Udemy 
+		
 		n = in.nextInt();
 
 		for (i = 1; i <= n; i++) {
