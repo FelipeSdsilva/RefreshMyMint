@@ -23,7 +23,7 @@ public class MensagensObjects {
 			"Write the salary of person: " };
 
 	public String[] person = { "How many persons will you type? ", // 0
-			"Date of ", // 1
+			"Datas of ", // 1
 			"a person: ", // 2
 			"Name: ", // 3
 			"Age: ", // 4
@@ -36,7 +36,9 @@ public class MensagensObjects {
 			" and ", // 11
 			" years old", // 12
 			" ", // 13
-			"Write ages: " };
+			"Write ages: ",//14
+			"How a many persons you go register? ",//15
+			"Person more old: "};
 
 	public String[] product = { "Enter the product data:", // 0
 			"Product data: ", // 1

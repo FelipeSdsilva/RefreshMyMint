@@ -3,6 +3,7 @@ package exercicies;
 import java.util.Locale;
 import java.util.Scanner;
 
+import controllers.ArrayController;
 import entities.Person;
 import views.MensagensObjects;
 import views.StringText;
@@ -11,8 +12,8 @@ public class ArrayExercice {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
-	MensagensObjects ms =  new MensagensObjects();
-	
+	MensagensObjects ms = new MensagensObjects();
+
 	int cont;
 
 	public void exercice01() {
@@ -37,6 +38,7 @@ public class ArrayExercice {
 			}
 		}
 
+		ArrayController.menuExerciciesArray();
 	}
 
 	public void exercice02() {
@@ -63,6 +65,7 @@ public class ArrayExercice {
 		System.out.println("\nSum: " + String.format("%.2f", sum));
 		System.out.println("Avarage: " + String.format("%.2f", sum / cont));
 
+		ArrayController.menuExerciciesArray();
 	}
 
 	public void exercice03() {
@@ -115,6 +118,8 @@ public class ArrayExercice {
 			}
 
 		}
+
+		ArrayController.menuExerciciesArray();
 	}
 
 	public void exercice04() {
@@ -140,6 +145,8 @@ public class ArrayExercice {
 
 		}
 		System.out.println("\nEven quantity: " + cont);
+
+		ArrayController.menuExerciciesArray();
 	}
 
 	public void exercice05() {
@@ -162,6 +169,8 @@ public class ArrayExercice {
 		}
 		System.out.println("Highest number: " + highest);
 		System.out.println("Position of highest number: " + position);
+
+		ArrayController.menuExerciciesArray();
 	}
 
 	public void exercice06() {
@@ -192,6 +201,8 @@ public class ArrayExercice {
 		for (int i = 0; i < vecC.length; i++) {
 			System.out.println(vecC[i]);
 		}
+
+		ArrayController.menuExerciciesArray();
 	}
 
 	public void exercice07() {
@@ -213,7 +224,6 @@ public class ArrayExercice {
 		System.out.println(msg.array[6] + String.format("%.3f", sum / cont));
 		System.out.println(msg.array[7]);
 
-		
 		for (int i = 0; i < vecD.length; i++) {
 			if (vecD[i] < sum / cont) {
 				System.out.println(vecD[i]);
@@ -249,12 +259,39 @@ public class ArrayExercice {
 	}
 
 	public void exercice09() {
-		/*
-		 * Fazer um programa para ler um conjunto de nomes de pessoas e suas respectivas
-		 * idades. Os nomes devem ser armazenados em um vetor, e as idades em um outro
-		 * vetor. Depois, mostrar na tela o nome da pessoa mais velha.
-		 */
+
+		String name = "";
+		int n, age, moreOld = 0;
+
+		System.out.print(ms.person[15]);
+		n = in.nextInt();
+		Person[] people = new Person[n];
+
+		for (int i = 0; i < people.length; i++) {
+
+			System.out.print(ms.person[1] + (i + 1) + ms.person[2] + "\n" + ms.person[3]);
+			in.nextLine();
+			name = in.nextLine();
+			System.out.print(ms.person[4]);
+			age = in.nextInt();
 		
+			if(age > moreOld) {
+				moreOld = age; 
+			}
+			
+			people[i] = new Person(name, age);
+
+		}
+
+		for (int i = 0; i < people.length; i++) {
+
+			if (people[i].getAge() == moreOld) {
+				name = people[i].getName();
+			}
+		}
+		System.out.println(ms.person[16] + name);
+
+		ArrayController.menuExerciciesArray();
 	}
 
 	public void exercice10() {
@@ -265,6 +302,7 @@ public class ArrayExercice {
 		 * dos alunos aprovados, considerando aprovados aqueles cuja m�dia das notas
 		 * seja maior ou igual a 6.0 (seis).
 		 */
+		ArrayController.menuExerciciesArray();
 	}
 
 	public void exercice11() {
@@ -273,5 +311,6 @@ public class ArrayExercice {
 		 * pessoas. Fazer um programa que calcule e escreva a maior e a menor altura do
 		 * grupo, a m�dia de altura das mulheres, e o n�mero de homens.
 		 */
+		ArrayController.menuExerciciesArray();
 	}
 }

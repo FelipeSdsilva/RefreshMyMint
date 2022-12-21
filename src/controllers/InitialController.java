@@ -3,14 +3,12 @@ package controllers;
 import java.util.Scanner;
 
 import views.MenuView;
-import views.StringText;
 
 public class InitialController {
 
 	public static void menuInitial() {
 
 		Scanner in = new Scanner(System.in);
-		StringText msg = new StringText();
 		MenuView view = new MenuView();
 		int n;
 
@@ -43,7 +41,7 @@ public class InitialController {
 			break;
 		}
 		case 00:{
-			System.out.println(msg.mensage[30]);
+			System.out.println(view.screenEnd);
 			break;
 		}
 		default:
