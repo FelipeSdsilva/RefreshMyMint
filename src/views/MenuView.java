@@ -15,7 +15,7 @@ public class MenuView {
 			|           Exercice 06 - soma_vetores    [x] DevSuperior      |
 			|           Exercice 07 - abaixo_da_media [x] DevSuperior      |
 			|           Exercice 08 - media_pares     [x] DevSuperior      |
-			|           Exercice 09 - mais_velho      [ ] DevSuperior      |
+			|           Exercice 09 - mais_velho      [x] DevSuperior      |
 			|           Exercice 10 - aprovados       [ ] DevSuperior      |
 			|           Exercice 11 - dados_pessoas   [ ] DevSuperior      |
 			|                                                              |
@@ -83,24 +83,40 @@ public class MenuView {
 			|                                                              |
 			|_____________________""";
 
+	public String menuOriObj = """
+			 ______________________________________________________________
+			|                                                              |
+			|                 Exercices Orientation Objects                |
+			|                                                              |
+			|                01 - exercicio_de_fixação                     |
+			|                02 - resolvendo_c_orientação                  |
+			|                03 - retângulo                                |
+			|                04 - triângulo                                |
+			|                05 - empregado_funcionario                    |
+			|                06 - estudante_aprovado                       |
+			|                07 - conta_bancaria                           |
+			|                                                              |
+			|                00 - initial menu                             |
+			|_______________________""";
+	
 	public String menuSeq = """
-			______________________________________________________________
-			|                                                             |
-			|               Exercices Sequential Structure                |
-			|                                                             |
-			|         Exercice 01 - terreno     [x] DevSuperior           |
-			|         Exercice 02 - retangulo   [x] DevSuperior           |
-			|         Exercice 03 - idades      [x] DevSuperior           |
-			|         Exercice 04 - soma        [x] DevSuperior           |
-			|         Exercice 05 - troco       [x] DevSuperior           |
-			|         Exercice 06 - circulo     [x] DevSuperior           |
-			|         Exercice 07 - pagamento   [x] DevSuperior           |
-			|         Exercice 08 - consumo     [x] DevSuperior           |
-			|         Exercice 09 - medidas     [x] DevSuperior           |
-			|         Exercice 10 - duracao     [x] DevSuperior           |
-			|         Exercice 11 - vl/dol/Real [x] DevSuperior           |
-			|                                                             |
-			|                   0 - Initial menu                          |
+			 ______________________________________________________________
+			|                                                              |
+			|               Exercices Sequential Structure                 |
+			|                                                              |
+			|         Exercice 01 - terreno     [x] DevSuperior            |
+			|         Exercice 02 - retangulo   [x] DevSuperior            |
+			|         Exercice 03 - idades      [x] DevSuperior            |
+			|         Exercice 04 - soma        [x] DevSuperior            |
+			|         Exercice 05 - troco       [x] DevSuperior            |
+			|         Exercice 06 - circulo     [x] DevSuperior            |
+			|         Exercice 07 - pagamento   [x] DevSuperior            |
+			|         Exercice 08 - consumo     [x] DevSuperior            |
+			|         Exercice 09 - medidas     [x] DevSuperior            |
+			|         Exercice 10 - duracao     [x] DevSuperior            |
+			|         Exercice 11 - vl/dol/Real [x] DevSuperior            |
+			|                                                              |
+			|                   0 - Initial menu                           |
 			|_____________________""";
 
 	public String menuWhile = """
@@ -138,6 +154,8 @@ public class MenuView {
 			|                                                              |
 			|                                                              |
 			|______________________________________________________________|""";
+	
+	
 			
 
 }

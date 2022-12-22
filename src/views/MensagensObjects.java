@@ -69,5 +69,9 @@ public class MensagensObjects {
 			"Reproved ", // 3
 			"Aproved", // 4
 			"Value invalid! try again: ", // 5
-			"Avarage = " };
+			"Avarage = ",//6
+			"Write the name, the firsth and second note of %d Student: ",//7
+			"How a many students are registers? ",//8
+			"Studenst aproved",//9
+	};
 }

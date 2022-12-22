@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 import controllers.ArrayController;
 import entities.Person;
+import entities.Student;
+import statics.DivisionStatic;
+import statics.SumStatic;
 import views.MensagensObjects;
 import views.StringText;
 
@@ -274,11 +277,11 @@ public class ArrayExercice {
 			name = in.nextLine();
 			System.out.print(ms.person[4]);
 			age = in.nextInt();
-		
-			if(age > moreOld) {
-				moreOld = age; 
+
+			if (age > moreOld) {
+				moreOld = age;
 			}
-			
+
 			people[i] = new Person(name, age);
 
 		}
@@ -295,13 +298,46 @@ public class ArrayExercice {
 	}
 
 	public void exercice10() {
-		/*
-		 * Fazer um programa para ler um conjunto de N nomes de alunos, bem como as
-		 * notas que eles tiraram no 1� e 2� semestres. Cada uma dessas
-		 * informa��es deve ser armazenada em um vetor. Depois, imprimir os nomes
-		 * dos alunos aprovados, considerando aprovados aqueles cuja m�dia das notas
-		 * seja maior ou igual a 6.0 (seis).
-		 */
+
+		String name = "";
+		int n = 0;
+
+		@SuppressWarnings("unused")
+		double av1, av2, avg = 0;
+
+		System.out.print(ms.student[8]);
+		n = in.nextInt();
+
+		Student[] students = new Student[n];
+		Double[] avaliations = new Double[n];
+
+		for (int i = 0; i < students.length; i++) {
+			
+			in.nextLine();
+
+			System.out.printf(ms.student[7], (i + 1));
+			System.out.println();
+			name = in.nextLine();
+
+			for (int j = 0; j < 2; j++) {
+				avaliations[j] = av1 = in.nextDouble();
+			}
+
+			students[i] = new Student(name, avaliations);
+
+		}
+
+		System.out.println(ms.student[9]);
+
+		for (int i = 0; i < students.length; i++) {
+
+			if (students[i].finalNoteDivision() >= 6.0) {
+
+				System.out.println(students[i].getName());
+
+			}
+		}
+
 		ArrayController.menuExerciciesArray();
 	}
 
