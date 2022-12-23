@@ -38,7 +38,14 @@ public class MensagensObjects {
 			" ", // 13
 			"Write ages: ",//14
 			"How a many persons you go register? ",//15
-			"Person more old: "};
+			"Person more old: ",//16
+			"Height of %da person: ",//17
+			"Gender of %da person: ",//18
+			"Number of mans = ",//19
+			"Avarege height of womans = ",//20
+			"Height smaller = ",//21
+			"Height Bigger = ",//22
+			};
 
 	public String[] product = { "Enter the product data:", // 0
 			"Product data: ", // 1

@@ -1,5 +1,7 @@
 package entities;
 
+import views.MensagensObjects;
+
 public class Person {
 
 	private String name;
@@ -24,6 +26,11 @@ public class Person {
 	public Person(String name, int age, double height, char gender) {
 		this.name = name;
 		this.age = age;
+		this.height = height;
+		this.gender = gender;
+	}
+
+	public Person(double height, char gender) {
 		this.height = height;
 		this.gender = gender;
 	}

@@ -307,7 +307,6 @@ public class ArrayExercice {
 		n = in.nextInt();
 
 		Student[] students = new Student[n];
-		
 
 		for (int i = 0; i < students.length; i++) {
 
@@ -339,7 +338,49 @@ public class ArrayExercice {
 
 	public void exercice11() {
 
-		
+		double height , heightBigger = 0, heightAvgWoman = 0, heightSmaller = 0;
+		char gender;
+		int n, contMen = 0, contWom = 0;
+		;
+		System.out.print(ms.person[15]);
+		n = in.nextInt();
+
+		Person[] persons = new Person[n];
+
+		for (int i = 0; i < persons.length; i++) {
+
+			System.out.printf(ms.person[17], (i + 1));
+			height = in.nextDouble();
+			System.out.printf(ms.person[18], (i + 1));
+			gender = in.next().charAt(0);
+
+			if (height > heightBigger) {
+				heightBigger = height;
+				heightSmaller = height;
+			} else if (height < heightSmaller) {
+				heightSmaller = height;
+			}
+
+			if (gender == 'M' || gender == 'm') {
+				contMen++;
+			} else {
+				contWom++;
+				heightAvgWoman += height;
+			}
+
+			persons[i] = new Person(height, gender);
+		}
+
+		System.out.println(ms.person[21] + heightSmaller);
+		System.out.println(ms.person[22] + heightBigger);
+		System.out.println(ms.person[20] + String.format("%.2f", (heightAvgWoman / contWom)));
+		System.out.println(ms.person[19] + contMen);
+
+		ArrayController.menuExerciciesArray();
+	}
+
+	public void exercice12() {
+
 		ArrayController.menuExerciciesArray();
 	}
 }
