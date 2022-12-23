@@ -16,7 +16,7 @@ public class MenuView {
 			|           Exercice 07 - abaixo_da_media [x] DevSuperior      |
 			|           Exercice 08 - media_pares     [x] DevSuperior      |
 			|           Exercice 09 - mais_velho      [x] DevSuperior      |
-			|           Exercice 10 - aprovados       [ ] DevSuperior      |
+			|           Exercice 10 - aprovados       [x] DevSuperior      |
 			|           Exercice 11 - dados_pessoas   [ ] DevSuperior      |
 			|                                                              |
 			|                     0 - Initial menu                         |
@@ -88,6 +88,7 @@ public class MenuView {
 			|                                                              |
 			|                 Exercices Orientation Objects                |
 			|                                                              |
+			|                                                              |
 			|                01 - exercicio_de_fixação                     |
 			|                02 - resolvendo_c_orientação                  |
 			|                03 - retângulo                                |
@@ -96,7 +97,9 @@ public class MenuView {
 			|                06 - estudante_aprovado                       |
 			|                07 - conta_bancaria                           |
 			|                                                              |
+			|                                                              |
 			|                00 - initial menu                             |
+			|                                                              |
 			|_______________________""";
 	
 	public String menuSeq = """

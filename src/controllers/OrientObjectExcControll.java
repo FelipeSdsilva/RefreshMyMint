@@ -14,13 +14,12 @@ public class OrientObjectExcControll {
 		MenuView view = new MenuView();
 		int n;
 
-		System.out.print(view.menuArr);
+		System.out.print(view.menuOriObj);
 		n = in.nextInt();
 
 		switch (n) {
 		case 1: {
 			or.accountExercicie();
-			;
 			break;
 		}
 		case 2: {

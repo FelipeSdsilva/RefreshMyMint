@@ -6,8 +6,6 @@ import java.util.Scanner;
 import controllers.ArrayController;
 import entities.Person;
 import entities.Student;
-import statics.DivisionStatic;
-import statics.SumStatic;
 import views.MensagensObjects;
 import views.StringText;
 
@@ -309,21 +307,19 @@ public class ArrayExercice {
 		n = in.nextInt();
 
 		Student[] students = new Student[n];
-		Double[] avaliations = new Double[n];
+		
 
 		for (int i = 0; i < students.length; i++) {
-			
+
 			in.nextLine();
 
 			System.out.printf(ms.student[7], (i + 1));
 			System.out.println();
 			name = in.nextLine();
+			av1 = in.nextDouble();
+			av2 = in.nextDouble();
 
-			for (int j = 0; j < 2; j++) {
-				avaliations[j] = av1 = in.nextDouble();
-			}
-
-			students[i] = new Student(name, avaliations);
+			students[i] = new Student(name, av1, av2);
 
 		}
 
@@ -342,11 +338,8 @@ public class ArrayExercice {
 	}
 
 	public void exercice11() {
-		/*
-		 * Tem-se um conjunto de dados contendo a altura e o g�nero (M, F) de N
-		 * pessoas. Fazer um programa que calcule e escreva a maior e a menor altura do
-		 * grupo, a m�dia de altura das mulheres, e o n�mero de homens.
-		 */
+
+		
 		ArrayController.menuExerciciesArray();
 	}
 }
