@@ -4,6 +4,8 @@ public class Product {
 
 	private Integer code;
 	private String name;
+	private Double priceOfPurchase;
+	private Double priceOfSale;
 	private Double price = 0.0;
 	private Integer quantity = 0;
 
@@ -30,6 +32,22 @@ public class Product {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Double getPriceOfPurchase() {
+		return priceOfPurchase;
+	}
+
+	public void setPriceOfPurchase(Double priceOfPurchase) {
+		this.priceOfPurchase = priceOfPurchase;
+	}
+
+	public Double getPriceOfSale() {
+		return priceOfSale;
+	}
+
+	public void setPriceOfSale(Double priceOfSale) {
+		this.priceOfSale = priceOfSale;
 	}
 
 	public Double getPrice() {

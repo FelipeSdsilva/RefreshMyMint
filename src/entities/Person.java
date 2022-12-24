@@ -1,7 +1,5 @@
 package entities;
 
-import views.MensagensObjects;
-
 public class Person {
 
 	private String name;

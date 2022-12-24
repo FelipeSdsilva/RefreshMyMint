@@ -66,6 +66,10 @@ public class ArrayController {
 			arr.exercice11();
 			break;
 		}
+		case 12: {
+			arr.exercice12();
+			break;
+		}
 		default:
 			InitialController.menuInitial();
 		}

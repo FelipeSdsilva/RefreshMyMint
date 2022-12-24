@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import controllers.ArrayController;
 import entities.Person;
+import entities.Product;
 import entities.Student;
 import views.MensagensObjects;
 import views.StringText;
@@ -381,6 +382,12 @@ public class ArrayExercice {
 
 	public void exercice12() {
 
+		int n;
+		
+		n = in.nextInt();
+		
+		Product[] products = new Product[n];
+		
 		ArrayController.menuExerciciesArray();
 	}
 }
