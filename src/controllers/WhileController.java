@@ -2,7 +2,7 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.WhileExercice;
+import exercices.WhileExercice;
 import views.MenuView;
 
 public class WhileController {

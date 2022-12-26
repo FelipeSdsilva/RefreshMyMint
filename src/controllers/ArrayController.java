@@ -2,7 +2,7 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.ArrayExercice;
+import exercices.ArrayExercice;
 import views.MenuView;
 
 public class ArrayController {

@@ -2,7 +2,7 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.ConditionalStructureExercice;
+import exercices.ConditionalStructureExercice;
 import views.MenuView;
 
 public class ConditionalStructureController {

@@ -2,7 +2,7 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.OrientationObjectExercice;
+import exercices.OrientationObjectExercice;
 import views.MenuView;
 
 public class OrientObjectExcControll {

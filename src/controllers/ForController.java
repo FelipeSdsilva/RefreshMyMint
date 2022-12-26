@@ -2,7 +2,7 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.ForExercice;
+import exercices.ForExercice;
 import views.MenuView;
 
 public class ForController {

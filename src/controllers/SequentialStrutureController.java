@@ -2,7 +2,7 @@ package controllers;
 
 import java.util.Scanner;
 
-import exercicies.SequentialStructureExercice;
+import exercices.SequentialStructureExercice;
 import views.MenuView;
 
 public class SequentialStrutureController {

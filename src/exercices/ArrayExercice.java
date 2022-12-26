@@ -1,4 +1,4 @@
-package exercicies;
+package exercices;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -382,11 +382,18 @@ public class ArrayExercice {
 
 	public void exercice12() {
 
+		String name;
+		double priceSale, pricePurchase;
 		int n;
 		
+		System.out.print(ms.product[14]);
 		n = in.nextInt();
 		
 		Product[] products = new Product[n];
+		
+		for (int i = 0; i < products.length; i++) {
+			System.out.println();
+		}
 		
 		ArrayController.menuExerciciesArray();
 	}
