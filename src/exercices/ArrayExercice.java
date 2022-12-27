@@ -339,7 +339,7 @@ public class ArrayExercice {
 
 	public void exercice11() {
 
-		double height , heightBigger = 0, heightAvgWoman = 0, heightSmaller = 0;
+		double height, heightBigger = 0, heightAvgWoman = 0, heightSmaller = 0;
 		char gender;
 		int n, contMen = 0, contWom = 0;
 		;
@@ -385,16 +385,26 @@ public class ArrayExercice {
 		String name;
 		double priceSale, pricePurchase;
 		int n;
-		
+
 		System.out.print(ms.product[14]);
 		n = in.nextInt();
-		
+
 		Product[] products = new Product[n];
-		
+
 		for (int i = 0; i < products.length; i++) {
-			System.out.println();
+
+			System.out.print(ms.product[15] + (i + 1) + "\n" + ms.person[3]);
+			name = in.nextLine();
+
+			System.out.print(ms.product[12]);
+			pricePurchase = in.nextDouble();
+
+			System.out.print(ms.product[13]);
+			priceSale = in.nextDouble();
+
+			products[i] = new Product(name, pricePurchase, priceSale);
 		}
-		
+
 		ArrayController.menuExerciciesArray();
 	}
 }

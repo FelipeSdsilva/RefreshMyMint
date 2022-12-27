@@ -18,6 +18,13 @@ public class Product {
 		this.price = price;
 	}
 
+	public Product(String name, Double priceOfPurchase, Double priceOfSale) {
+		super();
+		this.name = name;
+		this.priceOfPurchase = priceOfPurchase;
+		this.priceOfSale = priceOfSale;
+	}
+
 	public Integer getCode() {
 		return code;
 	}

@@ -70,7 +70,8 @@ public class MensagensObjects {
 					""",// 11
 					"Price of purchase: ",//12
 					"Price of sale: ",//13
-					"How a many data of products? "
+					"How a many data of products? ",
+					"Product ",//15
 	};
 
 	public String[] student = { "Enter with the firsth note: ", // 0
