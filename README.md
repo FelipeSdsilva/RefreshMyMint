@@ -1053,7 +1053,7 @@ Exemplo:
 	Numero de homens = 2
 
 
-- [ ] ```(12)Um comerciante deseja fazer o levantamento do lucro das mercadorias que ele comercializa. Para isto,
+- [x] ```(12)Um comerciante deseja fazer o levantamento do lucro das mercadorias que ele comercializa. Para isto,
 mandou digitar um conjunto de N mercadorias, cada uma contendo nome, preço de compra e preço de
 venda das mesmas. Fazer um programa que leia tais dados e determine e escreva quantas mercadorias
 proporcionaram:

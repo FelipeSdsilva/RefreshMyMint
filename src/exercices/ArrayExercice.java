@@ -383,8 +383,8 @@ public class ArrayExercice {
 	public void exercice12() {
 
 		String name;
-		double priceSale, pricePurchase;
-		int n;
+		double priceSale, pricePurchase, sumPur = 0, sumSale = 0, valueAgain = 0;
+		int n, smallerOf10Perc = 0, between10And20Perc = 0, bigger20Perc = 0;
 
 		System.out.print(ms.product[14]);
 		n = in.nextInt();
@@ -394,6 +394,7 @@ public class ArrayExercice {
 		for (int i = 0; i < products.length; i++) {
 
 			System.out.print(ms.product[15] + (i + 1) + "\n" + ms.person[3]);
+			in.nextLine();
 			name = in.nextLine();
 
 			System.out.print(ms.product[12]);
@@ -402,9 +403,25 @@ public class ArrayExercice {
 			System.out.print(ms.product[13]);
 			priceSale = in.nextDouble();
 
+			sumPur += pricePurchase;
+			sumSale += priceSale;
+
+			valueAgain = pricePurchase * 0.10;
+
+			if ((priceSale - pricePurchase) < valueAgain) {
+				smallerOf10Perc++;
+			} else if ((priceSale - pricePurchase) <= (valueAgain = pricePurchase * 0.20)) {
+				between10And20Perc++;
+			} else {
+				bigger20Perc++;
+			}
+
 			products[i] = new Product(name, pricePurchase, priceSale);
 		}
 
+		System.out.printf(ms.product[16], smallerOf10Perc, between10And20Perc, bigger20Perc, sumPur, sumSale,
+				(sumSale - sumPur));
+		
 		ArrayController.menuExerciciesArray();
 	}
 }

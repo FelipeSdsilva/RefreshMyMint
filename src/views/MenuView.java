@@ -17,7 +17,8 @@ public class MenuView {
 			|           Exercice 08 - media_pares     [x] DevSuperior      |
 			|           Exercice 09 - mais_velho      [x] DevSuperior      |
 			|           Exercice 10 - aprovados       [x] DevSuperior      |
-			|           Exercice 11 - dados_pessoas   [ ] DevSuperior      |
+			|           Exercice 11 - dados_pessoas   [x] DevSuperior      |
+			|           Exercice 12 - comerciante     [x] DevSuperior      |
 			|                                                              |
 			|                     0 - Initial menu                         |
 			|__________________________""";

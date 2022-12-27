@@ -36,16 +36,16 @@ public class MensagensObjects {
 			" and ", // 11
 			" years old", // 12
 			" ", // 13
-			"Write ages: ",//14
-			"How a many persons you go register? ",//15
-			"Person more old: ",//16
-			"Height of %da person: ",//17
-			"Gender of %da person: ",//18
-			"Number of mans = ",//19
-			"Avarege height of womans = ",//20
-			"Height smaller = ",//21
-			"Height Bigger = ",//22
-			};
+			"Write ages: ", // 14
+			"How a many persons you go register? ", // 15
+			"Person more old: ", // 16
+			"Height of %da person: ", // 17
+			"Gender of %da person: ", // 18
+			"Number of mans = ", // 19
+			"Avarege height of womans = ", // 20
+			"Height smaller = ", // 21
+			"Height Bigger = ",// 22
+	};
 
 	public String[] product = { "Enter the product data:", // 0
 			"Product data: ", // 1
@@ -67,11 +67,21 @@ public class MensagensObjects {
 
 					Measue whit eight decimal places: %.8f
 					Rouded (three decimal places): %.3f
-					""",// 11
-					"Price of purchase: ",//12
-					"Price of sale: ",//13
-					"How a many data of products? ",
-					"Product ",//15
+					""", // 11
+			"Price of purchase: ", // 12
+			"Price of sale: ", // 13
+			"How a many data of products? ", "Product ", // 15
+			"""
+			Report
+			Again smaller of 10: %d
+			Again between 10 and 20: %d 
+			Again more of 20: %d
+			Total value of purchase: %.2f
+			Total value of sale: %.2f
+			Total again: %.2f 
+			""", // 16
+
+
 	};
 
 	public String[] student = { "Enter with the firsth note: ", // 0
@@ -80,9 +90,9 @@ public class MensagensObjects {
 			"Reproved ", // 3
 			"Aproved", // 4
 			"Value invalid! try again: ", // 5
-			"Avarage = ",//6
-			"Write the name, the firsth and second note of %d Student: ",//7
-			"How a many students are registers? ",//8
-			"Studenst aproved",//9
+			"Avarage = ", // 6
+			"Write the name, the firsth and second note of %d Student: ", // 7
+			"How a many students are registers? ", // 8
+			"Studenst aproved",// 9
 	};
 }
