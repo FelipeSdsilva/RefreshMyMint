@@ -1090,7 +1090,7 @@ Exemplo:
 	Valor total de venda: 33.50
 	Lucro total: 3.50
 
-- [ ] ```(13)A dona de um pensionato possui dez quartos para alugar para estudantes,
+- [x] ```(13)A dona de um pensionato possui dez quartos para alugar para estudantes,
 sendo esses quartos identificados pelos números 0 a 9.
 Fazer um programa que inicie com todos os dez quartos vazios, e depois
 leia uma quantidade N representando o número de estudantes que vão

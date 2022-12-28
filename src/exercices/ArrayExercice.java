@@ -438,19 +438,27 @@ public class ArrayExercice {
 		for (int i = 0; i < n; i++) {
 			in.nextLine();
 
-			System.out.printf(ms.pension[1], (i + 1), "%n", ms.person[3]);
+			System.out.printf(ms.pension[1], (i + 1));
+			System.out.print(ms.person[3]);
 			name = in.nextLine();
-			
+
 			System.out.print(ms.pension[2]);
 			email = in.nextLine();
-			
+
 			System.out.print(ms.pension[3]);
 			room = in.nextInt();
-			
+
 			Student student = new Student(name, email);
-			
+
 			rooms[room] = new Pension(room, student);
-			
+
+		}
+
+		System.out.println(ms.pension[4]);
+		for (int i = 0; i < rooms.length; i++) {
+			if (rooms[i] != null) {
+				System.out.println(rooms[i]);
+			}
 		}
 
 	}

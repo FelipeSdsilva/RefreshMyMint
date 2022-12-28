@@ -32,8 +32,7 @@ public class Pension {
 
 	@Override
 	public String toString() {
-		return "Pension [numbOfRoom=" + numbOfRoom + ", student=" + student + "]";
+		return  numbOfRoom + ": " + student.getName() + ", " + student.getEmail();
 	}
 
-	
 }

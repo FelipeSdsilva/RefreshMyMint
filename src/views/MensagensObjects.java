@@ -96,8 +96,9 @@ public class MensagensObjects {
 	};
 
 	public String[] pension = { "How many rooms will be rented? ", // 0
-			"Rent #%d: ", // 1
+			"Rent #%d: \n", // 1
 			"Email: ", // 2
-			"Room: ",// 3
+			"Room: ", // 3
+			"Busy rooms: ",// 4
 	};
 }
