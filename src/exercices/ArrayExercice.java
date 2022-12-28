@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import controllers.ArrayController;
+import entities.Pension;
 import entities.Person;
 import entities.Product;
 import entities.Student;
@@ -421,7 +422,36 @@ public class ArrayExercice {
 
 		System.out.printf(ms.product[16], smallerOf10Perc, between10And20Perc, bigger20Perc, sumPur, sumSale,
 				(sumSale - sumPur));
-		
+
 		ArrayController.menuExerciciesArray();
+	}
+
+	public void exercice13() {
+
+		String name, email;
+		Pension[] rooms = new Pension[9];
+		int n, room;
+
+		System.out.print(ms.pension[0]);
+		n = in.nextInt();
+
+		for (int i = 0; i < n; i++) {
+			in.nextLine();
+
+			System.out.printf(ms.pension[1], (i + 1), "%n", ms.person[3]);
+			name = in.nextLine();
+			
+			System.out.print(ms.pension[2]);
+			email = in.nextLine();
+			
+			System.out.print(ms.pension[3]);
+			room = in.nextInt();
+			
+			Student student = new Student(name, email);
+			
+			rooms[room] = new Pension(room, student);
+			
+		}
+
 	}
 }

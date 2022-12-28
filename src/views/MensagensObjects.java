@@ -72,15 +72,14 @@ public class MensagensObjects {
 			"Price of sale: ", // 13
 			"How a many data of products? ", "Product ", // 15
 			"""
-			Report
-			Again smaller of 10: %d
-			Again between 10 and 20: %d 
-			Again more of 20: %d
-			Total value of purchase: %.2f
-			Total value of sale: %.2f
-			Total again: %.2f 
-			""", // 16
-
+					Report
+					Again smaller of 10: %d
+					Again between 10 and 20: %d
+					Again more of 20: %d
+					Total value of purchase: %.2f
+					Total value of sale: %.2f
+					Total again: %.2f
+					""", // 16
 
 	};
 
@@ -94,5 +93,11 @@ public class MensagensObjects {
 			"Write the name, the firsth and second note of %d Student: ", // 7
 			"How a many students are registers? ", // 8
 			"Studenst aproved",// 9
+	};
+
+	public String[] pension = { "How many rooms will be rented? ", // 0
+			"Rent #%d: ", // 1
+			"Email: ", // 2
+			"Room: ",// 3
 	};
 }

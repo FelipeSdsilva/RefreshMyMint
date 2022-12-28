@@ -3,11 +3,18 @@ package entities;
 public class Student {
 
 	private String name;
+	private String email;
 	private double av1;
 	private double av2;
 	private Double[] avaliantion;
 
 	public Student() {
+	}
+
+	public Student(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
 	}
 
 	public Student(String name, double av1, double av2) {
@@ -27,6 +34,14 @@ public class Student {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public double getAv1() {
