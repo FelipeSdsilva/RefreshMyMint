@@ -18,7 +18,7 @@ public class MenuView {
 			|           Exercice 09 - mais_velho      [x] DevSuperior      |
 			|           Exercice 10 - aprovados       [x] DevSuperior      |
 			|           Exercice 11 - dados_pessoas   [x] DevSuperior      |
-			|           Exercice 12 - comerciante     [x] DevSuperior      |
+			|           Exercice 12 - comerciante     [x] DevSuperior      |x
 			|           Exercice 13 - pensao          [x] Udemy            |
 			|                                                              |
 			|                     0 - Initial menu                         |
