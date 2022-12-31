@@ -1120,6 +1120,9 @@ Exemplo:
 	5: Maria Green, maria@gmail.com
 	8: Alex Brown, alex@gmail.com
 
+##  Exercice List
+
+
 ## Back-End
 
 -Java 17
