@@ -12,6 +12,6 @@ public class ListExercice {
 	StringText msg = new StringText();
 	
 	public void exercice01() {
-		
+		System.out.println();
 	}
 }
