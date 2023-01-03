@@ -22,9 +22,13 @@ public class MensagensObjects {
             "Percentege = ", // 7
             "Write the salary of person: ",// 8
             "How many employee will be register? ",// 9
-            "Employee #%d: \n",// 10
+            "\nEmployee #",// 10
             "Salary: ",// 11
             "Id: ",// 12
+            "Enter the employee id that will have salary increase : ", // 13
+            "Enter the percentage: ",// 14
+            "List of employees: ",// 15
+            "This id is in use! "
     };
 
     public String[] person = {"How many persons will you type? ", // 0

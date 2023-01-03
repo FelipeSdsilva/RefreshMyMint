@@ -2,77 +2,97 @@ package entities;
 
 public class Employee {
 
-	private String name;
-	private Double grossSalary;
-	private Double tax = 0.0;
-	private Double valuePerHour;
-	private Integer hoursJobs;
-	
-	public Employee() {
-	}
+    private Long id;
+    private String name;
+    private Double grossSalary;
+    private Double tax = 0.0;
+    private Double valuePerHour;
+    private Integer hoursJobs;
 
-	public Employee(String name, Double grossSalary, Double tax) {
-		this.name = name;
-		this.grossSalary = grossSalary;
-		this.tax = tax ;
-	}
+    public Employee() {
+    }
 
-	public String getName() {
-		return name;
-	}
+    public Employee(Long id, String name, Double grossSalary) {
+        this.id = id;
+        this.name = name;
+        this.grossSalary = grossSalary;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Employee(String name, Double grossSalary, Double tax) {
+        this.name = name;
+        this.grossSalary = grossSalary;
+        this.tax = tax;
+    }
 
-	public Double getGrossSalary() {
-		return grossSalary;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setSalary(Double grossSalary) {
-		this.grossSalary = grossSalary;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public Double getTax() {
-		return tax;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setTax(Double tax) {
-		this.tax = tax;
-	}
-	
-	public Double getValuePerHour() {
-		return valuePerHour;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setValuePerHour(Double valuePerHour) {
-		this.valuePerHour = valuePerHour;
-	}
+    public Double getGrossSalary() {
+        return grossSalary;
+    }
 
-	public Integer getHoursJobs() {
-		return hoursJobs;
-	}
+    public void setSalary(Double grossSalary) {
+        this.grossSalary = grossSalary;
+    }
 
-	public void setHoursJobs(Integer hoursJobs) {
-		this.hoursJobs = hoursJobs;
-	}
+    public Double getTax() {
+        return tax;
+    }
 
-	public double netSalary() {
-		return getGrossSalary() - getTax();
-	}
+    public void setTax(Double tax) {
+        this.tax = tax;
+    }
 
-	public void increaseSalary(Double percentage) {
-		this.grossSalary += ((getGrossSalary() * percentage) / 100);
-	}
+    public Double getValuePerHour() {
+        return valuePerHour;
+    }
 
-	@Override
-	public String toString() {
-		return "Employee : [name=" +
-				name + 
-				", salary= " +
-				String.format("%.2f", netSalary()) +
-				", tax= " + 
-				String.format("%.2f", tax) + "]";
-	}
+    public void setValuePerHour(Double valuePerHour) {
+        this.valuePerHour = valuePerHour;
+    }
+
+    public Integer getHoursJobs() {
+        return hoursJobs;
+    }
+
+    public void setHoursJobs(Integer hoursJobs) {
+        this.hoursJobs = hoursJobs;
+    }
+
+    public double netSalary() {
+        return getGrossSalary() - getTax();
+    }
+
+    public void increaseSalary(Double percentage) {
+        this.grossSalary += ((getGrossSalary() * percentage) / 100);
+    }
+
+
+    @Override
+    public String toString() {
+
+        if (tax == null) {
+            return "Employee : [name=" +
+                    name +
+                    ", salary= " +
+                    String.format("%.2f", netSalary()) +
+                    ", tax= " +
+                    String.format("%.2f", tax) + "]";
+        }
+        return id + ", " + name + ", " + String.format("%.2f", grossSalary);
+    }
 
 }

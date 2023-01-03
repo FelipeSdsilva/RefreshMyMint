@@ -1,8 +1,8 @@
 package application;
 
-import java.util.Locale;
+import exercices.ListExercice;
 
-import controllers.InitialController;
+import java.util.Locale;
 
 public class App {
 
@@ -10,6 +10,9 @@ public class App {
 
 		Locale.setDefault(Locale.US);
 
-		InitialController.menuInitial();
+		ListExercice list = new ListExercice();
+
+		list.exercice01();
+		//InitialController.menuInitial();
 	}
 }
