@@ -1,13 +1,13 @@
 package controllers;
 
-import java.util.Scanner;
-
 import exercices.SequentialStructureExercice;
 import views.MenuView;
 
+import java.util.Scanner;
+
 public class SequentialStrutureController {
 
-	public static void menuExerciciesSequential() {
+	public static void menuExercicesSequential() {
 
 		SequentialStructureExercice ss = new SequentialStructureExercice();
 		Scanner in = new Scanner(System.in);

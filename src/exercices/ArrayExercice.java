@@ -1,8 +1,5 @@
 package exercices;
 
-import java.util.Locale;
-import java.util.Scanner;
-
 import controllers.ArrayController;
 import entities.Pension;
 import entities.Person;
@@ -10,6 +7,9 @@ import entities.Product;
 import entities.Student;
 import views.MensagensObjects;
 import views.StringText;
+
+import java.util.Locale;
+import java.util.Scanner;
 
 public class ArrayExercice {
 
@@ -41,7 +41,7 @@ public class ArrayExercice {
 			}
 		}
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice02() {
@@ -68,7 +68,7 @@ public class ArrayExercice {
 		System.out.println("\nSum: " + String.format("%.2f", sum));
 		System.out.println("Avarage: " + String.format("%.2f", sum / cont));
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice03() {
@@ -122,7 +122,7 @@ public class ArrayExercice {
 
 		}
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice04() {
@@ -149,7 +149,7 @@ public class ArrayExercice {
 		}
 		System.out.println("\nEven quantity: " + cont);
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice05() {
@@ -173,7 +173,7 @@ public class ArrayExercice {
 		System.out.println("Highest number: " + highest);
 		System.out.println("Position of highest number: " + position);
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice06() {
@@ -205,7 +205,7 @@ public class ArrayExercice {
 			System.out.println(vecC[i]);
 		}
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice07() {
@@ -232,6 +232,7 @@ public class ArrayExercice {
 				System.out.println(vecD[i]);
 			}
 		}
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice08() {
@@ -259,6 +260,7 @@ public class ArrayExercice {
 		} else {
 			System.out.println(msg.array[9]);
 		}
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice09() {
@@ -294,7 +296,7 @@ public class ArrayExercice {
 		}
 		System.out.println(ms.person[16] + name);
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice10() {
@@ -335,7 +337,7 @@ public class ArrayExercice {
 			}
 		}
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice11() {
@@ -378,7 +380,7 @@ public class ArrayExercice {
 		System.out.println(ms.person[20] + String.format("%.2f", (heightAvgWoman / contWom)));
 		System.out.println(ms.person[19] + contMen);
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice12() {
@@ -423,7 +425,7 @@ public class ArrayExercice {
 		System.out.printf(ms.product[16], smallerOf10Perc, between10And20Perc, bigger20Perc, sumPur, sumSale,
 				(sumSale - sumPur));
 
-		ArrayController.menuExerciciesArray();
+		ArrayController.menuExercicesArray();
 	}
 
 	public void exercice13() {
@@ -461,5 +463,6 @@ public class ArrayExercice {
 			}
 		}
 
+		ArrayController.menuExercicesArray();
 	}
 }

@@ -1,5 +1,6 @@
 package exercices;
 
+import controllers.ListController;
 import entities.Employee;
 import views.MensagensObjects;
 
@@ -59,5 +60,8 @@ public class ListExercice {
         for (Employee emp : employees) {
             System.out.println(emp);
         }
+
+        ListController.ListExerciceMenu();
+
     }
 }

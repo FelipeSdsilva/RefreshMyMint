@@ -1,193 +1,220 @@
 package exercices;
 
-import java.util.Scanner;
-
+import controllers.ConditionalStructureController;
 import statics.ConditionalStatic;
 import statics.MultiplicationStatic;
 import statics.SumStatic;
 import views.MensagensObjects;
 import views.StringText;
 
+import java.util.Scanner;
+
 public class ConditionalStructureExercice {
 
-	Scanner in = new Scanner(System.in);
-	StringText msg = new StringText();
-	MensagensObjects ms =  new MensagensObjects();
-	
-	public void exercice01() {
-		Double av1, av2, sum;
+    Scanner in = new Scanner(System.in);
+    StringText msg = new StringText();
+    MensagensObjects ms = new MensagensObjects();
 
-		System.out.print(ms.student[0]);
-		av1 = in.nextDouble();
-		System.out.print(ms.student[1]);
-		av2 = in.nextDouble();
+    public void exercice01() {
+        Double av1, av2, sum;
 
-		sum = SumStatic.sumTwoNumbersDoub(av1, av2);
+        System.out.print(ms.student[0]);
+        av1 = in.nextDouble();
+        System.out.print(ms.student[1]);
+        av2 = in.nextDouble();
 
-		String resp = (sum < 60) ? ms.student[3] : "";
+        sum = SumStatic.sumTwoNumbersDoub(av1, av2);
 
-		System.out.println(ms.student[2] + sum + "\n" + resp);
-	}
+        String resp = (sum < 60) ? ms.student[3] : "";
 
-	public void exercice02() {
+        System.out.println(ms.student[2] + sum + "\n" + resp);
 
-		double a, b, c, delt, x1, x2;
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-		System.out.print(msg.mensage[9]);
-		a = in.nextDouble();
-		System.out.print(msg.mensage[10]);
-		b = in.nextDouble();
-		System.out.print(msg.mensage[11]);
-		c = in.nextDouble();
+    public void exercice02() {
 
-		delt = MultiplicationStatic.formOfBaskara(a, b, c);
+        double a, b, c, delt, x1, x2;
 
-		x1 = MultiplicationStatic.positiveValueBaskara(a, b, delt);
-		x2 = MultiplicationStatic.negativeValueBaskara(a, b, delt);
+        System.out.print(msg.mensage[9]);
+        a = in.nextDouble();
+        System.out.print(msg.mensage[10]);
+        b = in.nextDouble();
+        System.out.print(msg.mensage[11]);
+        c = in.nextDouble();
 
-		String result = !(x1 != Double.NaN && x2 != Double.NaN) ? msg.mensage[12]
-				: msg.xAndY[3] + String.format("%.4f", x1) + "\n" + msg.xAndY[4] + String.format("%.4f", x2);
+        delt = MultiplicationStatic.formOfBaskara(a, b, c);
 
-		System.out.println(result);
-	}
+        x1 = MultiplicationStatic.positiveValueBaskara(a, b, delt);
+        x2 = MultiplicationStatic.negativeValueBaskara(a, b, delt);
 
-	public void exercice03() {
+        String result = !(x1 != Double.NaN && x2 != Double.NaN) ? msg.mensage[12]
+                : msg.xAndY[3] + String.format("%.4f", x1) + "\n" + msg.xAndY[4] + String.format("%.4f", x2);
 
-		int a, b, c;
+        System.out.println(result);
 
-		System.out.print(msg.mensage[13]);
-		a = in.nextInt();
-		System.out.print(msg.mensage[14]);
-		b = in.nextInt();
-		System.out.print(msg.mensage[15]);
-		c = in.nextInt();
-		ConditionalStatic.smallerBetweeThreeNumbers(a, b, c);
-	}
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-	public void exercice04() {
+    public void exercice03() {
 
-		int min;
+        int a, b, c;
 
-		System.out.print(msg.mensage[16]);
-		min = in.nextInt();
+        System.out.print(msg.mensage[13]);
+        a = in.nextInt();
+        System.out.print(msg.mensage[14]);
+        b = in.nextInt();
+        System.out.print(msg.mensage[15]);
+        c = in.nextInt();
+        ConditionalStatic.smallerBetweeThreeNumbers(a, b, c);
 
-		System.out.println(msg.mensage[17] + String.format("%.2f", ConditionalStatic.valueContOfTellOperator(min)));
-	}
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-	public void exercice05() {
+    public void exercice04() {
 
-		double money, totalValue, price;
-		int qtd;
+        int min;
 
-		System.out.print(ms.product[5]);
-		price = in.nextDouble();
+        System.out.print(msg.mensage[16]);
+        min = in.nextInt();
 
-		System.out.print(ms.product[6]);
-		qtd = in.nextInt();
+        System.out.println(msg.mensage[17] + String.format("%.2f", ConditionalStatic.valueContOfTellOperator(min)));
 
-		System.out.print(ms.product[7]);
-		money = in.nextDouble();
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-		totalValue = MultiplicationStatic.converterDollar(price, (double) qtd);
+    public void exercice05() {
 
-		ConditionalStatic.changeVerification(money, totalValue);
-	}
+        double money, totalValue, price;
+        int qtd;
 
-	public void exercice06() {
-		double avgGlu;
-		System.out.print(msg.mensage[18]);
-		avgGlu = in.nextDouble();
+        System.out.print(ms.product[5]);
+        price = in.nextDouble();
 
-		ConditionalStatic.quantityOfGlucose(avgGlu);
-	}
+        System.out.print(ms.product[6]);
+        qtd = in.nextInt();
 
-	public void exercice07() {
-		double a, b, c;
+        System.out.print(ms.product[7]);
+        money = in.nextDouble();
 
-		System.out.println(msg.mensage[19]);
-		a = in.nextDouble();
-		b = in.nextDouble();
-		c = in.nextDouble();
+        totalValue = MultiplicationStatic.converterDollar(price, (double) qtd);
 
-		ConditionalStatic.biggerDistance(a, b, c);
-	}
+        ConditionalStatic.changeVerification(money, totalValue);
 
-	public void exercice08() {
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-		char scale;
-		double temp;
+    public void exercice06() {
+        double avgGlu;
+        System.out.print(msg.mensage[18]);
+        avgGlu = in.nextDouble();
 
-		System.out.print(msg.mensage[28]);
-		scale = in.next().charAt(0);
+        ConditionalStatic.quantityOfGlucose(avgGlu);
 
-		String result = (scale == 'C') ? msg.mensage[26] : msg.mensage[27];
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-		System.out.print(result);
-		temp = in.nextDouble();
+    public void exercice07() {
+        double a, b, c;
 
-		String result1 = (scale == 'C') ? msg.mensage[25] : msg.mensage[29];
+        System.out.println(msg.mensage[19]);
+        a = in.nextDouble();
+        b = in.nextDouble();
+        c = in.nextDouble();
 
-		System.out.println(
-				result1 + String.format("%.2f", ConditionalStatic.convertTemperatureCelciusAndFahrenheit(scale, temp)));
-	}
+        ConditionalStatic.biggerDistance(a, b, c);
 
-	public void exercice09() {
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-		int codProd, qtd;
+    public void exercice08() {
 
-		System.out.print(ms.product[10]);
-		codProd = in.nextInt();
-		System.out.print(ms.product[6]);
-		qtd = in.nextInt();
+        char scale;
+        double temp;
 
-		System.out.print(ms.product[9]);
-		ConditionalStatic.totalOrderPriceSnackBar(codProd, qtd);
-	}
+        System.out.print(msg.mensage[28]);
+        scale = in.next().charAt(0);
 
-	public void exercice10() {
+        String result = (scale == 'C') ? msg.mensage[26] : msg.mensage[27];
 
-		int a, b;
+        System.out.print(result);
+        temp = in.nextDouble();
 
-		System.out.println(msg.mensage[31]);
-		a = in.nextInt();
-		b = in.nextInt();
+        String result1 = (scale == 'C') ? msg.mensage[25] : msg.mensage[29];
 
-		ConditionalStatic.areMultiples(a, b);
-	}
+        System.out.println(
+                result1 + String.format("%.2f", ConditionalStatic.convertTemperatureCelciusAndFahrenheit(scale, temp)));
 
-	public void exercice11() {
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-		double salary;
+    public void exercice09() {
 
-		System.out.print(ms.employee[8]);
-		salary = in.nextDouble();
+        int codProd, qtd;
 
-		ConditionalStatic.increasySalary(salary);
-	}
+        System.out.print(ms.product[10]);
+        codProd = in.nextInt();
+        System.out.print(ms.product[6]);
+        qtd = in.nextInt();
 
-	public void exercice12() {
+        System.out.print(ms.product[9]);
+        ConditionalStatic.totalOrderPriceSnackBar(codProd, qtd);
 
-		int initH, endH;
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-		System.out.print(msg.mensage[34]);
-		initH = in.nextInt();
+    public void exercice10() {
 
-		System.out.print(msg.mensage[35]);
-		endH = in.nextInt();
+        int a, b;
 
-		SumStatic.initalAndEndHorTheGame(initH, endH);
-	}
+        System.out.println(msg.mensage[31]);
+        a = in.nextInt();
+        b = in.nextInt();
 
-	public void exercice13() {
+        ConditionalStatic.areMultiples(a, b);
 
-		double x = 0, y = 0;
+        ConditionalStructureController.menuExercicesConditional();
+    }
 
-		System.out.print(msg.xAndY[0]);
-		x = in.nextDouble();
+    public void exercice11() {
 
-		System.out.print(msg.xAndY[1]);
-		y = in.nextDouble();
+        double salary;
 
-		ConditionalStatic.planCartesian('D',x, y);		
-	}
+        System.out.print(ms.employee[8]);
+        salary = in.nextDouble();
+
+        ConditionalStatic.increasySalary(salary);
+
+        ConditionalStructureController.menuExercicesConditional();
+    }
+
+    public void exercice12() {
+
+        int initH, endH;
+
+        System.out.print(msg.mensage[34]);
+        initH = in.nextInt();
+
+        System.out.print(msg.mensage[35]);
+        endH = in.nextInt();
+
+        SumStatic.initalAndEndHorTheGame(initH, endH);
+
+        ConditionalStructureController.menuExercicesConditional();
+    }
+
+    public void exercice13() {
+
+        double x = 0, y = 0;
+
+        System.out.print(msg.xAndY[0]);
+        x = in.nextDouble();
+
+        System.out.print(msg.xAndY[1]);
+        y = in.nextDouble();
+
+        ConditionalStatic.planCartesian('D', x, y);
+
+        ConditionalStructureController.menuExercicesConditional();
+    }
 }

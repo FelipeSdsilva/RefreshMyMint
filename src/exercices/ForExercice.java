@@ -1,12 +1,12 @@
 package exercices;
 
-import java.util.Scanner;
-
 import controllers.ForController;
 import statics.MultiplicationStatic;
 import views.MensageInBlockView;
 import views.MensagensObjects;
 import views.StringText;
+
+import java.util.Scanner;
 
 public class ForExercice {
 
@@ -23,7 +23,7 @@ public class ForExercice {
 		for (int i = 0; i <= 10; i++) {
 			System.out.println(n + " X " + i + " = " + (n * i));
 		}
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice02() {
@@ -46,7 +46,7 @@ public class ForExercice {
 
 		System.out.println(msg.mensage[42] + c);
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice03() {
@@ -59,7 +59,7 @@ public class ForExercice {
 			}
 		}
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice04() {
@@ -82,7 +82,7 @@ public class ForExercice {
 		}
 
 		System.out.println(inp + msg.mensage[43] + "\n" + out + msg.mensage[44]);
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice05() {
@@ -109,7 +109,7 @@ public class ForExercice {
 
 		}
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice06() {
@@ -135,7 +135,7 @@ public class ForExercice {
 		 * md[i])); }
 		 */
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice07() {
@@ -164,7 +164,7 @@ public class ForExercice {
 
 		}
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice08() {
@@ -185,7 +185,7 @@ public class ForExercice {
 
 		System.out.println(msg.mensage[54] + sum);
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice09() {
@@ -222,7 +222,7 @@ public class ForExercice {
 
 		System.out.printf(msgb.blocExercice9For, expTotal, rabbit, mouse, frog, percRabbit, percMouse, percFrog);
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice10() {
@@ -236,7 +236,7 @@ public class ForExercice {
 			}
 		}
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 
 	public void exercice11() {
@@ -252,6 +252,6 @@ public class ForExercice {
 			System.out.println();
 		}
 
-		ForController.menuExerciciesFor();
+		ForController.menuExercicesFor();
 	}
 }

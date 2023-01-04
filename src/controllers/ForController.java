@@ -1,13 +1,13 @@
 package controllers;
 
-import java.util.Scanner;
-
 import exercices.ForExercice;
 import views.MenuView;
 
+import java.util.Scanner;
+
 public class ForController {
 
-	public static void menuExerciciesFor() {
+	public static void menuExercicesFor() {
 
 		MenuView view = new MenuView();
 		Scanner in = new Scanner(System.in);

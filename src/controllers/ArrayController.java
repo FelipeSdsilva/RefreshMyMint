@@ -1,13 +1,13 @@
 package controllers;
 
-import java.util.Scanner;
-
 import exercices.ArrayExercice;
 import views.MenuView;
 
+import java.util.Scanner;
+
 public class ArrayController {
 
-	public static void menuExerciciesArray() {
+	public static void menuExercicesArray() {
 
 		ArrayExercice arr = new ArrayExercice();
 		Scanner in = new Scanner(System.in);

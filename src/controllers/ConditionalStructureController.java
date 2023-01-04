@@ -1,13 +1,13 @@
 package controllers;
 
-import java.util.Scanner;
-
 import exercices.ConditionalStructureExercice;
 import views.MenuView;
 
+import java.util.Scanner;
+
 public class ConditionalStructureController {
 
-	public static void menuExerciciesConditional() {
+	public static void menuExercicesConditional() {
 
 		Scanner in = new Scanner(System.in);
 		ConditionalStructureExercice sc = new ConditionalStructureExercice();
