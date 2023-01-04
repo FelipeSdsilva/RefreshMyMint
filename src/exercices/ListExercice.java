@@ -39,9 +39,9 @@ public class ListExercice {
             employees.add(new Employee(id, name, salary));
         }
 
-
         System.out.print("\n" + ms.employee[13]);
         idEncrease = in.nextLong();
+
 
         List<Employee> employees1 = employees.stream().filter(employee -> employee.getId() == idEncrease).toList();
 
