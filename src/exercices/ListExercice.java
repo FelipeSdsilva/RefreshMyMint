@@ -38,15 +38,21 @@ public class ListExercice {
             employees.add(new Employee(id, name, salary));
         }
 
+
         System.out.print("\n" + ms.employee[13]);
         idEncrease = in.nextLong();
 
-        for (Employee emp : employees) {
-            if (idEncrease == emp.getId()) {
+        List<Employee> employees1 = employees.stream().filter(employee -> employee.getId() == idEncrease).toList();
+
+        if (!(employees1.isEmpty())) {
+            for (Employee emp : employees1) {
                 System.out.print(ms.employee[14]);
                 percent = in.nextDouble();
                 emp.increaseSalary(percent);
+
             }
+        } else {
+            System.out.println(ms.employee[16]);
         }
 
         System.out.println("\n" + ms.employee[15]);

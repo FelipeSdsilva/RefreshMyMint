@@ -28,7 +28,8 @@ public class MensagensObjects {
             "Enter the employee id that will have salary increase : ", // 13
             "Enter the percentage: ",// 14
             "List of employees: ",// 15
-            "This id is in use! "
+            "This id does not exist ! ",// 16
+            "This id exists and is cadastre!",// 17
     };
 
     public String[] person = {"How many persons will you type? ", // 0
