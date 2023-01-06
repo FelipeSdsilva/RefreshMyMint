@@ -3,13 +3,17 @@ package entities;
 import entities.enums.OrderStatus;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Order {
-
     private Long id;
     private LocalDateTime moment;
     private OrderStatus status;
 
+    private Client client;
+
+    List<OrderItem> items = new ArrayList<>();
     public Order() {
     }
 
@@ -43,6 +47,10 @@ public class Order {
         this.status = status;
     }
 
+    public List<OrderItem> getItems() {
+        return items;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
@@ -51,4 +59,6 @@ public class Order {
                 ", status=" + status +
                 '}';
     }
+
+
 }
