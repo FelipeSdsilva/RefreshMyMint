@@ -12,6 +12,11 @@ public class Product {
 	public Product() {
 	}
 
+	public Product(String name, Double price) {
+		this.name = name;
+		this.price = price;
+	}
+
 	public Product(Integer code, String name, Double price) {
 		this.code = code;
 		this.name = name;
@@ -19,7 +24,6 @@ public class Product {
 	}
 
 	public Product(String name, Double priceOfPurchase, Double priceOfSale) {
-		super();
 		this.name = name;
 		this.priceOfPurchase = priceOfPurchase;
 		this.priceOfSale = priceOfSale;
