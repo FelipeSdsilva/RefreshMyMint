@@ -1,5 +1,21 @@
 /.settings
 /.idea
 #class in bin.
+/bin
+/null
+/.settings
+
+*.db
 *.class
+*.jar
+*.war
+*.ear
+*.classpath
+
+/.settings/org.eclipse.jdt.core.prefs
+
+.project
+
+/null/Documentos/indice-lucene/write.lock
+/config.properties
 
