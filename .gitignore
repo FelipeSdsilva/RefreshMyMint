@@ -1,2 +1,5 @@
 /.settings
 /.idea
+#class in bin.
+*.class
+
