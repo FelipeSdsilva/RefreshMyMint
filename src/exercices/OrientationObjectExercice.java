@@ -191,4 +191,8 @@ public class OrientationObjectExercice {
 		}while (cont != 'n');
 
 	}
+
+	public void contractsOfEmployees(){
+
+	}
 }
