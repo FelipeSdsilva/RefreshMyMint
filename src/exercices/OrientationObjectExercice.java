@@ -1,17 +1,13 @@
 package exercices;
 
-import java.util.Locale;
-import java.util.Scanner;
-
-import entities.Account;
-import entities.Employee;
-import entities.Person;
-import entities.Product;
-import entities.Rectangle;
-import entities.Student;
-import entities.Triangle;
+import entities.*;
 import views.MensagensObjects;
 import views.StringText;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.util.Scanner;
 
 public class OrientationObjectExercice {
 
@@ -171,4 +167,28 @@ public class OrientationObjectExercice {
 		System.out.println(ms.account[6] + "\n" + acc);
 	}
 
+	public  void Order(){
+
+		DateTimeFormatter fmt2 =  DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+
+		System.out.println("Welcome to store! ");
+		char cont ;
+
+
+		do{
+			Client client = new Client();
+			Product product = new Product();
+			
+			Order order =  new Order();
+			
+			String date = sc.nextLine();
+			LocalDateTime moment = LocalDateTime.now();
+
+
+
+			System.out.print("Do you when continue? (y= yes/ n= no)");
+			cont = sc.next().charAt(0);
+		}while (cont != 'n');
+
+	}
 }
