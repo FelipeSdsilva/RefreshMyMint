@@ -26,7 +26,7 @@ public class WhileExercice {
 			ConditionalStatic.ascendingAndDescendingOrder(x, y);
 		} while (x != y);
 
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 	}
 
 	public void exercice02() {
@@ -49,7 +49,7 @@ public class WhileExercice {
 			System.out.println(msg.mensage[58]);
 		}
 
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 
 	}
 
@@ -70,7 +70,7 @@ public class WhileExercice {
 		} while (password != 2002);
 
 		System.out.println(msg.mensage[61]);
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 	}
 
 	public void exercice04() {
@@ -86,7 +86,7 @@ public class WhileExercice {
 		} while (x != 0 && y != 0);
 
 		/* Form 2 */
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 	}
 
 	public void exercice05() {
@@ -115,13 +115,13 @@ public class WhileExercice {
 
 		DivisionStatic.averageAgeIndeterminateNumbers(2, avg);
 
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 	}
 
 	public void exercice06() {
 
 		ConditionalStatic.acresentNumber();
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 	}
 
 	public void exercice07() {
@@ -148,7 +148,7 @@ public class WhileExercice {
 			sum = 0;
 		} while (n != 0);
 
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 	}
 
 	public void exercice08() {
@@ -164,7 +164,7 @@ public class WhileExercice {
 			cont = in.next().charAt(0);
 		} while (cont != 'n');
 
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 	}
 
 	public void exercice09() {
@@ -185,7 +185,7 @@ public class WhileExercice {
 
 		} while (cont != 'n' && cont != 'N');
 
-		WhileController.menuExercicesWhile();
+		WhileController.menuExerciseWhile();
 	}
 
 }

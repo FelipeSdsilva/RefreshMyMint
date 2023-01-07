@@ -29,7 +29,7 @@ public class ConditionalStructureExercice {
 
         System.out.println(ms.student[2] + sum + "\n" + resp);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice02() {
@@ -53,7 +53,7 @@ public class ConditionalStructureExercice {
 
         System.out.println(result);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice03() {
@@ -68,7 +68,7 @@ public class ConditionalStructureExercice {
         c = in.nextInt();
         ConditionalStatic.smallerBetweeThreeNumbers(a, b, c);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice04() {
@@ -80,7 +80,7 @@ public class ConditionalStructureExercice {
 
         System.out.println(msg.mensage[17] + String.format("%.2f", ConditionalStatic.valueContOfTellOperator(min)));
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice05() {
@@ -101,7 +101,7 @@ public class ConditionalStructureExercice {
 
         ConditionalStatic.changeVerification(money, totalValue);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice06() {
@@ -111,7 +111,7 @@ public class ConditionalStructureExercice {
 
         ConditionalStatic.quantityOfGlucose(avgGlu);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice07() {
@@ -124,7 +124,7 @@ public class ConditionalStructureExercice {
 
         ConditionalStatic.biggerDistance(a, b, c);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice08() {
@@ -145,7 +145,7 @@ public class ConditionalStructureExercice {
         System.out.println(
                 result1 + String.format("%.2f", ConditionalStatic.convertTemperatureCelciusAndFahrenheit(scale, temp)));
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice09() {
@@ -160,7 +160,7 @@ public class ConditionalStructureExercice {
         System.out.print(ms.product[9]);
         ConditionalStatic.totalOrderPriceSnackBar(codProd, qtd);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice10() {
@@ -173,7 +173,7 @@ public class ConditionalStructureExercice {
 
         ConditionalStatic.areMultiples(a, b);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice11() {
@@ -185,7 +185,7 @@ public class ConditionalStructureExercice {
 
         ConditionalStatic.increasySalary(salary);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice12() {
@@ -200,7 +200,7 @@ public class ConditionalStructureExercice {
 
         SumStatic.initalAndEndHorTheGame(initH, endH);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 
     public void exercice13() {
@@ -215,6 +215,6 @@ public class ConditionalStructureExercice {
 
         ConditionalStatic.planCartesian('D', x, y);
 
-        ConditionalStructureController.menuExercicesConditional();
+        ConditionalStructureController.menuExerciseConditional();
     }
 }

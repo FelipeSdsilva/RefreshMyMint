@@ -21,7 +21,7 @@ public class ArrayExercice {
 
 	public void exercice01() {
 
-		int[] vec = new int[0];
+		int[] vec;
 
 		System.out.print(msg.array[0]);
 		cont = in.nextInt();
@@ -35,18 +35,18 @@ public class ArrayExercice {
 
 		System.out.println("Negative numbers: ");
 
-		for (int i = 0; i < vec.length; i++) {
-			if (vec[i] < 0) {
-				System.out.println(vec[i]);
+		for (int j : vec) {
+			if (j < 0) {
+				System.out.println(j);
 			}
 		}
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice02() {
 
-		double[] vecD = new double[0];
+		double[] vecD;
 		double sum = 0;
 
 		Locale.setDefault(Locale.US);
@@ -66,9 +66,9 @@ public class ArrayExercice {
 			System.out.printf("%.1f ", vecD[i]);
 		}
 		System.out.println("\nSum: " + String.format("%.2f", sum));
-		System.out.println("Avarage: " + String.format("%.2f", sum / cont));
+		System.out.println("Average: " + String.format("%.2f", sum / cont));
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice03() {
@@ -99,34 +99,34 @@ public class ArrayExercice {
 
 		int contp = 0;
 
-		for (int i = 0; i < person.length; i++) {
-			sum += person[i].getHeight();
+		for (Person value : person) {
+			sum += value.getHeight();
 
 		}
 
 		avg = sum / cont;
 		System.out.println(ms.person[6] + String.format("%.2f", avg));
 
-		for (int i = 0; i < person.length; i++) {
-			if (person[i].getAge() < 16) {
+		for (Person value : person) {
+			if (value.getAge() < 16) {
 				contp++;
 			}
 		}
 
 		System.out.println(ms.person[7] + String.format("%.1f", (100.00 * contp) / cont) + "%");
 
-		for (int i = 0; i < person.length; i++) {
-			if (person[i].getAge() < 16) {
-				System.out.println(person[i].getName());
+		for (Person value : person) {
+			if (value.getAge() < 16) {
+				System.out.println(value.getName());
 			}
 
 		}
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice04() {
-		int[] vec = new int[0];
+		int[] vec;
 
 		System.out.print(msg.array[0]);
 		cont = in.nextInt();
@@ -140,16 +140,16 @@ public class ArrayExercice {
 		cont = 0;
 
 		System.out.println("Even numbers: ");
-		for (int i = 0; i < vec.length; i++) {
-			if (vec[i] % 2 == 0) {
-				System.out.print(vec[i] + " ");
+		for (int j : vec) {
+			if (j % 2 == 0) {
+				System.out.print(j + " ");
 				cont++;
 			}
 
 		}
 		System.out.println("\nEven quantity: " + cont);
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice05() {
@@ -173,11 +173,11 @@ public class ArrayExercice {
 		System.out.println("Highest number: " + highest);
 		System.out.println("Position of highest number: " + position);
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice06() {
-		int[] vecA = new int[0], vecB = new int[0], vecC = new int[0];
+		int[] vecA, vecB, vecC;
 
 		System.out.print(msg.array[2]);
 		cont = in.nextInt();
@@ -201,16 +201,16 @@ public class ArrayExercice {
 			vecC[i] = vecA[i] + vecB[i];
 		}
 		System.out.println(msg.array[5]);
-		for (int i = 0; i < vecC.length; i++) {
-			System.out.println(vecC[i]);
+		for (int j : vecC) {
+			System.out.println(j);
 		}
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice07() {
 
-		double[] vecD = new double[0];
+		double[] vecD;
 		double sum = 0;
 
 		System.out.print(msg.array[0]);
@@ -227,17 +227,17 @@ public class ArrayExercice {
 		System.out.println(msg.array[6] + String.format("%.3f", sum / cont));
 		System.out.println(msg.array[7]);
 
-		for (int i = 0; i < vecD.length; i++) {
-			if (vecD[i] < sum / cont) {
-				System.out.println(vecD[i]);
+		for (double v : vecD) {
+			if (v < sum / cont) {
+				System.out.println(v);
 			}
 		}
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice08() {
 
-		int[] vec = new int[0];
+		int[] vec;
 		double sum = 0;
 
 		System.out.print(msg.array[0]);
@@ -260,7 +260,7 @@ public class ArrayExercice {
 		} else {
 			System.out.println(msg.array[9]);
 		}
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice09() {
@@ -288,21 +288,21 @@ public class ArrayExercice {
 
 		}
 
-		for (int i = 0; i < people.length; i++) {
+		for (Person person : people) {
 
-			if (people[i].getAge() == moreOld) {
-				name = people[i].getName();
+			if (person.getAge() == moreOld) {
+				name = person.getName();
 			}
 		}
 		System.out.println(ms.person[16] + name);
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice10() {
 
-		String name = "";
-		int n = 0;
+		String name;
+		int n;
 
 		@SuppressWarnings("unused")
 		double av1, av2, avg = 0;
@@ -328,16 +328,16 @@ public class ArrayExercice {
 
 		System.out.println(ms.student[9]);
 
-		for (int i = 0; i < students.length; i++) {
+		for (Student student : students) {
 
-			if (students[i].finalNoteDivision() >= 6.0) {
+			if (student.finalNoteDivision() >= 6.0) {
 
-				System.out.println(students[i].getName());
+				System.out.println(student.getName());
 
 			}
 		}
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice11() {
@@ -345,7 +345,6 @@ public class ArrayExercice {
 		double height, heightBigger = 0, heightAvgWoman = 0, heightSmaller = 0;
 		char gender;
 		int n, contMen = 0, contWom = 0;
-		;
 		System.out.print(ms.person[15]);
 		n = in.nextInt();
 
@@ -380,13 +379,13 @@ public class ArrayExercice {
 		System.out.println(ms.person[20] + String.format("%.2f", (heightAvgWoman / contWom)));
 		System.out.println(ms.person[19] + contMen);
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice12() {
 
 		String name;
-		double priceSale, pricePurchase, sumPur = 0, sumSale = 0, valueAgain = 0;
+		double priceSale, pricePurchase, sumPur = 0, sumSale = 0, valueAgain;
 		int n, smallerOf10Perc = 0, between10And20Perc = 0, bigger20Perc = 0;
 
 		System.out.print(ms.product[14]);
@@ -413,7 +412,7 @@ public class ArrayExercice {
 
 			if ((priceSale - pricePurchase) < valueAgain) {
 				smallerOf10Perc++;
-			} else if ((priceSale - pricePurchase) <= (valueAgain = pricePurchase * 0.20)) {
+			} else if ((priceSale - pricePurchase) <= pricePurchase * 0.20) {
 				between10And20Perc++;
 			} else {
 				bigger20Perc++;
@@ -425,7 +424,7 @@ public class ArrayExercice {
 		System.out.printf(ms.product[16], smallerOf10Perc, between10And20Perc, bigger20Perc, sumPur, sumSale,
 				(sumSale - sumPur));
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 
 	public void exercice13() {
@@ -457,12 +456,12 @@ public class ArrayExercice {
 		}
 
 		System.out.println(ms.pension[4]);
-		for (int i = 0; i < rooms.length; i++) {
-			if (rooms[i] != null) {
-				System.out.println(rooms[i]);
+		for (Pension pension : rooms) {
+			if (pension != null) {
+				System.out.println(pension);
 			}
 		}
 
-		ArrayController.menuExercicesArray();
+		ArrayController.menuExerciseArray();
 	}
 }
