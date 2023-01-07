@@ -15,7 +15,7 @@ public class OrientationObjectExercice {
 	MensagensObjects ms =  new MensagensObjects();
 	StringText msg = new StringText();
 
-	public void fixedExercicieString() {
+	public void fixedExerciceString() {
 
 		Product p1 = new Product(5290, "Computer", 2100.0);
 		Product p2 = new Product(5598, "Office desk", 650.50);
@@ -57,7 +57,7 @@ public class OrientationObjectExercice {
 		sc.close();
 	}
 
-	public void rectangleExercicie() {
+	public void rectangleExercice() {
 		Rectangle rec = new Rectangle();
 
 		System.out.print(msg.rectangle);
@@ -67,7 +67,7 @@ public class OrientationObjectExercice {
 		System.out.println(rec);
 	}
 
-	public static void triangleExercicie() {
+	public static void triangleExercice() {
 
 		Triangle t1 = new Triangle(), t2 = new Triangle();
 
@@ -96,7 +96,7 @@ public class OrientationObjectExercice {
 		sc.close();
 	}
 	
-	public void employeeExercicie() {
+	public void employeeExercice() {
 
 		Employee emp = new Employee();
 		System.out.print("Name: ");
@@ -116,7 +116,7 @@ public class OrientationObjectExercice {
 
 	}
 
-	public void estudentExercicie() {
+	public void estudentExercice() {
 		Student std = new Student();
 
 		std.setName(sc.nextLine());
@@ -131,7 +131,7 @@ public class OrientationObjectExercice {
 		std.finalNote();
 	}
 
-	public void accountExercicie() {
+	public void accountExercice() {
 		Account acc = new Account();
 		char confDeposit;
 		double value;
