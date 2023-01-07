@@ -1,4 +1,4 @@
-package exercices;
+package exercises;
 
 import controllers.ForController;
 import statics.MultiplicationStatic;
