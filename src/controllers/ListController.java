@@ -19,13 +19,8 @@ public class ListController {
         n = in.nextInt();
 
         switch (n) {
-            case 01: {
-                list.exercice01();
-                break;
-            }
-            case 00: {
-                InitialController.menuInitial();
-            }
+            case 1 -> list.exercice01();
+            case 0 -> InitialController.menuInitial();
         }
     }
 }

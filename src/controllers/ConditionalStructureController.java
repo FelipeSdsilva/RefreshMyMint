@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class ConditionalStructureController {
 
-	public static void menuExercicesConditional() {
+	public static void menuExerciseConditional() {
 
 		Scanner in = new Scanner(System.in);
 		ConditionalStructureExercice sc = new ConditionalStructureExercice();
@@ -18,64 +18,20 @@ public class ConditionalStructureController {
 		n = in.nextInt();
 
 		switch (n) {
-		case 0: {
-			InitialController.menuInitial();
-			break;
-		}
-		case 1: {
-			sc.exercice01();
-			break;
-		}
-		case 2: {
-			sc.exercice02();
-			break;
-		}
-		case 3: {
-			sc.exercice03();
-			break;
-		}
-		case 4: {
-			sc.exercice04();
-			break;
-		}
-		case 5: {
-			sc.exercice05();
-			break;
-		}
-		case 6: {
-			sc.exercice06();
-			break;
-		}
-		case 7: {
-			sc.exercice07();
-			break;
-		}
-		case 8: {
-			sc.exercice08();
-			break;
-		}
-		case 9: {
-			sc.exercice09();
-			break;
-		}
-		case 10: {
-			sc.exercice10();
-			break;
-		}
-		case 11: {
-			sc.exercice11();
-			break;
-		}
-		case 12: {
-			sc.exercice12();
-			break;
-		}
-		case 13: {
-			sc.exercice13();
-			break;
-		}
-		default:
-			InitialController.menuInitial();
+			case 1 -> sc.exercice01();
+			case 2 -> sc.exercice02();
+			case 3 -> sc.exercice03();
+			case 4 -> sc.exercice04();
+			case 5 -> sc.exercice05();
+			case 6 -> sc.exercice06();
+			case 7 -> sc.exercice07();
+			case 8 -> sc.exercice08();
+			case 9 -> sc.exercice09();
+			case 10 -> sc.exercice10();
+			case 11 -> sc.exercice11();
+			case 12 -> sc.exercice12();
+			case 13 -> sc.exercice13();
+			default -> InitialController.menuInitial();
 		}
 
 		in.close();
