@@ -1,24 +1,18 @@
 package application;
 
+import exercices.OrientationObjectExercice;
+
 import java.util.Locale;
-import java.util.Scanner;
 
 public class App {
 
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
-        Scanner in = new Scanner (System.in);
-        System.out.println("Welcome to store! ");
-        char cont ;
+        OrientationObjectExercice or = new OrientationObjectExercice();
 
-        do{
+        or.Order();
 
-            System.out.print("Do you when continue? (y= yes/ n= no)");
-            cont = in.next().charAt(0);
-        }while (cont != 'n');
-
-        in.close();
         //InitialController.menuInitial();
     }
 }
