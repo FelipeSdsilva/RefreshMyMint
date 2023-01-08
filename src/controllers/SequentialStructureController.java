@@ -1,6 +1,6 @@
 package controllers;
 
-import exercices.SequentialStructureExercice;
+import exercises.SequentialStructureExercise;
 import views.MenuView;
 
 import java.util.Scanner;
@@ -9,7 +9,7 @@ public class SequentialStructureController {
 
     public static void menuExerciseSequential() {
 
-        SequentialStructureExercice ss = new SequentialStructureExercice();
+        SequentialStructureExercise ss = new SequentialStructureExercise();
         Scanner in = new Scanner(System.in);
         MenuView view = new MenuView();
         int n;

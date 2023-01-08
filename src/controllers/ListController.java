@@ -1,6 +1,6 @@
 package controllers;
 
-import exercices.ListExercice;
+import exercises.ListExercise;
 import views.MenuView;
 
 import java.util.Scanner;
@@ -12,7 +12,7 @@ public class ListController {
 
         MenuView view = new MenuView();
         Scanner in = new Scanner(System.in);
-        ListExercice list = new ListExercice();
+        ListExercise list = new ListExercise();
         int n;
 
         System.out.print(view.menuList);

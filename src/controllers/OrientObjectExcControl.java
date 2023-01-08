@@ -1,6 +1,6 @@
 package controllers;
 
-import exercices.OrientationObjectExercise;
+import exercises.OrientationObjectExercise;
 import views.MenuView;
 
 import java.util.Scanner;
@@ -21,10 +21,10 @@ public class OrientObjectExcControl {
             case 1 -> or.fixedExerciseString();
             case 2 -> or.resolveProblemWithOrientationObject();
             case 3 -> or.rectangleExercise();
-            case 4 -> OrientationObjectExercise.triangleExercice();
-            case 5 -> or.employeeExercice();
+            case 4 -> OrientationObjectExercise.triangleExercise();
+            case 5 -> or.employeeExercise();
             case 6 -> or.studentExercise();
-            case 7 -> or.accountExercice();
+            case 7 -> or.accountExercise();
             case 8 -> or.contractsOfEmployees();
             case 9 -> or.Order();
             default -> InitialController.menuInitial();

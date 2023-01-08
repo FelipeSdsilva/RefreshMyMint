@@ -1,6 +1,6 @@
 package controllers;
 
-import exercices.WhileExercice;
+import exercises.WhileExercise;
 import views.MenuView;
 
 import java.util.Scanner;
@@ -9,7 +9,7 @@ public class WhileController {
 
 	public static void menuExerciseWhile() {
 
-        WhileExercice wl = new WhileExercice();
+        WhileExercise wl = new WhileExercise();
         Scanner in = new Scanner(System.in);
         MenuView view = new MenuView();
         int n;

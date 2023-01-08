@@ -1,6 +1,6 @@
 package controllers;
 
-import exercices.ConditionalStructureExercice;
+import exercises.ConditionalStructureExercise;
 import views.MenuView;
 
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class ConditionalStructureController {
 	public static void menuExerciseConditional() {
 
 		Scanner in = new Scanner(System.in);
-		ConditionalStructureExercice sc = new ConditionalStructureExercice();
+		ConditionalStructureExercise sc = new ConditionalStructureExercise();
 		MenuView view = new MenuView();
 		int n;
 
@@ -18,19 +18,19 @@ public class ConditionalStructureController {
 		n = in.nextInt();
 
 		switch (n) {
-			case 1 -> sc.exercice01();
-			case 2 -> sc.exercice02();
-			case 3 -> sc.exercice03();
-			case 4 -> sc.exercice04();
-			case 5 -> sc.exercice05();
-			case 6 -> sc.exercice06();
-			case 7 -> sc.exercice07();
-			case 8 -> sc.exercice08();
-			case 9 -> sc.exercice09();
-			case 10 -> sc.exercice10();
-			case 11 -> sc.exercice11();
-			case 12 -> sc.exercice12();
-			case 13 -> sc.exercice13();
+			case 1 -> sc.exercise01();
+			case 2 -> sc.exercise02();
+			case 3 -> sc.exercise03();
+			case 4 -> sc.exercise04();
+			case 5 -> sc.exercise05();
+			case 6 -> sc.exercise06();
+			case 7 -> sc.exercise07();
+			case 8 -> sc.exercise08();
+			case 9 -> sc.exercise09();
+			case 10 -> sc.exercise10();
+			case 11 -> sc.exercise11();
+			case 12 -> sc.exercise12();
+			case 13 -> sc.exercise13();
 			default -> InitialController.menuInitial();
 		}
 
