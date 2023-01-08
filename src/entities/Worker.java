@@ -2,6 +2,7 @@ package entities;
 
 import entities.enums.WorkLevel;
 
+import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,12 +61,35 @@ public class Worker {
         return contracts;
     }
 
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "\nname= '" + name + '\'' +
+                ",\nlevel= " + level +
+                department +
+                "}";
+    }
+
     public void addContract(HourContract contract) {
         contracts.add(contract);
     }
 
     public void removeContract(HourContract contract) {
         contracts.remove(contract);
+    }
+
+    public double income(int month, int year) {
+        double sum = baseSalary;
+
+        for (HourContract c : contracts) {
+            int c_year = c.getDate().getYear();
+            Month c_month = c.getDate().getMonth();
+
+            if (c_year == year && c_month == Month.of(month)) {
+                sum += c.totalValue();
+            }
+        }
+        return sum;
     }
 
 }

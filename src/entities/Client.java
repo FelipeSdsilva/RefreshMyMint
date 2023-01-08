@@ -10,7 +10,7 @@ public class Client {
     private String email;
     private LocalDate birthDate;
 
-    private List<Order> orders = new ArrayList<>();
+    private final List<Order> orders = new ArrayList<>();
     public Client() {
     }
 
