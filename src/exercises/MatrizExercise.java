@@ -2,7 +2,7 @@ package exercises;
 
 import java.util.Scanner;
 
-public class MatrizExercice {
+public class MatrizExercise {
 
     Scanner in = new Scanner(System.in);
 

@@ -9,13 +9,13 @@ import views.StringText;
 
 import java.util.Scanner;
 
-public class ConditionalStructureExercice {
+public class ConditionalStructureExercise {
 
     Scanner in = new Scanner(System.in);
     StringText msg = new StringText();
     MensagensObjects ms = new MensagensObjects();
 
-    public void exercice01() {
+    public void exercise01() {
         Double av1, av2, sum;
 
         System.out.print(ms.student[0]);
@@ -32,7 +32,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice02() {
+    public void exercise02() {
 
         double a, b, c, delt, x1, x2;
 
@@ -56,7 +56,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice03() {
+    public void exercise03() {
 
         int a, b, c;
 
@@ -71,7 +71,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice04() {
+    public void exercise04() {
 
         int min;
 
@@ -83,7 +83,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice05() {
+    public void exercise05() {
 
         double money, totalValue, price;
         int qtd;
@@ -104,7 +104,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice06() {
+    public void exercise06() {
         double avgGlu;
         System.out.print(msg.mensage[18]);
         avgGlu = in.nextDouble();
@@ -114,7 +114,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice07() {
+    public void exercise07() {
         double a, b, c;
 
         System.out.println(msg.mensage[19]);
@@ -127,7 +127,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice08() {
+    public void exercise08() {
 
         char scale;
         double temp;
@@ -148,7 +148,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice09() {
+    public void exercise09() {
 
         int codProd, qtd;
 
@@ -163,7 +163,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice10() {
+    public void exercise10() {
 
         int a, b;
 
@@ -176,7 +176,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice11() {
+    public void exercise11() {
 
         double salary;
 
@@ -188,7 +188,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice12() {
+    public void exercise12() {
 
         int initH, endH;
 
@@ -203,7 +203,7 @@ public class ConditionalStructureExercice {
         ConditionalStructureController.menuExerciseConditional();
     }
 
-    public void exercice13() {
+    public void exercise13() {
 
         double x = 0, y = 0;
 

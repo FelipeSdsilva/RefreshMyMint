@@ -8,14 +8,14 @@ import views.StringText;
 
 import java.util.Scanner;
 
-public class ForExercice {
+public class ForExercise {
 
 	StringText msg = new StringText();
 	MensagensObjects ms = new MensagensObjects();
 	Scanner in = new Scanner(System.in);
 	int n, i;
 
-	public void exercice01() {
+	public void exercise01() {
 
 		System.out.print(msg.mensage[40]);
 		n = in.nextInt();
@@ -26,7 +26,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice02() {
+	public void exercise02() {
 
 		int a, b, c = 0, res, rest;
 		System.out.println(msg.mensage[41]);
@@ -49,7 +49,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice03() {
+	public void exercise03() {
 		System.out.print(msg.xAndY[0]);
 		int x = in.nextInt();
 
@@ -62,7 +62,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice04() {
+	public void exercise04() {
 
 		System.out.print(msg.array[0]);
 		n = in.nextInt();
@@ -85,7 +85,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice05() {
+	public void exercise05() {
 
 		System.out.print(msg.array[0]);
 		n = in.nextInt();
@@ -112,7 +112,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice06() {
+	public void exercise06() {
 
 		double avg1, avg2, avg3;
 
@@ -138,7 +138,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice07() {
+	public void exercise07() {
 
 		System.out.print(msg.array[0]);
 		n = in.nextInt();
@@ -167,7 +167,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice08() {
+	public void exercise08() {
 
 		int sum;
 
@@ -188,7 +188,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice09() {
+	public void exercise09() {
 
 		MensageInBlockView msgb = new MensageInBlockView();
 
@@ -225,7 +225,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice10() {
+	public void exercise10() {
 		//divisores_D_n     [x] Udemy 
 		
 		n = in.nextInt();
@@ -239,7 +239,7 @@ public class ForExercice {
 		ForController.menuExerciseFor();
 	}
 
-	public void exercice11() {
+	public void exercise11() {
 		//Quadrado_Cubo_D_N [x] Udemy 
 		
 		n = in.nextInt();

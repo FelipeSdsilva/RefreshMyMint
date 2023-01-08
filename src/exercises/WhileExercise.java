@@ -8,7 +8,7 @@ import views.StringText;
 
 import java.util.Scanner;
 
-public class WhileExercice {
+public class WhileExercise {
 
 	StringText msg = new StringText();
 	MensagensObjects ms = new MensagensObjects();

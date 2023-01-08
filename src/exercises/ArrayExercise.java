@@ -11,7 +11,7 @@ import views.StringText;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ArrayExercice {
+public class ArrayExercise {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();
@@ -19,7 +19,7 @@ public class ArrayExercice {
 
 	int cont;
 
-	public void exercice01() {
+	public void exercise01() {
 
 		int[] vec;
 
@@ -44,7 +44,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice02() {
+	public void exercise02() {
 
 		double[] vecD;
 		double sum = 0;
@@ -71,7 +71,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice03() {
+	public void exercise03() {
 
 		int age;
 		double height, sum = 0, avg;
@@ -125,7 +125,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice04() {
+	public void exercise04() {
 		int[] vec;
 
 		System.out.print(msg.array[0]);
@@ -152,7 +152,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice05() {
+	public void exercise05() {
 
 		int position = 0;
 		double highest = 0;
@@ -176,7 +176,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice06() {
+	public void exercise06() {
 		int[] vecA, vecB, vecC;
 
 		System.out.print(msg.array[2]);
@@ -208,7 +208,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice07() {
+	public void exercise07() {
 
 		double[] vecD;
 		double sum = 0;
@@ -235,7 +235,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice08() {
+	public void exercise08() {
 
 		int[] vec;
 		double sum = 0;
@@ -263,7 +263,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice09() {
+	public void exercise09() {
 
 		String name = "";
 		int n, age, moreOld = 0;
@@ -299,7 +299,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice10() {
+	public void exercise10() {
 
 		String name;
 		int n;
@@ -340,7 +340,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice11() {
+	public void exercise11() {
 
 		double height, heightBigger = 0, heightAvgWoman = 0, heightSmaller = 0;
 		char gender;
@@ -382,7 +382,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice12() {
+	public void exercise12() {
 
 		String name;
 		double priceSale, pricePurchase, sumPur = 0, sumSale = 0, valueAgain;
@@ -427,7 +427,7 @@ public class ArrayExercice {
 		ArrayController.menuExerciseArray();
 	}
 
-	public void exercice13() {
+	public void exercise13() {
 
 		String name, email;
 		Pension[] rooms = new Pension[9];

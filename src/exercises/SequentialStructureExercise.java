@@ -9,7 +9,7 @@ import statics.MultiplicationStatic;
 import views.MensagensObjects;
 import views.StringText;
 
-public class SequentialStructureExercice {
+public class SequentialStructureExercise {
 
 	Scanner in = new Scanner(System.in);
 	StringText msg = new StringText();

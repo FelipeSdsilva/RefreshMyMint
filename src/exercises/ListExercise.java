@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ListExercice {
+public class ListExercise {
 
     Scanner in = new Scanner(System.in);
     MensagensObjects ms = new MensagensObjects();
