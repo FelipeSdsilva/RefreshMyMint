@@ -7,6 +7,7 @@ import views.MensagensObjects;
 import views.StringText;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
@@ -243,4 +244,37 @@ public class OrientationObjectExercise {
 
         OrientObjectExcControl.menuExeOrientationObject();
     }
+
+    public void socialNetwork() {
+        char liked, conti;
+        String title, content, comment;
+        int likes = 0, deslike = 0;
+
+        LocalDateTime date = LocalDateTime.now();
+
+        System.out.print("Welcome te my Social Network!\nDo you liked of include new post(y/n)? ");
+        do {
+            conti = sc.next().charAt(0);
+            sc.nextLine();
+
+            System.out.print("What title your post? ");
+            title = sc.nextLine();
+            System.out.print("Write the content? ");
+            content = sc.nextLine();
+            Post post = new Post(date, title, content, 0);
+
+            System.out.println(post);
+
+            System.out.println("Do you liked this post (yes = y/ no = n)? ");
+            liked = sc.next().charAt(0);
+            sc.nextLine();
+            if (liked == 'y') {
+                likes++;
+            } else {
+                deslike++;
+            }
+
+        } while (conti != 'n');
+    }
+
 }
