@@ -9,6 +9,8 @@ import views.StringText;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -246,35 +248,61 @@ public class OrientationObjectExercise {
     }
 
     public void socialNetwork() {
-        char liked, conti;
+        char liked, conti, commentconf;
         String title, content, comment;
-        int likes = 0, deslike = 0;
+        int likes = 0;
+
+        List<Post> posts = new ArrayList<>();
 
         LocalDateTime date = LocalDateTime.now();
 
         System.out.print("Welcome te my Social Network!\nDo you liked of include new post(y/n)? ");
-        do {
-            conti = sc.next().charAt(0);
+        conti = sc.next().charAt(0);
+
+        while (conti != 'n') {
             sc.nextLine();
 
             System.out.print("What title your post? ");
             title = sc.nextLine();
             System.out.print("Write the content? ");
             content = sc.nextLine();
-            Post post = new Post(date, title, content, 0);
 
-            System.out.println(post);
 
             System.out.println("Do you liked this post (yes = y/ no = n)? ");
             liked = sc.next().charAt(0);
             sc.nextLine();
             if (liked == 'y') {
                 likes++;
-            } else {
-                deslike++;
             }
 
-        } while (conti != 'n');
+            Post post = new Post(date, title, content, likes);
+            posts.add(post);
+
+            System.out.print("Do you want to comment on the post(y/n)? ");
+            commentconf = sc.next().charAt(0);
+
+            while (commentconf != 'n') {
+                if (commentconf == 'y') {
+
+                    sc.nextLine();
+                    System.out.print("Write your comment: ");
+                    comment = sc.nextLine();
+
+                    post.addComments(new Comment(comment));
+                }
+
+                System.out.print("Do you want add new comment (y/n)? ");
+                commentconf = sc.next().charAt(0);
+            }
+
+            System.out.print("Do you want add new post(y/n)? ");
+            conti = sc.next().charAt(0);
+        }
+
+        for (Post post : posts) {
+            System.out.println(post);
+        }
+
     }
 
 }
