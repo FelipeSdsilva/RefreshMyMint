@@ -27,6 +27,7 @@ public class OrientObjectExcControl {
             case 7 -> or.accountExercise();
             case 8 -> or.contractsOfEmployees();
             case 9 -> or.Order();
+            case 10 -> or.socialNetwork();
             default -> InitialController.menuInitial();
         }
 
