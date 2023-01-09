@@ -5,7 +5,7 @@ public class MenuView {
     public String menuArr = """
              ______________________________________________________________
             |                                                              |
-            |                        Exercices Array                       |
+            |                        Exercises Array                       |
             |                                                              |
             |           Exercice 01 - negativos       [x] DevSuperior      |
             |           Exercice 02 - soma_vetor      [x] DevSuperior      |
@@ -27,7 +27,7 @@ public class MenuView {
     public String menuCond = """
              ______________________________________________________________
             |                                                              |
-            |                Exercices conditional structure               |
+            |                Exercises conditional structure               |
             |                                                              |
             |            Exercice 01 - notas            [x] DevSuperior    |
             |            Exercice 02 - baskara          [x] DevSuperior    |
@@ -49,7 +49,7 @@ public class MenuView {
     public String menuFor = """
              ______________________________________________________________
             |                                                              |
-            |                Exercices of repetition For                   |
+            |                Exercises of repetition For                   |
             |                                                              |
             |           Exercice 01 - tabuada           [x] DevSuperior    |
             |           Exercice 02 - soma_impares      [x] DevSuperior    |
@@ -69,7 +69,7 @@ public class MenuView {
     public String menuIn = """
              ______________________________________________________________
             |                                                              |
-            |       Welcome to my exercices of resolved in modules         |
+            |       Welcome to my exercises of resolved in modules         |
             |                   DevSuperior and Udemy.                     |
             |                                                              |
             |                                                              |
@@ -89,7 +89,7 @@ public class MenuView {
     public String menuList = """
              ______________________________________________________________
             |                                                              |
-            |                        Exercices List                        |
+            |                        Exercises List                        |
             |                                                              |
             |           01 - aum_sala_por_id         [x]Udemy              |
             |                                                              |
@@ -108,7 +108,7 @@ public class MenuView {
     public String menuOriObj = """
              ______________________________________________________________
             |                                                              |
-            |                 Exercices Orientation Objects                |
+            |                 Exercises Orientation Objects                |
             |                                                              |
             |                                                              |
             |                01 - exercicio_de_fixa��o                     |
@@ -127,7 +127,7 @@ public class MenuView {
     public String menuSeq = """
              ______________________________________________________________
             |                                                              |
-            |               Exercices Sequential Structure                 |
+            |               Exercises Sequential Structure                 |
             |                                                              |
             |         Exercice 01 - terreno     [x] DevSuperior            |
             |         Exercice 02 - retangulo   [x] DevSuperior            |
@@ -147,7 +147,7 @@ public class MenuView {
     public String menuWhile = """
             ______________________________________________________________
             |                                                             |
-            |               Exercices of repetition while                 |
+            |               Exercises of repetition while                 |
             |                                                             |
             |          Exercice 01 - crescente          [x] DevSuperior   |
             |          Exercice 02 - media_idade        [x] DevSuperior   |
