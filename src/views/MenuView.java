@@ -7,19 +7,19 @@ public class MenuView {
             |                                                              |
             |                        Exercises Array                       |
             |                                                              |
-            |           Exercice 01 - negativos       [x] DevSuperior      |
-            |           Exercice 02 - soma_vetor      [x] DevSuperior      |
-            |           Exercice 03 - alturas         [x] DevSuperior      |
-            |           Exercice 04 - numeros_pares   [x] DevSuperior      |
-            |           Exercice 05 - maior_posicao   [x] DevSuperior      |
-            |           Exercice 06 - soma_vetores    [x] DevSuperior      |
-            |           Exercice 07 - abaixo_da_media [x] DevSuperior      |
-            |           Exercice 08 - media_pares     [x] DevSuperior      |
-            |           Exercice 09 - mais_velho      [x] DevSuperior      |
-            |           Exercice 10 - aprovados       [x] DevSuperior      |
-            |           Exercice 11 - dados_pessoas   [x] DevSuperior      |
-            |           Exercice 12 - comerciante     [x] DevSuperior      |
-            |           Exercice 13 - pensao          [x] Udemy            |
+            |           Exercise 01 - negativos       [x] DevSuperior      |
+            |           Exercise 02 - soma_vetor      [x] DevSuperior      |
+            |           Exercise 03 - alturas         [x] DevSuperior      |
+            |           Exercise 04 - numeros_pares   [x] DevSuperior      |
+            |           Exercise 05 - maior_posicao   [x] DevSuperior      |
+            |           Exercise 06 - soma_vetores    [x] DevSuperior      |
+            |           Exercise 07 - abaixo_da_media [x] DevSuperior      |
+            |           Exercise 08 - media_pares     [x] DevSuperior      |
+            |           Exercise 09 - mais_velho      [x] DevSuperior      |
+            |           Exercise 10 - aprovados       [x] DevSuperior      |
+            |           Exercise 11 - dados_pessoas   [x] DevSuperior      |
+            |           Exercise 12 - comerciante     [x] DevSuperior      |
+            |           Exercise 13 - pensao          [x] Udemy            |
             |                                                              |
             |                     0 - Initial menu                         |
             |__________________________""";
@@ -29,19 +29,19 @@ public class MenuView {
             |                                                              |
             |                Exercises conditional structure               |
             |                                                              |
-            |            Exercice 01 - notas            [x] DevSuperior    |
-            |            Exercice 02 - baskara          [x] DevSuperior    |
-            |            Exercice 03 - menor_de_tres    [x] DevSuperior    |
-            |            Exercice 04 - operadora        [x] DevSuperior    |
-            |            Exercice 05 - troco_verificado [x] DevSuperior    |
-            |            Exercice 06 - glicose          [x] DevSuperior    |
-            |            Exercice 07 - dardo            [x] DevSuperior    |
-            |            Exercice 08 - temperatura      [x] DevSuperior    |
-            |            Exercice 09 - lanchonete       [x] DevSuperior    |
-            |            Exercice 10 - s�o_multiplos    [x] DevSuperior    |
-            |            Exercice 11 - aumento falta    [x] DevSuperior    |
-            |            Exercice 12 - tempo_de_jogo    [x] DevSuperior    |
-            |            Exercice 13 - coordenadas      [x] DevSuperior    |
+            |            Exercise 01 - notas            [x] DevSuperior    |
+            |            Exercise 02 - baskara          [x] DevSuperior    |
+            |            Exercise 03 - menor_de_tres    [x] DevSuperior    |
+            |            Exercise 04 - operadora        [x] DevSuperior    |
+            |            Exercise 05 - troco_verificado [x] DevSuperior    |
+            |            Exercise 06 - glicose          [x] DevSuperior    |
+            |            Exercise 07 - dardo            [x] DevSuperior    |
+            |            Exercise 08 - temperatura      [x] DevSuperior    |
+            |            Exercise 09 - lanchonete       [x] DevSuperior    |
+            |            Exercise 10 - s�o_multiplos    [x] DevSuperior    |
+            |            Exercise 11 - aumento falta    [x] DevSuperior    |
+            |            Exercise 12 - tempo_de_jogo    [x] DevSuperior    |
+            |            Exercise 13 - coordenadas      [x] DevSuperior    |
             |                                                              |
             |                      0 - Initial menu                        |
             |_________________________""";
@@ -51,17 +51,17 @@ public class MenuView {
             |                                                              |
             |                Exercises of repetition For                   |
             |                                                              |
-            |           Exercice 01 - tabuada           [x] DevSuperior    |
-            |           Exercice 02 - soma_impares      [x] DevSuperior    |
-            |           Exercice 03 - sequencia_impares [x] DevSuperior    |
-            |           Exercice 04 - dentro_fora       [x] DevSuperior    |
-            |           Exercice 05 - par_impar         [x] DevSuperior    |
-            |           Exercice 06 - media_ponderada   [x] DevSuperior    |
-            |           Exercice 07 - divisao           [x] DevSuperior    |
-            |           Exercice 08 - fatorial          [x] DevSuperior    |
-            |           Exercice 09 - experiencias      [x] DevSuperior    |
-            |           Exercice 10 - divisores_D_n     [x] Udemy          |
-            |           Exercice 11 - Quadrado_Cubo_D_N [x] Udemy          |
+            |           Exercise 01 - tabuada           [x] DevSuperior    |
+            |           Exercise 02 - soma_impares      [x] DevSuperior    |
+            |           Exercise 03 - sequencia_impares [x] DevSuperior    |
+            |           Exercise 04 - dentro_fora       [x] DevSuperior    |
+            |           Exercise 05 - par_impar         [x] DevSuperior    |
+            |           Exercise 06 - media_ponderada   [x] DevSuperior    |
+            |           Exercise 07 - divisao           [x] DevSuperior    |
+            |           Exercise 08 - fatorial          [x] DevSuperior    |
+            |           Exercise 09 - experiencias      [x] DevSuperior    |
+            |           Exercise 10 - divisores_D_n     [x] Udemy          |
+            |           Exercise 11 - Quadrado_Cubo_D_N [x] Udemy          |
             |                                                              |
             |                     0 - Initial menu                         |
             |_______________________""";
@@ -74,13 +74,13 @@ public class MenuView {
             |                                                              |
             |                                                              |
             |                                                              |
-            |           01 - Exercices Array                               |
-            |           02 - Exercices Conditional Structure               |
-            |           03 - Exercices For                                 |
-            |           04 - Exerceces Orientation Object                  |
-            |           05 - Exercices Sequential Structure                |
-            |           06 - Exercices While                               |
-            |           07 - Exercice List                                 |
+            |           01 - Exercises Array                               |
+            |           02 - Exercises Conditional Structure               |
+            |           03 - Exercises For                                 |
+            |           04 - Exerceses Orientation Object                  |
+            |           05 - Exercises Sequential Structure                |
+            |           06 - Exercises While                               |
+            |           07 - Exercise List                                 |
             |           00 - Exit                                          |
             |                                                              |
             |                                                              |
@@ -129,17 +129,17 @@ public class MenuView {
             |                                                              |
             |               Exercises Sequential Structure                 |
             |                                                              |
-            |         Exercice 01 - terreno     [x] DevSuperior            |
-            |         Exercice 02 - retangulo   [x] DevSuperior            |
-            |         Exercice 03 - idades      [x] DevSuperior            |
-            |         Exercice 04 - soma        [x] DevSuperior            |
-            |         Exercice 05 - troco       [x] DevSuperior            |
-            |         Exercice 06 - circulo     [x] DevSuperior            |
-            |         Exercice 07 - pagamento   [x] DevSuperior            |
-            |         Exercice 08 - consumo     [x] DevSuperior            |
-            |         Exercice 09 - medidas     [x] DevSuperior            |
-            |         Exercice 10 - duracao     [x] DevSuperior            |
-            |         Exercice 11 - vl/dol/Real [x] DevSuperior            |
+            |         Exercise 01 - terreno     [x] DevSuperior            |
+            |         Exercise 02 - retangulo   [x] DevSuperior            |
+            |         Exercise 03 - idades      [x] DevSuperior            |
+            |         Exercise 04 - soma        [x] DevSuperior            |
+            |         Exercise 05 - troco       [x] DevSuperior            |
+            |         Exercise 06 - circulo     [x] DevSuperior            |
+            |         Exercise 07 - pagamento   [x] DevSuperior            |
+            |         Exercise 08 - consumo     [x] DevSuperior            |
+            |         Exercise 09 - medidas     [x] DevSuperior            |
+            |         Exercise 10 - duracao     [x] DevSuperior            |
+            |         Exercise 11 - vl/dol/Real [x] DevSuperior            |
             |                                                              |
             |                   0 - Initial menu                           |
             |_____________________""";
@@ -149,15 +149,15 @@ public class MenuView {
             |                                                             |
             |               Exercises of repetition while                 |
             |                                                             |
-            |          Exercice 01 - crescente          [x] DevSuperior   |
-            |          Exercice 02 - media_idade        [x] DevSuperior   |
-            |          Exercice 03 - senha_fixa         [x] DevSuperior   |
-            |          Exercice 04 - quadrante          [x] DevSuperior   |
-            |          Exercice 05 - validacao_de_nota  [x] DevSuperior   |
-            |          Exercice 06 - combustivel        [x] DevSuperior   |
-            |          Exercice 07 - pares_consecutivos [x] DevSuperior   |
-            |          Exercice 08 - temp_cel_em_fah    [x] DevSuperior   |
-            |          Exercice 09 - maior_ent_tres_num [x] DevSuperior   |
+            |          Exercise 01 - crescente          [x] DevSuperior   |
+            |          Exercise 02 - media_idade        [x] DevSuperior   |
+            |          Exercise 03 - senha_fixa         [x] DevSuperior   |
+            |          Exercise 04 - quadrante          [x] DevSuperior   |
+            |          Exercise 05 - validacao_de_nota  [x] DevSuperior   |
+            |          Exercise 06 - combustivel        [x] DevSuperior   |
+            |          Exercise 07 - pares_consecutivos [x] DevSuperior   |
+            |          Exercise 08 - temp_cel_em_fah    [x] DevSuperior   |
+            |          Exercise 09 - maior_ent_tres_num [x] DevSuperior   |
             |
             |                    0 - Initial menu
             |______________________""";
