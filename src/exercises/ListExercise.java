@@ -13,7 +13,7 @@ public class ListExercise {
     Scanner in = new Scanner(System.in);
     MensagensObjects ms = new MensagensObjects();
 
-    public void exercice01() {
+    public void exercise01() {
 
         List<Employee> employees = new ArrayList<>();
         int n;

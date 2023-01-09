@@ -1,8 +1,8 @@
 # RefreshMyMint
 
-This Repository is where training my logical and OO with exercicies DEVSUPERIOR.
+This Repository is where training my logical and OO with exercises DEVSUPERIOR.
 
-## Exercices Sequential Structure
+## Exercises Sequential Structure
 
 - [x] ```(1) Fazer um programa para ler as medidas da largura e comprimento de um terreno retangular com uma
 casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais. Em seguida,
@@ -115,7 +115,7 @@ Exemplo:
 	Digite a duracao em segundos: 300
 	0:5:0
 
-## Exercice Conditional Structure
+## Exercise Conditional Structure
 
 - [x] ```(1) Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de
 uma disciplina anual. Em seguida, mostrar a nota final que o aluno obteve (com uma casa decimal) no
@@ -450,7 +450,7 @@ Exemplo 4:
 	Valor de Y: 0
 	Eixo X
 
-## Exercices While
+## Exercises While
 
 - [x] ```(1) Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva para cada X e Y uma
 mensagem que indique se estes valores foram digitados em ordem crescente ou decrescente. O
@@ -599,7 +599,7 @@ Exemplo:
 	Equivalente em Fahrenheit: 13.1
 	Deseja repetir (s/n)? n
 
-## Exercices For
+## Exercises For
 
 - [x] `(1) Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10, conforme exemplo. `
 
@@ -804,7 +804,7 @@ Saida
 	4 16 64
 	5 25 12
 
-## Exercices Array
+## Exercises Array
 
 - [x] ```(1) Faça um programa que leia um número inteiro positivo N (máximo = 10) e depois N números inteiros
 e armazene-os em um vetor. Em seguida, mostrar na tela todos os números negativos lidos, exemplo: ```
@@ -1120,7 +1120,7 @@ Exemplo:
 	5: Maria Green, maria@gmail.com
 	8: Alex Brown, alex@gmail.com
 
-##  Exercice List
+##  Exercise List
 
 - [ ] ```(1)Fazer um programa para ler um número inteiro N e depois os dados (id, nome e salario) de
 N funcionários. Não deve haver repetição de id.
