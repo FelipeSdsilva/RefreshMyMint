@@ -1,6 +1,7 @@
 package entities;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,11 +58,15 @@ public class Post {
     @Override
     public String toString() {
         return "Post{" +
-                "\nmoment= " + moment +
+                "\nmoment= " + moment.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) +
                 ",\ntitle= '" + title + '\'' +
                 ",\ncontent='" + content + '\'' +
                 ",\nlikes= " + likes +
                 ",\n" + comments +
                 '}';
+    }
+
+    public void addComments(Comment comment){
+        comments.add(comment);
     }
 }
