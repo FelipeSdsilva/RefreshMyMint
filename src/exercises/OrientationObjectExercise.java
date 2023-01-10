@@ -2,6 +2,7 @@ package exercises;
 
 import controllers.OrientObjectExcControl;
 import entities.*;
+import entities.enums.OrderStatus;
 import entities.enums.WorkLevel;
 import views.MensagensObjects;
 import views.StringText;
@@ -182,18 +183,51 @@ public class OrientationObjectExercise {
         OrientObjectExcControl.menuExeOrientationObject();
     }
 
-    public void Order() {
+    public void orderTheStore() {
+        String name, email, birthDate, status, productNam;
+        int n, qtd;
+        Double price;
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        System.out.println("Welcome to store! ");
-        char cont;
+        LocalDateTime date = LocalDateTime.now();
+        LocalDate birthDateFmt;
 
+        System.out.print("Enter client data: \nName: ");
+        name = sc.nextLine();
+        System.out.print("Email: ");
+        email = sc.nextLine();
+        System.out.print("Birth date (DD/MM/YYYY): ");
+        birthDate = sc.nextLine();
+        birthDateFmt = LocalDate.parse(birthDate, fmt);
 
-        do {
+        Client client = new Client(name, email, birthDateFmt);
 
+        System.out.print("Enter order data: \nStatus: ");
+        status = sc.nextLine();
 
-            System.out.print("Do you when continue? (y= yes/ n= no)");
-            cont = sc.next().charAt(0);
-        } while (cont != 'n');
+        Order order = new Order(1L, date, OrderStatus.valueOf(status));
+
+        System.out.print("How many items to this order? ");
+        n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            sc.nextLine();
+
+            System.out.print("Enter #" + (i + 1) + " item data: \nProduct name: ");
+            productNam = sc.nextLine();
+            System.out.print("Product price: ");
+            price = sc.nextDouble();
+            System.out.print("Quantity: ");
+            qtd = sc.nextInt();
+
+            OrderItem item = new OrderItem(qtd, price, new Product(productNam, price));
+            order.addItems(item);
+        }
+        System.out.print(order + "\n" + client + "\n");
+        for (OrderItem item : order.getItems()) {
+            System.out.println(item);
+        }
+        System.out.print("\nTotal price: $" + String.format("%.2f", order.totalValue()) + "\n");
 
         OrientObjectExcControl.menuExeOrientationObject();
     }
@@ -248,7 +282,7 @@ public class OrientationObjectExercise {
     }
 
     public void socialNetwork() {
-        char liked, conti, commentconf;
+        char liked, conti, commentcont;
         String title, content, comment;
         int likes = 0;
 
@@ -279,10 +313,10 @@ public class OrientationObjectExercise {
             posts.add(post);
 
             System.out.print("Do you want to comment on the post(y/n)? ");
-            commentconf = sc.next().charAt(0);
+            commentcont = sc.next().charAt(0);
 
-            while (commentconf != 'n') {
-                if (commentconf == 'y') {
+            while (commentcont != 'n') {
+                if (commentcont == 'y') {
 
                     sc.nextLine();
                     System.out.print("Write your comment: ");
@@ -292,7 +326,7 @@ public class OrientationObjectExercise {
                 }
 
                 System.out.print("Do you want add new comment (y/n)? ");
-                commentconf = sc.next().charAt(0);
+                commentcont = sc.next().charAt(0);
             }
 
             System.out.print("Do you want add new post(y/n)? ");
@@ -303,6 +337,7 @@ public class OrientationObjectExercise {
             System.out.println(post);
         }
 
+        OrientObjectExcControl.menuExeOrientationObject();
     }
 
 }
