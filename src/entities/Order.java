@@ -3,10 +3,14 @@ package entities;
 import entities.enums.OrderStatus;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
+
+
+    private static final DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
     private Long id;
     private LocalDateTime moment;
     private OrderStatus status;
@@ -14,6 +18,7 @@ public class Order {
     private Client client;
 
     List<OrderItem> items = new ArrayList<>();
+
     public Order() {
     }
 
@@ -53,12 +58,28 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
-                "id=" + id +
-                ", moment=" + moment +
-                ", status=" + status +
-                '}';
+
+        StringBuilder bdl = new StringBuilder();
+        bdl.append("ORDER SUMMARY:");
+        bdl.append("\nOrder Moment: " + moment.format(fmt));
+        bdl.append("\nOrder Status: " + status);
+
+        return bdl.toString();
     }
 
+    public void addItems(OrderItem orderItem) {
+        items.add(orderItem);
+    }
 
+    public void removeItems(OrderItem orderItem) {
+        items.remove(orderItem);
+    }
+
+    public double totalValue() {
+        Double sum = 0.0;
+        for (OrderItem item : items) {
+            sum += item.subTotal();
+        }
+        return sum;
+    }
 }

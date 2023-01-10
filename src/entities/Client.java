@@ -1,16 +1,18 @@
 package entities;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Client {
-
+    private static final DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     private String name;
     private String email;
     private LocalDate birthDate;
 
     private final List<Order> orders = new ArrayList<>();
+
     public Client() {
     }
 
@@ -40,11 +42,19 @@ public class Client {
         return birthDate;
     }
 
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+
     public List<Order> getOrders() {
         return orders;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    @Override
+    public String toString() {
+        StringBuilder bdl = new StringBuilder();
+        bdl.append("Client: " + name + "(" + birthDate.format(fmt) + ") - " + email);
+
+        return bdl.toString();
     }
 }

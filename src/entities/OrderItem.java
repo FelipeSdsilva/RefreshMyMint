@@ -5,7 +5,7 @@ public class OrderItem {
     private Integer qtd;
     private Double price;
 
-   private  Product product;
+    private Product product;
 
     public OrderItem() {
     }
@@ -40,8 +40,15 @@ public class OrderItem {
         this.product = product;
     }
 
-    public double subTotal(){
+    public double subTotal() {
         return qtd * price;
     }
 
+    @Override
+    public String toString() {
+        return "OrderItems: " + product.getName() + ","
+                + String.format("%.2f", price) +
+                ", Quantity: " + qtd +
+                ", Subtotal: " + String.format("%.2f", subTotal());
+    }
 }
