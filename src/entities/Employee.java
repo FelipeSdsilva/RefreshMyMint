@@ -24,6 +24,12 @@ public class Employee {
         this.tax = tax;
     }
 
+    public Employee(String name, Double valuePerHour, Integer hoursJobs) {
+        this.name = name;
+        this.valuePerHour = valuePerHour;
+        this.hoursJobs = hoursJobs;
+    }
+
     public Long getId() {
         return id;
     }
