@@ -86,19 +86,25 @@ public class Employee {
         this.grossSalary += ((getGrossSalary() * percentage) / 100);
     }
 
+    public Double salaryPerHours(Double valuePerHour, Integer hoursJobs) {
+        return valuePerHour * hoursJobs;
+    }
 
     @Override
     public String toString() {
 
         if (tax == null) {
-            return "Employee : [name=" +
+            return "Employee : [name= " +
                     name +
                     ", salary= " +
                     String.format("%.2f", netSalary()) +
                     ", tax= " +
                     String.format("%.2f", tax) + "]";
         }
-        return id + ", " + name + ", " + String.format("%.2f", grossSalary);
+        if (id != null) {
+            return id + ", " + name + ", " + String.format("%.2f", grossSalary);
+        }
+        return name + " - $" + String.format("%.2f", salaryPerHours(getValuePerHour(), getHoursJobs()));
     }
 
 }
