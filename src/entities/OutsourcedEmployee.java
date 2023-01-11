@@ -20,4 +20,8 @@ public final class OutsourcedEmployee extends Employee {
         this.additionalCharge = additionalCharge;
     }
 
+    @Override
+    public final Double salaryPerHours(Double valuePerHour, Integer hoursJobs) {
+        return super.salaryPerHours(valuePerHour, hoursJobs) + (additionalCharge * 1.10);
+    }
 }
