@@ -4,6 +4,7 @@ import controllers.OrientObjectExcControl;
 import entities.*;
 import entities.enums.OrderStatus;
 import entities.enums.WorkLevel;
+import statics.ConditionalStatic;
 import views.MensagensObjects;
 import views.StringText;
 
@@ -109,22 +110,49 @@ public class OrientationObjectExercise {
 
     public void employeeExercise() {
 
-        Employee emp = new Employee();
-        System.out.print("Name: ");
-        emp.setName(sc.nextLine());
-        System.out.print("Gross salary: ");
-        emp.setSalary(sc.nextDouble());
-        System.out.print("Tax: ");
-        emp.setTax(sc.nextDouble());
+        System.out.print("This exercise is  \n- 1)Fixed employee \n or \n- 2)Outsource employee? ");
+        int esco = sc.nextInt();
+        if (esco == 1) {
+            sc.nextLine();
 
-        System.out.println(emp);
+            Employee emp = new Employee();
+            System.out.print("Name: ");
+            emp.setName(sc.nextLine());
+            System.out.print("Gross salary: ");
+            emp.setSalary(sc.nextDouble());
+            System.out.print("Tax: ");
+            emp.setTax(sc.nextDouble());
 
-        System.out.print(ms.employee[4]);
-        double percentage = sc.nextDouble();
-        emp.increaseSalary(percentage);
+            System.out.println(emp);
 
-        System.out.println(emp);
+            System.out.print(ms.employee[4]);
+            double percentage = sc.nextDouble();
+            emp.increaseSalary(percentage);
 
+            System.out.println(emp);
+        } else {
+
+            List<Employee> employees = new ArrayList<>();
+
+            System.out.print("Enter the number of employees: ");
+            int n = sc.nextInt();
+
+            for (int i = 0; i < n; i++) {
+                sc.nextLine();
+
+                System.out.print("Employee #" + (i + 1) + " data: \nOutsourced (y/n)? ");
+                char out = sc.next().charAt(0);
+
+                Employee employee = ConditionalStatic.typeOfEmployee(out);
+                employees.add(employee);
+
+            }
+
+            System.out.println("\nPAYMENTS: ");
+            for (Employee emp :  employees){
+                System.out.println(emp);
+            }
+        }
         OrientObjectExcControl.menuExeOrientationObject();
     }
 
