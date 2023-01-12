@@ -38,7 +38,7 @@ public class MenuView {
             |            Exercise 07 - dardo            [x] DevSuperior    |
             |            Exercise 08 - temperatura      [x] DevSuperior    |
             |            Exercise 09 - lanchonete       [x] DevSuperior    |
-            |            Exercise 10 - s�o_multiplos    [x] DevSuperior    |
+            |            Exercise 10 - sao_multiplos    [x] DevSuperior    |
             |            Exercise 11 - aumento falta    [x] DevSuperior    |
             |            Exercise 12 - tempo_de_jogo    [x] DevSuperior    |
             |            Exercise 13 - coordenadas      [x] DevSuperior    |
@@ -111,10 +111,10 @@ public class MenuView {
             |                 Exercises Orientation Objects                |
             |                                                              |
             |                                                              |
-            |                01 - exercicio_de_fixa��o                     |
-            |                02 - resolvendo_c_orienta��o                  |
-            |                03 - ret�ngulo                                |
-            |                04 - tri�ngulo                                |
+            |                01 - exercicio_de_fixacao                     |
+            |                02 - resolvendo_c_orientacao                  |
+            |                03 - retangulo                                |
+            |                04 - triangulo                                |
             |                05 - empregado_funcionario                    |
             |                06 - estudante_aprovado                       |
             |                07 - conta_bancaria                           |
