@@ -1,10 +1,11 @@
 package statics;
 
-import entities.Employee;
-import entities.OutsourcedEmployee;
+import entities.*;
 import views.MensagensObjects;
 import views.StringText;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class ConditionalStatic {
@@ -57,29 +58,25 @@ public class ConditionalStatic {
         StringText msg = new StringText();
 
         if (a > b && a > c) {
-            System.out.println(String.format(msg.mensage[21], a));
-        } else if (b > c) {
-            System.out.println(String.format(msg.mensage[21], b));
-        } else {
-            System.out.println(String.format(msg.mensage[21], c));
-        }
+            System.out.printf((msg.mensage[21]) + "%n", a);
+        } else System.out.printf((msg.mensage[21]) + "%n", Math.max(b, c));
     }
 
     public static void changeVerification(double money, double totalValue) {
 
         if (money > totalValue) {
-            System.out.println(String.format("Change: %.2f", money - totalValue));
+            System.out.printf("Change: %.2f%n", money - totalValue);
         } else {
-            System.out.println(String.format("Cash insufficient. FOUL %.2f REALS", totalValue - money));
+            System.out.printf("Cash insufficient. FOUL %.2f REALS%n", totalValue - money);
         }
     }
 
     public static double convertTemperatureCelciusAndFahrenheit(char escFahOrCel, double temp) {
 
         if (escFahOrCel == 'C' || escFahOrCel == ' ') {
-            return temp = (temp * 9 / 5) + 32;
+            return (temp * 9 / 5) + 32;
         } else if (escFahOrCel == 'F') {
-            return temp = (temp - 32) * 5 / 9;
+            return (temp - 32) * 5 / 9;
         }
         return Double.NaN;
     }
@@ -218,9 +215,9 @@ public class ConditionalStatic {
         double avg = 0;
 
         if (avaliation > 0 && avaliation <= 10.0) {
-            return avg += avaliation;
+            return avg + avaliation;
         }
-        return avg += 0;
+        return avg + 0;
     }
 
     public static double valueContOfTellOperator(int min) {
@@ -230,34 +227,53 @@ public class ConditionalStatic {
         if (min <= 100) {
             return value;
         }
-        return value += (min - 100) * 2.00;
+        return value + (min - 100) * 2.00;
     }
 
     public static Employee typeOfEmployee(char outsourced) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Name: ");
+        String name = sc.nextLine();
+        System.out.print("Hours: ");
+        Integer hours = sc.nextInt();
+        System.out.print("Value per hour: ");
+        Double valuePerHour = sc.nextDouble();
         if (outsourced == 'n') {
-
-            System.out.print("Name: ");
-            String name = sc.nextLine();
-            System.out.print("Hours: ");
-            Integer hours = sc.nextInt();
-            System.out.print("Value per hour: ");
-            Double valuePerHour = sc.nextDouble();
-
             return new Employee(name, valuePerHour, hours);
         } else {
-
-            System.out.print("Name: ");
-            String name = sc.nextLine();
-            System.out.print("Hours: ");
-            Integer hours = sc.nextInt();
-            System.out.print("Value per hour: ");
-            Double valuePerHour = sc.nextDouble();
             System.out.print("Additional charge: ");
             Double additionalCharge = sc.nextDouble();
 
             return new OutsourcedEmployee(name, valuePerHour, hours, additionalCharge);
         }
+    }
+
+    public static Product tagTypeOfProduct(char typeOfProduct) {
+        Scanner sc = new Scanner(System.in);
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        System.out.print("Name: ");
+        String name = sc.nextLine();
+        System.out.print("Price: ");
+        Double price = sc.nextDouble();
+
+        if (typeOfProduct == 'i') {
+
+            System.out.print("Custom Fee: ");
+            Double customFee = sc.nextDouble();
+            return new ImportedProduct(name, price, customFee);
+        } else if (typeOfProduct == 'u') {
+            sc.nextLine();
+
+            System.out.print("Manufacture date (DD/MM/YYYY): ");
+            String date = sc.nextLine();
+
+            LocalDate date1 = LocalDate.parse(date, fmt);
+
+            return new UsedProduct(name, price, date1);
+        }
+
+        return new Product(name, price);
     }
 }
