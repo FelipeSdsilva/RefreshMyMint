@@ -149,7 +149,7 @@ public class OrientationObjectExercise {
             }
 
             System.out.println("\nPAYMENTS: ");
-            for (Employee emp :  employees){
+            for (Employee emp : employees) {
                 System.out.println(emp);
             }
         }
@@ -368,4 +368,27 @@ public class OrientationObjectExercise {
         OrientObjectExcControl.menuExeOrientationObject();
     }
 
+    public void tagForProduct() {
+        List<Product> products = new ArrayList<>();
+
+        System.out.print("Enter the number of product: ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            sc.nextLine();
+
+            System.out.print("Common, used or imported (c/u/i)? ");
+            char typeOfProduct = sc.next().charAt(0);
+
+            products.add(ConditionalStatic.tagTypeOfProduct(typeOfProduct));
+        }
+
+        System.out.println("\nPRICE TAGS: ");
+
+        for (Product prod : products) {
+            System.out.println(prod.priceTag());
+        }
+
+        OrientObjectExcControl.menuExeOrientationObject();
+    }
 }
