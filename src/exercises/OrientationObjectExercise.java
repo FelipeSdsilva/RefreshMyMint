@@ -88,14 +88,14 @@ public class OrientationObjectExercise {
         System.out.println(msg.xAndY[5]);
 
         t1.setWidth(sc.nextDouble());
-        t1.setHight(sc.nextDouble());
+        t1.setHeight(sc.nextDouble());
         t1.setBase(sc.nextDouble());
         t1.measuresOfTriangle();
 
         System.out.println(msg.xAndY[6]);
 
         t2.setWidth(sc.nextDouble());
-        t2.setHight(sc.nextDouble());
+        t2.setHeight(sc.nextDouble());
         t2.setBase(sc.nextDouble());
         t2.measuresOfTriangle();
 
@@ -390,5 +390,60 @@ public class OrientationObjectExercise {
         }
 
         OrientObjectExcControl.menuExeOrientationObject();
+    }
+
+    public void abstractExercise() {
+        List<Shape> shapes = new ArrayList<>();
+
+        System.out.print("Enter the number of shapes: ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            sc.nextLine();
+
+            System.out.print("Shape #" + (i + 1) + " data: \nRectangle or Circle (r/c)? ");
+            char type = sc.next().charAt(0);
+
+            shapes.add(ConditionalStatic.typeOfShape(type));
+        }
+
+        System.out.println("\nSHAPES AREAS: ");
+
+        for (Shape shape : shapes) {
+            System.out.printf("%.2f%n", shape.area());
+        }
+
+    }
+
+    public void methodAbstractExercise() {
+
+        List<TaxPayer> taxPayers = new ArrayList<>();
+
+        System.out.print("Enter the number of tax payers: ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            sc.nextLine();
+
+            System.out.print("Tax payer #" + (i + 1) + " data: \nIndividual or Company(i/c)? ");
+            char taxType = sc.next().charAt(0);
+
+            taxPayers.add(ConditionalStatic.typeTaxPayer(taxType));
+
+        }
+
+        System.out.println("\nTAXES PAID: ");
+
+        for (TaxPayer payer : taxPayers) {
+            System.out.println(payer.getName() + ": $" + String.format("%.2f", payer.tax()));
+        }
+
+        Double sum = 0.0;
+
+        for (TaxPayer payer : taxPayers) {
+            sum += payer.tax();
+        }
+
+        System.out.println("\nTOTAL TAXES: $" + String.format("%.2f", sum));
     }
 }
