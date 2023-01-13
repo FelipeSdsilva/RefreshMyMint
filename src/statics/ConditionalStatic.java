@@ -1,6 +1,7 @@
 package statics;
 
 import entities.*;
+import entities.enums.Color;
 import views.MensagensObjects;
 import views.StringText;
 
@@ -275,5 +276,51 @@ public class ConditionalStatic {
         }
 
         return new Product(name, price);
+    }
+
+    public static Shape typeOfShape(char shapeType) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Color (BLACK/BLUE/RED): ");
+        String color = in.nextLine();
+
+        if (shapeType == 'r') {
+
+            System.out.print("Width: ");
+            Double width = in.nextDouble();
+            System.out.print("Height: ");
+            Double height = in.nextDouble();
+
+            return new Rectangle(Color.valueOf(color), height, width);
+
+        } else if (shapeType == 'c') {
+
+            System.out.print("Radius: ");
+            Double radius = in.nextDouble();
+
+            return new Circle(Color.valueOf(color), radius);
+        }
+
+        return null;
+    }
+
+    public static TaxPayer typeTaxPayer(char typeTaxPayer) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Name: ");
+        String name = in.nextLine();
+        System.out.print("Annual income: ");
+        Double annualIncome = in.nextDouble();
+        if (typeTaxPayer == 'i') {
+            System.out.print("Health expenditures: ");
+            Double healthExpenditures = in.nextDouble();
+
+            return new Individual(name, annualIncome, healthExpenditures);
+        } else {
+            System.out.print("Number of employees: ");
+            Integer numberOfEmployee = in.nextInt();
+
+            return new Company(name, annualIncome, numberOfEmployee);
+        }
     }
 }
