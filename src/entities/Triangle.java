@@ -1,70 +1,76 @@
 package entities;
 
-public class Triangle {
+public final class Triangle extends Shape {
 
-	private double width;
-	private double hight;
-	private double base;
+    private double width;
+    private double height;
+    private double base;
 
-	private double area;
+    private double area;
 
-	public Triangle() {
-	}
+    public Triangle() {
+    }
 
-	public Triangle(double width, double hight, double base) {
-		this.width = width;
-		this.hight = hight;
-		this.base = base;
-	}
+    public Triangle(double width, double height, double base) {
+        this.width = width;
+        this.height = height;
+        this.base = base;
+    }
 
-	public double getWidth() {
-		return width;
-	}
+    public double getWidth() {
+        return width;
+    }
 
-	public void setWidth(double width) {
-		this.width = width;
-	}
+    public void setWidth(double width) {
+        this.width = width;
+    }
 
-	public double getHight() {
-		return hight;
-	}
+    public double getHeight() {
+        return height;
+    }
 
-	public void setHight(double hight) {
-		this.hight = hight;
-	}
+    public void setHeight(double height) {
+        this.height = height;
+    }
 
-	public double getBase() {
-		return base;
-	}
+    public double getBase() {
+        return base;
+    }
 
-	public void setBase(double base) {
-		this.base = base;
-	}
+    public void setBase(double base) {
+        this.base = base;
+    }
 
-	public double getArea() {
-		return area;
-	}
+    public double getArea() {
+        return area;
+    }
 
-	public void setArea(double area) {
-		this.area = area;
-	}
+    public void setArea(double area) {
+        this.area = area;
+    }
 
-	public double measuresOfTriangle() {
-		double p = (getWidth() + getHight() + getBase()) / 2;
-		double measure = Math.sqrt(p * ((p - getWidth()) * (p - getHight()) * (p - getBase())));
-		return area = measure;
-	}
+    public double measuresOfTriangle() {
+        double p = (getWidth() + getHeight() + getBase()) / 2;
+        double measure = Math.sqrt(p * ((p - getWidth()) * (p - getHeight()) * (p - getBase())));
+        return area = measure;
+    }
 
-	public static void theBiggeArea(Triangle a, Triangle b) {
-		if (a.getArea() > b.getArea()) {
-			System.out.println("Large area: X " + String.format("%.4f", a.getArea()));
-		} else {
-			System.out.println("Large area: Y " + String.format("%.4f", b.getArea()));
-		}
-	}
+    public static void theBiggeArea(Triangle a, Triangle b) {
+        if (a.getArea() > b.getArea()) {
+            System.out.println("Large area: X " + String.format("%.4f", a.getArea()));
+        } else {
+            System.out.println("Large area: Y " + String.format("%.4f", b.getArea()));
+        }
+    }
 
-	@Override
-	public String toString() {
-		return "Triangle [ area=" + String.format("%.4f", getArea()) + "]";
-	}
+    @Override
+    public String toString() {
+        return "Triangle [ area=" + String.format("%.4f", getArea()) + "]";
+    }
+
+    @Override
+    public Double area() {
+        return null;
+    }
+
 }
